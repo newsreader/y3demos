@@ -6,11 +6,12 @@
 # Author: Marieke van Erp
 # Date: 3 November 2015
 
-
+import sys
 import json
 from pprint import pprint
 
-with open('timeline-data/json/stock_contextual.timeline.json') as data_file:    
+corpus=sys.argv[1]
+with open('/Users/filipilievski/phd/y3demos/data/timeline-data/json/' + corpus  + '_contextual.timeline.json') as data_file:    
     data = json.load(data_file)
    
 eid = 1
@@ -19,7 +20,7 @@ for event in data['timeline']['events']:
     events['id'] = str(eid)
     events['event'] = event['event']
     events['climax'] = event['climax']
-    events['time'] = int(event['time'])
+    events['time'] = event['time'][:4] + '-' + event['time'][4:6] + '-' + event["time"][6:] + 'T00:00:00.000Z'
     events['size'] = event['size']
     events['label'] = event['labels']
     events['fnsuperframes'] = event['fnsuperframes']
