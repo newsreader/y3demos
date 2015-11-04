@@ -11,7 +11,8 @@ import json
 from pprint import pprint
 
 corpus=sys.argv[1]
-with open('/Users/filipilievski/phd/y3demos/data/timeline-data/json/' + corpus  + '_contextual.timeline.json') as data_file:    
+jsoninput  = sys.argv[2]
+with open('../data/timeline-data/json/gm_contextual.timeline.json') as data_file:    
     data = json.load(data_file)
    
 eid = 1
@@ -30,7 +31,7 @@ for event in data['timeline']['events']:
             for value in event['actors'].values():
                 events['actors'].append(value)
     eid = eid + 1
-    print '{ "index" : { "_index" : "stock", "_type" : "events", "_id" :', eid, '} }'
+    print '{ "index" : { "_index" : ', corpus, ', "_type" : "events", "_id" :', eid, '} }'
     print json.dumps(events)
 
 
