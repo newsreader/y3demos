@@ -31,7 +31,7 @@ for event in data['timeline']['events']:
             for value in event['actors'].values():
                 events['actors'].append(value)
     eid = eid + 1
-    print '{ "index" : { "_index" : ', corpus, ', "_type" : "events", "_id" :', eid, '} }'
+    sys.stdout.write('{ "index" : { "_index" : "' + corpus + '", "_type" : "events", "_id" :' + str(eid) + '} }' + "\n")
     print json.dumps(events)
 
 
