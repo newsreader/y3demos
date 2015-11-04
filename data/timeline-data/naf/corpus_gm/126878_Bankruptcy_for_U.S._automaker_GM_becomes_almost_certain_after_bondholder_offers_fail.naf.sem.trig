@@ -1,0 +1,244 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev7>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Becoming ;
+            rdfs:label     "become" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=33,40> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "General Motors" , "U.S. automaker GM" , "GM 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=30,32> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=148,162> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=232,234> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=15,32> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=232,236> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=770,772> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=584,588> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=817,819> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=584,586> .
+    
+    <http://www.newsreader-project.eu/time/20090528>
+            a              time:DateTimeDescription ;
+            time:day       "---28"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 28 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=86,98> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090528> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Exchange_currency , fn:Exchange , fn:Replacing , eso:Replacing ;
+            rdfs:label     "exchange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=223,231> .
+    
+    <http://www.newsreader-project.eu/time/20090527>
+            a              time:DateTimeDescription ;
+            time:day       "---27"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=176,185> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090527> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "debt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=251,255> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev28>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "professor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=956,965> .
+    
+    <http://dbpedia.org/resource/University_of_Michigan>
+            rdfs:label     "the University of Michigan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=971,997> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090528> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=516,520> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=820,824> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=848,852> , <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=938,942> .
+    
+    <http://www.newsreader-project.eu/time/20080601>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx4>
+            a                time:Instant ;
+            rdfs:label       "June 1" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=349,355> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080601> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Imposing_obligation , fn:Have_as_requirement ;
+            rdfs:label     "require" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=758,766> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev42>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=830,839> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr1> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=33,98> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=0,40> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=176,231> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr5,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=223,255> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=176,255> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr7,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=232,255> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr39,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=956,997> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=349,520> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr28,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=817,824> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr29,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=758,772> .
+    
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr33,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=817,839> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev7>
+            sem:hasActor        <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Becoming@Entity>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1               <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr4> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr5,rl11> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev10>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:replacing-entity_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr6> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr7,rl14> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr21> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr39,rl80> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/University_of_Michigan> ;
+            pb:A2         <http://dbpedia.org/resource/University_of_Michigan> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr30> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr28,rl59> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev37>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr32> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr29,rl62> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Imposing_obligation@Principle>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tr35> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#pr33,rl68> {
+    <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}

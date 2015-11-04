@@ -1,0 +1,515 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion_directional , fn:Travel ;
+            rdfs:label     "plunge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=32,38> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General motors" , "General motors Corporation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=0,14> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1339,1341> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=90,92> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=62,88> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=175,178> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=122,124> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1061,1063> .
+    
+    <http://www.newsreader-project.eu/time/20090401>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 1 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=47,60> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090401> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=26,31> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=165,170> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=313,318> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=633,638> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=730,735> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=758,763> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=143,156> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=803,805> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1245,1247> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1302,1304> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Ford Motor Company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=711,729> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1052,1056> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1179,1183> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=107,116> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090401> .
+    
+    <http://www.newsreader-project.eu/time/200903>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx4>
+            a                time:Instant ;
+            rdfs:label       "March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=187,192> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200903> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx5>
+            a                time:Instant ;
+            rdfs:label       "the last week of March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=332,354> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200903> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6>
+            a                time:Instant ;
+            rdfs:label       "March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=857,862> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200903> .
+    
+    <http://www.newsreader-project.eu/time/200902>
+            a              time:DateTimeDescription ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7>
+            a                time:Instant ;
+            rdfs:label       "February" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=876,884> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200902> .
+    
+    <http://www.newsreader-project.eu/time/1981>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1981"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8>
+            a                time:Instant ;
+            rdfs:label       "1981" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=935,939> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1981> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=467,476> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler LLC" , "Chrysler" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=493,505> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=645,653> .
+    
+    <http://dbpedia.org/resource/Jim_Press>
+            rdfs:label     "Jim Press" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=506,515> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Self_motion , fn:Undressing , eso:Translocation ;
+            rdfs:label     "slip" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=639,643> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1349,1356> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1265,1274> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090401> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion_directional , fn:Travel , fn:Change_position_on_a_scale , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=736,740> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev32>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1184,1190> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1342,1348> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Getting , eso:Increasing ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1191,1197> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev34>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "level" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1208,1213> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1254,1261> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev42>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,103> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev51>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny ;
+            rdfs:label     "analyst" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1157,1164> .
+    
+    <http://dbpedia.org/resource/Edmunds.com>
+            rdfs:label     "Edmunds" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1169,1176> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx9>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1122,1127> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090401> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr1> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=32,60> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=0,38> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=107,170> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=165,192> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=313,354> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=758,862> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=758,884> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=758,939> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=143,170> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr29,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=711,735> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=332,476> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr19,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=467,515> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=639,862> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=639,884> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=639,939> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1265,1356> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr54,rl113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1339,1356> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=736,862> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=736,884> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=736,939> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr30,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=711,740> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1184,1274> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr46,rl95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1179,1190> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr53,rl112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1339,1348> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1191,1274> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr47,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1179,1197> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1208,1274> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr48,rl102>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1179,1213> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1254,1274> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr50,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1245,1261> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,116> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,192> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=62,103> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1122,1164> .
+    
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr45,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1154,1176> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr1,rl1> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev13>
+            sem:hasActor                 <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Motion_directional@Goal>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Motion_directional@Theme>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                        <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr2> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr3> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr4> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr5> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr6> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr7> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr6,rl13> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr29,rl61> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                   <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr17> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr19,rl40> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/Jim_Press> ;
+            pb:A2         <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/Jim_Press> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr21> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr22> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr23> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr24> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr54,rl113> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev22>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Undressing@Wearer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr28> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr29> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr30> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr30,rl62> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev24>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr44> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr46,rl95> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr53,rl112> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr45> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr47,rl96> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev33>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr46> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr48,rl102> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr48> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr50,rl106> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev36>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr60> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr61> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr3,rl5> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tr78> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#pr45,rl93> {
+    <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#ev51>
+            sem:hasActor          <http://dbpedia.org/resource/Edmunds.com> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://dbpedia.org/resource/Edmunds.com> ;
+            pb:A0                 <http://dbpedia.org/resource/Edmunds.com> .
+}

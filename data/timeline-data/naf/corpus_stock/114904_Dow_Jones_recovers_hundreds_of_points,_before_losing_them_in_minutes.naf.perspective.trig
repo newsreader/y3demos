@@ -1,0 +1,368 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1037,1046>
+          rdfs:comment        "commented" ;
+          rdfs:label          "situation" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1002,1011> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/PeterCardillo> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1002,1011>
+          rdfs:label          "commented" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=10,18>
+          rdfs:label          "recovers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=46,52>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr1>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=19,27>
+          rdfs:label          "hundreds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=173,182>
+          rdfs:label          "recovered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=88,97>
+          rdfs:label          "Following" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=118,123>
+          rdfs:label          "start" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=186,194>
+          rdfs:label          "hundreds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=214,222>
+          rdfs:label          "climbing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=252,260>
+          rdfs:label          "dropping" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr8>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=323,330>
+          rdfs:label          "climbed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=301,306>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=388,392>
+          rdfs:label          "kept" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=357,366>
+          rdfs:label          "Following" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=367,372>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=393,398>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=475,479>
+          rdfs:label          "went" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=448,457>
+          rdfs:label          "Following" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=502,512>
+          rdfs:label          "recovering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr17>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=547,554>
+          rdfs:label          "hovered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=601,611>
+          rdfs:label          "recovering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr19>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=565,572>
+          rdfs:label          "minutes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=648,651>
+          rdfs:label          "-82" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr21>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=670,674>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=722,729>
+          rdfs:label          "falling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=689,694>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=815,822>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=853,862>
+          rdfs:label          "continued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=911,916>
+          rdfs:label          "start" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=972,981>
+          rdfs:label          "economist" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1070,1074>
+          rdfs:label          "seen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1114,1118>
+          rdfs:label          "kept" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1119,1126>
+          rdfs:label          "feeding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1160,1166>
+          rdfs:label          "happen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr33>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1176,1180>
+          rdfs:label          "need" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1197,1201>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1258,1262>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1290,1294>
+          rdfs:label          "came" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1323,1332>
+          rdfs:label          "continued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1303,1311>
+          rdfs:label          "breached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1346,1350>
+          rdfs:label          "mean" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1360,1362>
+          rdfs:label          "go" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr41>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1372,1379>
+          rdfs:label          "revisit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes_dAttr42>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes> .
+}

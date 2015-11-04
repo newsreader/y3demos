@@ -1,0 +1,602 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=140,150>
+          rdfs:comment        "announced" ;
+          rdfs:label          "contribute" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=101,110> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr0>
+          rdf:value            <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Airbus> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=101,110>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=227,231>
+          rdfs:comment        "announced" ;
+          rdfs:label          "fund" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=101,110> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=244,250>
+          rdfs:comment        "announced" ;
+          rdfs:label          "search" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=101,110> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=855,863>
+          rdfs:comment        "explained" ;
+          rdfs:label          "accident" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=906,915> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=906,915>
+          rdfs:label          "explained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=883,892>
+          rdfs:comment        "explained" ;
+          rdfs:label          "situation" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=906,915> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1692,1700>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "suffered" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> , <PROBABLE_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+acars+data> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672>
+          rdfs:label          "suggests" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1708,1712>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "loss" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1762,1771>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "suspicion" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1734,1743>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "including" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1754,1761>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "leading" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1775,1779>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "fall" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1813,1821>
+          rdfs:comment        "suggests" ;
+          rdfs:label          "supplies" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1664,1672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=7,13>
+          rdfs:label          "offers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=14,21>
+          rdfs:label          "funding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=25,31>
+          rdfs:label          "search" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr2>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=64,72>
+          rdfs:label          "disaster" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=324,331>
+          rdfs:label          "crashed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=365,372>
+          rdfs:label          "killing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=429,433>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=439,448>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=454,458>
+          rdfs:label          "want" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=462,466>
+          rdfs:label          "know" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr10>
+          rdf:value             <positive> , <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=472,480>
+          rdfs:label          "happened" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=499,505>
+          rdfs:label          "safety" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr12>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=485,494>
+          rdfs:label          "improving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=517,525>
+          rdfs:label          "priority" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=540,549>
+          rdfs:label          "committed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=553,560>
+          rdfs:label          "support" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr16>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=565,574>
+          rdfs:label          "extension" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=582,588>
+          rdfs:label          "search" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=608,620>
+          rdfs:label          "contribution" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=725,730>
+          rdfs:label          "makes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=652,658>
+          rdfs:label          "supply" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr21>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=669,679>
+          rdfs:label          "assistance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=757,766>
+          rdfs:label          "spokesman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=785,791>
+          rdfs:label          "saying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=806,810>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=955,964>
+          rdfs:label          "requested" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=994,1000>
+          rdfs:label          "search" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr28>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=975,985>
+          rdfs:label          "assistance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1050,1059>
+          rdfs:label          "discussed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1119,1124>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1128,1135>
+          rdfs:label          "looking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1152,1157>
+          rdfs:label          "voice" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1183,1191>
+          rdfs:label          "recorder" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1215,1221>
+          rdfs:label          "method" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1192,1197>
+          rdfs:label          "using" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1225,1232>
+          rdfs:label          "tracing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1284,1291>
+          rdfs:label          "expired" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1254,1263>
+          rdfs:label          "batteries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr39>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1330,1335>
+          rdfs:label          "using" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr40>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1362,1365>
+          rdfs:label          "tow" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1448,1452>
+          rdfs:label          "seek" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr42>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1413,1419>
+          rdfs:label          "proves" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr43>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1485,1491>
+          rdfs:label          "search" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1580,1588>
+          rdfs:label          "transmit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr45>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1589,1600>
+          rdfs:label          "information" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1611,1619>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1865,1876>
+          rdfs:label          "recommended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1932,1940>
+          rdfs:label          "replaced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1886,1895>
+          rdfs:label          "component" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1970,1974>
+          rdfs:label          "done" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2035,2043>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2057,2063>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr54>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2097,2107>
+          rdfs:label          "identified" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr55>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2123,2130>
+          rdfs:label          "involve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr56>
+          rdf:value             <POSSIBLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2212,2219>
+          rdfs:label          "probing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2320,2328>
+          rdfs:label          "suffered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2292,2300>
+          rdfs:label          "equipped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2339,2345>
+          rdfs:label          "series" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2349,2357>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2358,2365>
+          rdfs:label          "enroute" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster_dAttr62>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster> .
+}

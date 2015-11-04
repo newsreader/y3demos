@@ -1,0 +1,177 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , fn:Recovery , eso:Getting ;
+            rdfs:label     "recover" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=10,18> , <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=173,182> , <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=502,512> , <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=601,611> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow Jones" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=0,9> .
+    
+    <http://www.newsreader-project.eu/time/20081010>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 10 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=70,86> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081010> .
+    
+    <http://www.newsreader-project.eu/time/20081021>
+            a              time:DateTimeDescription ;
+            time:day       "---21"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx4>
+            a                time:Instant ;
+            rdfs:label       "one day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=744,751> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081021> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=46,52> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev32>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=972,981> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AvalonPartners>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Avalon Partners" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=985,1000> .
+    
+    <http://www.newsreader-project.eu/time/20081020>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081020> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev33>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "situation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1037,1046> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1054,1056> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr1> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=10,182> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=601,751> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=0,18> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=46,86> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=0,52> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr30,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=972,1000> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr31,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#char=1037,1056> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr2> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev19>
+            sem:hasActor            <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recovery@Affliction>
+                    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A0                   <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr3> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev20>
+            sem:hasActor                   <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A0                          <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr14> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr30,rl77> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev32>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/AvalonPartners> ;
+            pb:A2         <http://www.newsreader-project.eu/data/wikinews/entities/AvalonPartners> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tr15> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#pr31,rl80> {
+    <http://en.wikinews.org/wiki/Dow_Jones_recovers_hundreds_of_points,_before_losing_them_in_minutes#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A3         <http://dbpedia.org/resource/United_States_dollar> .
+}

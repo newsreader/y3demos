@@ -1,0 +1,303 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "airliner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=26,34> .
+    
+    <http://dbpedia.org/resource/World>
+            rdfs:label     "World" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=0,5> .
+    
+    <http://www.newsreader-project.eu/time/20050427>
+            a              time:DateTimeDescription ;
+            time:day       "---27"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 27 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=55,69> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050427> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=294,298> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=675,681> .
+    
+    <http://dbpedia.org/resource/Toulouse>
+            rdfs:label     "Toulouse" , "Toulouse in France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=178,186> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=611,619> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=178,196> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1016,1024> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=736,744> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4>
+            a              time:Interval ;
+            rdfs:label     "many year" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=799,809> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20150921> .
+    
+    <http://www.newsreader-project.eu/time/20150921>
+            a              time:DateTimeDescription ;
+            time:day       "---21"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2015"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "erect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=586,593> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20150921> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "centre" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=601,607> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Translocation , eso:Motion , fn:Traversing ;
+            rdfs:label     "circle" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=751,758> .
+    
+    <http://dbpedia.org/resource/Bay_of_Biscay>
+            rdfs:label     "Bay of Biscay" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=763,776> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev34>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "Bay" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=763,766> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev40>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "ceremony" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1004,1012> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=190,196> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1026,1032> .
+    
+    <http://www.newsreader-project.eu/time/20050118>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx5>
+            a                time:Instant ;
+            rdfs:label       "January 18 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1037,1053> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050118> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1159,1163> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=115,121> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=846,852> , <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1134,1140> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev51>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Body_movement ;
+            rdfs:label     "lift" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=161,168> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr1> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=26,69> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=0,34> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=675,809> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr23,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=675,744> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr20,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=586,619> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr21,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=601,619> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=751,809> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr25,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=751,776> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=763,809> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr26,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=763,776> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1004,1053> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr33,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1004,1033> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr37,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=1126,1163> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=55,168> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=161,186> .
+    
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#char=161,196> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr1,rl1> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/World> ;
+            pb:A0         <http://dbpedia.org/resource/World> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr6> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr23,rl51> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev21>
+            sem:hasPlace  <http://dbpedia.org/resource/Toulouse> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Toulouse> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr14> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr20,rl44> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev29>
+            sem:hasPlace  <http://dbpedia.org/resource/Toulouse> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Toulouse> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr15> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr21,rl45> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/Toulouse> ;
+            pb:A1         <http://dbpedia.org/resource/Toulouse> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr18> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr25,rl55> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev33>
+            sem:hasActor        <http://dbpedia.org/resource/Bay_of_Biscay> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Traversing@Area>
+                    <http://dbpedia.org/resource/Bay_of_Biscay> ;
+            pb:A1               <http://dbpedia.org/resource/Bay_of_Biscay> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr19> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr26,rl56> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/Bay_of_Biscay> ;
+            pb:A1         <http://dbpedia.org/resource/Bay_of_Biscay> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr25> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr33,rl70> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev40>
+            sem:hasPlace  <http://dbpedia.org/resource/Toulouse> , <http://dbpedia.org/resource/France> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Toulouse> , <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr28> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr37,rl78> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev43>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A1                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tr36> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr6,rl13> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev51>
+            sem:hasActor             <http://dbpedia.org/resource/Toulouse> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Source>
+                    <http://dbpedia.org/resource/Toulouse> ;
+            pb:A2                    <http://dbpedia.org/resource/Toulouse> .
+}
+
+<http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#pr6,rl14> {
+    <http://en.wikinews.org/wiki/World's_largest_passenger_airliner_makes_first_flight#ev51>
+            sem:hasPlace  <http://dbpedia.org/resource/France> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/France> .
+}

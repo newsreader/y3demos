@@ -1,0 +1,346 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane>
+          prov:wasAttributedTo  nwrauthor:Markie .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=646,654>
+          rdfs:comment        "stated" ;
+          rdfs:label          "expected" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=631,637> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/airbus+chief+executive+noel+forgeard> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=631,637>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=680,686>
+          rdfs:comment        "stated" ;
+          rdfs:label          "exceed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=631,637> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=655,660>
+          rdfs:comment        "stated" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=631,637> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=695,703>
+          rdfs:comment        "stated" ;
+          rdfs:label          "required" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=631,637> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=723,728>
+          rdfs:comment        "stated" ;
+          rdfs:label          "break" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=631,637> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=911,916>
+          rdfs:comment        "talks" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=875,880> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_sAttr1>
+          rdf:value            <POSSIBLE_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+company> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=875,880>
+          rdfs:label          "talks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=7,15>
+          rdfs:label          "launches" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=157,165>
+          rdfs:label          "unveiled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=81,89>
+          rdfs:label          "attended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=120,127>
+          rdfs:label          "leaders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=142,148>
+          rdfs:label          "guests" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=166,171>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=216,221>
+          rdfs:label          "carry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr6>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=254,259>
+          rdfs:label          "class" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=329,335>
+          rdfs:label          "layout" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=321,328>
+          rdfs:label          "classes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=360,364>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr10>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=385,390>
+          rdfs:label          "title" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=443,449>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=469,476>
+          rdfs:label          "attempt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=480,487>
+          rdfs:label          "compete" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr14>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=526,531>
+          rdfs:label          "aimed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=568,574>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=607,616>
+          rdfs:label          "executive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=601,606>
+          rdfs:label          "chief" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=792,800>
+          rdfs:label          "received" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=748,757>
+          rdfs:label          "confirmed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=758,764>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=809,812>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=813,818>
+          rdfs:label          "hopes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=835,841>
+          rdfs:label          "exceed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr25>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=940,946>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=967,971>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr28>
+          rdf:value             <POSSIBLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=972,977>
+          rdfs:label          "place" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1022,1028>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1032,1040>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1044,1048>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr32>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1148,1157>
+          rdfs:label          "purchased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1186,1192>
+          rdfs:label          "intend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1196,1199>
+          rdfs:label          "fit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane_dAttr35>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane> .
+}

@@ -1,0 +1,168 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev2>
+            a              sem:Event , nwrontology:contextualEvent , fn:Death ;
+            rdfs:label     "bankruptcy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=39,49> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=443,453> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=496,508> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=18,32> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=120,134> .
+    
+    <http://www.newsreader-project.eu/time/20090601>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 1 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=62,74> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090601> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=214,220> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090601> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev3>
+            a              sem:Event , nwrontology:contextualEvent , fn:Protecting ;
+            rdfs:label     "protection" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=50,60> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=171,181> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev7>
+            a              sem:Event , nwrontology:contextualEvent , fn:Seeking_to_achieve ;
+            rdfs:label     "seek" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=33,38> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , fn:Recording , eso:HavingInPossession ;
+            rdfs:label     "history" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=476,483> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "U.S." , "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=0,4> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=76,89> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=318,322> , <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=471,475> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr1> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev2>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=39,74> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=214,508> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=0,49> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=171,220> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr3,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=0,60> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=33,74> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=0,38> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=214,483> .
+    
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=471,483> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr2> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev2>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr2,rl3> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev2>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Death@Protagonist>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr3> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev3>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr3,rl4> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev3>
+            sem:hasActor              <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Protecting@Asset>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Protecting@Instrument>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                     <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr7> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr1,rl1> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev7>
+            sem:hasActor                 <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Seeking_to_achieve@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                        <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tr10> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#pr11,rl23> {
+    <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#ev10>
+            sem:hasActor             <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recording@Entity>
+                    <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recording@Phenomenon>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A1                    <http://dbpedia.org/resource/United_States> .
+}

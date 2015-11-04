@@ -1,0 +1,617 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Replacing , fn:Take_place_of , eso:Replacing ;
+            rdfs:label     "replace" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=15,23> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" , "Apple Computer 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=0,5> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=547,554> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=0,7> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=724,729> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=883,890> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=105,121> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=547,552> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=883,888> .
+    
+    <http://dbpedia.org/resource/Walmart>
+            rdfs:label     "Wal-Mart" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=24,32> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=175,183> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=944,952> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=756,764> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=794,802> .
+    
+    <http://www.newsreader-project.eu/time/20080409>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 9 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=61,74> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080409> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "seller" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=53,59> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=210,216> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=787,793> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=42,46> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=575,579> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=624,628> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=776,780> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=921,925> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=224,237> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080409> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Process_end , fn:Traversing ;
+            rdfs:label     "pass" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=168,174> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=568,574> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=749,755> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2>
+            a                  time:Interval ;
+            rdfs:label         "five year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=76,86> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20080409> .
+    
+    <http://www.newsreader-project.eu/time/200802>
+            a              time:DateTimeDescription ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3>
+            a                time:Instant ;
+            rdfs:label       "February" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=159,167> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200802> .
+    
+    <http://www.newsreader-project.eu/time/20080403>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4>
+            a                time:Instant ;
+            rdfs:label       "April 3" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=269,276> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080403> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7>
+            a                time:Instant ;
+            rdfs:label       "2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=647,651> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9>
+            a                time:Instant ;
+            rdfs:label       "the beginning of the year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=806,831> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev14>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "itunes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=122,128> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=891,897> .
+    
+    <http://www.newsreader-project.eu/time/200801>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10>
+            a                time:Instant ;
+            rdfs:label       "January 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=869,881> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200801> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance , fn:Being_employed , fn:Working_a_post , fn:Giving , eso:BeingEmployed , eso:Working , eso:Giving ;
+            rdfs:label     "service" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=148,155> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling , fn:Possession , fn:Storing , eso:Placing ;
+            rdfs:label     "store" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=459,464> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=562,567> .
+    
+    <http://www.newsreader-project.eu/time/2003>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2003" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=418,422> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2003> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx6>
+            a                time:Instant ;
+            rdfs:label       "February" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=438,446> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200802> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "retailer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=592,600> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=635,643> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "buy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=606,609> .
+    
+    <http://dbpedia.org/resource/Best_Buy>
+            rdfs:label     "Best buy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=601,609> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Containing , fn:Retaining , eso:HavingInPossession ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=898,902> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=932,938> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=325,329> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=514,518> .
+    
+    <http://dbpedia.org/resource/NPD_Group>
+            rdfs:label     "NPD Group" , "NPD" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=280,289> , <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=510,513> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev38>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=680,686> .
+    
+    <http://dbpedia.org/resource/Ars_Technica>
+            rdfs:label     "Ars Technica" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=690,702> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Communication , fn:Discussion ;
+            rdfs:label     "memo" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=716,720> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr1> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=15,74> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=0,23> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=15,32> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=210,216> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=42,59> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr7,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=210,237> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=76,174> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=159,174> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=168,276> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=568,651> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=749,831> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr3,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=168,183> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=76,128> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=122,167> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=122,276> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=869,897> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr5,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=105,128> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=76,155> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=148,167> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=148,276> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr6,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=105,155> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=418,464> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=438,464> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=562,651> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr21,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=547,567> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=592,651> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr22,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=575,600> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=606,651> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr23,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=601,609> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=869,902> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr33,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=883,902> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=869,938> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr36,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=921,938> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=325,422> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=325,446> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=514,651> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr19,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=510,518> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=680,831> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr26,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=680,702> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=716,831> .
+    
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr27,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#char=716,729> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev11>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Replacing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev11>
+            sem:hasActor            <http://dbpedia.org/resource/Walmart> ;
+            eso:replacing-entity_1  <http://dbpedia.org/resource/Walmart> ;
+            pb:A1                   <http://dbpedia.org/resource/Walmart> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr2> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev12>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev12>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr7,rl21> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev12>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr3> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr4> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr5> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr6> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr7> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr3,rl9> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/Walmart> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Manner>
+                    <http://dbpedia.org/resource/Walmart> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Process>
+                    <http://dbpedia.org/resource/Walmart> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Traversing@Theme>
+                    <http://dbpedia.org/resource/Walmart> ;
+            pb:A1                   <http://dbpedia.org/resource/Walmart> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr8> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr9> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr10> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr11> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr5,rl13> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev14>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr12> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr13> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr14> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr6,rl15> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev15>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr26> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr27> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr28> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr21,rl48> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev20>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr33> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr22,rl51> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev24>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr34> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr23,rl55> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev25>
+            sem:hasActor          <http://dbpedia.org/resource/Best_Buy> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Best_Buy> ;
+            pb:A1                 <http://dbpedia.org/resource/Best_Buy> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr36> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr33,rl79> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev27>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr38> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr36,rl85> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev29>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr50> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr51> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr52> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr19,rl43> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev36>
+            sem:hasActor             <http://dbpedia.org/resource/NPD_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/NPD_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/NPD_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/NPD_Group> ;
+            pb:A0                    <http://dbpedia.org/resource/NPD_Group> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr55> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr26,rl64> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev38>
+            sem:hasPlace  <http://dbpedia.org/resource/Ars_Technica> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Ars_Technica> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tr56> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#pr27,rl65> {
+    <http://en.wikinews.org/wiki/Apple's_iTunes_replaces_Wal-Mart_as_No._1_U.S._music_seller#ev39>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication@Addressee>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_2>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Topic>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2                         <http://dbpedia.org/resource/Apple_Inc.> .
+}

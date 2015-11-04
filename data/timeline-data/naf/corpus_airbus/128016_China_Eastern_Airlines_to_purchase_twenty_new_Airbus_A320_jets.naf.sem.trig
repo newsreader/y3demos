@@ -1,0 +1,159 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Board_vehicle , fn:Residence , fn:Temporary_stay , eso:BeingAtAPlace ;
+            rdfs:label     "board" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=486,491> .
+    
+    <http://dbpedia.org/resource/China>
+            rdfs:label     "China" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=290,295> , <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=470,475> .
+    
+    <http://dbpedia.org/resource/Eastern_Europe>
+            rdfs:label     "Eastern" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=476,483> .
+    
+    <http://www.newsreader-project.eu/time/20090618>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090618> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev21>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,108> .
+    
+    <http://dbpedia.org/resource/China_Eastern_Airlines>
+            rdfs:label     "China Eastern airlines" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=0,22> , <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=79,101> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=112,120> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090618> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev26>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=532,540> .
+    
+    <http://dbpedia.org/resource/China_Daily>
+            rdfs:label     "China Daily" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=510,521> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=663,667> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx6>
+            a                  time:Interval ;
+            rdfs:label         "two year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=676,685> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090618> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr8> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#pr14,rl30> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev15>
+            sem:hasActor  <http://dbpedia.org/resource/China> , <http://dbpedia.org/resource/Eastern_Europe> ;
+            pb:A2         <http://dbpedia.org/resource/China> , <http://dbpedia.org/resource/Eastern_Europe> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#pr14,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=470,491> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,120> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#pr2,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=79,108> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=532,667> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=532,685> .
+    
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=506,540> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr18> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#pr2,rl2> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/China_Eastern_Airlines> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/China_Eastern_Airlines> ;
+            pb:A0                 <http://dbpedia.org/resource/China_Eastern_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr23> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tr24> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#pr15,rl32> {
+    <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#ev26>
+            sem:hasActor           <http://dbpedia.org/resource/China_Daily> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/China_Daily> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/China_Daily> ;
+            pb:A0                  <http://dbpedia.org/resource/China_Daily> .
+}

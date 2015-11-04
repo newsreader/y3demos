@@ -1,0 +1,427 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Cause_motion , fn:Change_position_on_a_scale , fn:Motion , eso:Translocation , eso:Motion ;
+            rdfs:label     "roll" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=7,12> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=134,140> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1290,1297> .
+    
+    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes>
+            rdfs:label     "Boeing" , "Boeing 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=0,6> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1560,1566> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1516,1522> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1395,1401> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1678,1680> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=456,462> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=567,575> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=123,129> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=567,573> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx2>
+            a                  time:Interval ;
+            rdfs:label         "three year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=74,85> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20110808> .
+    
+    <http://www.newsreader-project.eu/time/20110808>
+            a              time:DateTimeDescription ;
+            time:day       "---08"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance , fn:Being_employed , fn:Working_a_post , fn:Giving , eso:BeingEmployed , eso:Working , eso:Giving ;
+            rdfs:label     "service" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=49,56> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx1>
+            a                time:Instant ;
+            rdfs:label       "August 8 , 2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=58,72> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110808> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , fn:Removing , fn:Bringing , fn:Taking , fn:Change_of_leadership , eso:Increasing , eso:Transportation , eso:Getting , eso:Taking ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=216,220> .
+    
+    <http://dbpedia.org/resource/All_Nippon_Airways>
+            rdfs:label     "ANA" , "ANA 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=203,206> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1045,1048> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=813,818> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=534,537> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=813,816> .
+    
+    <http://dbpedia.org/resource/Japan>
+            rdfs:label     "Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=194,199> .
+    
+    <http://www.newsreader-project.eu/time/200805>
+            a              time:DateTimeDescription ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx3>
+            a                time:Instant ;
+            rdfs:label       "May 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=233,241> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200805> .
+    
+    <http://www.newsreader-project.eu/time/201109>
+            a              time:DateTimeDescription ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx5>
+            a                time:Instant ;
+            rdfs:label       "next month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=277,287> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201109> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev29>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "system" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=588,594> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110808> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev33>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "livery" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=819,825> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7>
+            a                time:Instant ;
+            rdfs:label       "next month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=844,854> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201109> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Translocation , eso:Motion , fn:Bringing , eso:Transportation , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion ;
+            rdfs:label     "flight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=898,904> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1229,1236> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1254,1256> .
+    
+    <http://dbpedia.org/resource/Europe>
+            rdfs:label     "Europe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1240,1246> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving , fn:Renting , eso:IntentionalEvent ;
+            rdfs:label     "charter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=919,926> .
+    
+    <http://dbpedia.org/resource/Hong_Kong>
+            rdfs:label     "Hong Kong" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=941,950> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev39>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1061,1070> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1407,1416> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=463,467> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev62>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Experiencer_obj ;
+            rdfs:label     "bear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=805,812> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1040,1044> , <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1567,1571> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev67>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "claim" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1791,1797> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/JohnOstrower>
+            a              nwrontology:PERSON ;
+            rdfs:label     "John Ostrower" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1805,1818> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr1> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=74,140> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=0,12> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=49,72> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=0,56> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=216,241> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=216,287> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr8,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=194,220> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr21,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=567,594> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=819,854> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr29,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=813,825> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=844,904> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr47,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1229,1256> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=844,926> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr32,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=919,950> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=844,1070> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr39,rl84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1045,1070> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr52,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1395,1416> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr15,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=456,467> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=805,854> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr28,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=805,825> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=844,1044> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr56,rl130>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1560,1571> .
+    
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr64,rl153>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1791,1818> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev16>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_motion@Agent>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_position_on_a_scale@Attribute>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Motion@Theme>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr2> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev17>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr5> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr6> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr8,rl14> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/All_Nippon_Airways> , <http://dbpedia.org/resource/Japan> ;
+            eso:possession-owner_2   <http://dbpedia.org/resource/All_Nippon_Airways> , <http://dbpedia.org/resource/Japan> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/All_Nippon_Airways> , <http://dbpedia.org/resource/Japan> ;
+            pb:A0                    <http://dbpedia.org/resource/All_Nippon_Airways> , <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr18> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr21,rl43> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev29>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr22> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr29,rl59> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/All_Nippon_Airways> ;
+            pb:A0         <http://dbpedia.org/resource/All_Nippon_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr23> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr47,rl110> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Europe> ;
+            pb:A4         <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Europe> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr24> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr32,rl67> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev35>
+            sem:hasActor         <http://dbpedia.org/resource/Hong_Kong> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Renting@Duration>
+                    <http://dbpedia.org/resource/Hong_Kong> ;
+            pb:A2                <http://dbpedia.org/resource/Hong_Kong> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr28> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr39,rl84> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/All_Nippon_Airways> ;
+            pb:A2         <http://dbpedia.org/resource/All_Nippon_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr52,rl118> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A2         <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr47> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr15,rl31> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev58>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr51> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev62>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr28,rl58> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev62>
+            sem:hasActor                    <http://dbpedia.org/resource/All_Nippon_Airways> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_obj@Experiencer>
+                    <http://dbpedia.org/resource/All_Nippon_Airways> ;
+            pb:A1                           <http://dbpedia.org/resource/All_Nippon_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr53> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr56,rl130> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev64>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tr56> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#pr64,rl153> {
+    <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#ev67>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/JohnOstrower> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/JohnOstrower> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/JohnOstrower> ;
+            pb:A1                 <http://www.newsreader-project.eu/data/wikinews/entities/JohnOstrower> .
+}

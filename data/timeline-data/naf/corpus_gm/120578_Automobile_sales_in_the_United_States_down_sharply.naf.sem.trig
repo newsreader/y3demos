@@ -1,0 +1,582 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=11,16> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=70,75> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=223,228> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=250,255> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=553,558> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=617,622> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=743,748> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=896,901> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "the United states" , "the domestically own manufacturer" , "the US" , "just we manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=20,37> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=94,111> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=483,485> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=373,409> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=550,552> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1037,1039> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=889,891> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1033,1039> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=478,499> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford Motor Company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=231,249> .
+    
+    <http://dbpedia.org/resource/Honda>
+            rdfs:label     "Honda" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=611,616> .
+    
+    <http://www.newsreader-project.eu/time/200901>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx3>
+            a                time:Instant ;
+            rdfs:label       "January" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=135,142> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200901> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx5>
+            a                time:Instant ;
+            rdfs:label       "January" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=215,222> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200901> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6>
+            a                time:Instant ;
+            rdfs:label       "last month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=268,278> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200901> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8>
+            a                time:Instant ;
+            rdfs:label       "a year early" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=564,578> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx9>
+            a                time:Instant ;
+            rdfs:label       "last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=914,923> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=112,116> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing , fn:Cause_change_of_position_on_a_scale , fn:Body_movement , fn:Change_posture , fn:Commerce_pay , fn:Path_shape , eso:Translocation ;
+            rdfs:label     "drop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=256,263> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=542,546> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=594,601> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=623,630> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=902,909> .
+    
+    <http://dbpedia.org/resource/Nissan_Motor_Company>
+            rdfs:label     "Nissan motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=580,593> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Decreasing ;
+            rdfs:label     "decline" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=333,340> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=437,444> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=303,317> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1095,1097> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=954,956> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1064,1067> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=978,980> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "own" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=390,395> .
+    
+    <http://www.newsreader-project.eu/time/20090203>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090203> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Limiting , eso:IntentionalEvent ;
+            rdfs:label     "limit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=467,474> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=486,499> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Offering , eso:Giving ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=986,991> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Employing , eso:BeingEmployed ;
+            rdfs:label     "employee" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1020,1029> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx10>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=967,972> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090203> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving ;
+            rdfs:label     "give" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1116,1121> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=342,350> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1102,1110> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx11>
+            a                time:Instant ;
+            rdfs:label       "last month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1083,1093> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200901> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev30>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "loan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1122,1127> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_motion , eso:Translocation , fn:Cause_harm , fn:Cause_impact , fn:Experience_bodily_harm , fn:Hit_target , fn:Impact , fn:Attack , eso:Attacking , eso:Injuring ;
+            rdfs:label     "hit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=363,366> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev35>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=318,326> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> , <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=719,727> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev37>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr1> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=70,228> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=70,228> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=250,278> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=553,622> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=896,923> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=11,37> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr7,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=231,255> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr23,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=611,622> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=112,142> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=112,222> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=70,116> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=256,278> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=542,630> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=902,923> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr8,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=231,263> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr19,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=542,558> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr22,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=580,601> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr24,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=611,630> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=268,340> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=437,578> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr11,rl24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=303,340> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr13,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=373,409> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=467,578> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr15,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=467,499> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=486,578> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr17,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=478,499> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=986,991> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr37,rl81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=986,1039> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=967,1029> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr40,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1013,1039> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1083,1121> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr43,rl91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1095,1121> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1083,1127> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr44,rl95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1095,1127> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr12,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=342,366> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr12,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=363,409> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,578> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr10,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=303,326> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,972> .
+    
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr36,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=954,966> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr2> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr3> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr4> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr5> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr7,rl16> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasActor            <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                   <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr23,rl48> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev11>
+            sem:hasActor          <http://dbpedia.org/resource/Honda> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Honda> ;
+            pb:A1                 <http://dbpedia.org/resource/Honda> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr6> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr7> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev12>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr8> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr9> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr10> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr8,rl17> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:quantity-item       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1                   <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr19,rl42> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item       <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr22,rl46> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Nissan_Motor_Company> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Nissan_Motor_Company> ;
+            eso:quantity-item       <http://dbpedia.org/resource/Nissan_Motor_Company> ;
+            pb:A1                   <http://dbpedia.org/resource/Nissan_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr24,rl49> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Honda> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Honda> ;
+            eso:quantity-item       <http://dbpedia.org/resource/Honda> ;
+            pb:A1                   <http://dbpedia.org/resource/Honda> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr11> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr12> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr11,rl24> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev15>
+            sem:hasActor       <http://dbpedia.org/resource/General_Motors> ;
+            eso:quantity-item  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1              <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr13> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr13,rl31> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev16>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr15> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr15,rl35> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr16> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr17,rl38> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev19>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr21> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev24>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr37,rl81> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A3         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr24> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr40,rl86> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev27>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:employment-employee  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                    <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr26> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr43,rl91> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev29>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr27> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr44,rl95> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr29> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr12,rl26> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev32>
+            sem:hasActor            <http://dbpedia.org/resource/Chrysler> ;
+            eso:damaging-undergoer  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1                   <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr12,rl28> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev32>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr33> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr10,rl22> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev35>
+            sem:hasActor           <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                  <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tr35> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#pr36,rl75> {
+    <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#ev37>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}

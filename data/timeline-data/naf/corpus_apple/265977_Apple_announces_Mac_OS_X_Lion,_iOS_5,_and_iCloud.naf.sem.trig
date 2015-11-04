@@ -1,0 +1,851 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Birth , fn:Building , fn:Cause_to_start , fn:Creating , fn:Intentionally_create , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "generation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=218,228> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" , "Apple CEO Steve Jobs" , "Jobs" , "their" , "CEO Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=187,197> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3369,3373> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=177,197> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=409,413> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3427,3429> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=553,557> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=302,307> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3478,3480> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3252,3256> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2580,2594> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3571,3581> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2584,2594> .
+    
+    <http://www.newsreader-project.eu/time/20110607>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 7 , 2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=50,62> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110607> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_start , fn:Intentionally_create , fn:Manufacturing , eso:Creating , fn:Behind_the_scenes ;
+            rdfs:label     "product" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=241,249> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3689,3697> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=0,5> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1970,1975> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3657,3662> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1541,1546> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3146,3151> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2627,2634> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=711,716> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=913,918> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=262,267> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=255,260> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=177,182> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2627,2632> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12>
+            a                time:Instant ;
+            rdfs:label       "the fall of 2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3639,3655> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=268,276> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3285,3294> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11>
+            a                time:Instant ;
+            rdfs:label       "early this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3144> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev27>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Inclusion ;
+            rdfs:label     "feature" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=383,391> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=949,957> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1802,1810> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2355,2362> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2421,2429> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3308,3315> .
+    
+    <http://dbpedia.org/resource/Google_Reader>
+            rdfs:label     "Reader" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2348,2354> .
+    
+    <http://www.newsreader-project.eu/time/201007>
+            a              time:DateTimeDescription ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx4>
+            a                time:Instant ;
+            rdfs:label       "July" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=824,828> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201007> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance , fn:Being_employed , fn:Working_a_post , fn:Giving , eso:BeingEmployed , eso:Working , eso:Giving ;
+            rdfs:label     "service" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=586,593> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2645,2653> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3243,3250> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3269,3277> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev35>
+            a              sem:Event , nwrontology:contextualEvent , eso:BeingEmployed , fn:Employing ;
+            rdfs:label     "employee" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=717,726> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1976,1984> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=783,788> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110607> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev37>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Sending ;
+            rdfs:label     "ship" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=813,820> .
+    
+    <http://dbpedia.org/resource/Mac_OS_X_Lion>
+            rdfs:label     "Mac OS X Lion" , "OS X Lion" , "Mac" , "Mac OS" , "the Mac" , "Lion" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=16,29> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1231,1240> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1312,1315> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1498,1511> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1589,1595> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=791,804> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1148,1155> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=277,281> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2700,2704> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev39>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "outpace" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1160,1168> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6>
+            a                  time:Interval ;
+            rdfs:label         "five year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1203,1213> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20060607> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20110607> .
+    
+    <http://www.newsreader-project.eu/time/20060607>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Transportation ;
+            rdfs:label     "port" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1316,1320> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1634,1638> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "application" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1359,1371> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2713,2725> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev62>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Resurrection , eso:Arriving ;
+            rdfs:label     "return" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2595,2603> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110607> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev63>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving , fn:Offering ;
+            rdfs:label     "offering" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2654,2662> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev72>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "round" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3257,3264> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev79>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=198,208> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev83>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Event ;
+            rdfs:label     "event" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1547,1552> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev92>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=6,15> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev93>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "center" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=152,158> .
+    
+    <http://dbpedia.org/resource/San_Francisco>
+            rdfs:label     "San Francisco" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=162,175> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev94>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=563,572> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev96>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "discuss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=992,1001> .
+    
+    <http://dbpedia.org/resource/Friedrich_Schiller>
+            rdfs:label     "Schiller" , "Employee Phil Schiller" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1132,1140> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=969,991> .
+    
+    <http://dbpedia.org/resource/Phil_Schiller>
+            rdfs:label     "Phil Schiller" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=978,991> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev100>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Statement , fn:Choosing , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1141,1145> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev105>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1516,1525> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev106>
+            a              sem:Event , nwrontology:sourceEvent , fn:Evidence , fn:Reveal_secret ;
+            rdfs:label     "reveal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2620,2626> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ScottForestall>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Scott Forestall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1950,1965> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev113>
+            a              sem:Event , nwrontology:contextualEvent , fn:Closure , fn:Secrecy_status , fn:Body_movement ;
+            rdfs:label     "open" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3152,3158> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev114>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "center" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3186,3192> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3520,3526> .
+    
+    <http://dbpedia.org/resource/North_Carolina>
+            rdfs:label     "North Carolina" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3196,3210> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev117>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Statement , fn:Choosing , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3566,3570> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev118>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3663,3672> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr2> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=50,228> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr5,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=177,228> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3639,3697> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr131,rl287>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3657,3697> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3294> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr7,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=262,276> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr116,rl254>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3252,3294> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=824,957> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3315> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr82,rl186>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2348,2362> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3250> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr19,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=553,593> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr91,rl205>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2627,2653> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=717,788> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr23,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=711,726> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=813,828> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr26,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=791,820> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1160,1213> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr35,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1148,1168> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1203,1320> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1316,1638> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr44,rl105>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1312,1320> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1203,1371> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1359,1638> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr94,rl211>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2700,2725> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr89,rl200>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2580,2603> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr92,rl207>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2627,2662> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3264> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr114,rl250>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3252,3264> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=50,208> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=177,208> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1547,1638> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr51,rl119>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1541,1552> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=6,62> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=0,15> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=50,158> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr4,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=152,175> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=563,788> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr18,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=553,572> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=992,1213> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr29,rl71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=969,1001> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1141,1213> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr34,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1132,1145> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1516,1638> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr50,rl116>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1498,1525> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr66,rl151>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1950,1999> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr90,rl203>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2580,2626> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr108>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3158> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr109,rl240>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3146,3158> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3127,3192> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr110,rl244>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3186,3210> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3566,3655> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr124,rl273>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3566,3581> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3639,3672> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr129,rl284>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3657,3672> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr5,rl11> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Birth@Parents>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Creating@Cause>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Creating@Creator>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr3> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr131,rl287> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev22>
+            sem:hasActor                   <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                          <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr4> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr7,rl14> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr116,rl254> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr8> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr9> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr82,rl186> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev27>
+            sem:hasActor  <http://dbpedia.org/resource/Google_Reader> ;
+            pb:A2         <http://dbpedia.org/resource/Google_Reader> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr13> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr19,rl43> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev31>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr91,rl205> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev31>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr17> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr23,rl53> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev35>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:employment-employer  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr21> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr26,rl60> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev37>
+            sem:hasActor          <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            pb:A1                 <http://dbpedia.org/resource/Mac_OS_X_Lion> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr23> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr35,rl87> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            pb:A0         <http://dbpedia.org/resource/Mac_OS_X_Lion> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr27> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr28> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr44,rl105> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev43>
+            sem:hasActor  <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            pb:A1         <http://dbpedia.org/resource/Mac_OS_X_Lion> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr29> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr30> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr94,rl211> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev44>
+            sem:hasActor       <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            eso:inuse-purpose  <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            pb:A1              <http://dbpedia.org/resource/Mac_OS_X_Lion> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr50> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev62>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr89,rl200> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev62>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr51> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr92,rl207> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev63>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr61> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr114,rl250> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev72>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr68> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev79>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev79>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr73> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr51,rl119> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev83>
+            sem:hasActor    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Event@Event>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1           <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr82> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev92>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr83> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev93>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr4,rl10> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev93>
+            sem:hasPlace  <http://dbpedia.org/resource/San_Francisco> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/San_Francisco> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr84> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev94>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr18,rl40> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev94>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr88> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev96>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr29,rl71> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev96>
+            sem:hasActor                  <http://dbpedia.org/resource/Friedrich_Schiller> , <http://dbpedia.org/resource/Phil_Schiller> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/Friedrich_Schiller> , <http://dbpedia.org/resource/Phil_Schiller> ;
+            pb:A0                         <http://dbpedia.org/resource/Friedrich_Schiller> , <http://dbpedia.org/resource/Phil_Schiller> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr92> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev100>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr34,rl85> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev100>
+            sem:hasActor             <http://dbpedia.org/resource/Friedrich_Schiller> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Friedrich_Schiller> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Friedrich_Schiller> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Friedrich_Schiller> ;
+            pb:A0                    <http://dbpedia.org/resource/Friedrich_Schiller> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr99> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev105>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr50,rl116> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev105>
+            sem:hasActor          <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Mac_OS_X_Lion> ;
+            pb:A1                 <http://dbpedia.org/resource/Mac_OS_X_Lion> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr100> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev106>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr66,rl151> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev106>
+            sem:hasActor              <http://www.newsreader-project.eu/data/wikinews/entities/ScottForestall> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ScottForestall> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reveal_secret@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ScottForestall> ;
+            pb:A0                     <http://www.newsreader-project.eu/data/wikinews/entities/ScottForestall> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr90,rl203> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev106>
+            sem:hasActor              <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reveal_secret@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                     <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr108> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev113>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr109,rl240> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev113>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Secrecy_status@Cognizer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr109> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev114>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr110,rl244> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev114>
+            sem:hasPlace  <http://dbpedia.org/resource/North_Carolina> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/North_Carolina> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr112> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev117>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr124,rl273> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev117>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tr113> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev118>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#pr129,rl284> {
+    <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#ev118>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}

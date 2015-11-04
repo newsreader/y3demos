@@ -1,0 +1,346 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Van+der+Hoorn> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=232,240>
+          rdfs:comment        "announced" ;
+          rdfs:label          "selected" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=169,178> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <negative> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=169,178>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=244,252>
+          rdfs:comment        "announced" ;
+          rdfs:label          "purchase" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=169,178> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=863,867>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "move" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=837,846> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr3>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/an+expert> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=837,846>
+          rdfs:label          "indicated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=868,874>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "Saturn" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=837,846> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=887,892>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "roots" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=837,846> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=904,909>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "level" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=837,846> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=12,20>
+          rdfs:label          "selected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=24,27>
+          rdfs:label          "buy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr1>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=51,55>
+          rdfs:label          "unit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=116,125>
+          rdfs:label          "automaker" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr4>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=136,141>
+          rdfs:label          "filed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=157,167>
+          rdfs:label          "protection" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr6>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=299,308>
+          rdfs:label          "completed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr7>
+          rdf:value             <PROBABLE_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=335,343>
+          rdfs:label          "includes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=344,350>
+          rdfs:label          "rights" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=389,395>
+          rdfs:label          "models" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=415,422>
+          rdfs:label          "network" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=444,456>
+          rdfs:label          "discontinued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=486,494>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr13>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=495,503>
+          rdfs:label          "building" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=584,587>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=592,599>
+          rdfs:label          "dealers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=638,644>
+          rdfs:label          "employ" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=671,675>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=715,722>
+          rdfs:label          "dealers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=731,739>
+          rdfs:label          "included" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=818,825>
+          rdfs:label          "focused" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=788,796>
+          rdfs:label          "vehicles" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr22>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=810,817>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=933,938>
+          rdfs:label          "talks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=980,987>
+          rdfs:label          "replace" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=966,976>
+          rdfs:label          "automakers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1019,1026>
+          rdfs:label          "reports" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1102,1107>
+          rdfs:label          "wants" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1195,1199>
+          rdfs:label          "head" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr30>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1140,1147>
+          rdfs:label          "manager" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1320,1325>
+          rdfs:label          "talks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1344,1353>
+          rdfs:label          "ownership" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1329,1333>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr34>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1370,1374>
+          rdfs:label          "lead" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit> .
+}

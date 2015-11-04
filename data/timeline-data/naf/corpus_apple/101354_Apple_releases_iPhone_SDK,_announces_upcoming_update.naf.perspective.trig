@@ -1,0 +1,466 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1266,1274>
+          rdfs:comment        "announced" ;
+          rdfs:label          "released" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1225,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr3>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+company> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1225,1234>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1314,1323>
+          rdfs:comment        "announced" ;
+          rdfs:label          "scheduled" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1225,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1287,1291>
+          rdfs:comment        "announced" ;
+          rdfs:label          "beta" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1225,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1335,1342>
+          rdfs:comment        "announced" ;
+          rdfs:label          "release" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1225,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1424,1431>
+          rdfs:comment        "focusing" ;
+          rdfs:label          "attempt" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1386,1394> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr4>
+          rdf:value            <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1386,1394>
+          rdfs:label          "focusing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1435,1442>
+          rdfs:comment        "focusing" ;
+          rdfs:label          "compete" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1386,1394> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=6,14>
+          rdfs:label          "releases" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=27,36>
+          rdfs:label          "announces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=46,52>
+          rdfs:label          "update" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=132,140>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=84,89>
+          rdfs:label          "event" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=90,94>
+          rdfs:label          "held" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=112,124>
+          rdfs:label          "headquarters" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=150,157>
+          rdfs:label          "awaited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=205,215>
+          rdfs:label          "associated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=278,283>
+          rdfs:label          "allow" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr9>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=296,304>
+          rdfs:label          "software" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=305,315>
+          rdfs:label          "developers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=319,325>
+          rdfs:label          "create" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr12>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=363,373>
+          rdfs:label          "distribute" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=326,338>
+          rdfs:label          "applications" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=454,457>
+          rdfs:label          "add" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr15>
+          rdf:value             <POSSIBLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=410,417>
+          rdfs:label          "members" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=506,511>
+          rdfs:label          "costs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=525,529>
+          rdfs:label          "join" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr18>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=558,561>
+          rdfs:label          "set" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr19>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=595,602>
+          rdfs:label          "release" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=566,571>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=651,659>
+          rdfs:label          "approved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=682,689>
+          rdfs:label          "allowed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=769,774>
+          rdfs:label          "users" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=837,844>
+          rdfs:label          "allowed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=892,897>
+          rdfs:label          "pages" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=914,924>
+          rdfs:label          "distribute" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr27>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1038,1050>
+          rdfs:label          "demonstrated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=983,993>
+          rdfs:label          "developers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1008,1013>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1020,1026>
+          rdfs:label          "access" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr31>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1057,1069>
+          rdfs:label          "applications" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1094,1106>
+          rdfs:label          "demonstrated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1117,1122>
+          rdfs:label          "Spore" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1142,1151>
+          rdfs:label          "messenger" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1158,1164>
+          rdfs:label          "client" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1187,1196>
+          rdfs:label          "reference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1197,1204>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1409,1417>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1520,1524>
+          rdfs:label          "adds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1525,1532>
+          rdfs:label          "support" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1565,1573>
+          rdfs:label          "licensed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1629,1636>
+          rdfs:label          "support" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr45>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1686,1691>
+          rdfs:label          "users" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1712,1721>
+          rdfs:label          "described" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1736,1742>
+          rdfs:label          "charge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1759,1763>
+          rdfs:label          "done" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1823,1830>
+          rdfs:label          "updates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update> .
+}

@@ -1,0 +1,434 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=405,408>
+          rdfs:comment        "reported" ;
+          rdfs:label          "set" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/some+customers> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=411,420>
+          rdfs:comment        "reported" ;
+          rdfs:label          "recording" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=436,441>
+          rdfs:comment        "reported" ;
+          rdfs:label          "lines" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=442,449>
+          rdfs:comment        "reported" ;
+          rdfs:label          "telling" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=460,464>
+          rdfs:comment        "reported" ;
+          rdfs:label          "call" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=503,510>
+          rdfs:comment        "reported" ;
+          rdfs:label          "tweeted" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=523,533>
+          rdfs:comment        "reported" ;
+          rdfs:label          "experience" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=381,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1395,1399>
+          rdfs:comment        "estimated" ;
+          rdfs:label          "sold" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1347> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr4>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/BenReitzes> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1347>
+          rdfs:label          "estimated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1407,1410>
+          rdfs:comment        "estimated" ;
+          rdfs:label          "end" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1347> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1451,1455>
+          rdfs:comment        "estimated" ;
+          rdfs:label          "ends" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1347> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=6,13>
+          rdfs:label          "swamped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=99,104>
+          rdfs:label          "began" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=53,63>
+          rdfs:label          "Pre-orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=80,89>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=149,155>
+          rdfs:label          "buyers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=156,167>
+          rdfs:label          "experienced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=175,185>
+          rdfs:label          "connecting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=218,225>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=226,230>
+          rdfs:label          "line" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=275,281>
+          rdfs:label          "online" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=252,261>
+          rdfs:label          "finishing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=241,251>
+          rdfs:label          "difficulty" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=268,274>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=296,303>
+          rdfs:label          "endured" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=333,339>
+          rdfs:label          "stores" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=625,636>
+          rdfs:label          "experienced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=566,574>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=588,595>
+          rdfs:label          "servers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=664,670>
+          rdfs:label          "launch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=724,737>
+          rdfs:label          "authorization" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=768,777>
+          rdfs:label          "transfers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=803,810>
+          rdfs:label          "servers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=829,838>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=873,879>
+          rdfs:label          "appear" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=902,910>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=886,892>
+          rdfs:label          "having" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr26>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=913,928>
+          rdfs:label          "Representatives" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=974,978>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=998,1001>
+          rdfs:label          "try" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1034,1038>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1052,1061>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1123,1133>
+          rdfs:label          "introduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1202,1212>
+          rdfs:label          "Conference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1244,1250>
+          rdfs:label          "slated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1262,1269>
+          rdfs:label          "release" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1282,1290>
+          rdfs:label          "starting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1489,1493>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1532,1542>
+          rdfs:label          "continuing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1474>
+          rdfs:label          "Shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1523,1530>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1549,1554>
+          rdfs:label          "trend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1565,1570>
+          rdfs:label          "risen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders> .
+}

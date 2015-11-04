@@ -1,0 +1,449 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "appease" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=374,381> .
+    
+    <http://dbpedia.org/resource/Dmitry_Medvedev>
+            rdfs:label     "Dmitry Medvedev" , "President Dmitry Medvedev" , "Medvedev" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=327,342> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=317,342> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=550,558> .
+    
+    <http://www.newsreader-project.eu/time/1989>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1989"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx5>
+            a                time:Instant ;
+            rdfs:label       "1989" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=230,234> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1989> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Offering , eso:Giving ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=874,882> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1004,1011> .
+    
+    <http://dbpedia.org/resource/Central_Bank_of_Russia>
+            rdfs:label     "the Central Bank" , "Central Bank" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=844,860> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1062,1078> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1159,1171> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/VTBGroup>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "VTB Group" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1035,1044> .
+    
+    <http://www.newsreader-project.eu/time/20080917>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1012,1021> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "loan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=886,890> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev36>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Supply ;
+            rdfs:label     "provide" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1119,1126> .
+    
+    <http://www.newsreader-project.eu/time/20080924>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1215,1224> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080924> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Invading ;
+            rdfs:label     "invasion" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1578,1586> .
+    
+    <http://dbpedia.org/resource/Russia>
+            rdfs:label     "Russia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1569,1575> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1797,1803> .
+    
+    <http://dbpedia.org/resource/Georgia_(country)>
+            rdfs:label     "Georgia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1602,1609> .
+    
+    <http://www.newsreader-project.eu/time/200808>
+            a              time:DateTimeDescription ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx9>
+            a                time:Instant ;
+            rdfs:label       "early August" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1684,1696> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200808> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev49>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supporting ;
+            rdfs:label     "bolster" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1787,1796> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx10>
+            a              time:Interval ;
+            rdfs:label     "several year" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1818,1831> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20080918> .
+    
+    <http://www.newsreader-project.eu/time/20080918>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev50>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1806,1813> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev67>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=559,563> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080918> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev70>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=653,662> , <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1202,1211> .
+    
+    <http://dbpedia.org/resource/Alexei_Kudrin>
+            rdfs:label     "Alexei Kudrin" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=639,652> .
+    
+    <http://www.newsreader-project.eu/time/20080919>
+            a              time:DateTimeDescription ;
+            time:day       "---19"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx6>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=766,772> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080919> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev72>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communication_response , fn:Response ;
+            rdfs:label     "respond" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=861,870> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev74>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Attempt_suasion , eso:Creating ;
+            rdfs:label     "encourage" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1082,1093> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr10> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx5> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=230,381> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr16,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=317,381> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=874,1021> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr33,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=844,882> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr37,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1004,1060> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=886,1021> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr34,rl71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=844,890> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1012,1126> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1119,1224> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr39,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1062,1126> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1578,1696> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr55,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1569,1586> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr55,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1578,1609> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1787,1831> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr61,rl131>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1787,1813> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1806,1831> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr62,rl134>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1797,1813> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr22,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=550,563> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=653,772> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1202,1224> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr26,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=622,662> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=861,1021> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr32,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=844,870> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1012,1093> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1082,1224> .
+    
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr38,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#char=1062,1093> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr16,rl32> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Dmitry_Medvedev> ;
+            pb:A0         <http://dbpedia.org/resource/Dmitry_Medvedev> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr19> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr33,rl69> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            pb:A0         <http://dbpedia.org/resource/Central_Bank_of_Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr37,rl78> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev33>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/VTBGroup> ;
+            pb:A3         <http://www.newsreader-project.eu/data/wikinews/entities/VTBGroup> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr20> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr34,rl71> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            pb:A0         <http://dbpedia.org/resource/Central_Bank_of_Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr22> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr23> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr39,rl82> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev36>
+            sem:hasActor            <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            eso:possession-theme    <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            pb:A0                   <http://dbpedia.org/resource/Central_Bank_of_Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr33> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr55,rl117> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev43>
+            sem:hasActor         <http://dbpedia.org/resource/Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Invading@Invader>
+                    <http://dbpedia.org/resource/Russia> ;
+            pb:A0                <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr55,rl118> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev43>
+            sem:hasActor      <http://dbpedia.org/resource/Georgia_(country)> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Invading@Land>
+                    <http://dbpedia.org/resource/Georgia_(country)> ;
+            pb:A1             <http://dbpedia.org/resource/Georgia_(country)> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr39> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr61,rl131> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev49>
+            sem:hasActor             <http://dbpedia.org/resource/Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Supporting@Supported>
+                    <http://dbpedia.org/resource/Russia> ;
+            pb:A1                    <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr40> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr62,rl134> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev50>
+            sem:hasActor  <http://dbpedia.org/resource/Russia> ;
+            pb:A1         <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr58> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr22,rl43> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev67>
+            sem:hasActor             <http://dbpedia.org/resource/Dmitry_Medvedev> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Dmitry_Medvedev> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Dmitry_Medvedev> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Dmitry_Medvedev> ;
+            pb:A0                    <http://dbpedia.org/resource/Dmitry_Medvedev> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr61> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr62> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr26,rl52> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev70>
+            sem:hasActor          <http://dbpedia.org/resource/Alexei_Kudrin> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Alexei_Kudrin> ;
+            pb:A0                 <http://dbpedia.org/resource/Alexei_Kudrin> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr64> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr32,rl67> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev72>
+            sem:hasActor       <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication_response@Speaker>
+                    <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Response@Agent>
+                    <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            pb:A0              <http://dbpedia.org/resource/Central_Bank_of_Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr66> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev74>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tr67> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev74>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#pr38,rl79> {
+    <http://en.wikinews.org/wiki/Russian_markets_to_remain_closed_until_Friday#ev74>
+            sem:hasActor                <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt_suasion@Speaker>
+                    <http://dbpedia.org/resource/Central_Bank_of_Russia> ;
+            pb:A0                       <http://dbpedia.org/resource/Central_Bank_of_Russia> .
+}

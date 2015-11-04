@@ -1,0 +1,118 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=33,38>
+          rdfs:label          "seeks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=39,49>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=50,60>
+          rdfs:label          "protection" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=135,140>
+          rdfs:label          "filed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=171,181>
+          rdfs:label          "protection" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr4>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=191,200>
+          rdfs:label          "creditors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr5>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=305,311>
+          rdfs:label          "filing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=355,363>
+          rdfs:label          "declared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=395,399>
+          rdfs:label          "debt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=454,460>
+          rdfs:label          "filing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=476,483>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=443,453>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection#char=496,508>
+          rdfs:label          "bankruptcies" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._manufacturer_General_Motors_seeks_bankruptcy_protection> .
+}

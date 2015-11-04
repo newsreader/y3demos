@@ -1,0 +1,899 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Dispersal , fn:Giving , eso:Distribution ;
+            rdfs:label     "run" , "distribute" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=49,52> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2169,2179> .
+    
+    <http://dbpedia.org/resource/Fiat>
+            rdfs:label     "Fiat" , "Fiat Group SpA" , "european auto maker Fiat" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=31,45> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=181,185> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=365,369> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1306,1310> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2066,2070> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1487,1491> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=544,548> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1954,1958> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=666,670> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1243,1247> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1960,1964> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=161,185> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1514,1516> .
+    
+    <http://dbpedia.org/resource/European_Union>
+            rdfs:label     "Europe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2188,2194> .
+    
+    <http://www.newsreader-project.eu/time/20090501>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 1 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=62,73> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090501> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev17>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Possession , fn:Submitting_documents , fn:Placing , eso:Placing ;
+            rdfs:label     "file" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=110,115> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1117,1123> .
+    
+    <http://www.newsreader-project.eu/time/20090430>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=131,139> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090430> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Coming_to_be , fn:Departing , fn:Travel , eso:Leaving ;
+            rdfs:label     "emerge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=204,212> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=584,592> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" , "when" , "Chrysler administrator" , "Chrysler factory" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=0,8> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1268,1276> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2146,2154> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1374,1382> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2085,2093> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2032,2040> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=747,755> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1139,1147> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=464,468> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=408,416> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=101,109> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=213,221> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=593,601> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=747,770> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=832,834> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2146,2164> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "own" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=230,235> .
+    
+    <http://dbpedia.org/resource/United_Auto_Workers>
+            rdfs:label     "United Auto Workers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=254,273> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "percent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=239,246> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=326,333> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090501> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , eso:Replacing ;
+            rdfs:label     "appoint" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=555,562> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=653,660> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=619,636> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2107,2124> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Board_vehicle , fn:Residence , fn:Temporary_stay , eso:BeingAtAPlace ;
+            rdfs:label     "board" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=608,613> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=637,647> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , eso:Replacing , fn:Adopt_selection ;
+            rdfs:label     "assume" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=675,681> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "debt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1155,1159> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1332,1336> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving ;
+            rdfs:label     "give" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1369,1373> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev45>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Reasoning ;
+            rdfs:label     "demonstrate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1496,1508> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev48>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent ;
+            rdfs:label     "hesitation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1642,1653> .
+    
+    <http://dbpedia.org/resource/Ralph_Merkle>
+            rdfs:label     "Erich Merkle" , "Merkle" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1625,1637> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1721,1727> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev53>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "task" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1903,1907> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernment>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the U.S. Government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1878,1897> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_motion , fn:Intentionally_create , eso:Translocation ;
+            rdfs:label     "force" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1908,1913> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev55>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , eso:Placing , fn:Cause_change_of_consistency , fn:Change_of_consistency ;
+            rdfs:label     "set" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1926,1929> .
+    
+    <http://dbpedia.org/resource/Presidency_of_Barack_Obama>
+            rdfs:label     "Obama" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1479,1484> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1916,1921> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev56>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Behind_the_scenes , fn:Cause_to_start , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "produce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1972,1979> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2130,2137> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev58>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "technology" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2071,2081> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev59>
+            a              sem:Event , nwrontology:contextualEvent , fn:Manufacturing , eso:Creating , fn:Building ;
+            rdfs:label     "factory" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2094,2103> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2155,2164> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Manufacturing , eso:Creating , fn:Building , fn:Arriving , fn:Cause_change , fn:Cooking_creation , fn:Self_motion , fn:Creating ;
+            rdfs:label     "maker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=175,180> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession , fn:Inclusion ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1284,1288> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev66>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession , fn:Inclusion ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1638,1641> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev67>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , fn:Submitting_documents , fn:Placing , eso:Placing ;
+            rdfs:label     "file" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=9,14> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev68>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action , fn:Resolve_problem ;
+            rdfs:label     "deal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=151,155> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev69>
+            a              sem:Event , nwrontology:contextualEvent , fn:Expectation , fn:Opinion , fn:Motion , eso:Motion ;
+            rdfs:label     "expect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=771,777> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=835,841> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev70>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=980,984> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1455,1459> , <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1728,1732> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev76>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action , fn:Resolve_problem ;
+            rdfs:label     "deal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1233,1237> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev77>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating , fn:Coming_up_with ;
+            rdfs:label     "design" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1294,1302> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev78>
+            a              sem:Event , nwrontology:contextualEvent , fn:Daring ;
+            rdfs:label     "chance" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1385,1391> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev79>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny ;
+            rdfs:label     "analyst" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1617,1624> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr1> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=49,73> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=19,52> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr77,rl177>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2169,2194> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=110,139> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr3,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=110,198> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=131,212> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr7,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=200,221> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=131,235> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr8,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=200,235> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr8,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=230,273> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=326,333> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=239,273> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=555,562> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr17,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=619,660> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr19,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=580,613> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=637,647> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr20,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=623,647> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr21,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=666,681> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1155,1336> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr41,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1139,1159> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1369,1373> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr50,rl115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1369,1382> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1332,1508> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr54,rl121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1487,1508> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr59,rl132>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1606,1653> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr67,rl154>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1882,1907> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr68,rl156>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1882,1913> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr69,rl158>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1916,1929> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr70,rl161>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1960,1979> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr75,rl173>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2130,2164> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr73,rl168>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2066,2081> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr74,rl169>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2085,2103> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr74,rl170>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=2085,2124> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=131,180> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr5,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=161,198> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1284,1336> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr45,rl99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1268,1288> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr57,rl128>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1606,1641> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=9,73> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=9,60> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=131,155> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr4,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=151,198> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr26,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=747,777> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1332,1459> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr61,rl137>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1721,1732> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1233,1336> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr44,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1233,1247> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1294,1336> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr46,rl105>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1294,1314> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1332,1391> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr51,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1374,1391> .
+    
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr58,rl131>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#char=1606,1637> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev16>
+            sem:hasActor          <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                 <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr77,rl177> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/European_Union> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/European_Union> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr2> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr3,rl9> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Submitting_documents@Documents>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A1         <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr3> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr7,rl16> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev18>
+            sem:hasActor             <http://dbpedia.org/resource/Chrysler> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                    <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr4> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr8,rl17> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev19>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr8,rl19> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev19>
+            sem:hasActor          <http://dbpedia.org/resource/United_Auto_Workers> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A1                 <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr5> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev20>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr9,rl20> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr10> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev25>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr17,rl39> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_leadership@Selector>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr11> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr19,rl44> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A2         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr12> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev27>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr20,rl46> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev27>
+            sem:hasActor          <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr13> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr21,rl48> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev28>
+            sem:hasActor              <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Adopt_selection@Agent>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                     <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr23> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr41,rl93> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A2         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr25> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev42>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr50,rl115> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev42>
+            sem:hasActor            <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A2                   <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr28> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr54,rl121> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev45>
+            sem:hasActor          <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Arguer>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Support>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                 <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr31> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr59,rl132> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev48>
+            sem:hasActor  <http://dbpedia.org/resource/Ralph_Merkle> ;
+            pb:A0         <http://dbpedia.org/resource/Ralph_Merkle> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr36> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr67,rl154> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev53>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernment> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernment> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr37> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr68,rl156> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev54>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernment> ;
+            eso:translocation-goal  <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernment> ;
+            pb:A2                   <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernment> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr38> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr69,rl158> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev55>
+            sem:hasActor      <http://dbpedia.org/resource/Presidency_of_Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_consistency@Agent>
+                    <http://dbpedia.org/resource/Presidency_of_Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_consistency@Reason>
+                    <http://dbpedia.org/resource/Presidency_of_Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Presidency_of_Barack_Obama> ;
+            pb:A0             <http://dbpedia.org/resource/Presidency_of_Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr39> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr70,rl161> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev56>
+            sem:hasActor                   <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Agent>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                          <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr75,rl173> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev56>
+            sem:hasPlace  <http://dbpedia.org/resource/Chrysler> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr41> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr73,rl168> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev58>
+            sem:hasActor  <http://dbpedia.org/resource/Fiat> ;
+            pb:A0         <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr42> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr74,rl169> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev59>
+            sem:hasPlace  <http://dbpedia.org/resource/Chrysler> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr74,rl170> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev59>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr43> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr5,rl13> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev60>
+            sem:hasActor                   <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                          <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr46> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr45,rl99> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev64>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr48> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr57,rl128> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev66>
+            sem:hasActor          <http://dbpedia.org/resource/Ralph_Merkle> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Ralph_Merkle> ;
+            pb:A0                 <http://dbpedia.org/resource/Ralph_Merkle> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr49> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev67>
+            sem:hasActor      <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Cause>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Submitting_documents@Submittor>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0             <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev67>
+            sem:hasActor             <http://dbpedia.org/resource/Fiat> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Fiat> ;
+            pb:A1                    <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr50> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr4,rl11> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev68>
+            sem:hasActor                <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Means>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Be_in_agreement_on_assessment@Topic>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_2>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_2>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Topic>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Resolve_problem@Problem>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A2                       <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr51> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr26,rl55> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev69>
+            sem:hasActor             <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Cognizer>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Opinion@Cognizer>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                    <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr52> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr61,rl137> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev70>
+            sem:hasActor             <http://dbpedia.org/resource/Ralph_Merkle> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Ralph_Merkle> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ralph_Merkle> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Ralph_Merkle> ;
+            pb:A0                    <http://dbpedia.org/resource/Ralph_Merkle> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr58> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr44,rl98> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev76>
+            sem:hasActor                <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Means>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Be_in_agreement_on_assessment@Topic>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_2>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_2>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Topic>
+                    <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Resolve_problem@Problem>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A2                       <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr59> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev77>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr46,rl105> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev77>
+            sem:hasActor                <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_up_with@Cognizer>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                       <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr60> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev78>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr51,rl117> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev78>
+            sem:hasActor     <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Daring@Agent>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0            <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tr61> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev79>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#pr58,rl131> {
+    <http://en.wikinews.org/wiki/Chrysler_files_for_bankruptcy,_Fiat_Group_SpA_to_run_company#ev79>
+            sem:hasActor          <http://dbpedia.org/resource/Ralph_Merkle> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://dbpedia.org/resource/Ralph_Merkle> ;
+            pb:A0                 <http://dbpedia.org/resource/Ralph_Merkle> .
+}

@@ -1,0 +1,381 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev7>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "recession" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=35,44> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=567,576> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "the United states" , "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=32,34> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=159,172> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=580,597> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=600,617> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=725,729> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1236,1240> .
+    
+    <http://www.newsreader-project.eu/time/20080121>
+            a              time:DateTimeDescription ;
+            time:day       "---21"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 21 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=46,62> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080121> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev10>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "problem" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=143,151> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=112,118> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080121> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx4>
+            a              time:Interval ;
+            rdfs:label     "recent year" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=222,234> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20080121> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=271,275> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=302,306> .
+    
+    <http://dbpedia.org/resource/Hong_Kong>
+            rdfs:label     "Hong Kong" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=240,249> .
+    
+    <http://www.newsreader-project.eu/time/20010911>
+            a              time:DateTimeDescription ;
+            time:day       "---11"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx5>
+            a                time:Instant ;
+            rdfs:label       "September 11 , 2001" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=317,335> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20010911> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "stake" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=715,721> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx6>
+            a                time:Instant ;
+            rdfs:label       "late 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=829,838> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Attempt_suasion , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "encourage" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1044,1053> .
+    
+    <http://dbpedia.org/resource/Presidency_of_George_W._Bush>
+            rdfs:label     "Bush" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=998,1002> .
+    
+    <http://www.newsreader-project.eu/time/20080114>
+            a              time:DateTimeDescription ;
+            time:day       "---14"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx7>
+            a                time:Instant ;
+            rdfs:label       "last week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=977,986> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080114> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Closure , fn:Body_movement , eso:Motion ;
+            rdfs:label     "close" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1253,1259> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx9>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1263,1269> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080121> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev40>
+            a              sem:Event , nwrontology:sourceEvent , fn:Experiencer_focus ;
+            rdfs:label     "fear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=23,28> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev41>
+            a              sem:Event , nwrontology:sourceEvent , fn:Experiencer_focus ;
+            rdfs:label     "fear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=125,130> , <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=556,561> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment_communication , fn:Judgment ;
+            rdfs:label     "blame" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=533,538> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080121> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev47>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "propose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1003,1011> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr2> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=35,62> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr3,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=32,44> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=112,151> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=143,234> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr8,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=143,172> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=271,335> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr9,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=237,275> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=715,838> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr25,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=715,739> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=977,1053> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr39,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=988,1053> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1253,1269> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr48,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1236,1259> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=23,62> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=23,44> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=112,130> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=125,234> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr7,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=125,172> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr16,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=533,597> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=977,1011> .
+    
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr38,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=988,1011> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr3,rl4> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev7>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr7> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr8> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr8,rl15> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev10>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr9> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr9,rl16> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev11>
+            sem:hasPlace  <http://dbpedia.org/resource/Hong_Kong> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Hong_Kong> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr20> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr25,rl48> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr28> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr39,rl74> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev29>
+            sem:hasActor                <http://dbpedia.org/resource/Presidency_of_George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt_suasion@Speaker>
+                    <http://dbpedia.org/resource/Presidency_of_George_W._Bush> ;
+            pb:A0                       <http://dbpedia.org/resource/Presidency_of_George_W._Bush> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr36> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr48,rl94> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev34>
+            sem:hasActor                  <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Body_part>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Containing_object>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr43> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr2,rl3> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev40>
+            sem:hasActor                  <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Content>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Event>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr44> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr45> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr7,rl13> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev41>
+            sem:hasActor                  <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Content>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Event>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr47> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr16,rl33> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev43>
+            sem:hasActor         <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Evaluee>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Reason>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment_communication@Evaluee>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment_communication@Reason>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tr51> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#pr38,rl72> {
+    <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#ev47>
+            sem:hasActor          <http://dbpedia.org/resource/Presidency_of_George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Presidency_of_George_W._Bush> ;
+            pb:A0                 <http://dbpedia.org/resource/Presidency_of_George_W._Bush> .
+}

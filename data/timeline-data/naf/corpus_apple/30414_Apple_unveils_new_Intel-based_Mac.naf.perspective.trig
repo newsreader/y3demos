@@ -1,0 +1,170 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac>
+          prov:wasAttributedTo  nwrauthor:ShakataGaNai .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=131,134>
+          rdfs:comment        "announced" ;
+          rdfs:label          "use" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,77> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_sAttr0>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,77>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=99,109>
+          rdfs:comment        "announced" ;
+          rdfs:label          "generation" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,77> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=119,127>
+          rdfs:comment        "announced" ;
+          rdfs:label          "products" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,77> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=141,151>
+          rdfs:comment        "announced" ;
+          rdfs:label          "processors" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,77> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=6,13>
+          rdfs:label          "unveils" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=30,33>
+          rdfs:label          "Mac" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=238,242>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=208,217>
+          rdfs:label          "replacing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=260,265>
+          rdfs:label          "times" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=284,296>
+          rdfs:label          "predecessors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=339,344>
+          rdfs:label          "times" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=403,406>
+          rdfs:label          "set" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=413,420>
+          rdfs:label          "support" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=432,442>
+          rdfs:label          "collection" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=450,458>
+          rdfs:label          "software" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=459,467>
+          rdfs:label          "entitled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=485,490>
+          rdfs:label          "added" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=512,520>
+          rdfs:label          "software" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=537,545>
+          rdfs:label          "graphics" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac> .
+}

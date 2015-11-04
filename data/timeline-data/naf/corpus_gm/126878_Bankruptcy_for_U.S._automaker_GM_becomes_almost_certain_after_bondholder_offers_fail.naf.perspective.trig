@@ -1,0 +1,334 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail>
+          prov:wasAttributedTo  nwrauthor:Bawolff .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=653,659>
+          rdfs:comment        "agree" ;
+          rdfs:label          "reduce" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=607,612> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/90+%25+of+gm+%27s+bondholders> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=607,612>
+          rdfs:label          "agree" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=671,676>
+          rdfs:comment        "agree" ;
+          rdfs:label          "costs" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=607,612> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=33,40>
+          rdfs:label          "becomes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=73,79>
+          rdfs:label          "offers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=80,84>
+          rdfs:label          "fail" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=163,172>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=223,231>
+          rdfs:label          "exchange" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=203,214>
+          rdfs:label          "bondholders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=251,255>
+          rdfs:label          "debt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=274,279>
+          rdfs:label          "share" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=297,302>
+          rdfs:label          "stock" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=343,346>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=334,341>
+          rdfs:label          "straits" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=356,364>
+          rdfs:label          "deadline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=402,406>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=368,374>
+          rdfs:label          "finish" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr13>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=412,420>
+          rdfs:label          "includes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=427,435>
+          rdfs:label          "closures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=451,460>
+          rdfs:label          "reduction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=461,469>
+          rdfs:label          "measures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=516,520>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=534,538>
+          rdfs:label          "give" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr19>
+          rdf:value             <CERTAIN_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=554,557>
+          rdfs:label          "aid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr21>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=579,580>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr22>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=694,700>
+          rdfs:label          "amount" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=710,718>
+          rdfs:label          "tendered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=820,824>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=758,766>
+          rdfs:label          "required" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=776,783>
+          rdfs:label          "satisfy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr27>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=793,802>
+          rdfs:label          "reduction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=803,814>
+          rdfs:label          "requirement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=830,839>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=848,852>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=861,863>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=873,878>
+          rdfs:label          "tried" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=938,942>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=916,920>
+          rdfs:label          "file" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=956,965>
+          rdfs:label          "professor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail#char=1002,1013>
+          rdfs:label          "specializes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail_dAttr37>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Bankruptcy_for_U.S._automaker_GM_becomes_almost_certain_after_bondholder_offers_fail> .
+}

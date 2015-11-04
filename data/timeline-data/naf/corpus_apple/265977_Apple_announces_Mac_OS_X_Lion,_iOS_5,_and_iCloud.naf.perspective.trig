@@ -1,0 +1,1066 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=586,593>
+          rdfs:comment        "announced" ;
+          rdfs:label          "service" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=563,572> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=563,572>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1017,1025>
+          rdfs:comment        "discussed" ;
+          rdfs:label          "gestures" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=992,1001> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr2> , <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Phil_Schiller> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=992,1001>
+          rdfs:label          "discussed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr3>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Phil_Schiller> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2009,2016>
+          rdfs:comment        "revealed" ;
+          rdfs:label          "devices" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr4>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_FUTURE_NEG> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/ScottForestall> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999>
+          rdfs:label          "revealed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2033,2040>
+          rdfs:comment        "revealed" ;
+          rdfs:label          "require" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2063,2071>
+          rdfs:comment        "revealed" ;
+          rdfs:label          "allowing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2082,2085>
+          rdfs:comment        "revealed" ;
+          rdfs:label          "cut" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2110,2117>
+          rdfs:comment        "revealed" ;
+          rdfs:label          "devices" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1991,1999> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2645,2653>
+          rdfs:comment        "reveal" ;
+          rdfs:label          "services" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2620,2626> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr5>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2620,2626>
+          rdfs:label          "reveal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2654,2662>
+          rdfs:comment        "reveal" ;
+          rdfs:label          "offering" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2620,2626> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3689,3697>
+          rdfs:comment        "announced" ;
+          rdfs:label          "products" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3663,3672> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_sAttr6>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3663,3672>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr119> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=6,15>
+          rdfs:label          "announces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=198,208>
+          rdfs:label          "introduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=124,131>
+          rdfs:label          "keynote" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=152,158>
+          rdfs:label          "center" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr3>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=218,228>
+          rdfs:label          "generation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=241,249>
+          rdfs:label          "products" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=268,276>
+          rdfs:label          "unveiled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=291,298>
+          rdfs:label          "version" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=327,333>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=317,326>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=372,378>
+          rdfs:label          "brings" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=383,391>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=419,431>
+          rdfs:label          "demonstrated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=445,452>
+          rdfs:label          "version" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=470,476>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=503,510>
+          rdfs:label          "Touches" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=489,496>
+          rdfs:label          "iPhones" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=636,649>
+          rdfs:label          "participating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=666,671>
+          rdfs:label          "spend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr19>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=676,680>
+          rdfs:label          "rest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=717,726>
+          rdfs:label          "employees" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=738,746>
+          rdfs:label          "releases" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=768,772>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=813,820>
+          rdfs:label          "shipped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=931,935>
+          rdfs:label          "adds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=949,957>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1052,1059>
+          rdfs:label          "manager" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1060,1065>
+          rdfs:label          "named" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1087,1092>
+          rdfs:label          "shows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1141,1145>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1160,1168>
+          rdfs:label          "outpaced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1176,1184>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1214,1221>
+          rdfs:label          "running" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1244,1248>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1252,1256>
+          rdfs:label          "keep" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr36>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1257,1266>
+          rdfs:label          "extending" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1271,1275>
+          rdfs:label          "lead" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1286,1290>
+          rdfs:label          "adds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1296,1303>
+          rdfs:label          "support" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1316,1320>
+          rdfs:label          "port" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1359,1371>
+          rdfs:label          "applications" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1392,1397>
+          rdfs:label          "lists" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1398,1404>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1444,1453>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr45>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1456,1464>
+          rdfs:label          "revamped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1516,1525>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1547,1552>
+          rdfs:label          "event" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1581,1588>
+          rdfs:label          "replace" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr49>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1622,1630>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1672,1682>
+          rdfs:label          "introduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1694,1705>
+          rdfs:label          "installment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1738,1744>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1745,1748>
+          rdfs:label          "iOS" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1776,1786>
+          rdfs:label          "introduces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr55>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1802,1810>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1812,1821>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr57>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1846,1852>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1824,1832>
+          rdfs:label          "revamped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1860,1868>
+          rdfs:label          "combines" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1918,1927>
+          rdfs:label          "installed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr61>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1942,1948>
+          rdfs:label          "device" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr63>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=1976,1984>
+          rdfs:label          "employee" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr64>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2157,2161>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr65>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2175,2184>
+          rdfs:label          "interface" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr66>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2220,2230>
+          rdfs:label          "integrated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr67>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2254,2261>
+          rdfs:label          "devices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr68>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2315,2324>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr69>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2263,2275>
+          rdfs:label          "Improvements" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr70>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2297,2304>
+          rdfs:label          "browser" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr71>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2326,2332>
+          rdfs:label          "tabbed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr72>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2363,2372>
+          rdfs:label          "introduce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr73>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2355,2362>
+          rdfs:label          "feature" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr74>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2434,2439>
+          rdfs:label          "built" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr75>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2421,2429>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr76>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2444,2453>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr77>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2458,2465>
+          rdfs:label          "ability" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr78>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2469,2473>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr79>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2544,2552>
+          rdfs:label          "platform" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr80>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2595,2603>
+          rdfs:label          "returned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr81>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr82>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2684,2694>
+          rdfs:label          "integrates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr83>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2713,2725>
+          rdfs:label          "applications" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr84> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr84>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2730,2735>
+          rdfs:label          "syncs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr85> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr85>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2762,2769>
+          rdfs:label          "devices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr86> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr86>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2836,2840>
+          rdfs:label          "sent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr87> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr87>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2793,2799>
+          rdfs:label          "events" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr88> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr88>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2800,2807>
+          rdfs:label          "created" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr89> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr89>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2850,2856>
+          rdfs:label          "iPhone" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr90> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr90>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2957,2963>
+          rdfs:label          "shared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr91> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr91>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2914,2923>
+          rdfs:label          "purchased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr92> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr92>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2927,2934>
+          rdfs:label          "created" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr93> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr93>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=2992,3000>
+          rdfs:label          "intended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr94> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr94>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3004,3010>
+          rdfs:label          "launch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr95> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr95>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3018,3022>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr96> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr96>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3094,3101>
+          rdfs:label          "storage" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr97> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr97>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3109,3116>
+          rdfs:label          "devices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr98> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr98>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3152,3158>
+          rdfs:label          "opened" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr99> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr99>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3186,3192>
+          rdfs:label          "center" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr100> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr100>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3211,3219>
+          rdfs:label          "intended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr101> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr101>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3223,3233>
+          rdfs:label          "facilitate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr102> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr102>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3243,3250>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr103> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr103>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3257,3264>
+          rdfs:label          "rounded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr104> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr104>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3269,3277>
+          rdfs:label          "services" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr105> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr105>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3285,3294>
+          rdfs:label          "unveiling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr106> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr106>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3308,3315>
+          rdfs:label          "feature" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr107> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr107>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3321,3328>
+          rdfs:label          "mirrors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr108> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr108>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3338,3345>
+          rdfs:label          "library" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr109> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr109>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3360,3368>
+          rdfs:label          "allowing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr110> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr110>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3377,3383>
+          rdfs:label          "listen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr111> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr111>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3443,3449>
+          rdfs:label          "demote" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr112> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr112>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3494,3498>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr113> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr113>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3566,3570>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr114> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr114>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3511,3514>
+          rdfs:label          "hub" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr115> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr115>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3520,3526>
+          rdfs:label          "center" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr116> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr116>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3543,3547>
+          rdfs:label          "life" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr117> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr117>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3627,3635>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr118> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr118>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr119>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud#char=3643,3647>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr120> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud_dAttr120>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_Mac_OS_X_Lion,_iOS_5,_and_iCloud> .
+}

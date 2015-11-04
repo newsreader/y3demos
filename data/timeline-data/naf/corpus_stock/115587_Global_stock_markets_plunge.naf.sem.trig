@@ -1,0 +1,182 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=293,298> , <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=464,471> , <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=620,625> , <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=749,754> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=450,463> .
+    
+    <http://www.newsreader-project.eu/time/20081024>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=324,329> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081024> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Inclusion , eso:Merging ;
+            rdfs:label     "include" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=232,241> .
+    
+    <http://dbpedia.org/resource/Gordon_Brown>
+            rdfs:label     "Gordon Brown" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=257,269> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=103,108> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081024> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Categorization , fn:Grasp , fn:Intentionally_create , fn:Motion , fn:Perception_experience , fn:Self_motion , fn:Travel , fn:Come_together , eso:Creating , eso:Translocation , eso:Meeting , eso:Motion ;
+            rdfs:label     "see" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=472,475> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081024> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev30>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "comment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=921,930> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/DavidBuik>
+            a              nwrontology:PERSON ;
+            rdfs:label     "David Buik" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=894,904> .
+    
+    <http://dbpedia.org/resource/BGC_Partners>
+            rdfs:label     "BGC Partners" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=908,920> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=934,939> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081024> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr5> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=293,329> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr13,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=450,471> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=103,241> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=232,329> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr7,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=232,269> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr12,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=433,475> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=921,939> .
+    
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr24,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#char=894,930> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr13,rl27> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            pb:A0         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr16> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr17> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr7,rl12> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev22>
+            sem:hasActor       <http://dbpedia.org/resource/Gordon_Brown> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inclusion@Part>
+                    <http://dbpedia.org/resource/Gordon_Brown> ;
+            pb:A1              <http://dbpedia.org/resource/Gordon_Brown> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr24> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr12,rl25> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev27>
+            sem:hasActor                <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                       <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#tr28> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Global_stock_markets_plunge#pr24,rl57> {
+    <http://en.wikinews.org/wiki/Global_stock_markets_plunge#ev30>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/DavidBuik> , <http://dbpedia.org/resource/BGC_Partners> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/DavidBuik> , <http://dbpedia.org/resource/BGC_Partners> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/DavidBuik> , <http://dbpedia.org/resource/BGC_Partners> .
+}

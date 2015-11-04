@@ -1,0 +1,240 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_pay , eso:FinancialTransaction , eso:Paying ;
+            rdfs:label     "compensate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=25,36> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=111,122> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=126,132> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=688,694> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=419,425> .
+    
+    <http://www.newsreader-project.eu/time/20061005>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 5 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=54,69> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20061005> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx2>
+            a                time:Instant ;
+            rdfs:label       "this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=270,279> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://www.newsreader-project.eu/time/200710>
+            a              time:DateTimeDescription ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx3>
+            a                time:Instant ;
+            rdfs:label       "October 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=303,315> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200710> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=90,94> .
+    
+    <http://dbpedia.org/resource/Singapore_Airlines>
+            rdfs:label     "Singapore airlines" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=0,18> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=71,89> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1106,1124> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=447,451> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=755,759> .
+    
+    <http://dbpedia.org/resource/Fiat_Aviazione>
+            rdfs:label     "SIA" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=751,754> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1034,1037> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20061005> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev34>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=402,411> , <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=740,749> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev37>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1042,1048> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr1> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=25,122> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=111,279> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=111,315> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=111,132> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=54,94> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=90,279> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=90,315> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr2,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=71,94> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr21,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=751,759> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr12,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=402,433> .
+    
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr29,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1034,1048> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr2> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr3> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr27> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr28> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr29> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr2,rl2> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev31>
+            sem:hasActor             <http://dbpedia.org/resource/Singapore_Airlines> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Singapore_Airlines> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Singapore_Airlines> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Singapore_Airlines> ;
+            pb:A0                    <http://dbpedia.org/resource/Singapore_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr32> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr21,rl39> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev33>
+            sem:hasActor             <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            pb:A0                    <http://dbpedia.org/resource/Fiat_Aviazione> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr33> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr12,rl21> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev34>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A1                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tr36> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#pr29,rl53> {
+    <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#ev37>
+            sem:hasActor          <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            pb:A0                 <http://dbpedia.org/resource/Fiat_Aviazione> .
+}

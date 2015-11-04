@@ -1,0 +1,370 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=6,14> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=132,140> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=595,602> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1266,1274> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1335,1342> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=0,5> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1555,1560> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1748,1753> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1371,1376> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=663,668> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=126,131> .
+    
+    <http://www.newsreader-project.eu/time/200706>
+            a              time:DateTimeDescription ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3>
+            a                time:Instant ;
+            rdfs:label       "June" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1346,1350> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200706> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Containing , fn:Retaining , eso:HavingInPossession ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=90,94> .
+    
+    <http://dbpedia.org/resource/Cupertino,_California>
+            rdfs:label     "Cupertino" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=102,111> .
+    
+    <http://www.newsreader-project.eu/time/20080306>
+            a              time:DateTimeDescription ;
+            time:day       "---06"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1>
+            a                time:Instant ;
+            rdfs:label       "March 6 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=54,67> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080306> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "headquarters" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=112,124> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "access" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1020,1026> .
+    
+    <http://dbpedia.org/resource/Software_development_kit>
+            rdfs:label     "SDK" , "the SDK" , "Software Development kit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=22,25> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=265,272> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=192,195> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1030,1037> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=166,190> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=269,272> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1034,1037> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080306> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev31>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "Spore" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1117,1122> .
+    
+    <http://dbpedia.org/resource/Electronic_Arts>
+            rdfs:label     "EA" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1112,1114> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev32>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "messenger" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1142,1151> .
+    
+    <http://dbpedia.org/resource/AOL_Instant_Messenger>
+            rdfs:label     "AOL" , "AIM" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1124,1127> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1130,1133> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev40>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "license" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1565,1573> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev42>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Event ;
+            rdfs:label     "event" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=84,89> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Grant_permission , fn:Permitting , eso:IntentionalEvent ;
+            rdfs:label     "allow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=278,283> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=682,689> , <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=837,844> .
+    
+    <http://dbpedia.org/resource/Wi-Fi>
+            rdfs:label     "Wi-Fi" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=850,855> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev51>
+            a              sem:Event , fn:Grant_permission , nwrontology:sourceEvent ;
+            rdfs:label     "approve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=651,659> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev55>
+            a              sem:Event , nwrontology:sourceEvent , fn:Place_weight_on ;
+            rdfs:label     "focus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1386,1394> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev58>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communicate_categorization ;
+            rdfs:label     "describe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1712,1721> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1701,1711> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr1> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1266,1350> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=54,94> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr6,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=90,124> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=54,124> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr7,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=102,124> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr32,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1020,1037> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1117,1350> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr35,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1112,1122> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1142,1350> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr36,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1124,1151> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr51,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1555,1573> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=54,89> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr5,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=84,124> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=278,283> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr10,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=265,283> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr26,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=837,860> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr23,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=651,668> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1346,1394> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr45,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1371,1394> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr54,rl116>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#char=1701,1721> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev15>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr2> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr6,rl11> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/Cupertino,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Cupertino,_California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr3> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr7,rl13> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev17>
+            sem:hasPlace  <http://dbpedia.org/resource/Cupertino,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Cupertino,_California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr16> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr32,rl73> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/Software_development_kit> ;
+            pb:A1         <http://dbpedia.org/resource/Software_development_kit> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr17> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr35,rl76> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Electronic_Arts> ;
+            pb:A0         <http://dbpedia.org/resource/Electronic_Arts> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr18> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr36,rl77> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/AOL_Instant_Messenger> ;
+            pb:A0         <http://dbpedia.org/resource/AOL_Instant_Messenger> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr26> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr51,rl110> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev40>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr27> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr5,rl9> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev42>
+            sem:hasPlace  <http://dbpedia.org/resource/Cupertino,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Cupertino,_California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr33> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev48>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr10,rl18> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev48>
+            sem:hasActor                 <http://dbpedia.org/resource/Software_development_kit> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/Software_development_kit> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Permitting@Principle>
+                    <http://dbpedia.org/resource/Software_development_kit> ;
+            pb:A0                        <http://dbpedia.org/resource/Software_development_kit> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr26,rl58> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev48>
+            sem:hasPlace  <http://dbpedia.org/resource/Wi-Fi> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Wi-Fi> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr36> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr23,rl50> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev51>
+            sem:hasActor                 <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                        <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr40> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr45,rl98> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev55>
+            sem:hasActor              <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Place_weight_on@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                     <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tr43> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#pr54,rl116> {
+    <http://en.wikinews.org/wiki/Apple_releases_iPhone_SDK,_announces_upcoming_update#ev58>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communicate_categorization@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}

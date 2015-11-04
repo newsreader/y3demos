@@ -1,0 +1,207 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev7>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=6,13> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Computer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=0,5> , <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=53,67> .
+    
+    <http://dbpedia.org/resource/Macintosh>
+            rdfs:label     "Mac" , "new intel-based Mac" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=30,33> , <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=446,449> , <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=524,527> , <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=14,33> .
+    
+    <http://www.newsreader-project.eu/time/20060111>
+            a              time:DateTimeDescription ;
+            time:day       "---11"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 11 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=35,51> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060111> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Processing_materials ;
+            rdfs:label     "processor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=141,151> .
+    
+    <http://dbpedia.org/resource/Intel>
+            rdfs:label     "Intel" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=135,140> .
+    
+    <http://www.newsreader-project.eu/time/20060110>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=81,88> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060110> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "software" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=450,458> , <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=512,520> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060111> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_affect , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=131,134> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev21>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,77> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr1> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=6,51> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=0,13> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=6,33> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=81,151> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr7,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=135,151> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr16,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=446,458> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=81,134> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr4,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=53,134> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr4,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=131,151> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=68,88> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#char=53,77> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev7>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev7>
+            sem:hasActor  <http://dbpedia.org/resource/Macintosh> ;
+            pb:A1         <http://dbpedia.org/resource/Macintosh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr4> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr7,rl13> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Intel> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Processing_materials@Material>
+                    <http://dbpedia.org/resource/Intel> ;
+            pb:A1         <http://dbpedia.org/resource/Intel> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr10> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr16,rl29> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Macintosh> ;
+            pb:A0         <http://dbpedia.org/resource/Macintosh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr13> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr4,rl8> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev20>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr4,rl9> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev20>
+            sem:hasActor        <http://dbpedia.org/resource/Intel> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Intel> ;
+            eso:inuse-entity_2  <http://dbpedia.org/resource/Intel> ;
+            pb:A1               <http://dbpedia.org/resource/Intel> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tr14> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_Intel-based_Mac#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}

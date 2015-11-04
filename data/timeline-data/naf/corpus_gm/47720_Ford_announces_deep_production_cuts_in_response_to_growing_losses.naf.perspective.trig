@@ -1,0 +1,312 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=31,35>
+          rdfs:comment        "announces" ;
+          rdfs:label          "cuts" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,14> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ford_Motor_Company> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,14>
+          rdfs:label          "announces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=39,47>
+          rdfs:comment        "announces" ;
+          rdfs:label          "response" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,14> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=59,65>
+          rdfs:comment        "announces" ;
+          rdfs:label          "losses" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,14> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=51,58>
+          rdfs:comment        "announces" ;
+          rdfs:label          "growing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,14> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=112,116>
+          rdfs:comment        "announced" ;
+          rdfs:label          "cuts" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=93,102> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ford_Motor_Company> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=93,102>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=163,173>
+          rdfs:comment        "announced" ;
+          rdfs:label          "production" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=93,102> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=668,672>
+          rdfs:comment        "reported" ;
+          rdfs:label          "loss" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=642,650> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+company> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=642,650>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=709,716>
+          rdfs:comment        "reported" ;
+          rdfs:label          "decline" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=642,650> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=720,725>
+          rdfs:comment        "reported" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=642,650> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=175,184>
+          rdfs:label          "resulting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=200,207>
+          rdfs:label          "closure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=268,273>
+          rdfs:label          "comes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=277,280>
+          rdfs:label          "top" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=304,309>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=284,292>
+          rdfs:label          "existing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=310,319>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=378,381>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=396,402>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=447,456>
+          rdfs:label          "automaker" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=524,534>
+          rdfs:label          "struggling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=545,558>
+          rdfs:label          "profitability" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=580,586>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=563,572>
+          rdfs:label          "shrinking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr15>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=599,603>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=764,772>
+          rdfs:label          "director" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=782,790>
+          rdfs:label          "analysis" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=828,834>
+          rdfs:label          "having" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=821,827>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=810,816>
+          rdfs:label          "rising" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=844,850>
+          rdfs:label          "impact" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=858,862>
+          rdfs:label          "sale" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=905,910>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=911,917>
+          rdfs:label          "leader" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=965,970>
+          rdfs:label          "cause" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=985,995>
+          rdfs:label          "initiative" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses> .
+}

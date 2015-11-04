@@ -1,0 +1,378 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=369,377>
+          rdfs:comment        "announced" ;
+          rdfs:label          "replaced" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=278,287> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Airbus> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=278,287>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=351,359>
+          rdfs:comment        "announced" ;
+          rdfs:label          "airliner" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=278,287> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=394,403>
+          rdfs:comment        "announced" ;
+          rdfs:label          "commenced" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=278,287> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=947,955>
+          rdfs:comment        "plans" ;
+          rdfs:label          "commence" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=938,943> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Qantas> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=938,943>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=972,980>
+          rdfs:comment        "plans" ;
+          rdfs:label          "starting" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=938,943> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=961,971>
+          rdfs:comment        "plans" ;
+          rdfs:label          "operations" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=938,943> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=7,15>
+          rdfs:label          "troubles" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=16,21>
+          rdfs:label          "delay" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=40,44>
+          rdfs:label          "tour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=174,181>
+          rdfs:label          "delayed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=68,77>
+          rdfs:label          "departure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=138,142>
+          rdfs:label          "tour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=183,190>
+          rdfs:label          "leading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=196,209>
+          rdfs:label          "rearrangement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=224,235>
+          rdfs:label          "appearances" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=261,268>
+          rdfs:label          "measure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=237,243>
+          rdfs:label          "Citing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=421,427>
+          rdfs:label          "remain" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr12>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=449,453>
+          rdfs:label          "stop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=485,492>
+          rdfs:label          "display" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr14>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=511,517>
+          rdfs:label          "intend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr15>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=552,559>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=521,527>
+          rdfs:label          "launch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=584,592>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=618,622>
+          rdfs:label          "wear" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr19>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=627,633>
+          rdfs:label          "livery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=664,671>
+          rdfs:label          "arrives" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=721,728>
+          rdfs:label          "planned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=762,768>
+          rdfs:label          "bypass" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr23>
+          rdf:value             <CERTAIN_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=803,806>
+          rdfs:label          "fly" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=773,780>
+          rdfs:label          "planned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=858,862>
+          rdfs:label          "part" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=902,914>
+          rdfs:label          "celebrations" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1011,1016>
+          rdfs:label          "visit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr29>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1025,1036>
+          rdfs:label          "rescheduled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1054,1063>
+          rdfs:label          "occurring" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1082,1088>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1138,1145>
+          rdfs:label          "planned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1175,1179>
+          rdfs:label          "kept" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr34>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1193,1201>
+          rdfs:label          "indicate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1228,1232>
+          rdfs:label          "stop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1268,1278>
+          rdfs:label          "eliminated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1282,1288>
+          rdfs:label          "favour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1300,1310>
+          rdfs:label          "appearance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour> .
+}

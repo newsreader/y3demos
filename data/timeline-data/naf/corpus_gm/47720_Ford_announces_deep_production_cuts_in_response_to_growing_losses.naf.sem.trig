@@ -1,0 +1,315 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev10>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Causation ;
+            rdfs:label     "result" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=175,184> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Dearborn" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=0,4> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=413,417> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=794,798> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=496,498> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=84,88> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=1393,1401> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=1413,1417> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2>
+            a                  time:Interval ;
+            rdfs:label         "the 4 quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=236,254> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20051001> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20051231> .
+    
+    <http://www.newsreader-project.eu/time/20051001>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20051231>
+            a              time:DateTimeDescription ;
+            time:day       "---31"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Behind_the_scenes , fn:Cause_to_start , fn:Intentionally_create , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "production" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=163,173> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "ten of its plant" , "its US" , "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=147,149> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=211,228> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=143,149> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=465,469> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Behind_the_scenes , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "director" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=764,772> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx6>
+            a                time:Instant ;
+            rdfs:label       "2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=591,595> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx8>
+            a                  time:Interval ;
+            rdfs:label         "2 quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=653,667> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20060401> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20060630> .
+    
+    <http://www.newsreader-project.eu/time/20060401>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20060630>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/200608>
+            a              time:DateTimeDescription ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx9>
+            a                time:Instant ;
+            rdfs:label       "the month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=730,739> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200608> .
+    
+    <http://www.newsreader-project.eu/time/200607>
+            a              time:DateTimeDescription ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx10>
+            a                time:Instant ;
+            rdfs:label       "July" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=743,747> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200607> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev33>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,14> .
+    
+    <http://www.newsreader-project.eu/time/20060819>
+            a              time:DateTimeDescription ;
+            time:day       "---19"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx1>
+            a                time:Instant ;
+            rdfs:label       "August 19 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=67,82> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060819> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev35>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=93,102> , <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=310,319> .
+    
+    <http://www.newsreader-project.eu/time/200601>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx3>
+            a                time:Instant ;
+            rdfs:label       "January" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=323,330> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200601> .
+    
+    <http://www.newsreader-project.eu/time/2012>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2012" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=406,410> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2012> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr6> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=175,254> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr7,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=84,184> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=163,254> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr9,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=147,173> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=591,772> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=653,772> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=730,772> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=743,772> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr28,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=764,798> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=5,82> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=93,254> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=310,330> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=310,410> .
+    
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr6,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#char=84,102> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr7,rl11> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev10>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr7> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr9,rl17> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev11>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr36> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr37> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr38> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr39> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr28,rl61> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev24>
+            sem:hasActor                 <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Studio>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A2                        <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr70> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev33>
+            sem:hasActor          <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                 <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr72> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr73> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tr74> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#pr6,rl8> {
+    <http://en.wikinews.org/wiki/Ford_announces_deep_production_cuts_in_response_to_growing_losses#ev35>
+            sem:hasActor          <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                 <http://dbpedia.org/resource/Ford_Motor_Company> .
+}

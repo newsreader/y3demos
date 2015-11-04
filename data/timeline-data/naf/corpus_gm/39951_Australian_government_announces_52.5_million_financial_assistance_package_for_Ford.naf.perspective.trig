@@ -1,0 +1,598 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford>
+          prov:wasAttributedTo  nwrauthor:ArchiveBot .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=67,74>
+          rdfs:comment        "announces" ;
+          rdfs:label          "package" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=22,31> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/australian+government> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=22,31>
+          rdfs:label          "announces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=56,66>
+          rdfs:comment        "announces" ;
+          rdfs:label          "assistance" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=22,31> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=213,223>
+          rdfs:comment        "announced" ;
+          rdfs:label          "government" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=186,195> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/John_Howard> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=186,195>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=233,242>
+          rdfs:comment        "announced" ;
+          rdfs:label          "providing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=186,195> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=310,320>
+          rdfs:comment        "announced" ;
+          rdfs:label          "assistance" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=186,195> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=321,328>
+          rdfs:comment        "announced" ;
+          rdfs:label          "package" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=186,195> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2229,2235>
+          rdfs:comment        "claims" ;
+          rdfs:label          "create" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2199,2205> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> , <CERTAIN_FUTURE_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/John_Howard> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2199,2205>
+          rdfs:label          "claims" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2249,2255>
+          rdfs:comment        "claims" ;
+          rdfs:label          "secure" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2199,2205> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2260,2266>
+          rdfs:comment        "claims" ;
+          rdfs:label          "future" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2199,2205> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2311,2316>
+          rdfs:comment        "claims" ;
+          rdfs:label          "built" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2199,2205> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=157,165>
+          rdfs:label          "minister" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=342,352>
+          rdfs:label          "assistance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr3>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=366,374>
+          rdfs:label          "provided" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr4>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=398,408>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=454,460>
+          rdfs:label          "secure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr6>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=482,492>
+          rdfs:label          "operations" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=568,572>
+          rdfs:label          "used" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=670,675>
+          rdfs:label          "built" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=581,587>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr10>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=646,654>
+          rdfs:label          "vehicles" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=705,710>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=719,727>
+          rdfs:label          "facelift" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=780,785>
+          rdfs:label          "dates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=824,828>
+          rdfs:label          "need" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr15>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=832,837>
+          rdfs:label          "serve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr16>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=892,903>
+          rdfs:label          "anticipated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=930,934>
+          rdfs:label          "face" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr18>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=941,952>
+          rdfs:label          "competition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1040,1048>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1014,1024>
+          rdfs:label          "competitor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1063,1067>
+          rdfs:label          "half" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1123,1128>
+          rdfs:label          "spent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1221,1229>
+          rdfs:label          "marketed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1136,1147>
+          rdfs:label          "development" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1178,1186>
+          rdfs:label          "platform" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1202,1207>
+          rdfs:label          "built" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1264,1268>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1309,1316>
+          rdfs:label          "involve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr29>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1379,1385>
+          rdfs:label          "become" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr30>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1317,1329>
+          rdfs:label          "construction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1360,1366>
+          rdfs:label          "centre" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1390,1394>
+          rdfs:label          "base" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr33>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1442,1446>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1519,1522>
+          rdfs:label          "put" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr35>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1585,1591>
+          rdfs:label          "helped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1607,1613>
+          rdfs:label          "secure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1773,1777>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1641,1648>
+          rdfs:label          "project" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1637,1640>
+          rdfs:label          "R&D" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1654,1664>
+          rdfs:label          "undertaken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1704,1708>
+          rdfs:label          "news" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1724,1733>
+          rdfs:label          "employees" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1759,1768>
+          rdfs:label          "producers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1798,1801>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr45>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1817,1823>
+          rdfs:label          "become" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1826,1832>
+          rdfs:label          "centre" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr47>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1848,1854>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1871,1881>
+          rdfs:label          "excellence" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1920,1925>
+          rdfs:label          "bring" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr50>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1935,1943>
+          rdfs:label          "benefits" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=1996,1999>
+          rdfs:label          "put" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr52>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2066,2073>
+          rdfs:label          "sectors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2116,2122>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2139,2151>
+          rdfs:label          "capabilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2182,2186>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2400,2406>
+          rdfs:label          "giving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2455,2466>
+          rdfs:label          "opportunity" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr59>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2470,2476>
+          rdfs:label          "supply" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr60>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2433,2442>
+          rdfs:label          "component" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2443,2451>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford#char=2505,2513>
+          rdfs:label          "produced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford_dAttr63>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Australian_government_announces_$52.5_million_financial_assistance_package_for_Ford> .
+}

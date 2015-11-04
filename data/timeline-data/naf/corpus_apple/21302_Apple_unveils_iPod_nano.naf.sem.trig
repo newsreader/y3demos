@@ -1,0 +1,194 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev15>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=6,13> , <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=56,64> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=0,5> , <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=756,761> , <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=181,186> , <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=65,68> , <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=44,49> .
+    
+    <http://www.newsreader-project.eu/time/20050907>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=50,55> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050907> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Social_event , eso:Meeting ;
+            rdfs:label     "host" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=171,177> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=140,145> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050907> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev27>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "display" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=960,967> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ROKRROKR>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "ROKR" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=943,947> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050907> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev51>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=948,951> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev56>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=767,776> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev59>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent ;
+            rdfs:label     "pause" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=1292,1298> .
+    
+    <http://dbpedia.org/resource/Motorola>
+            rdfs:label     "Motorola" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=814,822> , <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=1278,1286> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr1> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=50,64> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=0,13> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=140,177> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr7,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=171,186> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr25,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=939,967> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr24,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=939,951> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr23,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=756,776> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr36,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#char=1274,1298> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev15>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr3> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr7,rl14> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev17>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:meeting-participant  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr13> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr25,rl52> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev27>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/ROKRROKR> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/ROKRROKR> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr38> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr24,rl50> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev51>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/ROKRROKR> ;
+            eso:possession-owner  <http://www.newsreader-project.eu/data/wikinews/entities/ROKRROKR> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/ROKRROKR> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr43> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr23,rl47> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev56>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tr46> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#pr36,rl80> {
+    <http://en.wikinews.org/wiki/Apple_unveils_iPod_nano#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/Motorola> ;
+            pb:A0         <http://dbpedia.org/resource/Motorola> .
+}

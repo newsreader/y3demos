@@ -1,0 +1,552 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1500,1504>
+          rdfs:comment        "announcing" ;
+          rdfs:label          "loss" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1466,1476> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_sAttr1>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ford_Motor_Company> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1466,1476>
+          rdfs:label          "announcing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=13,18>
+          rdfs:label          "offer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=19,26>
+          rdfs:label          "buyouts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=37,47>
+          rdfs:label          "retirement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=121,126>
+          rdfs:label          "begun" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=143,151>
+          rdfs:label          "packages" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=130,135>
+          rdfs:label          "offer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr5>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=161,171>
+          rdfs:label          "workforces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=189,202>
+          rdfs:label          "manufacturers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=218,221>
+          rdfs:label          "hit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=245,253>
+          rdfs:label          "downturn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=268,274>
+          rdfs:label          "forced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=291,294>
+          rdfs:label          "aid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=278,282>
+          rdfs:label          "seek" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr12>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=309,319>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=329,332>
+          rdfs:label          "say" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=351,359>
+          rdfs:label          "includes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=375,382>
+          rdfs:label          "payment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=409,416>
+          rdfs:label          "voucher" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=432,437>
+          rdfs:label          "offer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr18>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=456,463>
+          rdfs:label          "voucher" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=523,528>
+          rdfs:label          "offer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr20>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=533,537>
+          rdfs:label          "deal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=572,577>
+          rdfs:label          "union" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=578,585>
+          rdfs:label          "members" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=611,618>
+          rdfs:label          "seeking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=622,625>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr25>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=671,679>
+          rdfs:label          "received" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=705,710>
+          rdfs:label          "loans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=714,718>
+          rdfs:label          "keep" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=724,733>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=765,772>
+          rdfs:label          "produce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=748,756>
+          rdfs:label          "required" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=783,788>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=868,874>
+          rdfs:label          "return" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=814,820>
+          rdfs:label          "making" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=838,842>
+          rdfs:label          "cuts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=792,803>
+          rdfs:label          "demonstrate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr36>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=853,864>
+          rdfs:label          "concessions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=894,901>
+          rdfs:label          "workers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=913,917>
+          rdfs:label          "earn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=937,949>
+          rdfs:label          "replacements" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr40>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=955,959>
+          rdfs:label          "earn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr41>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1002,1008>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1048,1052>
+          rdfs:label          "paid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1058,1065>
+          rdfs:label          "stopped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1015,1022>
+          rdfs:label          "workers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1097,1107>
+          rdfs:label          "attempting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1111,1119>
+          rdfs:label          "engineer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1138,1142>
+          rdfs:label          "swap" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1144,1152>
+          rdfs:label          "reducing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1157,1168>
+          rdfs:label          "liabilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1201,1205>
+          rdfs:label          "debt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1234,1241>
+          rdfs:label          "seeking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1245,1249>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1258,1270>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1300,1305>
+          rdfs:label          "group" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1349,1355>
+          rdfs:label          "brands" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr56>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1389,1395>
+          rdfs:label          "sector" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1400,1408>
+          rdfs:label          "suffered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1428,1436>
+          rdfs:label          "downturn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr59>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr60>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1526,1532>
+          rdfs:label          "sought" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr61>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1541,1544>
+          rdfs:label          "aid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr62>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1567,1570>
+          rdfs:label          "ran" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr63>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1607,1614>
+          rdfs:label          "leading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr64>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers#char=1630,1637>
+          rdfs:label          "bailout" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers_dAttr65>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM,_Chrysler_offer_buyouts_and_early_retirement_to_workers> .
+}

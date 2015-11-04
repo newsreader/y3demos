@@ -1,0 +1,392 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=182,189>
+          rdfs:comment        "reported" ;
+          rdfs:label          "quarter" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=137,145> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=137,145>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=210,214>
+          rdfs:comment        "reported" ;
+          rdfs:label          "loss" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=137,145> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=300,305>
+          rdfs:comment        "admitted" ;
+          rdfs:label          "swell" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=256,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=256,264>
+          rdfs:label          "admitted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=320,324>
+          rdfs:comment        "admitted" ;
+          rdfs:label          "pays" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=256,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=349,354>
+          rdfs:comment        "admitted" ;
+          rdfs:label          "costs" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=256,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=358,367>
+          rdfs:comment        "admitted" ;
+          rdfs:label          "thousands" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=256,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=378,385>
+          rdfs:comment        "admitted" ;
+          rdfs:label          "workers" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=256,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=763,767>
+          rdfs:comment        "report" ;
+          rdfs:label          "beat" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=743,749> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr3>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Toyota> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=743,749>
+          rdfs:label          "report" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=780,786>
+          rdfs:comment        "report" ;
+          rdfs:label          "profit" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=743,749> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1128,1131>
+          rdfs:comment        "plans" ;
+          rdfs:label          "cut" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1119,1124> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr4>
+          rdf:value            <PROBABLE_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1119,1124>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1148,1153>
+          rdfs:comment        "plans" ;
+          rdfs:label          "close" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1119,1124> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=3,8>
+          rdfs:label          "posts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=22,26>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=93,99>
+          rdfs:label          "posted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=117,121>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=390,396>
+          rdfs:label          "warned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=413,423>
+          rdfs:label          "calculated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=463,467>
+          rdfs:label          "rise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=492,500>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=536,546>
+          rdfs:label          "commission" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=597,606>
+          rdfs:label          "predicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=675,686>
+          rdfs:label          "predictions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=655,668>
+          rdfs:label          "manufacturers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=731,739>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr15>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=711,719>
+          rdfs:label          "contrast" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=821,829>
+          rdfs:label          "division" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=830,834>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=871,877>
+          rdfs:label          "driven" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=881,887>
+          rdfs:label          "losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=920,930>
+          rdfs:label          "attributed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=956,961>
+          rdfs:label          "share" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=978,983>
+          rdfs:label          "taken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=996,1009>
+          rdfs:label          "manufacturers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1010,1016>
+          rdfs:label          "Toyota" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1057,1061>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1079,1086>
+          rdfs:label          "charges" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1091,1095>
+          rdfs:label          "part" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1181,1185>
+          rdfs:label          "aide" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1253,1259>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1278,1283>
+          rdfs:label          "halve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr32>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1308,1316>
+          rdfs:label          "dividend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1318,1321>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1332,1335>
+          rdfs:label          "pay" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992#char=1340,1344>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992_dAttr36>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/GM_posts_first_annual_loss_since_1992> .
+}

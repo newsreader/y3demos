@@ -1,0 +1,708 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=77,81> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=239,246> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=330,334> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=384,388> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1616,1620> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "UK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=310,312> .
+    
+    <http://dbpedia.org/resource/Economy_of_Japan>
+            rdfs:label     "Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=365,370> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=989,994> .
+    
+    <http://www.newsreader-project.eu/time/20070810>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=82,87> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx4>
+            a                time:Instant ;
+            rdfs:label       "the day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=225,232> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev28>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=324,329> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Filling , fn:Ingest_substance , fn:Placing , fn:Giving , eso:Placing ;
+            rdfs:label     "inject" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=453,462> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=963,971> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the Bank of Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=945,962> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx6>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=937,943> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "system" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=488,495> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1007,1013> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Transfer , fn:Change_tool ;
+            rdfs:label     "transfer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=622,633> .
+    
+    <http://dbpedia.org/resource/Federal_Reserve_System>
+            rdfs:label     "Fed" , "U.S. Federal Reserve" , "the Federal Reserve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=601,621> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=818,821> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1017,1036> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1909,1928> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2346,2349> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=806,812> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , eso:Arriving ;
+            rdfs:label     "enter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=822,829> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cure ;
+            rdfs:label     "ease" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=901,907> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Congregating ;
+            rdfs:label     "meet" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1037,1040> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7>
+            a                time:Instant ;
+            rdfs:label       "this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1041,1050> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1114,1120> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Travel , eso:Decreasing ;
+            rdfs:label     "tumble" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1256,1264> .
+    
+    <http://dbpedia.org/resource/Bear_Stearns>
+            rdfs:label     "Bear Stearns" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1243,1255> .
+    
+    <http://www.newsreader-project.eu/time/20070803>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx9>
+            a                time:Instant ;
+            rdfs:label       "last Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1226,1237> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070803> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "loan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1591,1595> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." , "U.S. Deutsche Bank" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1581,1585> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1840,1844> , <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2513,2531> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx10>
+            a                time:Instant ;
+            rdfs:label       "this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1661,1670> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev56>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Possession , fn:Submitting_documents ;
+            rdfs:label     "file" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1814,1819> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AmericanHomeMortgageInvestmentCorp>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "American Home Mortgage Investment Corp" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1743,1781> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11>
+            a                  time:Interval ;
+            rdfs:label         "much than two year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1883,1902> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20050810> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://www.newsreader-project.eu/time/20050810>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1853,1859> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev59>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Cause_change_of_position_on_a_scale ;
+            rdfs:label     "raise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1929,1935> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev68>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_stop , fn:Halt , eso:StoppingAnActivity ;
+            rdfs:label     "halt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2670,2676> .
+    
+    <http://dbpedia.org/resource/BNP_Paribas>
+            rdfs:label     "BNP Paribas SA" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2654,2668> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070810> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev72>
+            a              sem:Event , nwrontology:contextualEvent , eso:Placing , fn:Possession , fn:Statement , fn:Activity_ongoing ;
+            rdfs:label     "maintain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1067,1075> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev81>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing , fn:Deciding ;
+            rdfs:label     "decide" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1056,1063> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev82>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communication , fn:Evidence , fn:Sign ;
+            rdfs:label     "indicate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1168,1178> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev91>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Statement , fn:Choosing , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2329,2335> .
+    
+    <http://dbpedia.org/resource/Pieter_Cramer>
+            rdfs:label     "Cramer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2281,2287> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx12>
+            a                time:Instant ;
+            rdfs:label       "last Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2268,2279> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070803> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev92>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Request , fn:Contacting , fn:Deserving , fn:Labeling ;
+            rdfs:label     "call" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2366,2372> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr3> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=77,87> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=225,246> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr10,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=306,334> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr11,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=365,388> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=225,329> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=306,329> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=937,971> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr28,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=945,971> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=937,1013> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr29,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=989,1013> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=622,812> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr17,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=597,633> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=806,829> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr23,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=814,829> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=806,907> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr24,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=814,907> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1037,1050> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1037,1120> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr30,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1017,1040> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1226,1264> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr40,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1243,1264> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1591,1670> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr50,rl119>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1581,1595> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1661,1819> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1814,1902> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr59,rl138>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1743,1819> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1853,1902> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr60,rl141>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1840,1859> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1883,1935> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr62,rl146>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1909,1935> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr83,rl196>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2631,2676> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1041,1075> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1067,1120> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr32,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1017,1075> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1041,1063> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1056,1120> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr31,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1017,1063> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1041,1178> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1114,1178> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr33,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=1017,1178> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2268,2335> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr73,rl174>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2281,2335> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2268,2372> .
+    
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr74,rl176>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#char=2341,2372> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr4> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr10,rl23> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev25>
+            sem:hasActor       <http://dbpedia.org/resource/United_Kingdom> ;
+            eso:quantity-item  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A1              <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr11,rl26> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev25>
+            sem:hasActor       <http://dbpedia.org/resource/Economy_of_Japan> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Economy_of_Japan> ;
+            pb:A1              <http://dbpedia.org/resource/Economy_of_Japan> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr7> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr9,rl20> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr8> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr28,rl69> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev29>
+            sem:hasActor                  <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Filling@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Ingest_substance@Ingestor>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Cause>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            pb:A0                         <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr9> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr29,rl72> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/Economy_of_Japan> ;
+            pb:A0         <http://dbpedia.org/resource/Economy_of_Japan> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr11> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr17,rl43> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev32>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_tool@Agent>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Transfer@Donor>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Transfer@Theme>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                 <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr15> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr23,rl58> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev36>
+            sem:hasActor             <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                    <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr16> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr24,rl61> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev37>
+            sem:hasActor       <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cure@Treatment>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0              <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr18> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr19> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr30,rl74> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev39>
+            sem:hasActor                 <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Congregating@Individuals>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                        <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr26> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr40,rl98> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev43>
+            sem:hasActor            <http://dbpedia.org/resource/Bear_Stearns> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Bear_Stearns> ;
+            pb:A1                   <http://dbpedia.org/resource/Bear_Stearns> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr34> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr50,rl119> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev50>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr40> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr41> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr59,rl138> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev56>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/AmericanHomeMortgageInvestmentCorp> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Submitting_documents@Submittor>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AmericanHomeMortgageInvestmentCorp> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/AmericanHomeMortgageInvestmentCorp> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr42> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr60,rl141> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev57>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr44> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr62,rl146> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0         <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr53> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr83,rl196> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev68>
+            sem:hasActor        <http://dbpedia.org/resource/BNP_Paribas> ;
+            eso:activity-agent  <http://dbpedia.org/resource/BNP_Paribas> ;
+            pb:A0               <http://dbpedia.org/resource/BNP_Paribas> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr57> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr58> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr32,rl80> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev72>
+            sem:hasActor               <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Agent>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                      <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr66> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev81>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr67> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev81>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr31,rl76> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev81>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deciding@Cognizer>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                 <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr68> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr69> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr33,rl82> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev82>
+            sem:hasActor                   <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication@Communicator>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sign@Indicator>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                          <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr79> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev91>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr73,rl174> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev91>
+            sem:hasActor             <http://dbpedia.org/resource/Pieter_Cramer> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Pieter_Cramer> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Pieter_Cramer> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Pieter_Cramer> ;
+            pb:A0                    <http://dbpedia.org/resource/Pieter_Cramer> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tr80> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#pr74,rl176> {
+    <http://en.wikinews.org/wiki/Markets_dragged_down_by_credit_crisis#ev92>
+            sem:hasActor                <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Contacting@Communicator>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Entity>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                       <http://dbpedia.org/resource/Federal_Reserve_System> .
+}

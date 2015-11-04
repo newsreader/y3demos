@@ -1,0 +1,368 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=14,17>
+          rdfs:comment        "plans" ;
+          rdfs:label          "buy" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=5,10> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr0>
+          rdf:value            <u_u_u> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Fiat> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=5,10>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=27,32>
+          rdfs:comment        "plans" ;
+          rdfs:label          "stake" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=5,10> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100>
+          rdfs:comment        "announced" ;
+          rdfs:label          "intends" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <PROBABLE_u_POS> , <u_FUTURE_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Fiat> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=104,112>
+          rdfs:comment        "intends" , "announced" ;
+          rdfs:label          "purchase" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=121,128>
+          rdfs:comment        "intends" , "announced" ;
+          rdfs:label          "percent" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=184,188>
+          rdfs:comment        "intends" , "announced" ;
+          rdfs:label          "owns" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=202,206>
+          rdfs:comment        "intends" , "announced" ;
+          rdfs:label          "give" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=249,254>
+          rdfs:comment        "intends" , "announced" ;
+          rdfs:label          "stake" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=232,239>
+          rdfs:comment        "intends" , "announced" ;
+          rdfs:label          "percent" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=93,100> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr1> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_sAttr2>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <PROBABLE_u_POS> , <u_FUTURE_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Fiat> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=319,323>
+          rdfs:label          "told" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=289,301>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=348,355>
+          rdfs:label          "intends" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=359,362>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr5>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=377,380>
+          rdfs:label          "buy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr6>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=367,373>
+          rdfs:label          "option" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=385,390>
+          rdfs:label          "share" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=403,407>
+          rdfs:label          "held" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=418,428>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=450,459>
+          rdfs:label          "finalized" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=524,527>
+          rdfs:label          "pay" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr12>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=490,496>
+          rdfs:label          "agreed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=532,539>
+          rdfs:label          "average" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=547,556>
+          rdfs:label          "estimates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=597,603>
+          rdfs:label          "bought" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=621,626>
+          rdfs:label          "stake" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=655,661>
+          rdfs:label          "exited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=662,672>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=688,697>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=702,709>
+          rdfs:label          "holding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=725,733>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=737,745>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr23>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=760,763>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=877,880>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=896,903>
+          rdfs:label          "compete" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr26>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=885,892>
+          rdfs:label          "ability" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=954,958>
+          rdfs:label          "face" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=917,921>
+          rdfs:label          "kind" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=986,990>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=1015,1022>
+          rdfs:label          "benefit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr31>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=1040,1047>
+          rdfs:label          "getting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr32>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=1078,1082>
+          rdfs:label          "hint" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=1097,1106>
+          rdfs:label          "ownership" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=1139,1143>
+          rdfs:label          "went" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler> .
+}

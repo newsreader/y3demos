@@ -1,0 +1,453 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , eso:Increasing , eso:Getting ;
+            rdfs:label     "profit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=40,46> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=139,145> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=369,376> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Ford motors" , "Ford Motors Co." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=0,11> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=972,976> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=926,930> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=617,621> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=543,547> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=351,355> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=66,81> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx3>
+            a                time:Instant ;
+            rdfs:label       "the last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=150,163> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx4>
+            a                  time:Interval ;
+            rdfs:label         "four year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=202,212> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20060128> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20100128> .
+    
+    <http://www.newsreader-project.eu/time/20060128>
+            a              time:DateTimeDescription ;
+            time:day       "---28"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20100128>
+            a              time:DateTimeDescription ;
+            time:day       "---28"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the final quarter of 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=324,349> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7>
+            a                time:Instant ;
+            rdfs:label       "this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=435,444> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "debt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=568,572> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx10>
+            a                time:Instant ;
+            rdfs:label       "the end of 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=576,591> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=628,633> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx11>
+            a                  time:Interval ;
+            rdfs:label         "the 4 quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=597,615> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20091001> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20091231> .
+    
+    <http://www.newsreader-project.eu/time/20091001>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20091231>
+            a              time:DateTimeDescription ;
+            time:day       "---31"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx12>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=688,692> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_employed , fn:Work , fn:Working_a_post , eso:Working , eso:BeingEmployed ;
+            rdfs:label     "work" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=985,992> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100128> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=548,551> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=12,17> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 28 , 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=48,64> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100128> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=122,128> , <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=281,287> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=254,258> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=356,360> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Expectation , fn:Opinion ;
+            rdfs:label     "expect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=398,405> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev42>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=977,981> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr1> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=139,163> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=139,212> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=324,376> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=369,444> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr4,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=66,145> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=568,591> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr17,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=543,572> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=597,633> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=628,692> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr20,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=617,633> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr29,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=964,992> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=548,591> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr16,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=543,551> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=12,64> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=0,17> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=122,163> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=122,212> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=254,287> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr3,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=66,128> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=324,360> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=356,444> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr8,rl24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=351,360> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=324,405> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=398,444> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr9,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=351,405> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr28,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#char=972,981> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr2> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr3> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr4> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr4,rl9> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev10>
+            sem:hasActor                   <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                          <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr12> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr17,rl44> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A2         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr15> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr16> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr20,rl51> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev18>
+            sem:hasActor            <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                   <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr20> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr29,rl70> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev22>
+            sem:hasActor                <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Being_employed@Employee>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                       <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr31> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr16,rl41> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev31>
+            sem:hasActor          <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                 <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr34> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev34>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Sender>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr35> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr36> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr37> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr3,rl7> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev35>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Sender>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr38> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr39> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr8,rl24> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev36>
+            sem:hasActor             <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                    <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr40> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr41> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr9,rl27> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev37>
+            sem:hasActor             <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Opinion@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                    <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tr47> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#pr28,rl69> {
+    <http://en.wikinews.org/wiki/Ford_Motors_posts_US$2.7_billion_annual_profit#ev42>
+            sem:hasActor      <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0             <http://dbpedia.org/resource/Ford_Motor_Company> .
+}

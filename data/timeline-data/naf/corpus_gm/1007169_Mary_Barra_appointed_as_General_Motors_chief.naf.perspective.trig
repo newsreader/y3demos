@@ -1,0 +1,548 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=789,794>
+          rdfs:comment        "plans" ;
+          rdfs:label          "stand" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,785> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr0>
+          rdf:value            <u_u_u> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,785>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=828,832>
+          rdfs:comment        "plans" ;
+          rdfs:label          "wife" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,785> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=851,860>
+          rdfs:comment        "plans" ;
+          rdfs:label          "diagnosis" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,785> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=814,823>
+          rdfs:comment        "plans" ;
+          rdfs:label          "following" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,785> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1240,1244>
+          rdfs:comment        "announced" ;
+          rdfs:label          "head" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1230,1239> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+company> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1230,1239>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=11,20>
+          rdfs:label          "appointed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=39,44>
+          rdfs:label          "chief" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=97,109>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=131,136>
+          rdfs:label          "named" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=165,174>
+          rdfs:label          "executive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=215,219>
+          rdfs:label          "lead" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=248,256>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=333,337>
+          rdfs:label          "head" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=349,360>
+          rdfs:label          "development" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=367,371>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=405,414>
+          rdfs:label          "portfolio" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=462,473>
+          rdfs:label          "performance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=488,495>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=541,548>
+          rdfs:label          "honored" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=552,556>
+          rdfs:label          "lead" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr14>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=566,570>
+          rdfs:label          "team" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=603,611>
+          rdfs:label          "momentum" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=594,598>
+          rdfs:label          "keep" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=633,641>
+          rdfs:label          "replaces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=666,675>
+          rdfs:label          "appointed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=708,717>
+          rdfs:label          "executive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=722,730>
+          rdfs:label          "chairman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=760,770>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=893,897>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=868,875>
+          rdfs:label          "message" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=907,912>
+          rdfs:label          "leave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr26>
+          rdf:value             <CERTAIN_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=953,965>
+          rdfs:label          "accomplished" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=973,981>
+          rdfs:label          "optimism" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1011,1016>
+          rdfs:label          "pride" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1029,1038>
+          rdfs:label          "restoring" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1076,1082>
+          rdfs:label          "bearer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr31>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1102,1110>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr32>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1132,1142>
+          rdfs:label          "relinquish" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr33>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1156,1160>
+          rdfs:label          "role" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1168,1176>
+          rdfs:label          "replaced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1188,1196>
+          rdfs:label          "director" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1281,1290>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1309,1314>
+          rdfs:label          "comes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1349,1353>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1393,1399>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1370,1376>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1433,1440>
+          rdfs:label          "bailout" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1454,1457>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1474,1480>
+          rdfs:label          "coming" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1460,1461>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1494,1503>
+          rdfs:label          "ownership" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1521,1530>
+          rdfs:label          "recovered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1542,1552>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1570,1581>
+          rdfs:label          "appointment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1598,1608>
+          rdfs:label          "re-entered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1647,1654>
+          rdfs:label          "remains" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1671,1683>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1720,1727>
+          rdfs:label          "figures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1706,1713>
+          rdfs:label          "posting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr55>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1766,1774>
+          rdfs:label          "produces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1783,1789>
+          rdfs:label          "brands" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1825,1830>
+          rdfs:label          "holds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1844,1850>
+          rdfs:label          "degree" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1865,1876>
+          rdfs:label          "engineering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr60>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1940,1946>
+          rdfs:label          "listed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief_dAttr61>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief> .
+}

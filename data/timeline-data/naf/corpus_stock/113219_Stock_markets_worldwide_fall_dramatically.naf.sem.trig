@@ -1,0 +1,483 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=69,76> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=117,134> .
+    
+    <http://www.newsreader-project.eu/time/20080917>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=161,166> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "bailout" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=240,247> .
+    
+    <http://dbpedia.org/resource/Federal_Reserve_System>
+            rdfs:label     "the US Federal Reserve" , "the Federal Reserve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=279,301> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1688,1707> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev18>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=319,324> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=574,579> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=699,704> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "UK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=316,318> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=367,372> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=757,764> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Taking ;
+            rdfs:label     "takeover" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1105,1113> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the American International Group" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1117,1149> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1052,1057> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://www.newsreader-project.eu/time/20080916>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1159,1166> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080916> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Creating , eso:Creating ;
+            rdfs:label     "build" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1391,1396> .
+    
+    <http://dbpedia.org/resource/American_International_Group>
+            rdfs:label     "AIG" , "AIG 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=272,275> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1151,1154> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1559,1561> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1545,1550> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1383,1386> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1501,1506> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1256,1259> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1501,1504> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9>
+            a              time:Interval ;
+            rdfs:label     "the last several year" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1405,1427> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Offering , eso:Giving ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1492,1500> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Participation ;
+            rdfs:label     "stockholder" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1507,1519> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev44>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "bail" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1711,1715> .
+    
+    <http://dbpedia.org/resource/Lehman_Brothers>
+            rdfs:label     "Lehman brothers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1720,1735> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx10>
+            a                time:Instant ;
+            rdfs:label       "the past week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1653,1666> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://www.newsreader-project.eu/time/20080915>
+            a              time:DateTimeDescription ;
+            time:day       "---15"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx11>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1783,1789> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080915> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx12>
+            a                time:Instant ;
+            rdfs:label       "the weekend" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1867,1878> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1260,1263> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev63>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "relate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1090,1097> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev66>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act ;
+            rdfs:label     "refusal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1677,1684> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr2> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=69,166> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr2,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=69,135> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=161,247> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=240,301> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=699,764> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr8,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=316,324> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1052,1113> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1105,1166> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr33,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1105,1154> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1391,1427> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr44,rl109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1383,1396> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1405,1500> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr45,rl113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1383,1500> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1405,1519> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr47,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1501,1519> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1653,1715> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1711,1789> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1711,1878> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr57,rl142>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1688,1715> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr57,rl143>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1711,1735> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1052,1263> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1159,1263> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1260,1427> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr40,rl100>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1256,1263> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1052,1097> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1090,1166> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr30,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1090,1155> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1653,1684> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1677,1789> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1677,1878> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr56,rl140>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1677,1707> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr56,rl141>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#char=1677,1735> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr2,rl5> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev16>
+            sem:hasActor            <http://dbpedia.org/resource/United_States> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr3> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr6,rl14> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0         <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr4> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr8,rl17> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr17> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr18> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr33,rl86> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev27>
+            sem:hasActor     <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Taking@Theme>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup> ;
+            pb:A1            <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr34> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr44,rl109> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev35>
+            sem:hasActor        <http://dbpedia.org/resource/American_International_Group> ;
+            eso:creating-theme  <http://dbpedia.org/resource/American_International_Group> ;
+            pb:A1               <http://dbpedia.org/resource/American_International_Group> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr35> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr45,rl113> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev36>
+            sem:hasActor  <http://dbpedia.org/resource/American_International_Group> ;
+            pb:A0         <http://dbpedia.org/resource/American_International_Group> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr37> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr47,rl117> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev38>
+            sem:hasActor            <http://dbpedia.org/resource/American_International_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Participation@Event>
+                    <http://dbpedia.org/resource/American_International_Group> ;
+            pb:A1                   <http://dbpedia.org/resource/American_International_Group> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr49> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr50> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr51> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr57,rl142> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev44>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0         <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr57,rl143> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev44>
+            sem:hasActor  <http://dbpedia.org/resource/Lehman_Brothers> ;
+            pb:A1         <http://dbpedia.org/resource/Lehman_Brothers> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr68> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr69> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr70> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr40,rl100> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev54>
+            sem:hasActor          <http://dbpedia.org/resource/American_International_Group> ;
+            eso:possession-owner  <http://dbpedia.org/resource/American_International_Group> ;
+            pb:A0                 <http://dbpedia.org/resource/American_International_Group> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr86> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr87> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr30,rl79> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev63>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Addressee>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup> ;
+            pb:A2                   <http://www.newsreader-project.eu/data/wikinews/entities/theAmericanInternationalGroup> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr92> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr93> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tr94> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr56,rl140> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev66>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0         <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#pr56,rl141> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_fall_dramatically#ev66>
+            sem:hasActor  <http://dbpedia.org/resource/Lehman_Brothers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Proposed_action>
+                    <http://dbpedia.org/resource/Lehman_Brothers> ;
+            pb:A1         <http://dbpedia.org/resource/Lehman_Brothers> .
+}

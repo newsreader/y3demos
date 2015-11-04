@@ -1,0 +1,869 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/#char=1325,1330>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "hours" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/#char=1311,1318> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/iphone+4> .
+  
+  <http://en.wikinews.org/wiki/#char=1311,1318>
+          rdfs:label          "claimed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/#char=1342,1346>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "time" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/#char=1311,1318> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/#char=1449,1456>
+          rdfs:comment        "showed" ;
+          rdfs:label          "calling" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/#char=1417,1423> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/_sAttr2>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/#char=1417,1423>
+          rdfs:label          "showed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/#char=180,188>
+          rdfs:label          "unveiled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=234,240>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=258,265>
+          rdfs:label          "devices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=321,329>
+          rdfs:label          "surprise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=369,377>
+          rdfs:label          "obtained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=356,360>
+          rdfs:label          "blog" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=380,389>
+          rdfs:label          "prototype" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=421,428>
+          rdfs:label          "details" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=411,420>
+          rdfs:label          "published" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=435,441>
+          rdfs:label          "online" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=502,509>
+          rdfs:label          "started" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=449,460>
+          rdfs:label          "introducing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=485,495>
+          rdfs:label          "conference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=513,520>
+          rdfs:label          "hinting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/_dAttr13>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=538,544>
+          rdfs:label          "saying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=547,551>
+          rdfs:label          "Stop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=573,577>
+          rdfs:label          "seen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=605,612>
+          rdfs:label          "praised" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=637,641>
+          rdfs:label          "leap" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=648,653>
+          rdfs:label          "taken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=730,736>
+          rdfs:label          "making" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=754,764>
+          rdfs:label          "smartphone" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=794,803>
+          rdfs:label          "reduction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=826,831>
+          rdfs:label          "model" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=874,877>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=900,905>
+          rdfs:label          "frame" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=913,917>
+          rdfs:label          "acts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=944,952>
+          rdfs:label          "boosting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=997,1005>
+          rdfs:label          "reducing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=957,963>
+          rdfs:label          "signal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=964,973>
+          rdfs:label          "reception" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=974,983>
+          rdfs:label          "abilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1010,1016>
+          rdfs:label          "amount" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1020,1027>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1043,1046>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1061,1067>
+          rdfs:label          "dubbed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1094,1102>
+          rdfs:label          "displays" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1078,1085>
+          rdfs:label          "display" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1159,1165>
+          rdfs:label          "demoed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1192,1201>
+          rdfs:label          "gyroscope" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1230,1234>
+          rdfs:label          "uses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1253,1262>
+          rdfs:label          "processor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1270,1274>
+          rdfs:label          "used" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1287,1293>
+          rdfs:label          "tablet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1379,1387>
+          rdfs:label          "addition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1402,1410>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1484,1490>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1505,1513>
+          rdfs:label          "connects" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1532,1534>
+          rdfs:label          "4s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1556,1559>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1584,1589>
+          rdfs:label          "front" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1600,1605>
+          rdfs:label          "chats" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1622,1626>
+          rdfs:label          "back" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1631,1637>
+          rdfs:label          "taking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1681,1684>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1687,1697>
+          rdfs:label          "resolution" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1769,1772>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1732,1741>
+          rdfs:label          "recording" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/_dAttr59>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1780,1785>
+          rdfs:label          "flash" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1806,1809>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/_dAttr61>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1842,1848>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1895,1905>
+          rdfs:label          "introduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/_dAttr63>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1951,1963>
+          rdfs:label          "capabilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/_dAttr64>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1929,1937>
+          rdfs:label          "includes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/_dAttr65>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1970,1976>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/_dAttr66>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=1985,1993>
+          rdfs:label          "software" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/_dAttr67>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2030,2036>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/_dAttr68>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2061,2068>
+          rdfs:label          "support" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/_dAttr69>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2100,2107>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/_dAttr70>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2120,2124>
+          rdfs:label          "goes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/_dAttr71>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2249,2254>
+          rdfs:label          "comes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/_dAttr72>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2333,2339>
+          rdfs:label          "priced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/_dAttr73>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2363,2370>
+          rdfs:label          "version" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/_dAttr74>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2399,2404>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/_dAttr75>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2413,2420>
+          rdfs:label          "reduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/_dAttr76>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2457,2469>
+          rdfs:label          "discontinued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/_dAttr77>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2512,2518>
+          rdfs:label          "update" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/_dAttr78>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2522,2527>
+          rdfs:label          "users" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/_dAttr79>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2554,2561>
+          rdfs:label          "devices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/_dAttr80>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2563,2572>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/_dAttr81>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2658,2665>
+          rdfs:label          "network" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/_dAttr82>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2712,2716>
+          rdfs:label          "used" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/_dAttr83>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2675,2680>
+          rdfs:label          "calls" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr84> .
+  
+  <http://en.wikinews.org/wiki/_dAttr84>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2694,2697>
+          rdfs:label          "let" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr85> .
+  
+  <http://en.wikinews.org/wiki/_dAttr85>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2794,2800>
+          rdfs:label          "device" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr86> .
+  
+  <http://en.wikinews.org/wiki/_dAttr86>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2863,2869>
+          rdfs:label          "facing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr87> .
+  
+  <http://en.wikinews.org/wiki/_dAttr87>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2883,2894>
+          rdfs:label          "competition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr88> .
+  
+  <http://en.wikinews.org/wiki/_dAttr88>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2937,2943>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr89> .
+  
+  <http://en.wikinews.org/wiki/_dAttr89>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=2927,2936>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr90> .
+  
+  <http://en.wikinews.org/wiki/_dAttr90>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3004,3011>
+          rdfs:label          "managed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr91> .
+  
+  <http://en.wikinews.org/wiki/_dAttr91>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3015,3022>
+          rdfs:label          "outsell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr92> .
+  
+  <http://en.wikinews.org/wiki/_dAttr92>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3039,3044>
+          rdfs:label          "users" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr93> .
+  
+  <http://en.wikinews.org/wiki/_dAttr93>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3055,3062>
+          rdfs:label          "account" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr94> .
+  
+  <http://en.wikinews.org/wiki/_dAttr94>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3072,3076>
+          rdfs:label          "half" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr95> .
+  
+  <http://en.wikinews.org/wiki/_dAttr95>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3086,3093>
+          rdfs:label          "surfing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr96> .
+  
+  <http://en.wikinews.org/wiki/_dAttr96>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3119,3126>
+          rdfs:label          "browser" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr97> .
+  
+  <http://en.wikinews.org/wiki/_dAttr97>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3149,3154>
+          rdfs:label          "noted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr98> .
+  
+  <http://en.wikinews.org/wiki/_dAttr98>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3205,3211>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr99> .
+  
+  <http://en.wikinews.org/wiki/_dAttr99>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3230,3239>
+          rdfs:label          "purchased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr100> .
+  
+  <http://en.wikinews.org/wiki/_dAttr100>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3288,3291>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr101> .
+  
+  <http://en.wikinews.org/wiki/_dAttr101>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3326,3330>
+          rdfs:label          "sale" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr102> .
+  
+  <http://en.wikinews.org/wiki/_dAttr102>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+  
+  <http://en.wikinews.org/wiki/#char=3317,3321>
+          rdfs:label          "apps" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/_dAttr103> .
+  
+  <http://en.wikinews.org/wiki/_dAttr103>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/> .
+}

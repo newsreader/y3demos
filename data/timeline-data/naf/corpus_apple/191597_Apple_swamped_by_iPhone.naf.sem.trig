@@ -1,0 +1,612 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev11>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "swamp" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=6,13> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Inc." , "Apple 's" , "Apple Stores" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=0,5> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1478,1488> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1137,1142> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=762,767> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=318,325> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=189,196> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=605,610> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=395,400> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=127,132> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=189,194> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=318,323> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=940,952> .
+    
+    <http://www.newsreader-project.eu/time/20100616>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 16 , 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=38,51> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100616> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance , fn:Being_employed , fn:Working_a_post , fn:Giving , eso:BeingEmployed , eso:Working , eso:Giving ;
+            rdfs:label     "service" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=218,225> .
+    
+    <http://www.newsreader-project.eu/time/20100615>
+            a              time:DateTimeDescription ;
+            time:day       "---15"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx4>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=105,112> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100615> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "line" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=226,230> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=436,441> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=578,582> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , fn:Possession , fn:Storing , eso:Selling , eso:Placing ;
+            rdfs:label     "store" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=333,339> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100616> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev21>
+            a              sem:Event , nwrontology:contextualEvent , eso:Placing , fn:Cause_change_of_consistency , fn:Change_of_consistency , fn:Placing ;
+            rdfs:label     "set" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=405,408> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=566,574> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1262,1269> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1257,1261> .
+    
+    <http://www.newsreader-project.eu/time/20090624>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx8>
+            a                time:Instant ;
+            rdfs:label       "June 24" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1273,1280> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090624> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "server" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=588,595> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=803,810> .
+    
+    <http://dbpedia.org/resource/AT&T>
+            rdfs:label     "AT&amp;T" , "AT&amp;T server" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=137,141> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=798,802> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=615,619> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=798,810> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=672,677> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100616> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Transfer , fn:Change_tool ;
+            rdfs:label     "transfer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=768,777> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "slate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1244,1250> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Path_shape , fn:Sidereal_appearance , fn:Travel , fn:Change_position_on_a_scale , fn:Dough_rising , eso:Increasing ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1489,1493> , <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1565,1570> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1502,1511> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100615> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12>
+            a                time:Instant ;
+            rdfs:label       "this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1582,1591> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev29>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1474> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Inclusion , eso:Merging ;
+            rdfs:label     "include" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=829,838> .
+    
+    <http://dbpedia.org/resource/RadioShack>
+            rdfs:label     "Radio Shack" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=852,863> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1123,1133> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1147,1157> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx7>
+            a                time:Instant ;
+            rdfs:label       "two week ago" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1223,1236> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_ongoing , fn:Process_continue , eso:IntentionalEvent ;
+            rdfs:label     "continue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1532,1542> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev58>
+            a              sem:Event , nwrontology:sourceEvent , fn:Estimating ;
+            rdfs:label     "estimate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1347> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/BenReitzes>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Ben Reitzes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1302,1313> .
+    
+    <http://dbpedia.org/resource/Barclays>
+            rdfs:label     "Barclays Capital" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1320,1336> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx9>
+            a                  time:Interval ;
+            rdfs:label         "the end of the current financial quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1403,1443> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20100401> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20100630> .
+    
+    <http://www.newsreader-project.eu/time/20100401>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20100630>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20100626>
+            a              time:DateTimeDescription ;
+            time:day       "---26"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx10>
+            a                time:Instant ;
+            rdfs:label       "June 26" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1459,1466> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100626> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr1> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=6,51> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=0,13> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=105,225> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr8,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=189,225> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=105,230> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=436,582> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr9,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=189,230> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr15,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=318,339> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=405,582> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr17,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=395,408> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=566,582> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1262,1280> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr43,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1257,1269> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=578,595> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=672,810> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr26,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=588,619> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=672,777> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr29,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=762,777> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr29,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=768,810> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1244,1280> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr42,rl95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1244,1269> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1489,1570> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1489,1591> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr49,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1493> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1511> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1591> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr51,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1488> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=672,838> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr31,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=829,863> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1123,1236> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr40,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1123,1157> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1502,1542> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1532,1591> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr50,rl115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1468,1542> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1443> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1338,1466> .
+    
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr45,rl101>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#char=1302,1347> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr5> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr8,rl15> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev15>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr6> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr7> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr9,rl17> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr11> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr15,rl30> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev20>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr12> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr17,rl35> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev21>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_consistency@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_consistency@Reason>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr13> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr14> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr43,rl98> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev22>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr15> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr16> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr26,rl57> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> , <http://dbpedia.org/resource/AT&T> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> , <http://dbpedia.org/resource/AT&T> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr17> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr29,rl62> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev24>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_tool@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Transfer@Donor>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Transfer@Theme>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr29,rl64> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev24>
+            sem:hasPlace  <http://dbpedia.org/resource/AT&T> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/AT&T> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr19> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr42,rl95> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr22> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr23> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr49,rl110> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev28>
+            sem:hasActor       <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1              <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr24> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr25> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr51,rl117> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev29>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr33> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr31,rl67> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev35>
+            sem:hasActor       <http://dbpedia.org/resource/RadioShack> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inclusion@Part>
+                    <http://dbpedia.org/resource/RadioShack> ;
+            pb:A1              <http://dbpedia.org/resource/RadioShack> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr37> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr40,rl89> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr43> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr44> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr50,rl115> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev43>
+            sem:hasActor               <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_continue@Event>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                      <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr59> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tr60> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#pr45,rl101> {
+    <http://en.wikinews.org/wiki/Apple_swamped_by_iPhone_4_pre-orders#ev58>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/BenReitzes> , <http://dbpedia.org/resource/Barclays> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Estimating@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/BenReitzes> , <http://dbpedia.org/resource/Barclays> ;
+            pb:A0                   <http://www.newsreader-project.eu/data/wikinews/entities/BenReitzes> , <http://dbpedia.org/resource/Barclays> .
+}

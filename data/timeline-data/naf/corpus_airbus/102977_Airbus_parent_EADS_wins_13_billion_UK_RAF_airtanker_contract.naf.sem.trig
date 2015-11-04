@@ -1,0 +1,463 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Win_game , eso:Getting ;
+            rdfs:label     "win" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=19,23> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=179,182> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1070,1073> .
+    
+    <http://dbpedia.org/resource/EADS>
+            rdfs:label     "EADS" , "Airbus parent EADS" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=14,18> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=119,123> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=0,18> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1046,1050> .
+    
+    <http://dbpedia.org/resource/United_States_Air_Force>
+            rdfs:label     "the United states Air Force" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1111,1138> .
+    
+    <http://www.newsreader-project.eu/time/200802>
+            a              time:DateTimeDescription ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5>
+            a                time:Instant ;
+            rdfs:label       "last month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1013,1023> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200802> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , fn:Change_position_on_a_scale , fn:Expansion , eso:JoiningAnOrganization , eso:Decreasing ;
+            rdfs:label     "contract" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=53,61> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=197,205> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=398,406> .
+    
+    <http://dbpedia.org/resource/Royal_Air_Force>
+            rdfs:label     "RAF" , "Royal Air Force" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=39,42> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=647,650> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=254,257> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=237,252> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "AirTanker Ltd." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=336,350> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theDefenseMinistry>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the Defense Ministry" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=412,432> .
+    
+    <http://www.newsreader-project.eu/time/20080327>
+            a              time:DateTimeDescription ;
+            time:day       "---27"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx1>
+            a                time:Instant ;
+            rdfs:label       "March 27 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=63,77> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080327> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "airframer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=157,166> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=0,6> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=450,456> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=167,173> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1140,1146> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "supply" , "provide" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=209,215> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=436,442> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=832,838> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=869,875> , <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=984,991> .
+    
+    <http://dbpedia.org/resource/Thales_Group>
+            rdfs:label     "Thales" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=857,863> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=848,854> .
+    
+    <http://dbpedia.org/resource/VT_Group>
+            rdfs:label     "VT Group" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=970,978> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080327> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , eso:JoiningAnOrganization , fn:Sign_agreement ;
+            rdfs:label     "sign" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=381,387> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev18>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "airliner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=476,484> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=640,643> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "livery" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=651,657> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Operating_a_system , eso:BeingLeader ;
+            rdfs:label     "management" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1000,1010> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Beat_opponent ;
+            rdfs:label     "defeat" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1051,1059> .
+    
+    <http://dbpedia.org/resource/Northrop_Grumman>
+            rdfs:label     "Northrop Grumman" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1025,1041> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1060,1066> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Request ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1084,1089> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev36>
+            a              sem:Event , nwrontology:contextualEvent , eso:Placing ;
+            rdfs:label     "ink" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1156,1161> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr1> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1013,1073> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=0,23> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr35,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1070,1138> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=53,205> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=0,61> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr3,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=36,61> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr11,rl24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=336,406> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr11,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=398,432> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=63,166> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr6,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=157,173> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=832,838> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr7,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=209,258> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr12,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=336,442> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr29,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=848,875> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr32,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=965,991> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr10,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=336,387> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr14,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=450,484> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=640,643> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr17,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=640,657> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr23,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=647,657> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1000,1023> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr33,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=965,1010> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1013,1059> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr34,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1025,1059> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr34,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1051,1066> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1013,1089> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr36,rl81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1084,1138> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1013,1161> .
+    
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr37,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#char=1140,1161> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10>
+            sem:hasActor            <http://dbpedia.org/resource/EADS> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Win_game@Competitor>
+                    <http://dbpedia.org/resource/EADS> ;
+            pb:A0                   <http://dbpedia.org/resource/EADS> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr35,rl80> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Win_game@Competition>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A1                    <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr2> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/EADS> ;
+            pb:A0         <http://dbpedia.org/resource/EADS> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr3,rl7> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Royal_Air_Force> ;
+            pb:A0         <http://dbpedia.org/resource/Royal_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr11,rl24> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev11>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr11,rl25> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev11>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/theDefenseMinistry> ;
+            pb:A2         <http://www.newsreader-project.eu/data/wikinews/entities/theDefenseMinistry> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr3> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr6,rl15> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A1         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr4> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev13>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr7,rl16> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev13>
+            sem:hasActor          <http://dbpedia.org/resource/Royal_Air_Force> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Royal_Air_Force> ;
+            pb:A1                 <http://dbpedia.org/resource/Royal_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr12,rl27> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev13>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> ;
+            eso:possession-owner_1  <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> ;
+            eso:possession-theme    <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> ;
+            pb:A0                   <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr29,rl62> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/Thales_Group> , <http://dbpedia.org/resource/France> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Thales_Group> , <http://dbpedia.org/resource/France> ;
+            eso:possession-theme    <http://dbpedia.org/resource/Thales_Group> , <http://dbpedia.org/resource/France> ;
+            pb:A0                   <http://dbpedia.org/resource/Thales_Group> , <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr32,rl70> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/VT_Group> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/VT_Group> ;
+            eso:possession-theme    <http://dbpedia.org/resource/VT_Group> ;
+            pb:A0                   <http://dbpedia.org/resource/VT_Group> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr9> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr10,rl22> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev16>
+            sem:hasActor                 <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sign_agreement@Signatory>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> ;
+            pb:A0                        <http://www.newsreader-project.eu/data/wikinews/entities/AirTankerLtd> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr11> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr14,rl31> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr14> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev21>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr17,rl40> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev21>
+            sem:hasPlace  <http://dbpedia.org/resource/Royal_Air_Force> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Royal_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr19> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr23,rl52> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Royal_Air_Force> ;
+            pb:A1         <http://dbpedia.org/resource/Royal_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr28> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr33,rl73> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/VT_Group> ;
+            pb:A2         <http://dbpedia.org/resource/VT_Group> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr29> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr34,rl77> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev33>
+            sem:hasActor             <http://dbpedia.org/resource/Northrop_Grumman> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Beat_opponent@Winner>
+                    <http://dbpedia.org/resource/Northrop_Grumman> ;
+            pb:A0                    <http://dbpedia.org/resource/Northrop_Grumman> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr34,rl78> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev33>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Beat_opponent@Loser>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr31> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr36,rl81> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev35>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Message>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tr32> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#pr37,rl82> {
+    <http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev36>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}

@@ -1,0 +1,558 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "flight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=18,24> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=173,179> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=565,571> .
+    
+    <http://dbpedia.org/resource/Qantas>
+            rdfs:label     "Qantas" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=558,564> .
+    
+    <http://www.newsreader-project.eu/time/20070319>
+            a              time:DateTimeDescription ;
+            time:day       "---19"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=153,159> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070319> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Vehicle_landing , eso:Arriving ;
+            rdfs:label     "land" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=113,117> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states of America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=121,149> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=201,207> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=576,579> .
+    
+    <http://dbpedia.org/resource/Frankfurt_Airport>
+            rdfs:label     "Frankfurt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=213,222> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=585,594> .
+    
+    <http://dbpedia.org/resource/Chicago>
+            rdfs:label     "Chicago" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=226,233> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/LosAngelesLAX>
+            a              nwrontology:LOCATION ;
+            rdfs:label     "Los Angeles LAX" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=598,613> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=500,506> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070319> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving ;
+            rdfs:label     "staff" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=405,410> .
+    
+    <http://dbpedia.org/resource/Lufthansa>
+            rdfs:label     "Lufthansa" , "Airbus and german airline Lufthansa" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=440,449> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=701,710> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=414,449> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Travel ;
+            rdfs:label     "travel" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=474,484> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=682,692> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "we" , "A380" , "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=28,30> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=0,4> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=492,496> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "number" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=718,724> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070319> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev22>
+            a              sem:Event , nwrontology:contextualEvent , eso:Arriving , fn:Arriving ;
+            rdfs:label     "arrive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=740,746> .
+    
+    <http://dbpedia.org/resource/John_F._Kennedy_International_Airport>
+            rdfs:label     "John F. Kennedy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=761,776> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Expensiveness ;
+            rdfs:label     "cost" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1126,1130> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=52,58> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1167,1173> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1131,1137> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1710,1716> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1311,1317> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1396,1402> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1337,1342> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=414,420> .
+    
+    <http://www.newsreader-project.eu/time/200610>
+            a              time:DateTimeDescription ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx4>
+            a                time:Instant ;
+            rdfs:label       "October" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1057,1064> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200610> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1388,1392> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Collaboration , eso:Collaboration ;
+            rdfs:label     "partner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1403,1411> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1425,1429> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1413,1419> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "loss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1471,1475> .
+    
+    <http://dbpedia.org/resource/Germany>
+            rdfs:label     "Germany" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1454,1461> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "supply" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1703,1709> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev52>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1462,1468> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev57>
+            a              sem:Event , nwrontology:sourceEvent , fn:Labeling ;
+            rdfs:label     "brand" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=545,552> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev58>
+            a              sem:Event , nwrontology:sourceEvent , fn:Prevarication ;
+            rdfs:label     "leg" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=633,636> .
+    
+    <http://dbpedia.org/resource/New_York>
+            rdfs:label     "New York" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=238,246> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=665,673> , <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=750,758> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion ;
+            rdfs:label     "warn" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1178,1184> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Self_motion , eso:Translocation , eso:Motion , fn:Travel , fn:Categorization , fn:Grasp , fn:Intentionally_create , fn:Perception_experience , fn:Come_together , eso:Creating , eso:Meeting ;
+            rdfs:label     "see" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1531,1534> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "United Kingdom" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1501,1515> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr1> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=153,179> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr17,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=558,571> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=113,159> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr4,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=113,149> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=153,207> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=500,579> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr6,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=201,222> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr6,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=201,233> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr16,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=576,621> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=405,506> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr11,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=405,449> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=474,506> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr13,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=474,496> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr21,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=701,724> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr22,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=740,784> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1057,1130> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr31,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1126,1137> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr42,rl97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1388,1411> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr43,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1396,1411> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1425,1429> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr44,rl100>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1413,1429> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr48,rl109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1454,1475> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr56,rl130>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1703,1716> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr47,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1454,1468> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=500,552> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr15,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=545,571> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=633,636> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr19,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=633,673> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr34,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1167,1184> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1531,1534> .
+    
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr49,rl111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1497,1534> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr17,rl44> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev12>
+            sem:hasActor             <http://dbpedia.org/resource/Qantas> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Qantas> ;
+            pb:A0                    <http://dbpedia.org/resource/Qantas> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr3> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr4,rl10> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev14>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr4> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr5> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr6,rl16> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev15>
+            sem:hasPlace  <http://dbpedia.org/resource/Frankfurt_Airport> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Frankfurt_Airport> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr6,rl17> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev15>
+            sem:hasPlace  <http://dbpedia.org/resource/Chicago> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Chicago> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr16,rl43> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev15>
+            sem:hasPlace  <http://www.newsreader-project.eu/data/wikinews/entities/LosAngelesLAX> ;
+            pb:AM-DIR     <http://www.newsreader-project.eu/data/wikinews/entities/LosAngelesLAX> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr7> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr11,rl29> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Lufthansa> ;
+            pb:A0         <http://dbpedia.org/resource/Lufthansa> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr8> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr13,rl34> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev19>
+            sem:hasActor    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Travel@Goal>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1           <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr10> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr21,rl52> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/Lufthansa> ;
+            pb:A1         <http://dbpedia.org/resource/Lufthansa> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr11> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr22,rl55> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev22>
+            sem:hasActor            <http://dbpedia.org/resource/John_F._Kennedy_International_Airport> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/John_F._Kennedy_International_Airport> ;
+            pb:A4                   <http://dbpedia.org/resource/John_F._Kennedy_International_Airport> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr18> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr31,rl76> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev29>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expensiveness@Payer>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A3                   <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr23> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr42,rl97> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev34>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Airbus> ;
+            pb:A2                   <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr24> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr43,rl98> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev35>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A2         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr25> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev36>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr44,rl100> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev36>
+            sem:hasActor                   <http://dbpedia.org/resource/France> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/France> ;
+            pb:A0                          <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr28> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr48,rl109> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev39>
+            sem:hasActor                   <http://dbpedia.org/resource/Germany> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Germany> ;
+            pb:A0                          <http://dbpedia.org/resource/Germany> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr33> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr56,rl130> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev44>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A1                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr39> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev52>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr47,rl107> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev52>
+            sem:hasActor          <http://dbpedia.org/resource/Germany> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Germany> ;
+            pb:A0                 <http://dbpedia.org/resource/Germany> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr44> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr15,rl39> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev57>
+            sem:hasActor             <http://dbpedia.org/resource/Qantas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Explanation>
+                    <http://dbpedia.org/resource/Qantas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Time>
+                    <http://dbpedia.org/resource/Qantas> ;
+            pb:A2                    <http://dbpedia.org/resource/Qantas> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr45> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev58>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr19,rl49> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev58>
+            sem:hasActor                <http://dbpedia.org/resource/New_York> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Prevarication@Addressee>
+                    <http://dbpedia.org/resource/New_York> ;
+            pb:A1                       <http://dbpedia.org/resource/New_York> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr47> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr34,rl80> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev60>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tr51> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev64>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#pr49,rl111> {
+    <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#ev64>
+            sem:hasActor                <http://dbpedia.org/resource/United_Kingdom> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://dbpedia.org/resource/United_Kingdom> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://dbpedia.org/resource/United_Kingdom> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0                       <http://dbpedia.org/resource/United_Kingdom> .
+}

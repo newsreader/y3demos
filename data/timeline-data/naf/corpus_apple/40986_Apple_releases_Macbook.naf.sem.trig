@@ -1,0 +1,194 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev7>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=6,14> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Computer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=0,5> , <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=38,52> .
+    
+    <http://www.newsreader-project.eu/time/20060517>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 17 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=24,36> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060517> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev8>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "line" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=86,90> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=53,58> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060517> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Processing_materials ;
+            rdfs:label     "processor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=202,212> , <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=506,515> .
+    
+    <http://dbpedia.org/resource/Intel>
+            rdfs:label     "Intel" , "Intel Core" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=561,566> , <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=187,197> .
+    
+    <http://dbpedia.org/resource/PowerPC>
+            rdfs:label     "powerpc" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=498,505> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:IntentionalEvent ;
+            rdfs:label     "model" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=422,427> .
+    
+    <http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census>
+            rdfs:label     "Black" , "White" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=409,414> , <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=438,443> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060517> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=59,69> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#tr1> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=6,36> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=53,90> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=38,90> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=53,212> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#pr7,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=187,212> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#pr17,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=498,515> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=409,427> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=53,69> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#pr2,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_Macbook#char=38,69> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev7>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#tr2> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#tr5> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#pr7,rl15> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Intel> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Processing_materials@Material>
+                    <http://dbpedia.org/resource/Intel> ;
+            pb:A1         <http://dbpedia.org/resource/Intel> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#pr17,rl37> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/PowerPC> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Processing_materials@Material>
+                    <http://dbpedia.org/resource/PowerPC> ;
+            pb:A1         <http://dbpedia.org/resource/PowerPC> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#tr10> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#pr15,rl32> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census> ;
+            pb:A0         <http://dbpedia.org/resource/Race_and_ethnicity_in_the_United_States_Census> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#tr13> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_Macbook#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_Macbook#pr2,rl2> {
+    <http://en.wikinews.org/wiki/Apple_releases_Macbook#ev19>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}

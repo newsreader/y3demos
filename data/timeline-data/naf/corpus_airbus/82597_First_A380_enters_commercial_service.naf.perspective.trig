@@ -1,0 +1,208 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/First_A380_enters_commercial_service>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=502,509>
+          rdfs:comment        "applauded" ;
+          rdfs:label          "carrier" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=451,460> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+prime+minister> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=451,460>
+          rdfs:label          "applauded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=11,17>
+          rdfs:label          "enters" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=29,36>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=87,94>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=65,74>
+          rdfs:label          "milestone" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=118,124>
+          rdfs:label          "landed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=206,212>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=260,267>
+          rdfs:label          "greeted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=280,286>
+          rdfs:label          "guests" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=288,297>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=424,430>
+          rdfs:label          "speech" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=516,521>
+          rdfs:label          "cited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=526,533>
+          rdfs:label          "success" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=539,545>
+          rdfs:label          "source" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=585,589>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=716,724>
+          rdfs:label          "existing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=801,805>
+          rdfs:label          "open" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr16>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=810,815>
+          rdfs:label          "doors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=853,857>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr18>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=876,882>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=931,936>
+          rdfs:label          "begin" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr20>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=945,952>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=977,982>
+          rdfs:label          "route" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service> .
+}

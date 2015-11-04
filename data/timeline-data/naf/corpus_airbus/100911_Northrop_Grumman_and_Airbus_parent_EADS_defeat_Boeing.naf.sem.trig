@@ -1,0 +1,1330 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev47>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "parent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=28,34> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=21,27> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1549,1555> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3834,3840> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=129,135> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1621,1627> .
+    
+    <http://www.newsreader-project.eu/time/20080301>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx1>
+            a                time:Instant ;
+            rdfs:label       "March 1 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=93,106> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080301> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev49>
+            a              sem:Event , nwrontology:contextualEvent , fn:Beat_opponent ;
+            rdfs:label     "defeat" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=232,240> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" , "our" , "Boeing themselves" , "their" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=47,53> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=241,247> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1355,1361> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2478,2484> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2675,2681> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4239,4245> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=519,525> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6003,6009> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5902,5908> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3638,3644> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3498,3504> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2935,2941> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2445,2451> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4103,4107> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3123,3126> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2759,2761> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2841,2844> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3016,3018> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2806,2808> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2478,2495> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2347,2350> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2307,2310> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3161,3164> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2948,2953> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2726,2728> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3212,3215> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3520,3522> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2659,2665> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "supply" , "provide" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=298,304> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1328,1334> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1858,1866> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2590,2596> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3103,3110> .
+    
+    <http://dbpedia.org/resource/United_States_Air_Force>
+            rdfs:label     "USAF" , "United states Air Force" , "USAF 's" , "the Air Force" , "USAF 's Mobility Command" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=309,332> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2164,2170> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=973,977> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1264,1268> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=334,338> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6056,6060> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2283,2285> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3036,3049> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5126,5139> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3457,3470> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2040,2063> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2070,2072> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2164,2168> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7>
+            a                time:Instant ;
+            rdfs:label       "2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2552,2556> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Win_game , eso:Getting ;
+            rdfs:label     "win" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=567,574> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1379,1382> .
+    
+    <http://dbpedia.org/resource/Lockheed_Martin>
+            rdfs:label     "Lockheed" , "Lockheed Martin" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=530,545> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=547,555> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2527,2535> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080301> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev55>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "operation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=681,691> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2974,2984> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev56>
+            a              sem:Event , nwrontology:contextualEvent , fn:Residence , eso:BeingAtAPlace ;
+            rdfs:label     "life" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=733,737> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5893,5898> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "our" , "US" , "the US" , "the aircraft 's" , "U.S." , "the company 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1307,1309> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=869,871> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=872,874> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1303,1309> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=952,954> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=699,713> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=914,916> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=892,894> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1962,1964> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5266,5270> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5539,5541> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5517,5520> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5680,5693> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5660,5663> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5582,5585> .
+    
+    <http://www.newsreader-project.eu/time/2003>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10>
+            a                time:Instant ;
+            rdfs:label       "2003" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5959,5963> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2003> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev59>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "award" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1020,1027> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3812,3817> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4230,4235> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6210,6215> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev63>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_start , fn:Creating , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "create" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1286,1294> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1779,1785> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4404,4410> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev64>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "job" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1295,1299> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3915,3919> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4418,4422> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6048,6051> .
+    
+    <http://dbpedia.org/resource/Michael_M._Sears>
+            rdfs:label     "Michael M. Sears" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6020,6036> .
+    
+    <http://dbpedia.org/resource/Darleen_Druyun>
+            rdfs:label     "Darleen Druyun" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6070,6084> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev66>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "position" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1424,1433> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev69>
+            a              sem:Event , nwrontology:contextualEvent , eso:Creating , fn:Building , fn:Manufacturing ;
+            rdfs:label     "factory" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1628,1635> .
+    
+    <http://dbpedia.org/resource/Toulouse>
+            rdfs:label     "Toulouse" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1639,1647> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1649,1655> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev74>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_motion , fn:Change_position_on_a_scale , eso:Translocation ;
+            rdfs:label     "shift" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1933,1938> .
+    
+    <http://dbpedia.org/resource/EADS>
+            rdfs:label     "EADS" , "EADS 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=35,39> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5480,5482> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5474,5478> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=208,212> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5614,5620> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4944,4950> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5333,5337> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1894,1898> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4944,4948> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5614,5618> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2118,2122> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev76>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "chief" , "head" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2032,2036> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2171,2176> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5338,5343> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev83>
+            a              sem:Event , nwrontology:contextualEvent , fn:Difficulty , fn:Motion , eso:Motion ;
+            rdfs:label     "challenge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2452,2463> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2513,2523> .
+    
+    <http://dbpedia.org/resource/Sikorsky_Aircraft>
+            rdfs:label     "Sikorsky" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2540,2548> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev84>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Giving ;
+            rdfs:label     "give" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2666,2671> .
+    
+    <http://dbpedia.org/resource/William_Barksdale>
+            rdfs:label     "William Barksdale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2692,2709> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev86>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "spokesman" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2682,2691> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev89>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "base" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2942,2947> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev91>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Attaching ;
+            rdfs:label     "tap" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3050,3056> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev103>
+            a              sem:Event , nwrontology:contextualEvent , fn:Creating , eso:Creating , fn:Building ;
+            rdfs:label     "build" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4094,4102> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4326,4331> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4737,4742> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "America" , "North America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3291,3298> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4111,4118> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4951,4964> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev104>
+            a              sem:Event , nwrontology:contextualEvent , fn:Replacing , fn:Take_place_of , eso:Replacing ;
+            rdfs:label     "place" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4426,4431> .
+    
+    <http://dbpedia.org/resource/Kansas>
+            rdfs:label     "Kansas" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3960,3966> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3995,3997> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4435,4441> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4263,4269> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev106>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "executive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4985,4994> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5344,5353> .
+    
+    <http://dbpedia.org/resource/Northrop_Grumman>
+            rdfs:label     "Northrop Grumman" , "the Northrop Grumman" , "Northrop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=0,16> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=802,818> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1466,1486> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4976,4984> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=108,124> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5108,5124> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx9>
+            a              time:Interval ;
+            rdfs:label     "decade" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5194,5201> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20080301> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev111>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "footprint" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5282,5291> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev114>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "customer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5421,5430> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5550,5558> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev118>
+            a              sem:Event , nwrontology:contextualEvent , fn:Existence , eso:BeingInExistence ;
+            rdfs:label     "presence" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5632,5640> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev120>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Giving , eso:Replacing , fn:Change_of_leadership ;
+            rdfs:label     "portfolio" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5717,5727> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev126>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , fn:Renting , eso:Renting ;
+            rdfs:label     "lease" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5933,5938> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev129>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Arranging , fn:Placing , eso:Placing ;
+            rdfs:label     "arrange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6037,6045> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev145>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=632,636> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=833,837> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=988,992> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1118,1124> .
+    
+    <http://dbpedia.org/resource/David_Strauss>
+            rdfs:label     "David Strauss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1104,1117> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev151>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "official" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=978,987> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev152>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "base" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1028,1033> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1536,1541> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MRTTMRTT>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "MRTT" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1561,1565> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev155>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "deny" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1274,1280> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev156>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Expectation , fn:Opinion ;
+            rdfs:label     "expect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1367,1375> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev161>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1914,1923> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2065,2069> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2710,2714> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2986,2990> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3351,3355> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3400,3406> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3989,3993> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4286,4290> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4511,4517> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4794,4798> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4803,4806> .
+    
+    <http://dbpedia.org/resource/Norman_D._Dicks>
+            rdfs:label     "Norm Dicks" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3340,3350> .
+    
+    <http://dbpedia.org/resource/Sam_Brownback>
+            rdfs:label     "Sam Brownback" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3975,3988> .
+    
+    <http://dbpedia.org/resource/Todd_Tiahrt>
+            rdfs:label     "Todd Tiahrt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4248,4259> .
+    
+    <http://dbpedia.org/resource/Bob_Riley>
+            rdfs:label     "Bob Riley" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4784,4793> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2003" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3591,3595> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2003> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev175>
+            a              sem:Event , nwrontology:sourceEvent , fn:Partiality , fn:Preference ;
+            rdfs:label     "favor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3486,3493> .
+    
+    <http://dbpedia.org/resource/Boeing_767>
+            a              <http://dbpedia.org/resource/Boeing_767> ;
+            rdfs:label     "Boeing 767" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3498,3508> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev178>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Request , fn:Contacting , fn:Deserving , fn:Labeling ;
+            rdfs:label     "call" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4128,4135> .
+    
+    <http://dbpedia.org/resource/United_States_Department_of_Defense>
+            rdfs:label     "Defense" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4158,4165> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev180>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "protest" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4215,4222> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev183>
+            a              sem:Event , nwrontology:contextualEvent , fn:Congregating ;
+            rdfs:label     "group" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4452,4457> .
+    
+    <http://dbpedia.org/resource/Washington,_D.C.>
+            rdfs:label     "Washington" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2866,2876> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3314,3324> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3668,3670> , <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4461,4471> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev194>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5752,5756> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ArthurLichteArthurLichte>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Arthur Lichte" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5738,5751> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev196>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agree" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5923,5929> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev197>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "official" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6061,6069> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr1> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=28,106> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=21,34> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=93,240> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr3,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=232,247> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2552,2596> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr4,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=298,339> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr11,rl24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=511,574> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr41,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1355,1382> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr94,rl215>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2935,2984> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5893,5963> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr15,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=699,737> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5959,6215> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr137,rl306>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4226,4245> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4404,4410> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr37,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1286,1309> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5959,6051> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr38,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1295,1309> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr205,rl456>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6003,6051> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr205,rl458>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6048,6084> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr43,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1355,1433> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr49,rl116>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1621,1635> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr49,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1628,1655> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1933,2122> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr59,rl139>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1894,1938> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2032,2122> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr63,rl148>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2032,2063> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2452,2556> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr75,rl173>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2445,2463> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr76,rl177>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2513,2548> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2552,2671> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr81,rl187>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2666,2709> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2552,2691> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr83,rl189>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2675,2691> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr83,rl190>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2675,2709> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr93,rl213>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2935,2947> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr96,rl220>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3036,3056> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr133,rl298>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4094,4118> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr145,rl328>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4426,4446> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4985,5201> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr165,rl369>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4976,4994> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr176,rl395>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5333,5353> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5194,5291> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr173,rl390>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5266,5291> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr185,rl411>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5539,5558> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr188,rl418>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5614,5640> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr191,rl424>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5680,5727> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5933,5963> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr201,rl444>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5902,5938> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5959,6045> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr204,rl453>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6003,6045> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr26,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=973,992> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr31,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1092,1124> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr25,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=973,987> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr47,rl111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1536,1565> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr36,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1264,1280> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr42,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1355,1375> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1914,2122> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr58,rl136>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=1894,1923> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=2065,2122> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3351,3595> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr107,rl242>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3314,3355> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr129,rl288>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3960,3993> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr138,rl308>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4248,4290> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr159,rl356>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4767,4798> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr128>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3486,3595> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr111,rl249>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3457,3493> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr111,rl251>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=3486,3515> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr134,rl301>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4128,4165> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr136,rl305>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4215,4245> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr148,rl333>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=4452,4483> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr147>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5752,5963> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr193,rl427>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5730,5756> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr149>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5923,5963> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr200,rl441>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5902,5929> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr150>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=5959,6069> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr206,rl459>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6003,6069> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr206,rl460>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6056,6069> .
+    
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr206,rl461>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#char=6056,6084> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev47>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A1         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr3> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr3,rl9> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev49>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Beat_opponent@Loser>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr4> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr4,rl12> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev50>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_Air_Force> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr8> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr11,rl24> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev54>
+            sem:hasActor            <http://dbpedia.org/resource/Lockheed_Martin> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Win_game@Competitor>
+                    <http://dbpedia.org/resource/Lockheed_Martin> ;
+            pb:A0                   <http://dbpedia.org/resource/Lockheed_Martin> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr41,rl92> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev54>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Win_game@Competitor>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr9> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr94,rl215> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev55>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr10> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr15,rl36> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev56>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:atPlace-location  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr13> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr137,rl306> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A1         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr17> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev63>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr37,rl85> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev63>
+            sem:hasActor        <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:creating-theme  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1               <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr18> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr38,rl86> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr205,rl456> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/Michael_M._Sears> ;
+            pb:A0         <http://dbpedia.org/resource/Michael_M._Sears> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr205,rl458> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/Darleen_Druyun> ;
+            pb:A1         <http://dbpedia.org/resource/Darleen_Druyun> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr20> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr43,rl96> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev66>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr23> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr49,rl116> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev69>
+            sem:hasActor        <http://dbpedia.org/resource/Airbus> ;
+            eso:creating-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A1               <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr49,rl118> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev69>
+            sem:hasPlace  <http://dbpedia.org/resource/Toulouse> , <http://dbpedia.org/resource/France> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Toulouse> , <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr27> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev74>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr59,rl139> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev74>
+            sem:hasActor  <http://dbpedia.org/resource/EADS> ;
+            pb:A0         <http://dbpedia.org/resource/EADS> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr29> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr63,rl148> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev76>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Activity>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A0                   <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr36> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr75,rl173> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev83>
+            sem:hasActor               <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Difficulty@Experiencer>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                      <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr76,rl177> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev83>
+            sem:hasActor               <http://dbpedia.org/resource/Lockheed_Martin> , <http://dbpedia.org/resource/Sikorsky_Aircraft> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Difficulty@Experiencer>
+                    <http://dbpedia.org/resource/Lockheed_Martin> , <http://dbpedia.org/resource/Sikorsky_Aircraft> ;
+            pb:A0                      <http://dbpedia.org/resource/Lockheed_Martin> , <http://dbpedia.org/resource/Sikorsky_Aircraft> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr37> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev84>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr81,rl187> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev84>
+            sem:hasActor            <http://dbpedia.org/resource/William_Barksdale> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/William_Barksdale> ;
+            pb:A0                   <http://dbpedia.org/resource/William_Barksdale> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr38> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev86>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr83,rl189> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev86>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A2         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr83,rl190> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev86>
+            sem:hasActor  <http://dbpedia.org/resource/William_Barksdale> ;
+            pb:A0         <http://dbpedia.org/resource/William_Barksdale> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr41> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev89>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr93,rl213> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev89>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr43> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev91>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr96,rl220> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev91>
+            sem:hasActor        <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attaching@Agent>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A0               <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr55> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev103>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr133,rl298> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev103>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr56> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev104>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr145,rl328> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev104>
+            sem:hasActor            <http://dbpedia.org/resource/Kansas> ;
+            eso:replacing-entity_1  <http://dbpedia.org/resource/Kansas> ;
+            pb:A1                   <http://dbpedia.org/resource/Kansas> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr58> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev106>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr165,rl369> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev106>
+            sem:hasActor  <http://dbpedia.org/resource/Northrop_Grumman> ;
+            pb:A2         <http://dbpedia.org/resource/Northrop_Grumman> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr176,rl395> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev106>
+            sem:hasActor  <http://dbpedia.org/resource/EADS> ;
+            pb:A2         <http://dbpedia.org/resource/EADS> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr63> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev111>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr173,rl390> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev111>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr66> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev114>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr185,rl411> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev114>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr70> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev118>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr188,rl418> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev118>
+            sem:hasActor     <http://dbpedia.org/resource/EADS> ;
+            eso:exist-theme  <http://dbpedia.org/resource/EADS> ;
+            pb:A1            <http://dbpedia.org/resource/EADS> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr72> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev120>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr191,rl424> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev120>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr78> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev126>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr201,rl444> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev126>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr81> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev129>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr204,rl453> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev129>
+            sem:hasActor        <http://dbpedia.org/resource/Michael_M._Sears> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arranging@Agent>
+                    <http://dbpedia.org/resource/Michael_M._Sears> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Michael_M._Sears> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Cause>
+                    <http://dbpedia.org/resource/Michael_M._Sears> ;
+            pb:A0               <http://dbpedia.org/resource/Michael_M._Sears> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr96> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev145>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr26,rl61> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev145>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A0                    <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr31,rl69> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev145>
+            sem:hasActor             <http://dbpedia.org/resource/David_Strauss> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/David_Strauss> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/David_Strauss> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/David_Strauss> ;
+            pb:A0                    <http://dbpedia.org/resource/David_Strauss> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr102> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev151>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr25,rl59> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev151>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Time>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A2              <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr103> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev152>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr47,rl111> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev152>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> , <http://www.newsreader-project.eu/data/wikinews/entities/MRTTMRTT> ;
+            pb:A2         <http://dbpedia.org/resource/Airbus> , <http://www.newsreader-project.eu/data/wikinews/entities/MRTTMRTT> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr106> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev155>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr36,rl82> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev155>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr107> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev156>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr42,rl93> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev156>
+            sem:hasActor               <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Phenomenon>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Topic>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Opinion@Topic>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1                      <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr112> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev161>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr58,rl136> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev161>
+            sem:hasActor          <http://dbpedia.org/resource/EADS> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/EADS> ;
+            pb:A0                 <http://dbpedia.org/resource/EADS> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr114> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr115> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr107,rl242> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            sem:hasActor             <http://dbpedia.org/resource/Norman_D._Dicks> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Norman_D._Dicks> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Norman_D._Dicks> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Norman_D._Dicks> ;
+            pb:A0                    <http://dbpedia.org/resource/Norman_D._Dicks> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr129,rl288> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            sem:hasActor             <http://dbpedia.org/resource/Sam_Brownback> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Sam_Brownback> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Sam_Brownback> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Sam_Brownback> ;
+            pb:A0                    <http://dbpedia.org/resource/Sam_Brownback> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr138,rl308> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            sem:hasActor             <http://dbpedia.org/resource/Todd_Tiahrt> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Todd_Tiahrt> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Todd_Tiahrt> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Todd_Tiahrt> ;
+            pb:A0                    <http://dbpedia.org/resource/Todd_Tiahrt> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr159,rl356> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev163>
+            sem:hasActor             <http://dbpedia.org/resource/Bob_Riley> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Bob_Riley> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Bob_Riley> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Bob_Riley> ;
+            pb:A0                    <http://dbpedia.org/resource/Bob_Riley> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr128> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev175>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr111,rl249> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev175>
+            sem:hasActor               <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Partiality@Judge>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Preference@Experiencer>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A0                      <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr111,rl251> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev175>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing> , <http://dbpedia.org/resource/Boeing_767> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Partiality@Dispute>
+                    <http://dbpedia.org/resource/Boeing> , <http://dbpedia.org/resource/Boeing_767> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Partiality@Side_1>
+                    <http://dbpedia.org/resource/Boeing> , <http://dbpedia.org/resource/Boeing_767> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Partiality@Sides>
+                    <http://dbpedia.org/resource/Boeing> , <http://dbpedia.org/resource/Boeing_767> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Preference@Event>
+                    <http://dbpedia.org/resource/Boeing> , <http://dbpedia.org/resource/Boeing_767> ;
+            pb:A1                  <http://dbpedia.org/resource/Boeing> , <http://dbpedia.org/resource/Boeing_767> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr131> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev178>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr134,rl301> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev178>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Contacting@Topic>
+                    <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deserving@Action>
+                    <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Label>
+                    <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Message>
+                    <http://dbpedia.org/resource/United_States_Department_of_Defense> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_Department_of_Defense> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr133> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev180>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr136,rl305> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev180>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A1         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr136> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev183>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr148,rl333> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev183>
+            sem:hasActor  <http://dbpedia.org/resource/Washington,_D.C.> ;
+            pb:A1         <http://dbpedia.org/resource/Washington,_D.C.> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr147> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev194>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr193,rl427> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev194>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/ArthurLichteArthurLichte> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ArthurLichteArthurLichte> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ArthurLichteArthurLichte> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ArthurLichteArthurLichte> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/ArthurLichteArthurLichte> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr149> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev196>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr200,rl441> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev196>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tr150> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev197>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr206,rl459> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev197>
+            sem:hasActor       <http://dbpedia.org/resource/Michael_M._Sears> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Time>
+                    <http://dbpedia.org/resource/Michael_M._Sears> ;
+            pb:A2              <http://dbpedia.org/resource/Michael_M._Sears> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr206,rl460> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev197>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_Air_Force> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Time>
+                    <http://dbpedia.org/resource/United_States_Air_Force> ;
+            pb:A2              <http://dbpedia.org/resource/United_States_Air_Force> .
+}
+
+<http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#pr206,rl461> {
+    <http://en.wikinews.org/wiki/Northrop_Grumman_and_Airbus_parent_EADS_defeat_Boeing_for_$40_billion_US_airtanker_contract#ev197>
+            sem:hasActor  <http://dbpedia.org/resource/Darleen_Druyun> ;
+            pb:A0         <http://dbpedia.org/resource/Darleen_Druyun> .
+}

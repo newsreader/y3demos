@@ -1,0 +1,1622 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Receiving , eso:Getting ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=16,23> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=124,131> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=968,975> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1635,1642> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1946,1953> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5162,5170> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "General Motor 's" , "GM 's" , "General motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=0,2> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2016,2031> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1888,1890> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2823,2825> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2929,2933> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2716,2720> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2863,2868> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2391,2393> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2176,2178> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5141,5143> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2455,2457> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=102,104> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1931,1934> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4012,4014> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2877,2880> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2214,2219> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=86,100> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2716,2718> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2929,2931> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" , "Chrysler 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=7,15> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1169,1179> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1049,1057> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1565,1573> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4019,4027> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1809,1819> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1365,1373> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=954,962> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2667,2677> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5148,5156> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1503,1513> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1419,1427> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1113,1115> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=110,118> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1169,1177> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1503,1511> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1809,1817> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2667,2675> .
+    
+    <http://dbpedia.org/resource/Canada>
+            rdfs:label     "Canada" , "Canada 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=168,174> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3099,3107> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1841,1847> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=596,602> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2708,2714> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=513,519> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3099,3105> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "we" , "our" , "the company" , "the United states" , "America" , "CA$ 1 billion" , "the US" , "their" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=44,46> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=277,279> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=634,636> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=650,653> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=299,312> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=414,416> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=617,619> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=455,457> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=606,608> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=492,509> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=830,847> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=778,785> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1266,1268> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=976,988> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4316,4322> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1652,1654> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4714,4719> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4259,4265> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4478,4481> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4263,4265> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4320,4322> .
+    
+    <http://www.newsreader-project.eu/time/20090403>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090403> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "loan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=33,38> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=139,144> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1153,1157> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5198,5203> .
+    
+    <http://www.newsreader-project.eu/time/200812>
+            a              time:DateTimeDescription ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx11>
+            a                time:Instant ;
+            rdfs:label       "December" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5132,5140> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200812> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , fn:Reforming_a_system , eso:Placing ;
+            rdfs:label     "restructure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=47,60> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1919,1930> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3487,3498> .
+    
+    <http://www.newsreader-project.eu/time/200805>
+            a              time:DateTimeDescription ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx5>
+            a                time:Instant ;
+            rdfs:label       "the end of May" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1901,1915> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200805> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=154,164> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=194,204> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=280,291> .
+    
+    <http://dbpedia.org/resource/Government_of_Ontario>
+            rdfs:label     "Ontario" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=208,215> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev43>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "reinvent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=317,325> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 3 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=71,84> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090403> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Test_the_test ;
+            rdfs:label     "symbol" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=768,774> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Separating , fn:Becoming_separated , fn:Separation , eso:Separating ;
+            rdfs:label     "part" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1161,1165> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1495,1499> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1979,1983> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2921,2925> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3905,3910> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4185,4190> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4395,4400> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3>
+            a                  time:Interval ;
+            rdfs:label         "30 day" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1243,1250> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090403> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20090503> .
+    
+    <http://www.newsreader-project.eu/time/20090503>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20090329>
+            a              time:DateTimeDescription ;
+            time:day       "---29"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx6>
+            a                time:Instant ;
+            rdfs:label       "Sunday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2074,2080> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090329> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Collaboration , eso:Collaboration ;
+            rdfs:label     "partnership" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1214,1225> .
+    
+    <http://dbpedia.org/resource/Fiat>
+            rdfs:label     "Fiat" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1231,1235> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1285,1289> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev59>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Giving ;
+            rdfs:label     "administration" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1269,1283> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev60>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "appease" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1254,1261> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev61>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "supplier" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1295,1303> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3911,3920> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4191,4200> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4365,4374> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4401,4409> .
+    
+    <http://dbpedia.org/resource/Delhi>
+            rdfs:label     "Delhi" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4384,4389> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev62>
+            a              sem:Event , nwrontology:contextualEvent , fn:Death ;
+            rdfs:label     "bankruptcy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1434,1444> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev64>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1552,1561> .
+    
+    <http://www.newsreader-project.eu/time/200803>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4>
+            a                time:Instant ;
+            rdfs:label       "March of 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1872,1885> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200803> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev67>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , fn:Change_position_on_a_scale , fn:Expansion , eso:JoiningAnOrganization , eso:Decreasing ;
+            rdfs:label     "contract" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1725,1733> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4037,4046> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4167,4176> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev68>
+            a              sem:Event , nwrontology:contextualEvent , eso:Decreasing , fn:Cause_change_of_position_on_a_scale ;
+            rdfs:label     "reduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1737,1743> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2831,2837> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev71>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1825,1830> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2738,2743> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4005,4010> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4307,4312> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev72>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "volume" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1831,1837> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2744,2750> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev76>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "executive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2038,2047> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev79>
+            a              sem:Event , nwrontology:contextualEvent , eso:Placing , eso:Collaboration , fn:Giving , eso:Giving , fn:Submitting_documents , fn:Motion , eso:Motion ;
+            rdfs:label     "submit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2183,2192> .
+    
+    <http://www.newsreader-project.eu/time/20090407>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2163,2170> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090407> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev84>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "task" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2358,2362> .
+    
+    <http://dbpedia.org/resource/Barack_Obama>
+            rdfs:label     "Obama" , "Barack Obama" , "Obama 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=803,815> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3376,3381> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3888,3893> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2345,2352> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9>
+            a                  time:Interval ;
+            rdfs:label         "the 1 two year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2617,2636> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090403> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20110403> .
+    
+    <http://www.newsreader-project.eu/time/20110403>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev85>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_motion , fn:Intentionally_create , eso:Translocation ;
+            rdfs:label     "force" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2363,2368> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev87>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "program" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2509,2516> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/GMTotalConfidence>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "GM Total Confidence ''" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2488,2509> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev88>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "provide" , "supply" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2517,2526> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4047,4054> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4652,4660> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2967,2976> .
+    
+    <http://dbpedia.org/resource/India>
+            rdfs:label     "India" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3950,3955> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4098,4103> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev102>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "Minister" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3108,3116> .
+    
+    <http://dbpedia.org/resource/Ministry_of_Trade_and_Industry_(Norway)>
+            rdfs:label     "Minister of Industry" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3108,3128> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev103>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "re-negotiate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3196,3208> .
+    
+    <http://dbpedia.org/resource/Canadian_Auto_Workers>
+            rdfs:label     "CAW" , "canadian Auto workers" , "United Auto Workers" , "the CAW" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1699,1720> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3236,3255> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3145,3152> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1721,1724> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3149,3152> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev106>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "proceeding" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3426,3437> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev114>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Exporting , fn:Sending , eso:Exporting ;
+            rdfs:label     "exporter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3937,3946> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev116>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "vendor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4087,4094> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev118>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_make_progress , fn:Coming_to_be ;
+            rdfs:label     "development" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4243,4255> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev122>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , eso:Placing , fn:Causation ;
+            rdfs:label     "put" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4621,4624> .
+    
+    <http://dbpedia.org/resource/Betty_Sutton>
+            rdfs:label     "Betty Sutton" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4586,4598> .
+    
+    <http://dbpedia.org/resource/Ohio>
+            rdfs:label     "Ohio" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4600,4604> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev126>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "chairman" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5027,5035> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford Motor Co." , "Ford Motor Company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5039,5053> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5055,5073> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev127>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Successful_action , fn:Success_or_failure ;
+            rdfs:label     "success" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=788,795> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev128>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Successful_action , fn:Success_or_failure ;
+            rdfs:label     "succeed" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1058,1066> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev129>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Inclusion , eso:Merging ;
+            rdfs:label     "include" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1204,1211> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev130>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance ;
+            rdfs:label     "help" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1360,1364> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev131>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1891,1894> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev134>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , eso:Transportation ;
+            rdfs:label     "bring" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2467,2474> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev143>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Arriving , fn:Reveal_secret , eso:Arriving ;
+            rdfs:label     "come" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5082,5086> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev147>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1108,1112> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1194,1198> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1528,1533> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2209,2213> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev149>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1574,1583> .
+    
+    <http://dbpedia.org/resource/Thomas_W._LaSorda>
+            rdfs:label     "Tom LaSorda" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1535,1546> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev150>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving , fn:Motion , eso:Motion , fn:Committing_crime , fn:Institutionalization , fn:Commitment , fn:Imposing_obligation , fn:Using_resource , eso:IntentionalEvent ;
+            rdfs:label     "commitment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1655,1665> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev151>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting ;
+            rdfs:label     "speak" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2150,2155> .
+    
+    <http://dbpedia.org/resource/Henderson,_Kentucky>
+            rdfs:label     "Henderson" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2140,2149> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2570,2573> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2315,2317> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev154>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "negotiate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2401,2410> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev155>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announcement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2692,2704> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev156>
+            a              sem:Event , nwrontology:sourceEvent , fn:Perception_body ;
+            rdfs:label     "ailment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2934,2942> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev159>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Supporting , fn:Taking_sides ;
+            rdfs:label     "support" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3158,3165> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev162>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "negotiator" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3256,3266> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev163>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3271,3275> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev164>
+            a              sem:Event , nwrontology:sourceEvent , fn:Perception_active , fn:Scrutiny ;
+            rdfs:label     "look" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3400,3407> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev171>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3883,3887> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev172>
+            a              sem:Event , nwrontology:contextualEvent , fn:Perception_active , fn:Seeking ;
+            rdfs:label     "watch" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4230,4238> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev173>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "gauge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4269,4274> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev174>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4377,4381> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4569,4573> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4989,4993> .
+    
+    <http://dbpedia.org/resource/Frederic_Clements>
+            rdfs:label     "Clements" , "Tony Clement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4574,4582> , <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3085,3097> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr1> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev39>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=124,131> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=0,23> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr4,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=124,174> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr28,rl63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=968,988> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5132,5203> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=0,38> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1901,1930> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr60,rl133>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1888,1930> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=194,204> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=150,174> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr7,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=194,215> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=71,325> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=299,325> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr24,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=768,795> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1161,1250> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1979,2080> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr104,rl239>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2921,2942> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1214,1250> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr35,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1214,1235> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1243,1283> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr36,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1266,1283> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1243,1261> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr37,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1254,1283> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1243,1303> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr167,rl380>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4384,4409> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1434,1444> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr40,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1419,1444> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1552,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr46,rl99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1548,1573> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1725,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr151,rl346>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4012,4046> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1737,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr97,rl223>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2823,2837> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1825,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr55,rl123>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1809,1830> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr93,rl214>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2716,2743> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr163,rl373>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4307,4322> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1831,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr56,rl125>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1809,1837> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr56,rl128>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1831,1847> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr94,rl216>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2716,2750> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2038,2080> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr65,rl143>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2016,2047> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2163,2192> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr69,rl154>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2176,2192> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2163,2362> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2358,2636> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr77,rl172>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2345,2362> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2163,2368> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2363,2636> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr78,rl174>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2345,2368> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2509,2636> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr83,rl189>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2487,2516> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2517,2636> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr152,rl350>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4047,4103> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr113,rl256>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3099,3116> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr113,rl257>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3108,3128> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr115,rl261>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3145,3208> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr125,rl285>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3372,3437> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr148,rl342>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3937,3955> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr153,rl351>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4087,4103> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr160,rl367>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4243,4265> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr174,rl394>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4586,4624> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr174,rl395>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4600,4624> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr186,rl428>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5017,5053> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr25,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=778,795> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1058,1250> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr29,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1049,1066> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1204,1250> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr32,rl71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1204,1235> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1360,1364> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr39,rl84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1360,1373> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1891,1915> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr59,rl131>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1888,1894> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2467,2636> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr82,rl185>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2455,2474> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5082,5140> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr187,rl430>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=5055,5086> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1194,1250> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2163,2213> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr34,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1169,1198> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr70,rl156>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2176,2213> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1574,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr43,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1535,1583> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1655,1885> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr50,rl109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=1652,1665> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2150,2170> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr68,rl151>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2140,2155> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr119>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2163,2410> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr120>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2401,2636> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr80,rl180>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2391,2410> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2617,2704> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr92,rl211>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2667,2704> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr105,rl240>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=2929,2942> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr125>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3158,3165> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr114,rl258>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3145,3165> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr119,rl270>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3236,3266> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr120,rl272>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3234,3275> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr124,rl282>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3372,3407> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr144,rl332>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=3883,3893> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr158,rl363>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4230,4265> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr159,rl365>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4239,4274> .
+    
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr170,rl386>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#char=4569,4582> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr1,rl1> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev39>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr4,rl11> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev39>
+            sem:hasActor            <http://dbpedia.org/resource/Canada> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Canada> ;
+            pb:A2                   <http://dbpedia.org/resource/Canada> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr28,rl63> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev39>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr2> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr2,rl4> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev40>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr3> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr60,rl133> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev41>
+            sem:hasActor                 <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reforming_a_system@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                        <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr4> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev42>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr6,rl13> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/Canada> ;
+            pb:A0                 <http://dbpedia.org/resource/Canada> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr7,rl17> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/Government_of_Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/Government_of_Ontario> ;
+            pb:A0                 <http://dbpedia.org/resource/Government_of_Ontario> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr5> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr9,rl20> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev43>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr15> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr24,rl54> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev54>
+            sem:hasActor               <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Test_the_test@Criteria>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                      <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr18> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr19> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr104,rl239> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev57>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:separating-theme_3  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr20> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr35,rl77> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev58>
+            sem:hasActor                 <http://dbpedia.org/resource/Fiat> ;
+            eso:collaboration-partner_2  <http://dbpedia.org/resource/Fiat> ;
+            eso:collaboration-partners   <http://dbpedia.org/resource/Fiat> ;
+            pb:A1                        <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr21> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr36,rl78> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev59>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr22> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr37,rl79> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev60>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr23> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr167,rl380> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev61>
+            sem:hasActor            <http://dbpedia.org/resource/Delhi> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Delhi> ;
+            pb:A2                   <http://dbpedia.org/resource/Delhi> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr24> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev62>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr40,rl86> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev62>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Death@Protagonist>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr26> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr46,rl99> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr29> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr151,rl346> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev67>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> , <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr30> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr97,rl223> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev68>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Cause>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr33> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr55,rl123> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev71>
+            sem:hasActor            <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                   <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr93,rl214> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev71>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr163,rl373> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev71>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr34> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr56,rl125> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev72>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr56,rl128> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev72>
+            sem:hasActor  <http://dbpedia.org/resource/Canada> ;
+            pb:A3         <http://dbpedia.org/resource/Canada> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr94,rl216> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev72>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr37> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr65,rl143> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev76>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr40> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev79>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr69,rl154> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev79>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Submitting_documents@Authority>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Submitting_documents@Submittor>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr45> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev84>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr46> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev84>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr77,rl172> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev84>
+            sem:hasActor  <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0         <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr47> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev85>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr48> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev85>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr78,rl174> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev85>
+            sem:hasActor            <http://dbpedia.org/resource/Barack_Obama> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A2                   <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr51> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev87>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr83,rl189> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev87>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/GMTotalConfidence> ;
+            pb:A1         <http://www.newsreader-project.eu/data/wikinews/entities/GMTotalConfidence> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr52> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr152,rl350> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev88>
+            sem:hasActor            <http://dbpedia.org/resource/India> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/India> ;
+            pb:A2                   <http://dbpedia.org/resource/India> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr66> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev102>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr113,rl256> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev102>
+            sem:hasActor  <http://dbpedia.org/resource/Canada> ;
+            pb:A0         <http://dbpedia.org/resource/Canada> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr113,rl257> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev102>
+            sem:hasActor  <http://dbpedia.org/resource/Ministry_of_Trade_and_Industry_(Norway)> ;
+            pb:A1         <http://dbpedia.org/resource/Ministry_of_Trade_and_Industry_(Norway)> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr67> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev103>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr115,rl261> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev103>
+            sem:hasActor  <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A0         <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr70> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev106>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr125,rl285> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev106>
+            sem:hasActor  <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0         <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr77> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev114>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr148,rl342> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev114>
+            sem:hasPlace  <http://dbpedia.org/resource/India> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/India> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr79> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev116>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr153,rl351> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev116>
+            sem:hasActor  <http://dbpedia.org/resource/India> ;
+            pb:A0         <http://dbpedia.org/resource/India> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr81> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev118>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr160,rl367> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev118>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr84> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev122>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr174,rl394> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev122>
+            sem:hasActor        <http://dbpedia.org/resource/Betty_Sutton> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Cause>
+                    <http://dbpedia.org/resource/Betty_Sutton> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Betty_Sutton> ;
+            pb:A0               <http://dbpedia.org/resource/Betty_Sutton> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr174,rl395> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev122>
+            sem:hasActor        <http://dbpedia.org/resource/Ohio> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Cause>
+                    <http://dbpedia.org/resource/Ohio> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Ohio> ;
+            pb:A0               <http://dbpedia.org/resource/Ohio> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr88> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev126>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr186,rl428> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev126>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr89> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev127>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr25,rl55> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev127>
+            sem:hasActor                 <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Success_or_failure@Agent>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Successful_action@Cause>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                        <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr90> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev128>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr29,rl64> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev128>
+            sem:hasActor                 <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Success_or_failure@Agent>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Successful_action@Cause>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                        <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr91> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev129>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr32,rl71> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev129>
+            sem:hasActor       <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inclusion@Part>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A1              <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr92> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev130>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr39,rl84> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev130>
+            sem:hasActor                <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Focal_entity>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Goal>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1                       <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr93> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev131>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr59,rl131> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev131>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr97> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev134>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr82,rl185> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev134>
+            sem:hasActor       <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Bringing@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0              <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr106> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev143>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr187,rl430> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev143>
+            sem:hasActor             <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1                    <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr110> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev147>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr111> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev147>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr34,rl75> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev147>
+            sem:hasActor      <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0             <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr70,rl156> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev147>
+            sem:hasActor      <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0             <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr113> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev149>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr43,rl94> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev149>
+            sem:hasActor          <http://dbpedia.org/resource/Thomas_W._LaSorda> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Thomas_W._LaSorda> ;
+            pb:A0                 <http://dbpedia.org/resource/Thomas_W._LaSorda> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr114> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev150>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr50,rl109> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev150>
+            sem:hasActor                  <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Commitment@Topic>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Committing_crime@Crime>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Imposing_obligation@Means>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Institutionalization@Patient>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr115> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev151>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr68,rl151> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev151>
+            sem:hasActor                <http://dbpedia.org/resource/Henderson,_Kentucky> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/Henderson,_Kentucky> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Henderson,_Kentucky> ;
+            pb:A0                       <http://dbpedia.org/resource/Henderson,_Kentucky> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr119> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev154>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr120> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev154>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr80,rl180> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev154>
+            sem:hasActor                  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr121> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev155>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr92,rl211> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev155>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr122> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev156>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr105,rl240> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev156>
+            sem:hasActor                  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_body@Body_part>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr125> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev159>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr114,rl258> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev159>
+            sem:hasActor              <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Supporting@Supporter>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Taking_sides@Cognizer>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A0                     <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr128> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev162>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr119,rl270> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev162>
+            sem:hasActor                  <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A0                         <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr129> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev163>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr120,rl272> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev163>
+            sem:hasActor             <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A0                    <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr130> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev164>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr124,rl282> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev164>
+            sem:hasActor          <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_active@Perceiver_agentive>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0                 <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr137> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev171>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr144,rl332> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev171>
+            sem:hasActor             <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0                    <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr138> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev172>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr158,rl363> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev172>
+            sem:hasActor              <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_active@Phenomenon>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Seeking@Sought_entity>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr139> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev173>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr159,rl365> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev173>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tr140> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev174>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#pr170,rl386> {
+    <http://en.wikinews.org/wiki/GM_and_Chrysler_receive_Canadian_loans_amid_US_restructuring_ultimata#ev174>
+            sem:hasActor             <http://dbpedia.org/resource/Frederic_Clements> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Frederic_Clements> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Frederic_Clements> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Frederic_Clements> ;
+            pb:A0                    <http://dbpedia.org/resource/Frederic_Clements> .
+}

@@ -1,0 +1,418 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=36,40> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=103,107> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=519,526> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=615,619> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=656,662> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=768,772> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=807,811> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1092,1097> .
+    
+    <http://dbpedia.org/resource/HBOS>
+            rdfs:label     "HBOS" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=514,518> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow Jones" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=586,595> .
+    
+    <http://dbpedia.org/resource/NASDAQ>
+            rdfs:label     "Nasdaq" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=789,795> .
+    
+    <http://www.newsreader-project.eu/time/20081007>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=121,126> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081007> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=620,625> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081007> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=825,830> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081007> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1072,1077> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081007> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Removing , eso:Removing ;
+            rdfs:label     "bail" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=232,236> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernments>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the US Government 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=199,218> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=299,304> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=339,346> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=596,601> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=796,801> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "UK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=296,298> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=504,510> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "spokesperson" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1028,1040> .
+    
+    <http://dbpedia.org/resource/White_House>
+            rdfs:label     "the White House" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1045,1060> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev49>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_end , fn:Destroying , fn:Process_end , eso:Destroying ;
+            rdfs:label     "end" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=554,557> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_ongoing , fn:Process_continue , eso:IntentionalEvent ;
+            rdfs:label     "continue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=602,611> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev57>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Earnings_and_losses ;
+            rdfs:label     "fare" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=480,485> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=748,753> .
+    
+    <http://dbpedia.org/resource/Bank_of_America>
+            rdfs:label     "Bank of America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=732,747> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev62>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "insure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1362,1369> .
+    
+    <http://dbpedia.org/resource/Federal_Deposit_Insurance_Corporation>
+            rdfs:label     "FDIC" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1377,1381> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081007> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev69>
+            a              sem:Event , nwrontology:sourceEvent , fn:Hear , fn:Perception_experience ;
+            rdfs:label     "hear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1891,1895> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1918,1935> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr1> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=103,126> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=615,662> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=807,830> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1072,1097> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr17,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=504,526> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr23,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=582,619> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr30,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=785,811> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=121,236> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr9,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=199,236> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=596,625> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=796,830> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr11,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=296,304> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr21,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=586,601> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr29,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=789,801> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=504,625> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr20,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=504,518> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1028,1077> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr36,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1028,1060> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=554,625> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr19,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=504,557> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=602,625> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr22,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=582,611> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=480,753> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=748,830> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr27,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=732,753> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr47,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1362,1381> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr70,rl156>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#char=1891,1935> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr2> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr3> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr4> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr17,rl37> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasActor       <http://dbpedia.org/resource/HBOS> ;
+            eso:quantity-item  <http://dbpedia.org/resource/HBOS> ;
+            pb:A1              <http://dbpedia.org/resource/HBOS> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr23,rl47> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasActor       <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1              <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr30,rl62> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev13>
+            sem:hasActor       <http://dbpedia.org/resource/NASDAQ> ;
+            eso:quantity-item  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A1              <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr6> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr9,rl17> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev15>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernments> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernments> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr8> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr9> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr11,rl21> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr21,rl44> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A0         <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr29,rl59> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0         <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr12> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr20,rl43> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/HBOS> ;
+            pb:A1         <http://dbpedia.org/resource/HBOS> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr20> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr36,rl79> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/White_House> ;
+            pb:A1         <http://dbpedia.org/resource/White_House> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr41> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr19,rl41> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev49>
+            sem:hasActor           <http://dbpedia.org/resource/HBOS> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_end@Agent>
+                    <http://dbpedia.org/resource/HBOS> ;
+            pb:A0                  <http://dbpedia.org/resource/HBOS> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr42> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr22,rl45> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev50>
+            sem:hasActor                  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Activity>
+                    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_continue@Event>
+                    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1                         <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr49> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr50> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr27,rl55> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev57>
+            sem:hasActor                   <http://dbpedia.org/resource/Bank_of_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Bank_of_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A0                          <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr56> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev62>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr47,rl104> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev62>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_Deposit_Insurance_Corporation> ;
+            pb:A0         <http://dbpedia.org/resource/Federal_Deposit_Insurance_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tr63> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#pr70,rl156> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_continue_to_fall#ev69>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            pb:A2         <http://dbpedia.org/resource/United_States> .
+}

@@ -1,0 +1,840 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Experience_bodily_harm ;
+            rdfs:label     "cut" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=19,26> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=143,146> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=561,564> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1219,1222> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1299,1302> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Ford Motor Company" , "the Ford Motor Company" , "the company 's" , "their" , "Ford 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=0,18> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=70,88> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2522,2526> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2317,2321> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1062,1066> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=753,757> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=862,866> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=66,88> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1743,1747> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2374,2387> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2493,2498> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2954,2960> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=612,618> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=503,509> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=335,341> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=216,220> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2339,2342> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=400,406> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=335,339> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=400,404> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=503,507> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=612,616> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2954,2958> .
+    
+    <http://www.newsreader-project.eu/time/20060123>
+            a              time:DateTimeDescription ;
+            time:day       "---23"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060123> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=113,125> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=129,136> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx4>
+            a                time:Instant ;
+            rdfs:label       "last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=249,258> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev34>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "los" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=422,428> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=432,436> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev38>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "workforce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=525,534> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the end of this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=664,684> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Closure , fn:Body_movement , eso:Motion ;
+            rdfs:label     "close" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=587,593> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=727,733> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=929,934> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1085,1091> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1980,1985> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2209,2214> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2267,2273> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=3131,3137> .
+    
+    <http://dbpedia.org/resource/Clarence_Thomas>
+            rdfs:label     "St. Louis" , "Thomas" , "St. Thomas" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2012,2018> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=702,711> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1173,1183> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=803,812> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev41>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "capacity" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=630,638> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev45>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "union" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1151,1156> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1388,1393> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2434,2439> .
+    
+    <http://dbpedia.org/resource/Automotive_industry>
+            rdfs:label     "canadian Auto workers" , "Automotive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1897,1907> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1366,1387> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1129,1150> .
+    
+    <http://dbpedia.org/resource/United_Auto_Workers>
+            rdfs:label     "UAW" , "United Auto workers" , "the UAW" , "the union" , "the United Auto workers union" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2414,2433> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2678,2681> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2792,2799> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2558,2567> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2410,2439> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2796,2799> .
+    
+    <http://www.newsreader-project.eu/time/1520>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1520"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8>
+            a                time:Instant ;
+            rdfs:label       "local 1520" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1354,1364> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1520> .
+    
+    <http://www.newsreader-project.eu/time/15200101>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1520"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1429,1434> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/15200101> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Change_of_leadership , eso:Replacing , eso:Giving ;
+            rdfs:label     "invest" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1598,1606> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1770,1776> .
+    
+    <http://dbpedia.org/resource/Ontario>
+            rdfs:label     "the plant" , "Ontario" , "Ontario plant" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1020,1027> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1185,1192> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1725,1734> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1185,1198> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1795,1804> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1232,1241> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev55>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "news" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1716,1720> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Shoot_projectiles , fn:Use_firearm , fn:Firing , fn:Quitting , eso:LeavingAnOrganization ;
+            rdfs:label     "fire" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2327,2331> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev63>
+            a              sem:Event , nwrontology:contextualEvent , fn:Receiving , eso:Getting ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2483,2492> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2618,2623> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060123> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , fn:Change_position_on_a_scale , fn:Expansion , eso:JoiningAnOrganization , eso:Decreasing ;
+            rdfs:label     "contract" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2396,2404> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2544,2552> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev68>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Creating , fn:Supply , fn:Emanating ;
+            rdfs:label     "issue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2800,2806> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev70>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2976,2981> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev80>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating , fn:Creating , fn:Arriving , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Self_motion ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=743,748> .
+    
+    <http://dbpedia.org/resource/Atlanta>
+            rdfs:label     "Atlanta" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=690,697> , <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=735,742> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7>
+            a                time:Instant ;
+            rdfs:label       "2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=910,914> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev83>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating , fn:Creating , fn:Arriving , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Self_motion ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1242,1247> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev88>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , eso:Replacing , fn:Taking , eso:Taking ;
+            rdfs:label     "relieve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=208,215> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev90>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1049,1058> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev91>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "negotiation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1107,1119> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev92>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1394,1398> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/WhiteyMacDonald>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Whitey MacDonald" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1321,1337> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev95>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Giving , eso:Giving , fn:Motion , fn:Committing_crime , fn:Institutionalization , fn:Commitment , fn:Imposing_obligation , fn:Using_resource , eso:IntentionalEvent ;
+            rdfs:label     "commit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1757,1766> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev97>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1997,2001> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/DesRoiserDesRoiser>
+            a              nwrontology:PERSON ;
+            rdfs:label     "DesRoiser" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1987,1996> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev101>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "negotiate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2527,2537> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev104>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr1> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev28>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=143,146> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=0,26> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=113,258> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr3,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=113,136> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=422,436> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=400,428> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=432,534> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=525,684> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr18,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=503,534> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=929,934> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr24,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=686,733> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=432,638> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=630,684> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr21,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=612,638> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1354,1393> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1388,1434> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr36,rl81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1138,1156> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr78,rl175>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2414,2439> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr58,rl127>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1743,1776> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr58,rl129>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1770,1804> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr56,rl123>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1716,1734> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2327,2331> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr73,rl159>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2317,2331> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2483,2623> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr76,rl166>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2367,2492> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2396,2623> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr77,rl172>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2374,2404> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr77,rl174>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2396,2439> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr87,rl199>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2792,2806> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr93,rl213>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2954,2981> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=664,748> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=743,914> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr26,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=735,748> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1242,1364> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1242,1434> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr39,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1232,1247> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=208,258> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=208,220> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=910,1058> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr33,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1049,1066> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=910,1119> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr35,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1107,1156> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1354,1398> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1394,1434> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr40,rl91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1321,1398> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr40,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1366,1398> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr57,rl124>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1743,1766> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr64,rl140>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1987,2001> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2527,2623> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr81,rl181>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2522,2537> .
+    
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr88,rl201>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2792,2816> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experience_bodily_harm@Experiencer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr2> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr3,rl10> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev29>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr8> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr11,rl23> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr15> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr16> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr18,rl35> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr17> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev39>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr24,rl49> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev39>
+            sem:hasActor                  <http://dbpedia.org/resource/Clarence_Thomas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Body_part>
+                    <http://dbpedia.org/resource/Clarence_Thomas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Containing_object>
+                    <http://dbpedia.org/resource/Clarence_Thomas> ;
+            pb:A1                         <http://dbpedia.org/resource/Clarence_Thomas> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr20> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr21> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr21,rl42> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr26> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr27> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr36,rl81> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev45>
+            sem:hasActor  <http://dbpedia.org/resource/Automotive_industry> ;
+            pb:A1         <http://dbpedia.org/resource/Automotive_industry> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr78,rl175> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev45>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A1         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr35> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr58,rl127> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev50>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr58,rl129> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev50>
+            sem:hasActor  <http://dbpedia.org/resource/Ontario> ;
+            pb:A2         <http://dbpedia.org/resource/Ontario> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr40> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr56,rl123> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev55>
+            sem:hasActor  <http://dbpedia.org/resource/Ontario> ;
+            pb:A1         <http://dbpedia.org/resource/Ontario> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr46> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev60>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr73,rl159> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev60>
+            sem:hasActor             <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:employment-employer  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                    <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr48> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr76,rl166> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev63>
+            sem:hasActor            <http://dbpedia.org/resource/United_Auto_Workers> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0                   <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr49> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr77,rl172> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr77,rl174> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A2         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr53> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr87,rl199> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev68>
+            sem:hasActor         <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Creating@Creator>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0                <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr55> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr93,rl213> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev70>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr67> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev80>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr68> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev80>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr26,rl52> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev80>
+            sem:hasActor                   <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/Atlanta> ;
+            pb:A0                          <http://dbpedia.org/resource/Atlanta> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr71> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr72> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr39,rl88> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev83>
+            sem:hasActor                   <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Ontario> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/Ontario> ;
+            pb:A0                          <http://dbpedia.org/resource/Ontario> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr76> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr6,rl14> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev88>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr78> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev90>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr33,rl74> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev90>
+            sem:hasActor          <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                 <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr79> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev91>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr35,rl79> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev91>
+            sem:hasActor                  <http://dbpedia.org/resource/Automotive_industry> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_2>
+                    <http://dbpedia.org/resource/Automotive_industry> ;
+            pb:A2                         <http://dbpedia.org/resource/Automotive_industry> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr80> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr81> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr40,rl91> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev92>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/WhiteyMacDonald> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/WhiteyMacDonald> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/WhiteyMacDonald> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/WhiteyMacDonald> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/WhiteyMacDonald> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr40,rl92> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev92>
+            sem:hasActor             <http://dbpedia.org/resource/Automotive_industry> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Automotive_industry> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Automotive_industry> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Automotive_industry> ;
+            pb:A0                    <http://dbpedia.org/resource/Automotive_industry> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr85> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev95>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr57,rl124> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev95>
+            sem:hasActor                  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Commitment@Topic>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Committing_crime@Crime>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Imposing_obligation@Means>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Institutionalization@Patient>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1                         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr87> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev97>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr64,rl140> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev97>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/DesRoiserDesRoiser> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/DesRoiserDesRoiser> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/DesRoiserDesRoiser> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/DesRoiserDesRoiser> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/DesRoiserDesRoiser> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr92> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev101>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr81,rl181> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev101>
+            sem:hasActor                  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tr95> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev104>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#pr88,rl201> {
+    <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#ev104>
+            sem:hasActor          <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0                 <http://dbpedia.org/resource/United_Auto_Workers> .
+}

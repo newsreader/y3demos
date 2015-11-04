@@ -1,0 +1,610 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1116,1128>
+          rdfs:comment        "announced" ;
+          rdfs:label          "subscription" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1080,1089> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <u_NON_FUTURE_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1080,1089>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1138,1143>
+          rdfs:comment        "announced" ;
+          rdfs:label          "built" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1080,1089> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1462,1470>
+          rdfs:comment        "announced" ;
+          rdfs:label          "released" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1421,1430> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Waugh> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1421,1430>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1595,1600>
+          rdfs:comment        "announced" ;
+          rdfs:label          "begin" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1554,1563> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr2>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1554,1563>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1607,1614>
+          rdfs:comment        "announced" ;
+          rdfs:label          "shipped" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1554,1563> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1671,1677>
+          rdfs:comment        "announced" ;
+          rdfs:label          "ending" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1554,1563> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1626,1636>
+          rdfs:comment        "announced" ;
+          rdfs:label          "processors" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1554,1563> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1694,1705>
+          rdfs:comment        "announced" ;
+          rdfs:label          "partnership" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1554,1563> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1903,1908>
+          rdfs:comment        "note" ;
+          rdfs:label          "added" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1874,1878> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr3>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1874,1878>
+          rdfs:label          "note" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1968,1978>
+          rdfs:comment        "note" ;
+          rdfs:label          "processors" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1874,1878> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=30,35>
+          rdfs:label          "gives" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=36,43>
+          rdfs:label          "opening" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=125,129>
+          rdfs:label          "gave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=149,156>
+          rdfs:label          "keynote" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=265,274>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=286,297>
+          rdfs:label          "integration" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=301,311>
+          rdfs:label          "podcasting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=399,406>
+          rdfs:label          "feature" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr7>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=337,346>
+          rdfs:label          "amazement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=413,423>
+          rdfs:label          "processors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=431,439>
+          rdfs:label          "welcomed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=466,475>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=529,538>
+          rdfs:label          "engineers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=575,585>
+          rdfs:label          "conference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=629,639>
+          rdfs:label          "developers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=649,657>
+          rdfs:label          "programs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=671,675>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=687,690>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=746,754>
+          rdfs:label          "creating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=783,790>
+          rdfs:label          "revenue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=807,812>
+          rdfs:label          "share" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=853,858>
+          rdfs:label          "moved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=865,869>
+          rdfs:label          "talk" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr22>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=895,907>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=927,933>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=975,981>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1004,1009>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1186,1195>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1268,1277>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1252,1258>
+          rdfs:label          "Moving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1325,1329>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1309,1315>
+          rdfs:label          "copies" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1376,1382>
+          rdfs:label          "demoed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1407,1413>
+          rdfs:label          "widget" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1537,1541>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1737,1741>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1774,1785>
+          rdfs:label          "frustration" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1763,1773>
+          rdfs:label          "increasing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1795,1804>
+          rdfs:label          "inability" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1834,1844>
+          rdfs:label          "processors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1808,1815>
+          rdfs:label          "deliver" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2010,2016>
+          rdfs:label          "happen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr45>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2017,2026>
+          rdfs:label          "beginning" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr46>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=1998,2002>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2043,2047>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2066,2069>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2112,2120>
+          rdfs:label          "compiled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2132,2142>
+          rdfs:label          "processors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2142,2143>
+          rdfs:label          "]" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2164,2170>
+          rdfs:label          "talked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2181,2189>
+          rdfs:label          "easiness" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2223,2227>
+          rdfs:label          "apps" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2208,2212>
+          rdfs:label          "port" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr56>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2243,2253>
+          rdfs:label          "processors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr57>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2271,2279>
+          rdfs:label          "programs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2287,2290>
+          rdfs:label          "run" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2300,2310>
+          rdfs:label          "processors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr60>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2330,2340>
+          rdfs:label          "technology" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2345,2349>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr62>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2365,2372>
+          rdfs:label          "getting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr63>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005#char=2388,2398>
+          rdfs:label          "transition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005_dAttr64>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Computer_CEO_Steve_Jobs_gives_opening_keynote_to_WWDC_2005> .
+}

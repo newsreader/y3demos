@@ -1,0 +1,298 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , fn:Possession , eso:HavingInPossession , eso:Getting ;
+            rdfs:label     "trademark" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=32,41> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=129,138> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=250,260> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=520,529> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple Inc." , "Apple" , "Apple Corps" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=0,10> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=915,925> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=631,641> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=97,99> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=1009,1011> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=112,115> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=220,230> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=69,79> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=244,249> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=893,904> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=915,920> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=514,519> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=286,297> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=181,192> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=12,23> .
+    
+    <http://www.newsreader-project.eu/time/20070205>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=90,96> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070205> .
+    
+    <http://www.newsreader-project.eu/time/1991>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1991"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3>
+            a                time:Instant ;
+            rdfs:label       "1991" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=405,409> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1991> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "own" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=236,239> .
+    
+    <http://www.newsreader-project.eu/time/20070206>
+            a              time:DateTimeDescription ;
+            time:day       "---06"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070206> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev14>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "license" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=270,277> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Operating_a_system , eso:BeingLeader ;
+            rdfs:label     "manager" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=882,889> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_affect , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=506,509> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev31>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,89> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev37>
+            a              sem:Event , nwrontology:sourceEvent , fn:Experiencer_focus , fn:Experiencer_subj ;
+            rdfs:label     "love" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=536,540> .
+    
+    <http://dbpedia.org/resource/The_Beatles>
+            rdfs:label     "Beatles" , "the Beatles" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=156,163> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=541,552> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=626,630> , <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=862,866> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev41>
+            a              sem:Event , nwrontology:sourceEvent , fn:Desiring ;
+            rdfs:label     "wish" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=910,914> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr1> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=90,138> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=405,529> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr11,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=244,260> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=236,239> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr8,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=220,239> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=270,277> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr9,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=270,297> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr32,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=882,904> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=405,509> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr19,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=506,529> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,96> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr3,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=69,89> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=405,540> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr21,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=536,552> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=405,630> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr22,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=626,641> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr33,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=910,925> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr2> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr11,rl25> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr4> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev13>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr8,rl16> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev13>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr5> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev14>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr9,rl22> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev14>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr15> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr32,rl69> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev23>
+            sem:hasActor                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Operating_a_system@Operator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                           <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr22> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr19,rl46> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev29>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr24> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr3,rl3> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev31>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr31> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr21,rl50> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev37>
+            sem:hasActor                  <http://dbpedia.org/resource/The_Beatles> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Content>
+                    <http://dbpedia.org/resource/The_Beatles> ;
+            pb:A1                         <http://dbpedia.org/resource/The_Beatles> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr32> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr22,rl52> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev38>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tr35> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#pr33,rl72> {
+    <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#ev41>
+            sem:hasActor       <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Desiring@Event>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1              <http://dbpedia.org/resource/Apple_Inc.> .
+}

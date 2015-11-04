@@ -1,0 +1,220 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev17>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Reasoning ;
+            rdfs:label     "demonstrate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=694,706> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Computer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=0,5> , <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=80,83> , <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=683,688> , <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=49,63> .
+    
+    <http://www.newsreader-project.eu/time/20090617>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx4>
+            a                time:Instant ;
+            rdfs:label       "June 17" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=597,604> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090617> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx5>
+            a              time:Interval ;
+            rdfs:label     "two day" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=606,614> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20090609> .
+    
+    <http://www.newsreader-project.eu/time/20090609>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev19>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "highlight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=783,794> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:IntentionalEvent ;
+            rdfs:label     "model" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=884,890> .
+    
+    <http://dbpedia.org/resource/Gigabyte>
+            rdfs:label     "GB" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=871,873> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090609> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Launch_process , fn:Cause_motion , fn:Shoot_projectiles , fn:Motion , eso:Translocation ;
+            rdfs:label     "launch" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=6,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 9 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=35,47> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090609> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev28>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=70,79> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=64,69> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090609> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr17> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=597,706> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=606,706> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr22,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=683,706> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=597,794> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=606,794> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr24,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=683,794> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr30,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=871,890> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=6,47> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=64,79> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#char=49,79> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr18> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr22,rl57> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev17>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Arguer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Support>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr21> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr22> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr24,rl62> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev19>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr30> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr30,rl75> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Gigabyte> ;
+            pb:A0         <http://dbpedia.org/resource/Gigabyte> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr31> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev25>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_start@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Launch_process@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Shoot_projectiles@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tr36> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Apple_launches_new,_faster_iPhone#ev28>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}

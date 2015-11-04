@@ -1,0 +1,410 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Killing+Vector> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=298,302>
+          rdfs:comment        "announced" ;
+          rdfs:label          "move" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=274,283> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Smith_College> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=274,283>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=935,939>
+          rdfs:comment        "shows" ;
+          rdfs:label          "face" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=920,925> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=920,925>
+          rdfs:label          "shows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=16,19>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr0>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=27,31>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=70,82>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=98,102>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=117,120>
+          rdfs:label          "axe" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr4>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=149,157>
+          rdfs:label          "division" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=228,234>
+          rdfs:label          "wanted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=197,206>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=238,244>
+          rdfs:label          "reduce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr8>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=245,250>
+          rdfs:label          "costs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=327,330>
+          rdfs:label          "say" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=376,382>
+          rdfs:label          "wanted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=360,364>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=365,370>
+          rdfs:label          "place" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=386,393>
+          rdfs:label          "present" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=394,401>
+          rdfs:label          "details" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=409,413>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=426,437>
+          rdfs:label          "governments" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=486,490>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=498,508>
+          rdfs:label          "cancelling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=511,515>
+          rdfs:label          "deal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=519,523>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr22>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=561,566>
+          rdfs:label          "parts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=600,609>
+          rdfs:label          "expressed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=610,624>
+          rdfs:label          "disappointment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=633,645>
+          rdfs:label          "cancellation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=659,663>
+          rdfs:label          "deal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=700,708>
+          rdfs:label          "favoured" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=685,695>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=773,777>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=718,727>
+          rdfs:label          "behaviour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=785,792>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=793,801>
+          rdfs:label          "minister" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=825,832>
+          rdfs:label          "premier" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=879,887>
+          rdfs:label          "remarked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=847,852>
+          rdfs:label          "state" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=910,919>
+          rdfs:label          "behaviour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1024,1032>
+          rdfs:label          "welcomed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1044,1052>
+          rdfs:label          "decision" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1108,1112>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1070,1078>
+          rdfs:label          "decision" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1125,1134>
+          rdfs:label          "secretary" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1283,1287>
+          rdfs:label          "told" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1237,1241>
+          rdfs:label          "done" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel#char=1322,1330>
+          rdfs:label          "employed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automaker_GM_to_cut_10,000_jobs_at_Opel> .
+}

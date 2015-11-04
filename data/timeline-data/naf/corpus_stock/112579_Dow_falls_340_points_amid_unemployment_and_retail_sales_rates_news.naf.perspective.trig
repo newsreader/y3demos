@@ -1,0 +1,622 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=609,617>
+          rdfs:comment        "claiming" ;
+          rdfs:label          "benefits" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=580,588> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr1>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/people+claiming+weekly+unemployment+benefits> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=580,588>
+          rdfs:label          "claiming" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=789,795>
+          rdfs:comment        "indicate" , "statement" ;
+          rdfs:label          "sector" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <PROBABLE_NON_FUTURE_POS> , <PROBABLE_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/this+morning+%27s+employment+numbers> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773>
+          rdfs:comment        "statement" ;
+          rdfs:label          "indicate" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=796,803>
+          rdfs:comment        "indicate" , "statement" ;
+          rdfs:label          "remains" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=821,826>
+          rdfs:comment        "indicate" , "statement" ;
+          rdfs:label          "looks" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=830,838>
+          rdfs:comment        "indicate" , "statement" ;
+          rdfs:label          "continue" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=842,846>
+          rdfs:comment        "indicate" , "statement" ;
+          rdfs:label          "shed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=867,876>
+          rdfs:comment        "indicate" , "statement" ;
+          rdfs:label          "remainder" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=765,773> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr2> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=745,752>
+          rdfs:comment        "statement" ;
+          rdfs:label          "numbers" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <PROBABLE_NON_FUTURE_POS> , <PROBABLE_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/JosephBrusuelas> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=753,761>
+          rdfs:comment        "statement" ;
+          rdfs:label          "continue" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=4,9>
+          rdfs:label          "falls" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=56,61>
+          rdfs:label          "rates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=50,55>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=62,66>
+          rdfs:label          "news" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=201,205>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=136,141>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=150,155>
+          rdfs:label          "gauge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr6>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=160,171>
+          rdfs:label          "performance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=190,199>
+          rdfs:label          "exchanges" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=220,225>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=259,265>
+          rdfs:label          "reason" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=320,328>
+          rdfs:label          "pointing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=369,374>
+          rdfs:label          "cites" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=377,381>
+          rdfs:label          "rise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=398,405>
+          rdfs:label          "numbers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=406,414>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=462,466>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=477,482>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=483,491>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=618,622>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=563,569>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=946,950>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=915,924>
+          rdfs:label          "economist" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1017,1023>
+          rdfs:label          "posted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1026,1030>
+          rdfs:label          "gain" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1071,1076>
+          rdfs:label          "boost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1084,1092>
+          rdfs:label          "resulted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1108,1112>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1122,1127>
+          rdfs:label          "stock" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1136,1144>
+          rdfs:label          "retailer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1152,1158>
+          rdfs:label          "posted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1167,1171>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1223,1227>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1173,1179>
+          rdfs:label          "Shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1308,1312>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1330,1334>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1340,1347>
+          rdfs:label          "percent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1375,1380>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1381,1385>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1391,1398>
+          rdfs:label          "percent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1423,1427>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1428,1432>
+          rdfs:label          "left" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1472,1480>
+          rdfs:label          "decrease" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1490,1495>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr45>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1582,1586>
+          rdfs:label          "June" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1608,1616>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1671,1676>
+          rdfs:label          "cause" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1690,1694>
+          rdfs:label          "rise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr49>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1617,1629>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1660,1664>
+          rdfs:label          "data" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1681,1686>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1799,1803>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1762,1768>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1792,1798>
+          rdfs:label          "sector" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1836,1840>
+          rdfs:label          "done" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1899,1903>
+          rdfs:label          "rise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1911,1917>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1921,1925>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr59>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1973,1977>
+          rdfs:label          "rise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr60>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1985,1990>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2003,2008>
+          rdfs:label          "bonds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2014,2022>
+          rdfs:label          "reaction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr63>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2031,2039>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr64>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2068,2075>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr65>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2082,2090>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news_dAttr66>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news> .
+}

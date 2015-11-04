@@ -1,0 +1,902 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev19>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "executive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=6,15> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=119,128> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" , "when" , "Apple Inc." , "Macintosh" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=0,5> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2045,2052> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=923,927> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2478,2483> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2229,2234> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1031,1038> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1574,1581> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2585,2590> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=796,801> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=354,359> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=239,244> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=108,118> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1031,1036> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1574,1579> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2045,2050> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2079,2088> .
+    
+    <http://www.newsreader-project.eu/time/20100809>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1>
+            a                time:Instant ;
+            rdfs:label       "August 9 , 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=62,76> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100809> .
+    
+    <http://www.newsreader-project.eu/time/201007>
+            a              time:DateTimeDescription ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3>
+            a                time:Instant ;
+            rdfs:label       "last month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=264,274> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201007> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Departing , fn:Path_shape , fn:Quitting , eso:Leaving , eso:LeavingAnOrganization ;
+            rdfs:label     "leave" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=16,22> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=396,400> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=452,457> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "oversee" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=129,139> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2156,2166> .
+    
+    <http://dbpedia.org/resource/Mansfield_Town_F.C.>
+            rdfs:label     "Mansfield" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2102,2111> .
+    
+    <http://www.newsreader-project.eu/time/200811>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6>
+            a                time:Instant ;
+            rdfs:label       "November 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2241,2254> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200811> .
+    
+    <http://www.newsreader-project.eu/time/200904>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7>
+            a                time:Instant ;
+            rdfs:label       "April 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2320,2330> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200904> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Receiving , eso:Getting ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=245,253> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1358,1365> .
+    
+    <http://www.newsreader-project.eu/time/20110716>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4>
+            a                time:Instant ;
+            rdfs:label       "July 16" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1276,1283> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110716> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Departing , fn:Quitting , eso:Leaving , fn:Setting_out ;
+            rdfs:label     "departure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=602,611> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster>
+            a              nwrontology:PERSON , nwrontology:ORGANIZATION , nwrontology:LOCATION ;
+            rdfs:label     "Papermaster" , "Papermaster 's" , "Mark Papermaster" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=375,386> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2426,2437> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2203,2214> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2520,2522> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1511,1522> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1626,1637> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2389,2391> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1993,2006> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1791,1802> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=477,488> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=438,440> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=588,601> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2461,2464> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=844,846> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=557,560> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2332,2334> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=78,94> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=588,599> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1993,2004> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100809> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Cause_motion , fn:Manipulation , fn:Travel , eso:Translocation ;
+            rdfs:label     "push" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1532,1538> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev39>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "culture" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1592,1599> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Adorning , fn:Filling , eso:IntentionalEvent , eso:Merging , eso:Placing ;
+            rdfs:label     "fill" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2020,2026> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5>
+            a                time:Instant ;
+            rdfs:label       "a year ago" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1980,1990> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev46>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2065,2074> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Participation ;
+            rdfs:label     "involve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2124,2132> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev51>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "sue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2421,2425> .
+    
+    <http://dbpedia.org/resource/IBM>
+            rdfs:label     "IBM" , "where" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2378,2381> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2417,2420> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2541,2544> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2383,2388> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8>
+            a                  time:Interval ;
+            rdfs:label         "25 year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2415> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/19850809> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20100809> .
+    
+    <http://www.newsreader-project.eu/time/19850809>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1985"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev52>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Attempt , fn:Intentionally_create ;
+            rdfs:label     "attempt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2444,2451> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev53>
+            a              sem:Event , nwrontology:contextualEvent , fn:Eclipse ;
+            rdfs:label     "block" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2455,2460> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev54>
+            a              sem:Event , nwrontology:contextualEvent , eso:Merging , fn:Becoming_a_member , fn:Attaching , fn:Cause_to_amalgamate ;
+            rdfs:label     "join" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2470,2477> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev55>
+            a              sem:Event , nwrontology:contextualEvent , fn:Eclipse , fn:Emitting ;
+            rdfs:label     "secret" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2555,2562> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=823,833> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=806,816> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev59>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_affect , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1646,1650> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev63>
+            a              sem:Event , nwrontology:contextualEvent , fn:Judgment_communication , fn:Being_employed , fn:Working_a_post , eso:BeingEmployed , eso:Working ;
+            rdfs:label     "criticism" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=254,263> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev64>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "confirm" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=360,369> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev67>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "comment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=497,504> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev73>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=908,916> , <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1497,1505> .
+    
+    <http://dbpedia.org/resource/The_Wall_Street_Journal>
+            rdfs:label     "the Wall Street Journal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1473,1496> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev76>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communication_response , fn:Response ;
+            rdfs:label     "response" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1039,1047> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev82>
+            a              sem:Event , nwrontology:sourceEvent , fn:Adducing ;
+            rdfs:label     "cite" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1430,1436> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev87>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2007,2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev88>
+            a              sem:Event , nwrontology:sourceEvent , fn:Assessing ;
+            rdfs:label     "judge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2284,2289> .
+    
+    <http://dbpedia.org/resource/Federal_government_of_the_United_States>
+            rdfs:label     "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2262,2275> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev89>
+            a              sem:Event , nwrontology:contextualEvent , fn:Buildings , fn:Motion , eso:Motion ;
+            rdfs:label     "bar" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2290,2296> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev91>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reveal_secret ;
+            rdfs:label     "disclose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2572,2581> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr1> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=6,128> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=119,274> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=0,15> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=16,76> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=264,457> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=0,22> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=62,139> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=129,274> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2156,2254> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2156,2330> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr70,rl160>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2102,2166> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=245,274> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1276,1365> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr10,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=239,253> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr22,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=588,611> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1276,1538> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr50,rl111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1511,1538> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1276,1599> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr51,rl113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1574,1599> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1980,2026> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr67,rl148>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1993,2026> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1980,2074> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr68,rl151>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2045,2074> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2124,2254> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2124,2330> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr69,rl156>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2102,2132> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2425> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr79,rl181>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2417,2425> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr79,rl182>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2421,2437> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2451> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr80,rl184>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2417,2451> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2460> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr81,rl186>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2417,2460> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr81,rl188>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2455,2483> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2477> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr82,rl190>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2470,2483> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2562> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr85,rl196>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2541,2562> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr26,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=796,833> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1646,1990> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr53,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1626,1650> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=254,274> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=239,263> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=264,369> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr14,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=354,369> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr19,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=477,504> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1276,1505> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr48,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1473,1505> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr34,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1031,1047> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1276,1436> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr49,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1430,1496> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2007,2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr66,rl146>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=1993,2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2241,2289> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2284,2330> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr73,rl164>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2262,2289> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2241,2296> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2290,2330> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr74,rl167>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2260,2296> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2407,2581> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr86,rl200>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#char=2572,2590> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr2> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev19>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr3> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr4> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev20>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr7> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr8> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr9> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr10> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr70,rl160> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/Mansfield_Town_F.C.> ;
+            pb:A0         <http://dbpedia.org/resource/Mansfield_Town_F.C.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr15> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr16> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr10,rl19> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev25>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr21> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr22,rl45> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev29>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            eso:translocation-theme  <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr31> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr50,rl111> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev38>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            eso:translocation-goal   <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            eso:translocation-theme  <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A1                    <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr32> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr51,rl113> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr38> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr67,rl148> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev45>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            eso:translocation-goal  <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A1                   <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr39> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr68,rl151> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev46>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr40> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr41> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr69,rl156> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev47>
+            sem:hasActor            <http://dbpedia.org/resource/Mansfield_Town_F.C.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Participation@Event>
+                    <http://dbpedia.org/resource/Mansfield_Town_F.C.> ;
+            pb:A1                   <http://dbpedia.org/resource/Mansfield_Town_F.C.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr48> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr79,rl181> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev51>
+            sem:hasActor  <http://dbpedia.org/resource/IBM> ;
+            pb:A0         <http://dbpedia.org/resource/IBM> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr79,rl182> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev51>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A1         <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr49> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev52>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr80,rl184> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev52>
+            sem:hasActor      <http://dbpedia.org/resource/IBM> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt@Agent>
+                    <http://dbpedia.org/resource/IBM> ;
+            pb:A0             <http://dbpedia.org/resource/IBM> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr50> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr81,rl186> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev53>
+            sem:hasActor            <http://dbpedia.org/resource/IBM> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Eclipse@Obstruction>
+                    <http://dbpedia.org/resource/IBM> ;
+            pb:A0                   <http://dbpedia.org/resource/IBM> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr81,rl188> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev53>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr51> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr82,rl190> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev54>
+            sem:hasActor         <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:merging-theme_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr52> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr85,rl196> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev55>
+            sem:hasActor                <http://dbpedia.org/resource/IBM> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Eclipse@Obstruction>
+                    <http://dbpedia.org/resource/IBM> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Emitting@Source_emitter>
+                    <http://dbpedia.org/resource/IBM> ;
+            pb:A0                       <http://dbpedia.org/resource/IBM> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr54> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr26,rl53> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev57>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr56> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr53,rl117> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev59>
+            sem:hasActor        <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            eso:inuse-entity_1  <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            eso:inuse-entity_2  <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A1               <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr61> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr11,rl23> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev63>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment_communication@Evaluee>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr62> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr14,rl28> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev64>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr65> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr19,rl37> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev67>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr71> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev73>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr48,rl107> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev73>
+            sem:hasActor           <http://dbpedia.org/resource/The_Wall_Street_Journal> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/The_Wall_Street_Journal> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/The_Wall_Street_Journal> ;
+            pb:A0                  <http://dbpedia.org/resource/The_Wall_Street_Journal> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr74> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr34,rl74> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev76>
+            sem:hasActor       <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication_response@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Response@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0              <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr81> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr49,rl110> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev82>
+            sem:hasActor         <http://dbpedia.org/resource/The_Wall_Street_Journal> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Adducing@Speaker>
+                    <http://dbpedia.org/resource/The_Wall_Street_Journal> ;
+            pb:A0                <http://dbpedia.org/resource/The_Wall_Street_Journal> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr86> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev87>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr66,rl146> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev87>
+            sem:hasActor       <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Sender>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> ;
+            pb:A0              <http://www.newsreader-project.eu/data/wikinews/entities/PapermasterPapermaster> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr87> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr88> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr73,rl164> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev88>
+            sem:hasActor        <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Means>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Value>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2               <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr89> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev89>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr90> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev89>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr74,rl167> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev89>
+            sem:hasActor       <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Buildings@Name>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0              <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tr92> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev91>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#pr86,rl200> {
+    <http://en.wikinews.org/wiki/Apple_executive_leaves_company_after_iPhone_4_antenna_issues#ev91>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reveal_secret@Addressee>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2                       <http://dbpedia.org/resource/Apple_Inc.> .
+}

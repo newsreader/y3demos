@@ -1,0 +1,178 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "automaker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=5,14> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=0,4> .
+    
+    <http://www.newsreader-project.eu/time/20090514>
+            a              time:DateTimeDescription ;
+            time:day       "---14"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 14 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=60,72> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090514> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Desiring , fn:Motion , fn:Possession , eso:HavingInPossession , eso:Motion ;
+            rdfs:label     "want" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=24,29> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" , "Chrysler LLC" , "U.S. automaker Chrysler" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=15,23> , <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=107,119> , <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=584,592> , <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=0,23> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Destroying , fn:Killing , fn:Removing , eso:Removing ;
+            rdfs:label     "eliminate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=33,42> , <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=146,155> , <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=641,650> , <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=773,783> .
+    
+    <http://www.newsreader-project.eu/time/200806>
+            a              time:DateTimeDescription ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx3>
+            a                time:Instant ;
+            rdfs:label       "early June" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=205,215> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200806> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev34>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "schedule" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=383,392> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theUSBankruptcyCourt>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the US Bankruptcy Court" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=396,419> .
+    
+    <http://www.newsreader-project.eu/time/20080603>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx5>
+            a                time:Instant ;
+            rdfs:label       "June 3" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=359,365> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080603> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr1> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=5,72> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=24,72> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr2,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=0,58> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=146,215> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=0,58> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=359,392> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr15,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#char=383,419> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr1,rl1> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr16> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr2,rl2> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev27>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr17> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr3,rl5> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev28>
+            sem:hasActor       <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Killing@Cause>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Removing@Agent>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Removing@Cause>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0              <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tr23> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#pr15,rl33> {
+    <http://en.wikinews.org/wiki/U.S._automaker_Chrysler_wants_to_eliminate_789_dealerships#ev34>
+            sem:hasPlace  <http://www.newsreader-project.eu/data/wikinews/entities/theUSBankruptcyCourt> ;
+            pb:AM-LOC     <http://www.newsreader-project.eu/data/wikinews/entities/theUSBankruptcyCourt> .
+}

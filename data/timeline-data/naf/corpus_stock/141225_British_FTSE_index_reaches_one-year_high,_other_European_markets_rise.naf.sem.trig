@@ -1,0 +1,271 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev8>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=13,18> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=107,112> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=233,238> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=507,512> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=889,894> .
+    
+    <http://dbpedia.org/resource/FTSE_100_Index>
+            rdfs:label     "FTSE" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=502,506> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=113,117> .
+    
+    <http://www.newsreader-project.eu/time/20091012>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx4>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=169,175> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20091012> .
+    
+    <http://www.newsreader-project.eu/time/200909>
+            a              time:DateTimeDescription ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx5>
+            a                time:Instant ;
+            rdfs:label       "last September" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=339,353> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200909> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=557,565> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , fn:Change_of_quantity_of_possession , eso:Increasing , eso:Getting , fn:Change_position_on_a_scale ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=449,456> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=531,535> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=857,862> , <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=895,901> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx9>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=866,872> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20091012> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "strategist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=597,607> .
+    
+    <http://dbpedia.org/resource/IG_Group>
+            rdfs:label     "IG Index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=611,619> .
+    
+    <http://www.newsreader-project.eu/time/200809>
+            a              time:DateTimeDescription ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx7>
+            a                time:Instant ;
+            rdfs:label       "September last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=715,734> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200809> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx8>
+            a                time:Instant ;
+            rdfs:label       "this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=809,818> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_ongoing , fn:Process_continue , eso:IntentionalEvent ;
+            rdfs:label     "continue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=519,527> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "insurance" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=394,403> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theOldMutual>
+            a              nwrontology:LOCATION ;
+            rdfs:label     "the Old Mutual" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=379,393> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr1> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=107,175> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=233,353> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=507,565> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr22,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=502,512> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=531,565> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=857,872> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr24,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=498,535> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=597,734> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=597,818> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr27,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=597,619> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=519,565> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr23,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=498,527> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=339,403> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=394,565> .
+    
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr19,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#char=379,411> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr2> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr3> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr22,rl44> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/FTSE_100_Index> ;
+            pb:A0         <http://dbpedia.org/resource/FTSE_100_Index> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr14> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr15> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr24,rl49> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev18>
+            sem:hasActor       <http://dbpedia.org/resource/FTSE_100_Index> ;
+            eso:quantity-item  <http://dbpedia.org/resource/FTSE_100_Index> ;
+            pb:A1              <http://dbpedia.org/resource/FTSE_100_Index> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr17> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr18> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr27,rl58> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/IG_Group> ;
+            pb:A2         <http://dbpedia.org/resource/IG_Group> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr26> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr23,rl46> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev25>
+            sem:hasActor                  <http://dbpedia.org/resource/FTSE_100_Index> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Activity>
+                    <http://dbpedia.org/resource/FTSE_100_Index> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_continue@Event>
+                    <http://dbpedia.org/resource/FTSE_100_Index> ;
+            pb:A1                         <http://dbpedia.org/resource/FTSE_100_Index> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr32> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tr33> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#pr19,rl40> {
+    <http://en.wikinews.org/wiki/British_FTSE_index_reaches_one-year_high,_other_European_markets_rise#ev30>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/theOldMutual> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/theOldMutual> .
+}

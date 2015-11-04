@@ -1,0 +1,366 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=261,273> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=258,260> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=732,734> .
+    
+    <http://www.newsreader-project.eu/time/20050613>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=105,110> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050613> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=506,509> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" , "five Boeing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=34,40> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=29,40> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=468,474> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=150,156> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=491,497> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050613> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1086,1089> .
+    
+    <http://dbpedia.org/resource/Ryanair>
+            rdfs:label     "Ryanair" , "Ryanair 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=86,93> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=414,421> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=558,565> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=831,838> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=204,213> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=633,635> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=0,7> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=116,118> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=204,211> , <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1078,1085> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx4>
+            a                time:Instant ;
+            rdfs:label       "early this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=919,936> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "the next few year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1047,1065> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20050613> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Practice ;
+            rdfs:label     "exercise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=8,17> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 13 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=47,60> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050613> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Request , eso:Motion ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=242,248> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev41>
+            a              sem:Event , nwrontology:sourceEvent , fn:Deserving , fn:Justifying ;
+            rdfs:label     "justify" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=444,453> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Michael O' Leary" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=427,442> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=478,484> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing ;
+            rdfs:label     "choice" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=458,464> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev44>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "ensure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=545,552> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev47>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=886,894> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr2> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=105,273> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr11,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=258,273> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr19,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=487,509> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=919,1089> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1047,1089> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr42,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1078,1089> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=8,60> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=0,17> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr1,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=8,45> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=105,248> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr10,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=242,273> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr16,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=414,453> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr16,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=444,474> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr17,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=414,484> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr18,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=458,474> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr20,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=487,552> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=886,936> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=886,1065> .
+    
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr33,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=831,894> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr11,rl20> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev12>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr24> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr19,rl40> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev28>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr33> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr34> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr42,rl89> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev34>
+            sem:hasActor          <http://dbpedia.org/resource/Ryanair> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Ryanair> ;
+            pb:A0                 <http://dbpedia.org/resource/Ryanair> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr35> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev35>
+            sem:hasActor       <http://dbpedia.org/resource/Ryanair> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Practice@Agent>
+                    <http://dbpedia.org/resource/Ryanair> ;
+            pb:A0              <http://dbpedia.org/resource/Ryanair> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr1,rl3> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev35>
+            sem:hasActor        <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Practice@Action>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1               <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr41> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr10,rl19> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev40>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Message>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr42> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr16,rl33> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev41>
+            sem:hasActor                   <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deserving@State_of_Affairs>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Justifying@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            pb:A0                          <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr16,rl34> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev41>
+            sem:hasActor                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deserving@Action>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Justifying@State_of_affairs>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1                           <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr43> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr17,rl36> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev42>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/MichaelOLearyMichaelOLeary> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr44> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr18,rl39> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev43>
+            sem:hasActor        <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Chosen>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1               <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr45> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr20,rl42> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev44>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr49> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tr50> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#pr33,rl69> {
+    <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#ev47>
+            sem:hasActor           <http://dbpedia.org/resource/Ryanair> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Ryanair> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ryanair> ;
+            pb:A0                  <http://dbpedia.org/resource/Ryanair> .
+}

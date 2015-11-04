@@ -1,0 +1,140 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev7>
+            a              sem:Event , nwrontology:contextualEvent , fn:Delivery , eso:Transportation ;
+            rdfs:label     "deliver" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=94,103> , <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=186,195> .
+    
+    <http://dbpedia.org/resource/Singapore>
+            rdfs:label     "Singapore" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=199,208> , <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=410,419> .
+    
+    <http://www.newsreader-project.eu/time/20071015>
+            a              time:DateTimeDescription ;
+            time:day       "---15"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=104,109> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071015> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev8>
+            a              sem:Event , nwrontology:contextualEvent , eso:Transportation , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Translocation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=217,222> .
+    
+    <http://dbpedia.org/resource/Toulouse>
+            rdfs:label     "Toulouse" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=226,234> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=236,242> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Self_motion , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Manufacturing , fn:Creating , eso:Creating ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=74,78> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=82,88> , <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=761,767> .
+}
+
+<http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tr1> {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=94,109> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#pr4,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=186,208> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=104,222> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=217,242> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=74,109> .
+    
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#char=74,88> .
+}
+
+<http://en.wikinews.org/wiki/First_Airbus_A380_delivered#pr4,rl11> {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev7>
+            sem:hasPlace  <http://dbpedia.org/resource/Singapore> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Singapore> .
+}
+
+<http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tr2> {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/First_Airbus_A380_delivered#pr3,rl8> {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev8>
+            sem:hasPlace  <http://dbpedia.org/resource/Toulouse> , <http://dbpedia.org/resource/France> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Toulouse> , <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tr13> {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/First_Airbus_A380_delivered#pr1,rl2> {
+    <http://en.wikinews.org/wiki/First_Airbus_A380_delivered#ev19>
+            sem:hasActor                   <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                          <http://dbpedia.org/resource/Airbus> .
+}

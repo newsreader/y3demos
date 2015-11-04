@@ -1,0 +1,354 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=21,25>
+          rdfs:comment        "announces" ;
+          rdfs:label          "cuts" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=7,16> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Airbus> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=7,16>
+          rdfs:label          "announces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=129,133>
+          rdfs:comment        "announced" ;
+          rdfs:label          "cuts" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=108,117> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Airbus> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=108,117>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=90,102>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=169,174>
+          rdfs:label          "comes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=203,209>
+          rdfs:label          "starts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=232,241>
+          rdfs:label          "programme" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=332,336>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=321,330>
+          rdfs:label          "executive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=349,356>
+          rdfs:label          "expects" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=360,363>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr9>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=384,388>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=481,485>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=553,562>
+          rdfs:label          "reduction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr12>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=589,590>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=618,623>
+          rdfs:label          "force" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=651,660>
+          rdfs:label          "employees" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=752,762>
+          rdfs:label          "displeased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=680,684>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=688,693>
+          rdfs:label          "hoped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=697,704>
+          rdfs:label          "achieve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr19>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=770,779>
+          rdfs:label          "officials" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=780,784>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=799,808>
+          rdfs:label          "employees" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=830,833>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=850,858>
+          rdfs:label          "stoppage" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=882,889>
+          rdfs:label          "protest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr25>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=906,914>
+          rdfs:label          "response" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=934,938>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=957,966>
+          rdfs:label          "spokesman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1003,1008>
+          rdfs:label          "union" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1053,1057>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1059,1066>
+          rdfs:label          "hinting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1083,1089>
+          rdfs:label          "action" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1102,1107>
+          rdfs:label          "comes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1130,1136>
+          rdfs:label          "delays" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1172,1180>
+          rdfs:label          "airliner" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1200,1212>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1218,1226>
+          rdfs:label          "includes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1231,1239>
+          rdfs:label          "proposed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#char=1240,1244>
+          rdfs:label          "sale" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000_dAttr39>
+          rdf:value             <POSSIBLE_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000> .
+}

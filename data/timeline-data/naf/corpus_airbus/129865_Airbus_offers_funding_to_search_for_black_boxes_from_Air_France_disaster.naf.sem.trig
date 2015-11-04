@@ -1,0 +1,565 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Offering , eso:Giving ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=7,13> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=0,6> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1846,1852> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1011,1017> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=750,756> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=303,309> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=89,95> .
+    
+    <http://www.newsreader-project.eu/time/20090730>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1>
+            a                time:Instant ;
+            rdfs:label       "July 30 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=74,87> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090730> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_harm , fn:Experience_bodily_harm , eso:Injuring ;
+            rdfs:label     "disaster" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=64,72> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "Air France" , "France" , "France 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=917,923> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2380,2386> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1951,1961> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=917,925> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1022,1032> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1034,1044> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=276,286> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=53,63> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_impact , fn:Impact , fn:Cause_to_fragment , fn:Travel , fn:Motion_noise , eso:Damaging , eso:Destroying , eso:Motion ;
+            rdfs:label     "crash" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=324,331> .
+    
+    <http://dbpedia.org/resource/Atlantic_Ocean>
+            rdfs:label     "Atlantic Ocean" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=341,355> .
+    
+    <http://www.newsreader-project.eu/time/200906>
+            a              time:DateTimeDescription ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3>
+            a                time:Instant ;
+            rdfs:label       "June" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=359,363> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200906> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Killing , eso:Killing ;
+            rdfs:label     "kill" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=365,372> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance ;
+            rdfs:label     "assistance" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=669,679> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=975,985> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090730> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "spokesman" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=757,766> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Schaffrath" , "Airbus spokesman Stefan Schaffrath" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=895,905> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=750,784> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Stefan Schaffrath" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=767,784> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev49>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "enroute" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2358,2365> .
+    
+    <http://dbpedia.org/resource/Italy>
+            rdfs:label     "Italy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2371,2376> .
+    
+    <http://www.newsreader-project.eu/time/200907>
+            a              time:DateTimeDescription ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx6>
+            a                time:Instant ;
+            rdfs:label       "early this month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2249,2267> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200907> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Seeking_to_achieve ;
+            rdfs:label     "seek" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1448,1452> .
+    
+    <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile>
+            rdfs:label     "BEA" , "the BEA" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=947,950> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1435,1442> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1082,1089> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1086,1089> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1439,1442> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev57>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=101,110> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny , fn:Seeking ;
+            rdfs:label     "search" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=244,250> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=582,588> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=994,1000> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1485,1491> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev59>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=429,433> , <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=785,791> .
+    
+    <http://dbpedia.org/resource/Thomas_O._Enders>
+            rdfs:label     "Thomas Enders" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=415,428> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev60>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=439,448> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev66>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Explaining_the_facts ;
+            rdfs:label     "explain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=906,915> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev68>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "discuss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1050,1059> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev76>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "recommend" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1865,1876> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev78>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny , fn:Seeking , fn:Arriving , fn:Criminal_investigation , eso:Arriving ;
+            rdfs:label     "probe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2212,2219> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/UnitedStatesNationalTransportationSafetyBoard>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "United states National Transportation Safety Board" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2158,2208> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr1> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=7,87> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=0,13> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=64,87> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr4,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=53,72> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=324,363> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr9,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=299,331> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr9,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=324,355> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=359,372> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr10,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=299,372> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr35,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=975,1032> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr27,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=750,766> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr27,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=750,784> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2249,2365> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr75,rl166>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2358,2386> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1448,1452> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr48,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1435,1452> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=74,110> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=101,363> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr5,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=89,110> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=74,250> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=244,363> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr8,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=244,286> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=359,433> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=399,433> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr28,rl63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=750,791> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=359,448> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr12,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=399,448> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr30,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=895,915> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr36,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1034,1059> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr36,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1050,1089> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr62,rl133>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=1846,1876> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2212,2267> .
+    
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr70,rl154>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#char=2154,2219> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr3> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr4,rl5> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev14>
+            sem:hasActor  <http://dbpedia.org/resource/France> ;
+            pb:A0         <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr8> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr9,rl17> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev17>
+            sem:hasActor              <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_impact@Impactee>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_impact@Impactor>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Impact@Impactee>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Impact@Impactor>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Motion_noise@Theme>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A1                     <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr9,rl18> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev17>
+            sem:hasPlace  <http://dbpedia.org/resource/Atlantic_Ocean> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Atlantic_Ocean> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr9> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr10,rl21> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev18>
+            sem:hasActor       <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Killing@Cause>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Killing@Killer>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0              <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr15> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr35,rl76> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev24>
+            sem:hasActor                <http://dbpedia.org/resource/France> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Focal_entity>
+                    <http://dbpedia.org/resource/France> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Goal>
+                    <http://dbpedia.org/resource/France> ;
+            pb:A2                       <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr16> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr27,rl60> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A2         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr27,rl61> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev25>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr39> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr75,rl166> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev49>
+            sem:hasActor  <http://dbpedia.org/resource/France> , <http://dbpedia.org/resource/Italy> ;
+            pb:A3         <http://dbpedia.org/resource/France> , <http://dbpedia.org/resource/Italy> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr44> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr48,rl104> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54>
+            sem:hasActor                 <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Seeking_to_achieve@Agent>
+                    <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile> ;
+            pb:A0                        <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr47> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr48> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr5,rl7> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev57>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr49> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr50> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr8,rl16> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev58>
+            sem:hasActor        <http://dbpedia.org/resource/France> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Ground>
+                    <http://dbpedia.org/resource/France> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Seeking@Ground>
+                    <http://dbpedia.org/resource/France> ;
+            pb:A1               <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr51> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr11,rl23> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev59>
+            sem:hasActor             <http://dbpedia.org/resource/Thomas_O._Enders> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Thomas_O._Enders> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Thomas_O._Enders> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Thomas_O._Enders> ;
+            pb:A0                    <http://dbpedia.org/resource/Thomas_O._Enders> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr28,rl63> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev59>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> , <http://www.newsreader-project.eu/data/wikinews/entities/StefanSchaffrath> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr52> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr12,rl26> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev60>
+            sem:hasActor          <http://dbpedia.org/resource/Thomas_O._Enders> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Thomas_O._Enders> ;
+            pb:A0                 <http://dbpedia.org/resource/Thomas_O._Enders> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr58> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr30,rl68> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev66>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/SchaffrathSchaffrath> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr60> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr36,rl77> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev68>
+            sem:hasActor                  <http://dbpedia.org/resource/France> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/France> ;
+            pb:A0                         <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr36,rl79> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev68>
+            sem:hasActor                  <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_2>
+                    <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile> ;
+            pb:A2                         <http://dbpedia.org/resource/Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr68> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr62,rl133> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev76>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tr70> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev78>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#pr70,rl154> {
+    <http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev78>
+            sem:hasActor               <http://www.newsreader-project.eu/data/wikinews/entities/UnitedStatesNationalTransportationSafetyBoard> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/UnitedStatesNationalTransportationSafetyBoard> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Seeking@Cognizer_agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/UnitedStatesNationalTransportationSafetyBoard> ;
+            pb:A0                      <http://www.newsreader-project.eu/data/wikinews/entities/UnitedStatesNationalTransportationSafetyBoard> .
+}

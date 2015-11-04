@@ -1,0 +1,290 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Cause_motion , fn:Manipulation , fn:Travel , eso:Translocation ;
+            rdfs:label     "push" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=7,13> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=206,212> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" , "Boeing 's" , "Boeing Commercial airplanes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=0,6> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1360,1366> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=485,491> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=86,92> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1711,1719> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=233,239> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1410,1437> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1572,1575> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1532,1534> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1711,1717> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3>
+            a                time:Instant ;
+            rdfs:label       "two year ago" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=182,195> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Delivery , eso:Transportation ;
+            rdfs:label     "deliver" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1246,1253> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1236,1242> .
+    
+    <http://www.newsreader-project.eu/time/2020>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2020"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx6>
+            a                time:Instant ;
+            rdfs:label       "2020" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1154,1158> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2020> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1380,1384> .
+    
+    <http://www.newsreader-project.eu/time/2012>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7>
+            a                time:Instant ;
+            rdfs:label       "2012" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1403,1407> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2012> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev45>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=97,106> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=62,75> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev46>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=240,246> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=325,329> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=492,495> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=707,711> .
+    
+    <http://dbpedia.org/resource/Angers>
+            rdfs:label     "Angers" , "Spokeswoman Sandy Angers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=712,718> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=300,324> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/SandyAngers>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Sandy Angers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=312,324> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev55>
+            a              sem:Event , nwrontology:contextualEvent , eso:Translocation , fn:Desiring , fn:Self_motion ;
+            rdfs:label     "hope" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1187,1192> , <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1371,1376> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1455,1459> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr1> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=182,212> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=0,13> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1154,1253> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr47,rl90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1236,1253> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1380,1407> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr55,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1360,1384> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=97,195> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=62,106> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=182,246> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr9,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=233,246> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr12,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=300,329> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1154,1192> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1371,1407> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr54,rl101>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1360,1376> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1403,1459> .
+    
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr56,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#char=1410,1459> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev13>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_motion@Agent>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manipulation@Agent>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                  <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr21> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr47,rl90> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev33>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr30> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr55,rl103> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr33> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev45>
+            sem:hasActor          <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr34> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr9,rl18> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev46>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr12,rl22> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev46>
+            sem:hasActor             <http://dbpedia.org/resource/Angers> , <http://www.newsreader-project.eu/data/wikinews/entities/SandyAngers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Angers> , <http://www.newsreader-project.eu/data/wikinews/entities/SandyAngers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Angers> , <http://www.newsreader-project.eu/data/wikinews/entities/SandyAngers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Angers> , <http://www.newsreader-project.eu/data/wikinews/entities/SandyAngers> ;
+            pb:A0                    <http://dbpedia.org/resource/Angers> , <http://www.newsreader-project.eu/data/wikinews/entities/SandyAngers> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr43> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr44> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr54,rl101> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev55>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tr47> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#pr56,rl106> {
+    <http://en.wikinews.org/wiki/Boeing_pushes_back_737_replacement_development#ev58>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing> .
+}

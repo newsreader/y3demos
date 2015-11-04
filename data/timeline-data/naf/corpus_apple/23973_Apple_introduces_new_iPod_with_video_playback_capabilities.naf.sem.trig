@@ -1,0 +1,252 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "owner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=713,719> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1244,1249> .
+    
+    <http://dbpedia.org/resource/American_Broadcasting_Company>
+            rdfs:label     "ABC" , "Apple and ABC" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=875,878> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1253,1256> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=865,878> .
+    
+    <http://www.newsreader-project.eu/time/20051013>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051013> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev32>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "distributor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1228,1239> .
+    
+    <http://dbpedia.org/resource/Pixar>
+            rdfs:label     "Pixar" , "Pixar 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1106,1111> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1220,1227> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1220,1225> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=6,16> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=0,5> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=904,909> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1142,1147> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=865,870> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=204,209> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=92,97> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 13 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=60,76> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051013> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=98,108> .
+    
+    <http://www.newsreader-project.eu/time/20051012>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=81,90> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051012> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev39>
+            a              sem:Event , nwrontology:sourceEvent , fn:Awareness , fn:Certainty ;
+            rdfs:label     "believe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=225,233> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=214,224> , <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1152,1162> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev42>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agree" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=884,890> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action , fn:Giving , fn:Resolve_problem , eso:Giving ;
+            rdfs:label     "deal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=896,900> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr13> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev23>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=713,719> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr43,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1244,1256> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr42,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1220,1239> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr42,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=1228,1256> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=6,76> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=0,16> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=81,108> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr4,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=92,108> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=81,233> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr7,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=204,233> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr28,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=865,890> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr32,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#char=865,900> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr43,rl79> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev23>
+            sem:hasActor          <http://dbpedia.org/resource/American_Broadcasting_Company> ;
+            eso:possession-theme  <http://dbpedia.org/resource/American_Broadcasting_Company> ;
+            pb:A1                 <http://dbpedia.org/resource/American_Broadcasting_Company> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr22> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr42,rl76> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/Pixar> ;
+            pb:A0         <http://dbpedia.org/resource/Pixar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr42,rl77> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/American_Broadcasting_Company> ;
+            pb:A1         <http://dbpedia.org/resource/American_Broadcasting_Company> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr24> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr25> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr4,rl7> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev35>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr29> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr7,rl11> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev39>
+            sem:hasActor           <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Awareness@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Certainty@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                  <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr32> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr28,rl55> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev42>
+            sem:hasActor             <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tr33> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#pr32,rl60> {
+    <http://en.wikinews.org/wiki/Apple_introduces_new_iPod_with_video_playback_capabilities#ev43>
+            sem:hasActor             <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/American_Broadcasting_Company> , <http://dbpedia.org/resource/Apple_Inc.> .
+}

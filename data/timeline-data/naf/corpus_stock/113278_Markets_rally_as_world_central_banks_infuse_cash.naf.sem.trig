@@ -1,0 +1,400 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arranging , fn:Placing , fn:Intentionally_create , eso:Placing ;
+            rdfs:label     "arrange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=705,713> .
+    
+    <http://dbpedia.org/resource/Federal_Reserve_System>
+            rdfs:label     "the Federal Reserve" , "Federal Reserve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=319,334> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=685,704> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1149,1168> .
+    
+    <http://www.newsreader-project.eu/time/20080918>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080918> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , eso:Increasing ;
+            rdfs:label     "increase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=717,725> .
+    
+    <http://dbpedia.org/resource/European_Central_Bank>
+            rdfs:label     "the European Central Bank" , "ECB" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=268,293> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=295,298> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=751,776> .
+    
+    <http://dbpedia.org/resource/Swiss_National_Bank>
+            rdfs:label     "Swiss National Bank" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=363,382> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=828,847> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "line" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=740,745> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Existence , eso:BeingInExistence ;
+            rdfs:label     "exist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=726,734> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev33>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion ;
+            rdfs:label     "surge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1545,1551> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow Jones" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1535,1544> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "the 1 90 minute" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1479,1499> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20080918> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev36>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1822,1827> .
+    
+    <http://dbpedia.org/resource/Japan>
+            rdfs:label     "Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1807,1812> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "exchange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2225,2234> .
+    
+    <http://dbpedia.org/resource/Russia>
+            rdfs:label     "Russia" , "Russia 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2069,2075> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2091,2093> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2216,2224> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2216,2222> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev41>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "re-open" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2240,2247> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev55>
+            a              sem:Event , nwrontology:contextualEvent , fn:Closure , fn:Secrecy_status , fn:Body_movement ;
+            rdfs:label     "open" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=902,908> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the Bank of Japan" , "the Bank of Canada" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=336,353> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=929,946> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1047,1065> .
+    
+    <http://dbpedia.org/resource/Bank_of_England>
+            rdfs:label     "the Bank of England" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=247,266> , <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=997,1016> .
+    
+    <http://www.newsreader-project.eu/time/20090130>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx3>
+            a                time:Instant ;
+            rdfs:label       "January 30 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1108,1124> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090130> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev56>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1169,1175> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx4>
+            a              time:Interval ;
+            rdfs:label     "the last few day" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1231,1248> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20080918> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev63>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2076,2085> .
+    
+    <http://www.newsreader-project.eu/time/20080912>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx6>
+            a                time:Instant ;
+            rdfs:label       "Friday morning" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2251,2265> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080912> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr11> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr17,rl40> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev23>
+            sem:hasActor        <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arranging@Agent>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Cause>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0               <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr17,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=685,713> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr18,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=685,725> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr18,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=717,776> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr18,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=717,883> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr19,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=740,776> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr20,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=726,776> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1479,1551> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr35,rl83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1531,1551> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr39,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1807,1827> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2225,2234> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr52,rl119>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2216,2234> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2240,2247> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr53,rl120>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2216,2247> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=902,1124> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr21,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=902,946> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr21,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=902,1016> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1169,1248> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr22,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=1149,1175> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2076,2265> .
+    
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr46,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#char=2069,2085> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr12> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr18,rl42> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_position_on_a_scale@Attribute>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0         <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr18,rl43> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev24>
+            sem:hasActor            <http://dbpedia.org/resource/European_Central_Bank> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/European_Central_Bank> ;
+            pb:A1                   <http://dbpedia.org/resource/European_Central_Bank> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr18,rl44> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev24>
+            sem:hasActor          <http://dbpedia.org/resource/Swiss_National_Bank> ;
+            eso:quantity-value_1  <http://dbpedia.org/resource/Swiss_National_Bank> ;
+            pb:A3                 <http://dbpedia.org/resource/Swiss_National_Bank> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr13> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr19,rl46> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/European_Central_Bank> ;
+            pb:A1         <http://dbpedia.org/resource/European_Central_Bank> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr14> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr20,rl47> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev26>
+            sem:hasActor     <http://dbpedia.org/resource/European_Central_Bank> ;
+            eso:exist-theme  <http://dbpedia.org/resource/European_Central_Bank> ;
+            pb:A1            <http://dbpedia.org/resource/European_Central_Bank> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr22> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr35,rl83> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1         <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr25> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr39,rl93> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev36>
+            sem:hasActor  <http://dbpedia.org/resource/Japan> ;
+            pb:A0         <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr29> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev40>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr52,rl119> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev40>
+            sem:hasPlace  <http://dbpedia.org/resource/Russia> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr30> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev41>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr53,rl120> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/Russia> ;
+            pb:A0         <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr45> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr21,rl51> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev55>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Fastener>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> ;
+            pb:A2                   <http://www.newsreader-project.eu/data/wikinews/entities/theBankofJapan> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr21,rl53> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev55>
+            sem:hasActor            <http://dbpedia.org/resource/Bank_of_England> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://dbpedia.org/resource/Bank_of_England> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Fastener>
+                    <http://dbpedia.org/resource/Bank_of_England> ;
+            pb:A2                   <http://dbpedia.org/resource/Bank_of_England> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr46> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr22,rl55> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev56>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Federal_Reserve_System> ;
+            pb:A0                 <http://dbpedia.org/resource/Federal_Reserve_System> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tr55> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#pr46,rl107> {
+    <http://en.wikinews.org/wiki/Markets_rally_as_world's_central_banks_infuse_cash#ev63>
+            sem:hasActor          <http://dbpedia.org/resource/Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Russia> ;
+            pb:A0                 <http://dbpedia.org/resource/Russia> .
+}

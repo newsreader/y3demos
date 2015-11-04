@@ -1,0 +1,348 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=41,46> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=108,112> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=268,272> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=349,353> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1337,1341> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow Jones" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=31,40> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=244,253> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx3>
+            a                time:Instant ;
+            rdfs:label       "this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=126,135> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx4>
+            a                  time:Interval ;
+            rdfs:label         "the past nine day" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=375,393> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20080930> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20081009> .
+    
+    <http://www.newsreader-project.eu/time/20080930>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20081009>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/2003>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2003" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=426,430> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2003> .
+    
+    <http://www.newsreader-project.eu/time/20081008>
+            a              time:DateTimeDescription ;
+            time:day       "---08"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1325,1334> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081008> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing , fn:Cause_change_of_position_on_a_scale , fn:Body_movement , fn:Change_posture , fn:Commerce_pay , fn:Path_shape , eso:Translocation ;
+            rdfs:label     "drop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=226,230> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1022,1029> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1111,1115> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1136,1143> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "UK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1005,1007> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev32>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Containing ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1653,1657> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1798,1805> .
+    
+    <http://dbpedia.org/resource/International_Monetary_Fund>
+            rdfs:label     "the International Monetary Fund" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1739,1770> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8>
+            a                time:Instant ;
+            rdfs:label       "this weekend" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1658,1670> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Come_together , fn:Food_gathering , fn:Gathering_up , eso:Meeting ;
+            rdfs:label     "gather" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1710,1719> .
+    
+    <http://dbpedia.org/resource/Washington,_D.C.>
+            rdfs:label     "Washington" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1723,1733> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Congregating ;
+            rdfs:label     "meeting" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1819,1827> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Secrecy_status ;
+            rdfs:label     "open" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=485,491> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=472,476> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081009> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev45>
+            a              sem:Event , nwrontology:sourceEvent , fn:Explaining_the_facts , fn:Statement ;
+            rdfs:label     "explain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1488,1497> .
+    
+    <http://dbpedia.org/resource/Barclays>
+            rdfs:label     "Barclays" , "Barclays Capital" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1120,1128> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1130,1135> , <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1498,1514> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr1> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=108,135> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=349,393> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=349,430> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1325,1341> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=31,46> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=126,230> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=226,393> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=226,430> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1111,1334> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr29,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=998,1029> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1653,1670> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr51,rl111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1739,1805> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1658,1719> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr50,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1710,1733> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1658,1827> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr52,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1739,1827> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr14,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=468,491> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1325,1497> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1488,1670> .
+    
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr39,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#char=1488,1525> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr2> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr3> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr4> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev10>
+            sem:hasActor       <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1              <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr9> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr10> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr11> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr12> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr29,rl61> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev15>
+            sem:hasPlace  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr31> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr51,rl111> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev32>
+            sem:hasActor             <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            pb:A0                    <http://dbpedia.org/resource/International_Monetary_Fund> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr32> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr50,rl110> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev33>
+            sem:hasPlace  <http://dbpedia.org/resource/Washington,_D.C.> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Washington,_D.C.> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr33> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr52,rl114> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev34>
+            sem:hasActor                 <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Congregating@Individuals>
+                    <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            pb:A0                        <http://dbpedia.org/resource/International_Monetary_Fund> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr36> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr14,rl33> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev36>
+            sem:hasActor                <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Secrecy_status@Cognizer>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                       <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr47> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tr48> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#pr39,rl87> {
+    <http://en.wikinews.org/wiki/Markets_down_across_the_world;_Dow_Jones_falls_below_9,000#ev45>
+            sem:hasActor          <http://dbpedia.org/resource/Barclays> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Barclays> ;
+            pb:A0                 <http://dbpedia.org/resource/Barclays> .
+}

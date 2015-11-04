@@ -1,0 +1,494 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=759,767>
+          rdfs:comment        "announced" ;
+          rdfs:label          "auditors" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=740,749> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+auto+firm> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=740,749>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=768,771>
+          rdfs:comment        "announced" ;
+          rdfs:label          "had" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=740,749> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=785,790>
+          rdfs:comment        "announced" ;
+          rdfs:label          "doubt" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=740,749> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=825,829>
+          rdfs:comment        "announced" , "doubt" ;
+          rdfs:label          "keep" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=740,749> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=785,790> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr0> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_sAttr1>
+          rdf:value            <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/its+auditors> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=17,22>
+          rdfs:label          "reach" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=31,35>
+          rdfs:label          "lows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=61,68>
+          rdfs:label          "markets" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=69,76>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=92,96>
+          rdfs:label          "lows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=125,135>
+          rdfs:label          "confidence" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=117,124>
+          rdfs:label          "falling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=153,159>
+          rdfs:label          "sector" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=164,171>
+          rdfs:label          "worries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=203,215>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr9>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=247,251>
+          rdfs:label          "keep" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr10>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=252,261>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=297,304>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=354,362>
+          rdfs:label          "reaching" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=365,370>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=423,427>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=528,535>
+          rdfs:label          "closing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=493,500>
+          rdfs:label          "plunged" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=672,676>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=606,610>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=621,629>
+          rdfs:label          "remained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr20>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=702,708>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=709,713>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=842,848>
+          rdfs:label          "Shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=921,927>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=948,955>
+          rdfs:label          "falling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1032,1036>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1008,1011>
+          rdfs:label          "hit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1063,1069>
+          rdfs:label          "trader" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1114,1123>
+          rdfs:label          "divisions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1128,1135>
+          rdfs:label          "getting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1150,1159>
+          rdfs:label          "liquidate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1136,1141>
+          rdfs:label          "calls" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1187,1191>
+          rdfs:label          "seen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1208,1212>
+          rdfs:label          "come" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1296,1303>
+          rdfs:label          "started" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1349,1354>
+          rdfs:label          "loans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1324,1330>
+          rdfs:label          "crisis" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1381,1385>
+          rdfs:label          "fire" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1395,1400>
+          rdfs:label          "raced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1499,1502>
+          rdfs:label          "hit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1425,1432>
+          rdfs:label          "ignited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1458,1463>
+          rdfs:label          "parts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1469,1478>
+          rdfs:label          "insurance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1525,1531>
+          rdfs:label          "crisis" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1535,1542>
+          rdfs:label          "causing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1615,1619>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1546,1556>
+          rdfs:label          "unraveling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1608,1612>
+          rdfs:label          "lend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1655,1662>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1755,1760>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1761,1767>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1771,1772>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1802,1809>
+          rdfs:label          "falling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1785,1790>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows> .
+}

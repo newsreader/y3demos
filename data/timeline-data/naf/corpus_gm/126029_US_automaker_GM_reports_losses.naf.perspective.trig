@@ -1,0 +1,420 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=124,128>
+          rdfs:comment        "announced" ;
+          rdfs:label          "lost" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=107,116> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/united+states+automobile+company+general+motors> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=107,116>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=155,162>
+          rdfs:comment        "announced" ;
+          rdfs:label          "quarter" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=107,116> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=185,193>
+          rdfs:comment        "announced" ;
+          rdfs:label          "declines" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=107,116> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=365,369>
+          rdfs:comment        "reported" ;
+          rdfs:label          "loss" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=354,362> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=354,362>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=546,551>
+          rdfs:comment        "reported" ;
+          rdfs:label          "spent" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=525,533> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr3>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=525,533>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=572,578>
+          rdfs:comment        "reported" ;
+          rdfs:label          "effort" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=525,533> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=582,589>
+          rdfs:comment        "reported" ;
+          rdfs:label          "prevent" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=525,533> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=24,30>
+          rdfs:label          "losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=245,249>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=211,220>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=257,261>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=325,332>
+          rdfs:label          "quarter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=422,430>
+          rdfs:label          "analysts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=435,443>
+          rdfs:label          "forecast" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=460,466>
+          rdfs:label          "losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=623,631>
+          rdfs:label          "received" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=683,693>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=708,711>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=714,722>
+          rdfs:label          "deadline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=764,768>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=723,726>
+          rdfs:label          "set" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=740,744>
+          rdfs:label          "draw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr17>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=810,817>
+          rdfs:label          "obliged" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=784,786>
+          rdfs:label          "do" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=821,825>
+          rdfs:label          "file" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr20>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=841,851>
+          rdfs:label          "protection" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=861,869>
+          rdfs:label          "focusing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1009,1013>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=892,896>
+          rdfs:label          "side" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=926,931>
+          rdfs:label          "start" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=932,938>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=939,947>
+          rdfs:label          "revenues" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=952,955>
+          rdfs:label          "get" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=999,1006>
+          rdfs:label          "recover" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr29>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1045,1052>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1066,1074>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1078,1081>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr32>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1098,1104>
+          rdfs:label          "chance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1113,1123>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1192,1199>
+          rdfs:label          "believe" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1138,1144>
+          rdfs:label          "equity" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1393,1397>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1207,1213>
+          rdfs:label          "emerge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr38>
+          rdf:value             <POSSIBLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1303,1308>
+          rdfs:label          "drawn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1257,1265>
+          rdfs:label          "provided" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1328,1333>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1338,1343>
+          rdfs:label          "scope" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1363,1367>
+          rdfs:label          "cuts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion> .
+}

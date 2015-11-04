@@ -1,0 +1,827 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving ;
+            rdfs:label     "give" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=9,13> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=110,114> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2403,2407> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2520,2524> .
+    
+    <http://dbpedia.org/resource/Consumer_Reports>
+            rdfs:label     "Consumer Reports" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2374,2390> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2855,2871> .
+    
+    <http://www.newsreader-project.eu/time/20100717>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100717> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Try_defendant , eso:Placing ;
+            rdfs:label     "case" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=19,24> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=149,153> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=741,745> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2094,2099> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Inc." , "Apple 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=0,5> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=69,79> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2408,2415> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2635,2640> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2504,2511> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2884,2889> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2154,2159> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=102,104> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=717,722> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=909,916> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=430,435> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=125,128> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=909,914> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2408,2413> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2504,2509> .
+    
+    <http://www.newsreader-project.eu/time/20100723>
+            a              time:DateTimeDescription ;
+            time:day       "---23"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=90,96> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100723> .
+    
+    <http://www.newsreader-project.eu/time/20100716>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=702,711> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100716> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Containing , fn:Retaining , eso:HavingInPossession ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=349,353> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=422,426> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1605,1609> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4>
+            a                time:Instant ;
+            rdfs:label       "Friday morning" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=439,453> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100716> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Attempt , fn:Intentionally_create , eso:IntentionalEvent ;
+            rdfs:label     "attempt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=496,505> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Jobs" , "Steve Jobs" , "company CEO Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=485,495> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2027,2031> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1259,1263> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=756,759> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1890,1894> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=473,495> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1039,1043> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2216,2220> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1194,1198> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=692,696> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1065,1068> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving , fn:Offering ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=670,675> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=728,733> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Firing , fn:Judgment_communication , fn:Quitting , eso:LeavingAnOrganization ;
+            rdfs:label     "dismiss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1355,1364> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev57>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "attribute" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2032,2042> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8>
+            a                  time:Interval ;
+            rdfs:label         "22 day" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2262,2269> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20100625> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20100717> .
+    
+    <http://www.newsreader-project.eu/time/20100625>
+            a              time:DateTimeDescription ;
+            time:day       "---25"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev61>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Decreasing ;
+            rdfs:label     "decline" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2391,2399> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev62>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion ;
+            rdfs:label     "move" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2512,2516> .
+    
+    <http://www.newsreader-project.eu/time/20100624>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10>
+            a                time:Instant ;
+            rdfs:label       "June 24" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2626,2633> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100624> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev67>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cognitive_connection , eso:Collaboration ;
+            rdfs:label     "associate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2890,2900> .
+    
+    <http://www.newsreader-project.eu/time/20100702>
+            a              time:DateTimeDescription ;
+            time:day       "---02"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx11>
+            a                time:Instant ;
+            rdfs:label       "July 2" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2876,2882> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100702> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev87>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=80,89> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev92>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "conference" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=411,421> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=963,973> .
+    
+    <http://www.newsreader-project.eu/time/20100930>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx6>
+            a                time:Instant ;
+            rdfs:label       "September 30" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1025,1037> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100930> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev93>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting , fn:Speak_on_topic ;
+            rdfs:label     "address" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=509,516> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev94>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=517,524> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev97>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=697,701> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1049,1053> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1199,1203> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1400,1406> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev99>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "price" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=930,936> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev100>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "acknowledge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1264,1276> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev103>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Contacting , fn:Deserving , fn:Labeling , fn:Request , fn:Claim_ownership ;
+            rdfs:label     "call" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1758,1764> .
+    
+    <http://dbpedia.org/resource/AppleCare>
+            rdfs:label     "AppleCare" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1765,1774> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev107>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reveal_secret ;
+            rdfs:label     "admit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1895,1903> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev108>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2221,2225> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2142,2148> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2494,2498> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2836,2840> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MikeGikas>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Mike Gikas" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2841,2851> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev111>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting , fn:Speak_on_topic ;
+            rdfs:label     "address" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2168,2177> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev112>
+            a              sem:Event , nwrontology:sourceEvent , fn:Contacting , fn:Communication_means ;
+            rdfs:label     "phone" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2423,2428> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev113>
+            a              sem:Event , nwrontology:sourceEvent , fn:Assessing ;
+            rdfs:label     "rating" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2445,2451> , <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2605,2611> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev115>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Reporting , fn:Request , fn:Telling ;
+            rdfs:label     "tell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2641,2645> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr1> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev24>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=110,114> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr95,rl200>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2374,2407> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=90,153> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=702,745> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr34,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=717,745> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=422,453> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr20,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=422,435> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=439,505> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=496,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr22,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=473,505> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=728,733> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr33,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=717,733> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr50,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1259,1364> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2032,2269> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr80,rl164>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2027,2042> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2262,2399> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr94,rl198>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2374,2399> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2512,2633> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr101,rl212>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2504,2516> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2876,2900> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr112,rl236>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2884,2900> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=80,96> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr4,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=69,89> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=411,453> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=963,1037> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr19,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=411,435> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=439,516> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=509,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr23,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=473,516> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=439,524> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=517,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr24,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=473,524> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=697,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr32,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=692,701> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=930,1037> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr40,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=909,936> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr49,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1259,1276> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr68,rl139>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1758,1774> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr75,rl155>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=1890,1903> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr108>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2142,2269> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr85,rl176>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2216,2225> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr109,rl231>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2836,2871> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2168,2269> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr89,rl185>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2154,2177> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2262,2428> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr96,rl203>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2408,2428> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2262,2451> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2605,2633> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr97,rl205>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2408,2451> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr116>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2626,2645> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr105,rl220>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#char=2635,2645> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr95,rl200> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev24>
+            sem:hasActor            <http://dbpedia.org/resource/Consumer_Reports> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Consumer_Reports> ;
+            pb:A0                   <http://dbpedia.org/resource/Consumer_Reports> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr4> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr5> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr34,rl68> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev26>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Try_defendant@Judge>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr14> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr20,rl43> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev32>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr16> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr17> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr22,rl47> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev34>
+            sem:hasActor      <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0             <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr22> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev38>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr33,rl64> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr29> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr50,rl106> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev44>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:employment-employer  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr42> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr80,rl164> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev57>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr46> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr94,rl198> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev61>
+            sem:hasActor       <http://dbpedia.org/resource/Consumer_Reports> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Consumer_Reports> ;
+            pb:A0              <http://dbpedia.org/resource/Consumer_Reports> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr47> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev62>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr101,rl212> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev62>
+            sem:hasActor     <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Motion@Theme>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0            <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr55> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr112,rl236> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev67>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr77> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev87>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr4,rl7> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev87>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr86> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr87> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr19,rl40> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev92>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr88> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev93>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr89> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev93>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr23,rl49> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev93>
+            sem:hasActor                <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Speak_on_topic@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                       <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr90> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev94>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr91> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev94>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr24,rl51> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev94>
+            sem:hasActor           <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                  <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr96> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev97>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr32,rl61> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev97>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr99> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev99>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr40,rl78> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev99>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr100> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev100>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr49,rl103> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev100>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr103> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev103>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr68,rl139> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev103>
+            sem:hasActor                 <http://dbpedia.org/resource/AppleCare> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Claim_ownership@Property>
+                    <http://dbpedia.org/resource/AppleCare> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Contacting@Addressee>
+                    <http://dbpedia.org/resource/AppleCare> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Contacting@Topic>
+                    <http://dbpedia.org/resource/AppleCare> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deserving@Action>
+                    <http://dbpedia.org/resource/AppleCare> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Label>
+                    <http://dbpedia.org/resource/AppleCare> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Message>
+                    <http://dbpedia.org/resource/AppleCare> ;
+            pb:A1                        <http://dbpedia.org/resource/AppleCare> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr107> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev107>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr75,rl155> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev107>
+            sem:hasActor              <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reveal_secret@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                     <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr108> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev108>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr85,rl176> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev108>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr109,rl231> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev108>
+            sem:hasActor             <http://dbpedia.org/resource/Consumer_Reports> , <http://www.newsreader-project.eu/data/wikinews/entities/MikeGikas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Consumer_Reports> , <http://www.newsreader-project.eu/data/wikinews/entities/MikeGikas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Consumer_Reports> , <http://www.newsreader-project.eu/data/wikinews/entities/MikeGikas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Consumer_Reports> , <http://www.newsreader-project.eu/data/wikinews/entities/MikeGikas> ;
+            pb:A0                    <http://dbpedia.org/resource/Consumer_Reports> , <http://www.newsreader-project.eu/data/wikinews/entities/MikeGikas> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr111> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev111>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr89,rl185> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev111>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Speak_on_topic@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr112> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev112>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr96,rl203> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev112>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication_means@Communicator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Contacting@Communicator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr113> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev113>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr114> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev113>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr97,rl205> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev113>
+            sem:hasActor           <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Assessor>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                  <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tr116> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev115>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#pr105,rl220> {
+    <http://en.wikinews.org/wiki/Apple_to_give_free_cases,_refunds_to_iPhone_4_owners#ev115>
+            sem:hasActor           <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Telling@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                  <http://dbpedia.org/resource/Apple_Inc.> .
+}

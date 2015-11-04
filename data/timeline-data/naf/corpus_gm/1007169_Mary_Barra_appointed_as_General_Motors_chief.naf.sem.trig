@@ -1,0 +1,764 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , eso:Replacing ;
+            rdfs:label     "appoint" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=11,20> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=666,675> .
+    
+    <http://dbpedia.org/resource/MSCI>
+            rdfs:label     "Barra" , "Mary Barra" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=177,182> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=258,261> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1819,1824> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=363,366> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=137,147> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=629,632> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=0,10> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=24,38> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=110,124> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=276,290> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=533,535> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1039,1053> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1506,1520> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx6>
+            a                time:Instant ;
+            rdfs:label       "2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=734,738> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "head" , "chief" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=39,44> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=333,337> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1240,1244> .
+    
+    <http://dbpedia.org/resource/Daniel_Ammann>
+            rdfs:label     "Daniel Ammann" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1256,1269> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx4>
+            a                  time:Interval ;
+            rdfs:label         "33 year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=295,303> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/19801210> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20131210> .
+    
+    <http://www.newsreader-project.eu/time/19801210>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1980"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20131210>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=97,109> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1671,1683> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "United states 's" , "United states" , "the United states" , "the United states 's" , "America" , "employee" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=69,84> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1691,1704> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1687,1704> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=65,84> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1057,1064> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1335,1337> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=879,888> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=125,130> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20131210> .
+    
+    <http://www.newsreader-project.eu/time/2012>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2012"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx12>
+            a                time:Instant ;
+            rdfs:label       "2012" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1747,1751> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2012> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev33>
+            a              sem:Event , nwrontology:contextualEvent , eso:Replacing , fn:Replacing , fn:Take_place_of ;
+            rdfs:label     "replace" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=633,641> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1168,1176> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Theodore Solso" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1197,1211> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Being_located , fn:Change_posture , fn:Placing , fn:Posture , eso:BeingAtAPlace , eso:Placing ;
+            rdfs:label     "stand" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=789,794> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Akerson" , "his" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=772,779> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=890,892> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1585,1592> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=824,827> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1114,1121> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=900,901> .
+    
+    <http://www.newsreader-project.eu/time/20130115>
+            a              time:DateTimeDescription ;
+            time:day       "---15"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2013"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7>
+            a                time:Instant ;
+            rdfs:label       "January 15" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=803,813> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20130115> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_pay , fn:Rejuvenation , eso:Giving ;
+            rdfs:label     "restore" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1029,1038> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev43>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Surrendering_possession , fn:Giving ;
+            rdfs:label     "relinquish" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1132,1142> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20131210> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev45>
+            a              sem:Event , nwrontology:contextualEvent , eso:Creating , fn:Behind_the_scenes , fn:Intentionally_create ;
+            rdfs:label     "director" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1188,1196> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1349,1353> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8>
+            a                  time:Interval ;
+            rdfs:label         "day" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1320,1324> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20131210> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1444,1448> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1393,1399> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev53>
+            a              sem:Event , nwrontology:contextualEvent , fn:Recovery ;
+            rdfs:label     "recover" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1521,1530> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx10>
+            a                  time:Interval ;
+            rdfs:label         "a year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1553,1559> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20131210> .
+    
+    <http://www.newsreader-project.eu/time/201011>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx11>
+            a                time:Instant ;
+            rdfs:label       "November 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1629,1642> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201011> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , eso:Replacing ;
+            rdfs:label     "appointment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1570,1581> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Containing , fn:Retaining , eso:HavingInPossession ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1825,1830> .
+    
+    <http://dbpedia.org/resource/Kettering_University>
+            rdfs:label     "Kettering University" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1882,1902> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev59>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "list" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1940,1946> .
+    
+    <http://dbpedia.org/resource/Forbes>
+            rdfs:label     "Forbes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1950,1956> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev63>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , eso:Replacing , fn:Name_conferral , eso:IntentionalEvent ;
+            rdfs:label     "name" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=131,136> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=367,371> , <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=893,897> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx5>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=525,530> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20131210> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev67>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,785> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev69>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Motion , fn:Causation , fn:Sending ;
+            rdfs:label     "message" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=868,875> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev71>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Experiencer_obj ;
+            rdfs:label     "bearer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1076,1082> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev72>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1230,1239> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev77>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "degree" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1844,1850> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr1> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx6> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=666,738> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=0,20> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=11,44> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=295,337> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=24,44> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr43,rl97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1240,1269> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=97,130> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1671,1751> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=65,109> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=633,738> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr40,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1168,1211> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=789,813> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr25,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=772,794> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=803,1038> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr35,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1029,1053> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1132,1142> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr38,rl83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1114,1142> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr41,rl91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1180,1211> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1320,1353> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1349,1448> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr46,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1331,1353> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1320,1399> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1393,1448> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr47,rl108>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1331,1399> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1521,1559> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1521,1642> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr54,rl120>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1506,1530> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1553,1581> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1570,1642> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr56,rl124>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1570,1592> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr64,rl144>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1819,1830> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr64,rl146>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1825,1922> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr67,rl153>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1940,1956> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=125,136> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr4,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=131,147> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=367,530> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr29,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=863,897> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=780,813> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr24,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=772,785> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=803,875> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr30,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=868,888> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=803,1082> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr36,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1057,1082> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1230,1324> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1230,1448> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr42,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1230,1269> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr65,rl147>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1819,1850> .
+    
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr65,rl150>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#char=1844,1922> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/MSCI> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_leadership@Selector>
+                    <http://dbpedia.org/resource/MSCI> ;
+            pb:A0         <http://dbpedia.org/resource/MSCI> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev21>
+            sem:hasActor                  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_leadership@Role>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2                         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr2> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr43,rl97> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev22>
+            sem:hasActor            <http://dbpedia.org/resource/Daniel_Ammann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Activity>
+                    <http://dbpedia.org/resource/Daniel_Ammann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/Daniel_Ammann> ;
+            pb:A0                   <http://dbpedia.org/resource/Daniel_Ammann> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr3> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr4> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev23>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr23> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr40,rl89> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev33>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso> ;
+            eso:replacing-entity_2  <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso> ;
+            pb:A2                   <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr28> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr25,rl53> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev36>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            eso:atPlace-theme        <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            eso:translocation-theme  <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            pb:A1                    <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr34> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr35,rl77> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev42>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Rejuvenation@Entity>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr35> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev43>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr38,rl83> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev43>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            eso:possession-theme  <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr37> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr41,rl91> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev45>
+            sem:hasActor                 <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso> ;
+            pb:A0                        <http://www.newsreader-project.eu/data/wikinews/entities/TheodoreSolsoTheodoreSolso> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr40> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr41> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr46,rl104> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev47>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr42> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr43> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr47,rl108> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev48>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr50> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr51> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr54,rl120> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev53>
+            sem:hasActor         <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recovery@Patient>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr52> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr53> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr56,rl124> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev54>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            eso:replacing-entity_2  <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            pb:A1                   <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr57> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr64,rl144> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev57>
+            sem:hasActor             <http://dbpedia.org/resource/MSCI> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/MSCI> ;
+            pb:A0                    <http://dbpedia.org/resource/MSCI> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr64,rl146> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev57>
+            sem:hasActor  <http://dbpedia.org/resource/Kettering_University> ;
+            pb:A2         <http://dbpedia.org/resource/Kettering_University> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr59> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr67,rl153> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/Forbes> ;
+            pb:A0         <http://dbpedia.org/resource/Forbes> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr65> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr4,rl10> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev63>
+            sem:hasActor            <http://dbpedia.org/resource/MSCI> ;
+            eso:replacing-entity_2  <http://dbpedia.org/resource/MSCI> ;
+            pb:A1                   <http://dbpedia.org/resource/MSCI> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr66> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr29,rl62> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev64>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr70> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr24,rl51> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev67>
+            sem:hasActor      <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> ;
+            pb:A0             <http://www.newsreader-project.eu/data/wikinews/entities/AkersonAkerson> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr72> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr30,rl65> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev69>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr74> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr36,rl79> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev71>
+            sem:hasActor                 <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_obj@Stimulus>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                        <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr75> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr76> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr42,rl94> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev72>
+            sem:hasActor          <http://dbpedia.org/resource/Daniel_Ammann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Daniel_Ammann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Daniel_Ammann> ;
+            pb:A1                 <http://dbpedia.org/resource/Daniel_Ammann> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tr82> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev77>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr65,rl147> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev77>
+            sem:hasActor  <http://dbpedia.org/resource/MSCI> ;
+            pb:A1         <http://dbpedia.org/resource/MSCI> .
+}
+
+<http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#pr65,rl150> {
+    <http://en.wikinews.org/wiki/Mary_Barra_appointed_as_General_Motors_chief#ev77>
+            sem:hasActor  <http://dbpedia.org/resource/Kettering_University> ;
+            pb:A2         <http://dbpedia.org/resource/Kettering_University> .
+}

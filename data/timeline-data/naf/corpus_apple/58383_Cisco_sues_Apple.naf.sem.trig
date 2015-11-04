@@ -1,0 +1,387 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev8>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "sue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=6,10> .
+    
+    <http://dbpedia.org/resource/Cisco_Systems>
+            rdfs:label     "Cisco" , "when" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=0,5> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=644,646> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=1004,1009> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=972,977> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=683,687> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=736,741> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=1022,1027> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=626,631> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=354,359> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=532,537> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Inc." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=11,16> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=216,221> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=911,916> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=955,960> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=564,574> , <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=270,280> .
+    
+    <http://www.newsreader-project.eu/time/20070112>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 12 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=39,55> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070112> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev14>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "base" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=334,339> .
+    
+    <http://dbpedia.org/resource/San_Jose,_California>
+            rdfs:label     "San Jose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=343,351> .
+    
+    <http://www.newsreader-project.eu/time/20070110>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=238,247> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070110> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "lawsuit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=548,555> .
+    
+    <http://www.newsreader-project.eu/time/2000>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2000" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=677,681> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2000> .
+    
+    <http://www.newsreader-project.eu/time/1996>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5>
+            a                time:Instant ;
+            rdfs:label       "1996" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=756,760> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1996> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=742,746> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/InfogearTechnologyCorp>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Infogear Technology Corp." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=709,734> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "device" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=899,905> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev26>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Possession ;
+            rdfs:label     "belong" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=961,968> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_make_progress , fn:Coming_to_be , fn:Intentionally_create , fn:Cause_change_of_position_on_a_scale , eso:Creating ;
+            rdfs:label     "develop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=991,1000> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070112> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , fn:Placing , fn:Submitting_documents , eso:Placing ;
+            rdfs:label     "file" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=541,545> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev36>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,638> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr1> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=6,55> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=0,10> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=6,16> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=238,339> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=334,359> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=548,681> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=548,760> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr19,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=548,574> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=677,746> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=742,760> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr25,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=683,760> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=677,905> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=756,905> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr30,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=899,916> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=677,968> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=756,968> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr33,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=961,977> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr34,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=991,1009> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=541,681> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=541,760> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr18,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=532,545> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr18,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=541,574> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,681> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,760> .
+    
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr22,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=626,638> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0         <http://dbpedia.org/resource/Cisco_Systems> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr9> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr9,rl20> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev14>
+            sem:hasPlace  <http://dbpedia.org/resource/San_Jose,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/San_Jose,_California> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr20> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr21> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr19,rl43> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr24> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr25> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr25,rl57> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev23>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/InfogearTechnologyCorp> ;
+            pb:A1         <http://www.newsreader-project.eu/data/wikinews/entities/InfogearTechnologyCorp> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr28> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr29> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr30,rl69> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr30> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr31> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr33,rl77> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev26>
+            sem:hasActor         <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Possession@Owner>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A1                <http://dbpedia.org/resource/Cisco_Systems> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr32> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr34,rl79> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev27>
+            sem:hasActor           <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_make_progress@Agent>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_to_be@Cause>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0                  <http://dbpedia.org/resource/Cisco_Systems> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr43> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr44> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr18,rl38> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev35>
+            sem:hasActor      <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Cause>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Submitting_documents@Submittor>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0             <http://dbpedia.org/resource/Cisco_Systems> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr18,rl40> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev35>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr45> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tr46> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#pr22,rl50> {
+    <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#ev36>
+            sem:hasActor          <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0                 <http://dbpedia.org/resource/Cisco_Systems> .
+}

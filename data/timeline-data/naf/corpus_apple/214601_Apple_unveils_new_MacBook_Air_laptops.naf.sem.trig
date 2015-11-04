@@ -1,0 +1,1115 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=6,13> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=384,392> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" , "Apple Inc." , "the Mac OS X" , "Macintosh" , "Mac" , "the Mac" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=0,5> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1328,1335> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2588,2593> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=916,923> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1079,1086> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2772,2779> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=568,573> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=363,368> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=282,289> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=111,121> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=282,287> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=646,658> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=611,614> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=916,921> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1079,1084> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1328,1333> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1735,1744> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1673,1676> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2513,2516> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=558,565> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2772,2777> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Jobs" , "Steve Jobs" , "Apple CEO Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=373,383> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=678,682> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=363,383> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2162,2166> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=732,737> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2397,2401> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1298,1302> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1026,1030> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1756,1760> .
+    
+    <http://www.newsreader-project.eu/time/20101023>
+            a              time:DateTimeDescription ;
+            time:day       "---23"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 23 , 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=65,81> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20101023> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=122,130> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=340,348> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=715,722> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=755,762> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1317,1324> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1595,1603> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2761,2768> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20101023> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "system" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=326,332> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=636,642> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=669,675> .
+    
+    <http://www.newsreader-project.eu/time/20101020>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=88,97> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20101020> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=175,179> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=693,698> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20101023> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5>
+            a                time:Instant ;
+            rdfs:label       "next summer" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=763,774> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_in_operation , fn:Operating_a_system , fn:Using , fn:Being_operational , eso:BeingInUse ;
+            rdfs:label     "operate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=316,325> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=659,668> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Behind_the_scenes , fn:Cause_to_start , fn:Intentionally_create , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "product" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=401,409> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Importing , eso:Importing ;
+            rdfs:label     "import" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=587,593> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Using , eso:BeingInUse , fn:Using_resource ;
+            rdfs:label     "application" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1105,1116> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx6>
+            a                  time:Interval ;
+            rdfs:label         "90 day" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=957,964> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20101023> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20110121> .
+    
+    <http://www.newsreader-project.eu/time/20110121>
+            a              time:DateTimeDescription ;
+            time:day       "---21"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/201011>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx7>
+            a                time:Instant ;
+            rdfs:label       "next month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1014,1024> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201011> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev33>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "ilife" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1336,1341> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1287,1296> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20101020> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1677,1686> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1607,1616> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20101020> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev40>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "functionality" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1718,1731> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1816,1820> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2517,2522> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2651,2656> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14>
+            a                  time:Interval ;
+            rdfs:label         "the last financial quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2485,2511> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20100701> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20100930> .
+    
+    <http://www.newsreader-project.eu/time/20100701>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20100930>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:IntentionalEvent ;
+            rdfs:label     "model" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2186,2192> .
+    
+    <http://dbpedia.org/resource/MacBook_Air>
+            rdfs:label     "MacBook Air" , "the MacBook Air" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=147,158> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1834,1845> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2196,2211> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2617,2628> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2812,2827> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev51>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "refer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2346,2355> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Shawn Wu" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2287,2295> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx13>
+            a                time:Instant ;
+            rdfs:label       "last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2447,2456> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , eso:Increasing ;
+            rdfs:label     "increase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2523,2532> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev55>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "percent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2536,2543> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2559,2566> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev56>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "comprise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2545,2555> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev63>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Event ;
+            rdfs:label     "event" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=439,444> .
+    
+    <http://dbpedia.org/resource/California>
+            rdfs:label     "California" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=428,438> .
+    
+    <http://dbpedia.org/resource/Cupertino,_California>
+            rdfs:label     "Cupertino" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=417,426> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , eso:Transportation ;
+            rdfs:label     "bring" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=541,546> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev65>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=574,577> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev72>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , eso:Transportation ;
+            rdfs:label     "bring" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1708,1713> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev73>
+            a              sem:Event , nwrontology:contextualEvent , fn:Using , eso:BeingInUse , fn:Using_resource , fn:Intentionally_affect ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1846,1850> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev74>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1906,1909> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev76>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing ;
+            rdfs:label     "lineup" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=137,143> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev77>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=446,452> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=870,874> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev80>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=578,583> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev81>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=683,692> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1036,1045> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1303,1312> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1761,1770> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev86>
+            a              sem:Event , nwrontology:sourceEvent , fn:Name_conferral ;
+            rdfs:label     "dub" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1218,1224> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MissionControlMissionControl>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Mission Control ''" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1226,1243> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev87>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting , fn:Speak_on_topic ;
+            rdfs:label     "address" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1279,1286> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev93>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2157,2161> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2296,2300> , <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2402,2406> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev96>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Earnings_and_losses ;
+            rdfs:label     "fare" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2637,2641> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev97>
+            a              sem:Event , nwrontology:sourceEvent , fn:Telling ;
+            rdfs:label     "update" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2855,2862> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx15>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2869,2873> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr1> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=6,81> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=0,13> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr16,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=363,392> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=715,722> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr4,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=111,130> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=88,332> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=175,332> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=636,698> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=636,774> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr14,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=282,332> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=88,325> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=175,325> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=659,698> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=659,774> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr30,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=646,675> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr17,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=363,409> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=587,698> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=587,774> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr26,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=568,593> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=957,1116> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1014,1116> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr43,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1079,1116> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1287,1341> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr52,rl116>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1328,1341> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1607,1686> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr63,rl139>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1673,1686> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1607,1731> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr66,rl146>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1718,1754> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2485,2522> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr68,rl150>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1756,1820> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr95,rl207>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2513,2522> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr85,rl182>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2186,2211> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2346,2456> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr87,rl185>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2279,2355> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2485,2532> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr94,rl204>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2513,2532> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2485,2566> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr96,rl208>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2513,2543> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2485,2555> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr97,rl209>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2513,2555> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr19,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=417,444> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr23,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=541,565> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=574,698> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=574,774> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr24,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=568,577> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1607,1713> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr67,rl148>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1708,1754> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr67,rl149>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1708,1760> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr71,rl154>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1826,1850> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr72,rl156>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1826,1909> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=88,143> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=137,179> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=137,166> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=870,964> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=870,1024> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr18,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=363,452> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=578,698> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=578,774> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr25,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=568,583> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=683,698> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=683,774> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1287,1312> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr31,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=678,692> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1218,1296> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr47,rl105>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1218,1257> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1279,1296> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr49,rl112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=1279,1302> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2402,2456> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr82,rl178>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2157,2166> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr86,rl183>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2279,2300> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2485,2641> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr99,rl214>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2604,2641> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2855,2873> .
+    
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr105,rl225>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#char=2812,2862> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr16,rl30> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr4> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev20>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr4,rl8> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev20>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr12> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr13> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr14> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr15> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr14,rl26> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr16> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr17> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr18> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr19> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr30,rl67> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev26>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr20> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr17,rl34> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev27>
+            sem:hasActor                   <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                          <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr21> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr22> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr26,rl58> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev29>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr27> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr28> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr43,rl93> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev32>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr29> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr52,rl116> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr34> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr63,rl139> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev38>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr36> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr66,rl146> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev40>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr37> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr68,rl150> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev41>
+            sem:hasActor            <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                   <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr95,rl207> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev41>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr46> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr85,rl182> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev50>
+            sem:hasActor  <http://dbpedia.org/resource/MacBook_Air> ;
+            pb:A1         <http://dbpedia.org/resource/MacBook_Air> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr47> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr87,rl185> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev51>
+            sem:hasActor      <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Theme>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> ;
+            pb:A0             <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr50> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr94,rl204> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev54>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr51> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr96,rl208> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev55>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr52> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr97,rl209> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev56>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr62> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr19,rl39> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev63>
+            sem:hasPlace  <http://dbpedia.org/resource/California> , <http://dbpedia.org/resource/Cupertino,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/California> , <http://dbpedia.org/resource/Cupertino,_California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr63> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr23,rl52> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev64>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr64> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev65>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr65> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev65>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr24,rl54> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev65>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr74> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr67,rl148> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev72>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr67,rl149> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev72>
+            sem:hasActor       <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Bringing@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0              <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr75> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev73>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr71,rl154> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev73>
+            sem:hasActor        <http://dbpedia.org/resource/MacBook_Air> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/MacBook_Air> ;
+            pb:A0               <http://dbpedia.org/resource/MacBook_Air> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr76> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev74>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr72,rl156> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev74>
+            sem:hasActor          <http://dbpedia.org/resource/MacBook_Air> ;
+            eso:possession-owner  <http://dbpedia.org/resource/MacBook_Air> ;
+            pb:A0                 <http://dbpedia.org/resource/MacBook_Air> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr78> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr79> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev76>
+            sem:hasActor        <http://dbpedia.org/resource/MacBook_Air> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Chosen>
+                    <http://dbpedia.org/resource/MacBook_Air> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Topic>
+                    <http://dbpedia.org/resource/MacBook_Air> ;
+            pb:A1               <http://dbpedia.org/resource/MacBook_Air> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr80> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev77>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr81> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev77>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr18,rl37> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev77>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr84> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev80>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr85> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev80>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr25,rl56> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev80>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr86> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev81>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr87> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev81>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr88> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev81>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr31,rl68> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev81>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr96> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev86>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr47,rl105> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev86>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/MissionControlMissionControl> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Name_conferral@Name>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MissionControlMissionControl> ;
+            pb:A2                   <http://www.newsreader-project.eu/data/wikinews/entities/MissionControlMissionControl> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr97> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev87>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr49,rl112> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev87>
+            sem:hasActor                <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Speak_on_topic@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                       <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr103> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev93>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr82,rl178> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev93>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr86,rl183> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev93>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/ShawnWu> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr106> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev96>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr99,rl214> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev96>
+            sem:hasActor                   <http://dbpedia.org/resource/MacBook_Air> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/MacBook_Air> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/MacBook_Air> ;
+            pb:A0                          <http://dbpedia.org/resource/MacBook_Air> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tr107> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev97>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#pr105,rl225> {
+    <http://en.wikinews.org/wiki/Apple_unveils_new_MacBook_Air_laptops,_iLife_'11_software_suite#ev97>
+            sem:hasActor          <http://dbpedia.org/resource/MacBook_Air> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Telling@Addressee>
+                    <http://dbpedia.org/resource/MacBook_Air> ;
+            pb:A1                 <http://dbpedia.org/resource/MacBook_Air> .
+}

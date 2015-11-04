@@ -1,0 +1,484 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev19>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "Tiger" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=26,31> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" , "Apple Computer 's" , "Apple Computer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=13,18> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=295,302> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=13,20> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=492,497> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=172,188> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2590,2604> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=295,300> .
+    
+    <http://www.newsreader-project.eu/time/20050507>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 7 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=33,44> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050507> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev22>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Inclusion ;
+            rdfs:label     "feature" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=283,291> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=337,345> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3>
+            a                time:Instant ;
+            rdfs:label       "a week now" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=479,489> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "interface" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=327,336> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev44>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "strength" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1533,1541> .
+    
+    <http://dbpedia.org/resource/Mac_OS_X_Tiger>
+            rdfs:label     "Macintosh" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=83,92> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1545,1554> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4>
+            a                time:Instant ;
+            rdfs:label       "late 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1492,1501> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_employed , fn:Work , fn:Working_a_post , eso:Working , eso:BeingEmployed , fn:Being_in_operation , fn:Operating_a_system , fn:Using , fn:Being_operational , eso:BeingInUse ;
+            rdfs:label     "work" , "operate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1558,1562> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1773,1777> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1574,1583> .
+    
+    <http://dbpedia.org/resource/Cisco_Systems>
+            rdfs:label     "Cisco System 's" , "Cisco" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1745,1759> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1790,1795> .
+    
+    <http://www.newsreader-project.eu/time/200505>
+            a              time:DateTimeDescription ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5>
+            a                time:Instant ;
+            rdfs:label       "the end of the month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1837,1857> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200505> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev47>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "VPN" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1760,1763> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev52>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Cause_motion , fn:Change_position_on_a_scale , fn:Motion , eso:Translocation , eso:Motion ;
+            rdfs:label     "move" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2177,2183> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2654,2660> .
+    
+    <http://dbpedia.org/resource/OS_X>
+            rdfs:label     "Mac OS" , "Mac News" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=189,195> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2476,2484> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2664,2670> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx6>
+            a                time:Instant ;
+            rdfs:label       "late May." ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2580,2589> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200505> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev59>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "pattern" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2640,2647> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev68>
+            a              sem:Event , nwrontology:contextualEvent , fn:Using , eso:BeingInUse , fn:Intentionally_affect , fn:Using_resource ;
+            rdfs:label     "user" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=93,98> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev69>
+            a              sem:Event , nwrontology:contextualEvent , fn:Using , eso:BeingInUse , fn:Intentionally_affect , fn:Using_resource ;
+            rdfs:label     "user" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=322,326> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev74>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1429,1433> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Microsoft Longhorn" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1390,1408> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev83>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev90>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Expectation , fn:Opinion ;
+            rdfs:label     "expect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1417,1425> , <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1480,1488> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev92>
+            a              sem:Event , nwrontology:sourceEvent , fn:Commitment ;
+            rdfs:label     "promise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1800,1808> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr2> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=26,44> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr2,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=13,31> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=283,489> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=295,345> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=327,489> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr10,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=295,336> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1492,1541> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr50,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1533,1554> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1492,1583> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1773,1857> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr51,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1545,1562> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr58,rl115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1745,1777> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1760,1857> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr57,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1745,1763> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2580,2660> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr86,rl179>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2590,2660> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr86,rl180>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2654,2672> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2580,2647> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr85,rl176>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2590,2647> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=33,98> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=93,489> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr4,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=83,98> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=322,489> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr9,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=295,326> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1429,1501> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr46,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1390,1433> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=479,505> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=492,505> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1417,1501> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr45,rl91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1390,1425> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1800,1857> .
+    
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr59,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1790,1808> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr2,rl2> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev19>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr6> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr11,rl23> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev22>
+            sem:hasActor       <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inclusion@Part>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1              <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr7> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr10,rl20> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr30> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr50,rl106> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev44>
+            sem:hasActor  <http://dbpedia.org/resource/Mac_OS_X_Tiger> ;
+            pb:A1         <http://dbpedia.org/resource/Mac_OS_X_Tiger> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr31> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr32> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr51,rl107> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev45>
+            sem:hasActor                <http://dbpedia.org/resource/Mac_OS_X_Tiger> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Being_employed@Employee>
+                    <http://dbpedia.org/resource/Mac_OS_X_Tiger> ;
+            pb:A0                       <http://dbpedia.org/resource/Mac_OS_X_Tiger> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr58,rl115> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev45>
+            sem:hasActor                <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Being_employed@Employee>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0                       <http://dbpedia.org/resource/Cisco_Systems> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr34> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr57,rl114> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev47>
+            sem:hasActor  <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0         <http://dbpedia.org/resource/Cisco_Systems> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr39> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev52>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr86,rl179> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev52>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr86,rl180> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev52>
+            sem:hasActor            <http://dbpedia.org/resource/OS_X> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/OS_X> ;
+            pb:A2                   <http://dbpedia.org/resource/OS_X> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr46> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr85,rl176> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr55> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr56> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr4,rl7> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev68>
+            sem:hasActor        <http://dbpedia.org/resource/Mac_OS_X_Tiger> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Mac_OS_X_Tiger> ;
+            eso:inuse-entity_2  <http://dbpedia.org/resource/Mac_OS_X_Tiger> ;
+            pb:A1               <http://dbpedia.org/resource/Mac_OS_X_Tiger> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr57> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr9,rl16> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev69>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr62> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev74>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr46,rl94> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev74>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> ;
+            eso:possession-owner  <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr72> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr15,rl32> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev83>
+            sem:hasActor           <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                  <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr79> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev90>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr45,rl91> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev90>
+            sem:hasActor               <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Phenomenon>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Topic>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Opinion@Topic>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> ;
+            pb:A1                      <http://www.newsreader-project.eu/data/wikinews/entities/MicrosoftLonghorn> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tr81> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#pr59,rl118> {
+    <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#ev92>
+            sem:hasActor           <http://dbpedia.org/resource/Cisco_Systems> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Commitment@Speaker>
+                    <http://dbpedia.org/resource/Cisco_Systems> ;
+            pb:A0                  <http://dbpedia.org/resource/Cisco_Systems> .
+}

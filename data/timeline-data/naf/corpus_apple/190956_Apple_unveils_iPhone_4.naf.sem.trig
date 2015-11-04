@@ -1,0 +1,695 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "system" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=234,240> , <http://en.wikinews.org/wiki/#char=1842,1848> , <http://en.wikinews.org/wiki/#char=2030,2036> , <http://en.wikinews.org/wiki/#char=2937,2943> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=0,5> , <http://en.wikinews.org/wiki/#char=2685,2690> , <http://en.wikinews.org/wiki/#char=2849,2854> , <http://en.wikinews.org/wiki/#char=2548,2553> , <http://en.wikinews.org/wiki/#char=3245,3252> , <http://en.wikinews.org/wiki/#char=1235,1242> , <http://en.wikinews.org/wiki/#char=1810,1817> , <http://en.wikinews.org/wiki/#char=2069,2076> , <http://en.wikinews.org/wiki/#char=1909,1914> , <http://en.wikinews.org/wiki/#char=809,816> , <http://en.wikinews.org/wiki/#char=245,250> , <http://en.wikinews.org/wiki/#char=809,814> , <http://en.wikinews.org/wiki/#char=1235,1240> , <http://en.wikinews.org/wiki/#char=1810,1815> , <http://en.wikinews.org/wiki/#char=2069,2074> , <http://en.wikinews.org/wiki/#char=3245,3250> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/#tmx3>
+            a                time:Instant ;
+            rdfs:label       "this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/#char=99,108> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "device" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=258,265> , <http://en.wikinews.org/wiki/#char=2554,2561> , <http://en.wikinews.org/wiki/#char=2794,2800> .
+    
+    <http://www.newsreader-project.eu/time/20100621>
+            a              time:DateTimeDescription ;
+            time:day       "---21"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/#tmx10>
+            a                time:Instant ;
+            rdfs:label       "June 21" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/#char=2585,2592> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100621> .
+    
+    <http://en.wikinews.org/wiki/#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "blog" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=356,360> .
+    
+    <http://dbpedia.org/resource/Gizmodo>
+            rdfs:label     "Gizmodo" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=361,368> .
+    
+    <http://www.newsreader-project.eu/time/201004>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/#tmx4>
+            a                time:Instant ;
+            rdfs:label       "April" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/#char=334,339> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201004> .
+    
+    <http://en.wikinews.org/wiki/#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "hint" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=513,520> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Jobs" , "Steve Jobs" , "company CEO Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=169,179> , <http://en.wikinews.org/wiki/#char=1154,1158> , <http://en.wikinews.org/wiki/#char=1965,1969> , <http://en.wikinews.org/wiki/#char=157,179> , <http://en.wikinews.org/wiki/#char=497,501> , <http://en.wikinews.org/wiki/#char=616,620> , <http://en.wikinews.org/wiki/#char=1412,1416> .
+    
+    <http://en.wikinews.org/wiki/#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:IntentionalEvent ;
+            rdfs:label     "model" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=826,831> .
+    
+    <http://www.newsreader-project.eu/time/20100608>
+            a              time:DateTimeDescription ;
+            time:day       "---08"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100608> .
+    
+    <http://en.wikinews.org/wiki/#ev38>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "demo" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1159,1165> .
+    
+    <http://en.wikinews.org/wiki/#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Processing_materials ;
+            rdfs:label     "processor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1253,1262> .
+    
+    <http://en.wikinews.org/wiki/#ev54>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance , fn:Being_employed , fn:Working_a_post , fn:Giving , eso:BeingEmployed , eso:Working , eso:Giving ;
+            rdfs:label     "service" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2100,2107> .
+    
+    <http://www.newsreader-project.eu/time/20100701>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/#tmx8>
+            a                time:Instant ;
+            rdfs:label       "July 1" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/#char=2133,2139> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100701> .
+    
+    <http://en.wikinews.org/wiki/#ev58>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "network" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2658,2665> .
+    
+    <http://dbpedia.org/resource/AT&T>
+            rdfs:label     "AT&amp;T" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2642,2646> .
+    
+    <http://en.wikinews.org/wiki/#ev59>
+            a              sem:Event , nwrontology:contextualEvent , fn:Competition , fn:Finish_competition ;
+            rdfs:label     "competition" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2883,2894> .
+    
+    <http://en.wikinews.org/wiki/#tmx12>
+            a                time:Instant ;
+            rdfs:label       "early this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/#char=2970,2987> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/#ev66>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "browser" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3119,3126> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2601,2605> , <http://en.wikinews.org/wiki/#char=3134,3138> .
+    
+    <http://en.wikinews.org/wiki/#ev67>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3230,3239> .
+    
+    <http://dbpedia.org/resource/App_Store_(iOS)>
+            rdfs:label     "App Store" , "the App Store" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3253,3262> , <http://en.wikinews.org/wiki/#char=3264,3277> .
+    
+    <http://en.wikinews.org/wiki/#ev68>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3326,3330> .
+    
+    <http://en.wikinews.org/wiki/#ev70>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , fn:Setting_fire , fn:Setting_out , eso:StartingAnActivity ;
+            rdfs:label     "start" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=502,509> .
+    
+    <http://en.wikinews.org/wiki/#ev74>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=874,877> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/StructurewiseStructurewise>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Structure-wise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=849,863> .
+    
+    <http://en.wikinews.org/wiki/#ev82>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1895,1905> .
+    
+    <http://en.wikinews.org/wiki/#tmx7>
+            a                time:Instant ;
+            rdfs:label       "April" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/#char=1918,1923> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201004> .
+    
+    <http://en.wikinews.org/wiki/#ev89>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3288,3291> .
+    
+    <http://en.wikinews.org/wiki/#ev94>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=538,544> .
+    
+    <http://en.wikinews.org/wiki/#ev96>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment_communication ;
+            rdfs:label     "praise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=605,612> .
+    
+    <http://en.wikinews.org/wiki/#ev103>
+            a              sem:Event , nwrontology:sourceEvent , fn:Evidence , fn:Reasoning ;
+            rdfs:label     "show" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1417,1423> .
+    
+    <http://en.wikinews.org/wiki/#ev107>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Motion , eso:Motion , fn:Claim_ownership , fn:Contacting , fn:Deserving , fn:Request , fn:Being_named , fn:Labeling , fn:Simple_naming ;
+            rdfs:label     "call" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1970,1976> .
+    
+    <http://en.wikinews.org/wiki/#ev112>
+            a              sem:Event , nwrontology:sourceEvent , fn:Grant_permission ;
+            rdfs:label     "let" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2694,2697> .
+    
+    <http://en.wikinews.org/wiki/#ev113>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Confronting_problem , eso:Merging ;
+            rdfs:label     "face" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2863,2869> .
+}
+
+<http://en.wikinews.org/wiki/#tr2> {
+    <http://en.wikinews.org/wiki/#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=99,240> .
+    
+    <http://en.wikinews.org/wiki/#pr66,rl138>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1810,1848> .
+    
+    <http://en.wikinews.org/wiki/#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=99,265> .
+    
+    <http://en.wikinews.org/wiki/#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2554,2592> .
+    
+    <http://en.wikinews.org/wiki/#pr3,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=245,265> .
+    
+    <http://en.wikinews.org/wiki/#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=334,360> .
+    
+    <http://en.wikinews.org/wiki/#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=356,368> .
+    
+    <http://en.wikinews.org/wiki/#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=334,520> .
+    
+    <http://en.wikinews.org/wiki/#pr14,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=497,520> .
+    
+    <http://en.wikinews.org/wiki/#pr24,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=809,831> .
+    
+    <http://en.wikinews.org/wiki/#pr39,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1154,1165> .
+    
+    <http://en.wikinews.org/wiki/#pr43,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1235,1262> .
+    
+    <http://en.wikinews.org/wiki/#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2100,2139> .
+    
+    <http://en.wikinews.org/wiki/#pr74,rl157>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2069,2107> .
+    
+    <http://en.wikinews.org/wiki/#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2585,2665> .
+    
+    <http://en.wikinews.org/wiki/#pr86,rl189>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2642,2665> .
+    
+    <http://en.wikinews.org/wiki/#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2883,2987> .
+    
+    <http://en.wikinews.org/wiki/#pr92,rl201>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2849,2894> .
+    
+    <http://en.wikinews.org/wiki/#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2970,3126> .
+    
+    <http://en.wikinews.org/wiki/#pr101,rl223>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3119,3143> .
+    
+    <http://en.wikinews.org/wiki/#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2970,3239> .
+    
+    <http://en.wikinews.org/wiki/#pr104,rl230>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3230,3262> .
+    
+    <http://en.wikinews.org/wiki/#pr106,rl234>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3264,3330> .
+    
+    <http://en.wikinews.org/wiki/#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=334,509> .
+    
+    <http://en.wikinews.org/wiki/#pr11,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=497,509> .
+    
+    <http://en.wikinews.org/wiki/#pr25,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=849,877> .
+    
+    <http://en.wikinews.org/wiki/#tr64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1895,1923> .
+    
+    <http://en.wikinews.org/wiki/#pr67,rl145>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1895,1914> .
+    
+    <http://en.wikinews.org/wiki/#pr105,rl231>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=3264,3291> .
+    
+    <http://en.wikinews.org/wiki/#tr77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=334,544> .
+    
+    <http://en.wikinews.org/wiki/#pr15,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=497,544> .
+    
+    <http://en.wikinews.org/wiki/#pr18,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=605,620> .
+    
+    <http://en.wikinews.org/wiki/#pr48,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1412,1423> .
+    
+    <http://en.wikinews.org/wiki/#tr90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1918,1976> .
+    
+    <http://en.wikinews.org/wiki/#tr91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1970,2139> .
+    
+    <http://en.wikinews.org/wiki/#pr70,rl149>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=1965,1976> .
+    
+    <http://en.wikinews.org/wiki/#tr97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2585,2697> .
+    
+    <http://en.wikinews.org/wiki/#pr89,rl194>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2685,2697> .
+    
+    <http://en.wikinews.org/wiki/#tr98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2863,2987> .
+    
+    <http://en.wikinews.org/wiki/#pr91,rl198>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/#char=2849,2869> .
+}
+
+<http://en.wikinews.org/wiki/#pr66,rl138> {
+    <http://en.wikinews.org/wiki/#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr3> {
+    <http://en.wikinews.org/wiki/#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/#tr4> {
+    <http://en.wikinews.org/wiki/#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/#pr3,rl7> {
+    <http://en.wikinews.org/wiki/#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr6> {
+    <http://en.wikinews.org/wiki/#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/#pr6,rl14> {
+    <http://en.wikinews.org/wiki/#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/Gizmodo> ;
+            pb:A1         <http://dbpedia.org/resource/Gizmodo> .
+}
+
+<http://en.wikinews.org/wiki/#tr9> {
+    <http://en.wikinews.org/wiki/#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/#pr14,rl27> {
+    <http://en.wikinews.org/wiki/#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr14> {
+    <http://en.wikinews.org/wiki/#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr24,rl50> {
+    <http://en.wikinews.org/wiki/#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr21> {
+    <http://en.wikinews.org/wiki/#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr39,rl82> {
+    <http://en.wikinews.org/wiki/#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr23> {
+    <http://en.wikinews.org/wiki/#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr43,rl93> {
+    <http://en.wikinews.org/wiki/#ev40>
+            sem:hasActor                   <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Processing_materials@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                          <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr37> {
+    <http://en.wikinews.org/wiki/#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/#pr74,rl157> {
+    <http://en.wikinews.org/wiki/#ev54>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr40> {
+    <http://en.wikinews.org/wiki/#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/#pr86,rl189> {
+    <http://en.wikinews.org/wiki/#ev58>
+            sem:hasActor  <http://dbpedia.org/resource/AT&T> ;
+            pb:A1         <http://dbpedia.org/resource/AT&T> .
+}
+
+<http://en.wikinews.org/wiki/#tr41> {
+    <http://en.wikinews.org/wiki/#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/#pr92,rl201> {
+    <http://en.wikinews.org/wiki/#ev59>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Competition@Participant_1>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr48> {
+    <http://en.wikinews.org/wiki/#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/#pr101,rl223> {
+    <http://en.wikinews.org/wiki/#ev66>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/#tr49> {
+    <http://en.wikinews.org/wiki/#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/#pr104,rl230> {
+    <http://en.wikinews.org/wiki/#ev67>
+            sem:hasActor            <http://dbpedia.org/resource/App_Store_(iOS)> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/App_Store_(iOS)> ;
+            pb:A2                   <http://dbpedia.org/resource/App_Store_(iOS)> .
+}
+
+<http://en.wikinews.org/wiki/#tr50> {
+    <http://en.wikinews.org/wiki/#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr106,rl234> {
+    <http://en.wikinews.org/wiki/#ev68>
+            sem:hasActor            <http://dbpedia.org/resource/App_Store_(iOS)> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/App_Store_(iOS)> ;
+            pb:A0                   <http://dbpedia.org/resource/App_Store_(iOS)> .
+}
+
+<http://en.wikinews.org/wiki/#tr52> {
+    <http://en.wikinews.org/wiki/#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/#pr11,rl21> {
+    <http://en.wikinews.org/wiki/#ev70>
+            sem:hasActor        <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:activity-agent  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0               <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr56> {
+    <http://en.wikinews.org/wiki/#ev74>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr25,rl52> {
+    <http://en.wikinews.org/wiki/#ev74>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/StructurewiseStructurewise> ;
+            eso:possession-owner  <http://www.newsreader-project.eu/data/wikinews/entities/StructurewiseStructurewise> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/StructurewiseStructurewise> .
+}
+
+<http://en.wikinews.org/wiki/#tr64> {
+    <http://en.wikinews.org/wiki/#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/#pr67,rl145> {
+    <http://en.wikinews.org/wiki/#ev82>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr71> {
+    <http://en.wikinews.org/wiki/#ev89>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr105,rl231> {
+    <http://en.wikinews.org/wiki/#ev89>
+            sem:hasActor          <http://dbpedia.org/resource/App_Store_(iOS)> ;
+            eso:possession-owner  <http://dbpedia.org/resource/App_Store_(iOS)> ;
+            pb:A0                 <http://dbpedia.org/resource/App_Store_(iOS)> .
+}
+
+<http://en.wikinews.org/wiki/#tr77> {
+    <http://en.wikinews.org/wiki/#ev94>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/#pr15,rl29> {
+    <http://en.wikinews.org/wiki/#ev94>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr79> {
+    <http://en.wikinews.org/wiki/#ev96>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr18,rl37> {
+    <http://en.wikinews.org/wiki/#ev96>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment_communication@Communicator>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr86> {
+    <http://en.wikinews.org/wiki/#ev103>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/#pr48,rl106> {
+    <http://en.wikinews.org/wiki/#ev103>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Arguer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Support>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr90> {
+    <http://en.wikinews.org/wiki/#ev107>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/#tr91> {
+    <http://en.wikinews.org/wiki/#ev107>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/#pr70,rl149> {
+    <http://en.wikinews.org/wiki/#ev107>
+            sem:hasActor                 <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Being_named@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Claim_ownership@Claimant>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Contacting@Communicator>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Simple_naming@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                        <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/#tr97> {
+    <http://en.wikinews.org/wiki/#ev112>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/#pr89,rl194> {
+    <http://en.wikinews.org/wiki/#ev112>
+            sem:hasActor                 <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                        <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/#tr98> {
+    <http://en.wikinews.org/wiki/#ev113>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/#pr91,rl198> {
+    <http://en.wikinews.org/wiki/#ev113>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Confronting_problem@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                         <http://dbpedia.org/resource/Apple_Inc.> .
+}

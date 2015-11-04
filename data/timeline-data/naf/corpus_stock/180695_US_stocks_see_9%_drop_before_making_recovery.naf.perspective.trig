@@ -1,0 +1,934 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=876,882>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "slowed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_NON_FUTURE_NEG> , <CERTAIN_u_POS> , <PROBABLE_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/other+reports> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849>
+          rdfs:label          "suggested" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=890,900>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "executions" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=909,915>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "became" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=940,946>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "errors" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=952,961>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "occurring" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1021,1030>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "withdrawn" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1032,1040>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "allowing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=985,993>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "majority" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1001,1007>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "orders" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=968,974>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "result" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1058,1066>
+          rdfs:comment        "suggested" ;
+          rdfs:label          "continue" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=840,849> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1356,1360>
+          rdfs:comment        "spoke" ;
+          rdfs:label          "know" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1320,1325> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_NON_FUTURE_NEG> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/procter+%26+gamble+spokeswoman+jennifer+chelune> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1320,1325>
+          rdfs:label          "spoke" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1366,1372>
+          rdfs:comment        "spoke" ;
+          rdfs:label          "caused" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1320,1325> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1573,1578>
+          rdfs:comment        "reports" ;
+          rdfs:label          "cause" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1531,1538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+reuters+news+agency> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1531,1538>
+          rdfs:label          "reports" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1554,1560>
+          rdfs:comment        "reports" ;
+          rdfs:label          "height" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1531,1538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1586,1592>
+          rdfs:comment        "reports" ;
+          rdfs:label          "values" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1531,1538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1596,1600>
+          rdfs:comment        "reports" ;
+          rdfs:label          "lose" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1531,1538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2626,2637>
+          rdfs:comment        "noted" ;
+          rdfs:label          "coordinated" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2612,2617> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr4>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/NASDAQ> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2612,2617>
+          rdfs:label          "noted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2642,2646>
+          rdfs:comment        "noted" ;
+          rdfs:label          "move" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2612,2617> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3143,3152>
+          rdfs:comment        "commented" ;
+          rdfs:label          "realizing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3113,3122> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr5>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/PeterBoockvar> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3113,3122>
+          rdfs:label          "commented" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr90> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3177,3179>
+          rdfs:comment        "commented" ;
+          rdfs:label          "go" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3113,3122> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3215,3221>
+          rdfs:comment        "commented" ;
+          rdfs:label          "couple" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3113,3122> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=10,13>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=29,35>
+          rdfs:label          "making" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr1>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=36,44>
+          rdfs:label          "recovery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=17,21>
+          rdfs:label          "drop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=68,75>
+          rdfs:label          "markets" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=76,79>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=163,169>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=229,238>
+          rdfs:label          "recovered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=251,254>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr8>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=294,297>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=363,368>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr10>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=308,312>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=327,331>
+          rdfs:label          "drop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=386,391>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=399,403>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=435,440>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=463,467>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=521,526>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=527,534>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=550,556>
+          rdfs:label          "points" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=601,609>
+          rdfs:label          "happened" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=596,600>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=678,685>
+          rdfs:label          "causing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=627,635>
+          rdfs:label          "mistyped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=639,644>
+          rdfs:label          "order" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=648,652>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr25>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=661,667>
+          rdfs:label          "amount" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=696,701>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=705,707>
+          rdfs:label          "go" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr28>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=723,730>
+          rdfs:label          "trigger" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=741,745>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=814,823>
+          rdfs:label          "abandoned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1129,1133>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1143,1144>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1198,1202>
+          rdfs:label          "bell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1221,1228>
+          rdfs:label          "started" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1256,1262>
+          rdfs:label          "trades" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1263,1271>
+          rdfs:label          "happened" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1291,1302>
+          rdfs:label          "spokeswoman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1380,1384>
+          rdfs:label          "know" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1419,1420>
+          rdfs:label          "[" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1435,1442>
+          rdfs:label          "looking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1627,1630>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1700,1703>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1708,1714>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1715,1722>
+          rdfs:label          "plummet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1771,1780>
+          rdfs:label          "rebounded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1784,1789>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr50>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1837,1844>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1825,1831>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1848,1852>
+          rdfs:label          "lows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1857,1864>
+          rdfs:label          "reached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr54>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2031,2037>
+          rdfs:label          "reared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr55>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=1985,1993>
+          rdfs:label          "generate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr56>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2000,2006>
+          rdfs:label          "trades" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr57>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2011,2017>
+          rdfs:label          "create" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr58>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2025,2030>
+          rdfs:label          "chaos" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr59>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2061,2065>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2042,2046>
+          rdfs:label          "head" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr61>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2248,2256>
+          rdfs:label          "reviewed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr62>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2261,2267>
+          rdfs:label          "placed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr63>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2104,2110>
+          rdfs:label          "battle" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr64>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2135,2145>
+          rdfs:label          "understood" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr65>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2371,2377>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr66>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2393,2404>
+          rdfs:label          "investigate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr67>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2409,2414>
+          rdfs:label          "cause" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr68>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2458,2462>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr69>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2472,2478>
+          rdfs:label          "trades" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr70>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2528,2537>
+          rdfs:label          "preceding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr71>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2538,2543>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr72>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr73>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2691,2698>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr74>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2740,2744>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr75>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2749,2754>
+          rdfs:label          "think" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr76>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2773,2777>
+          rdfs:label          "took" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr77>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2798,2801>
+          rdfs:label          "lot" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr78>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2811,2822>
+          rdfs:label          "interaction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr79>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2830,2835>
+          rdfs:label          "known" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr80>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2851,2858>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr81>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2863,2866>
+          rdfs:label          "run" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr82>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2888,2893>
+          rdfs:label          "think" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr83>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2909,2912>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr84> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr84>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2913,2919>
+          rdfs:label          "happen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr85> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr85>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=2966,2970>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr86> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr86>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3004,3012>
+          rdfs:label          "concerns" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr87> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr87>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3050,3057>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr88> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr88>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3028,3034>
+          rdfs:label          "ailing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr89> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr89>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr90>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3084,3094>
+          rdfs:label          "strategist" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr91> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr91>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3258,3265>
+          rdfs:label          "partner" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr92> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr92>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3250,3257>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr93> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr93>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3284,3293>
+          rdfs:label          "threatens" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr94> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr94>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery#char=3312,3318>
+          rdfs:label          "growth" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr95> .
+  
+  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery_dAttr95>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stocks_see_9%25_drop_before_making_recovery> .
+}

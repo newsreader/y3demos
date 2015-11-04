@@ -1,0 +1,250 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=6,14> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=70,78> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=260,268> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=0,5> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=703,705> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=254,259> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=445,450> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=506,513> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=312,314> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=60,65> , <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=506,511> .
+    
+    <http://www.newsreader-project.eu/time/20060405>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 5 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=45,58> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060405> .
+    
+    <http://www.newsreader-project.eu/time/200601>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2>
+            a                time:Instant ;
+            rdfs:label       "January" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=454,461> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200601> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "application" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=82,93> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "lawsuit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=419,426> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "vice-president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=524,538> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev30>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=863,867> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=871,877> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060405> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , fn:Submitting_documents , fn:Possession , eso:Placing ;
+            rdfs:label     "file" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=431,436> .
+    
+    <http://dbpedia.org/resource/California>
+            rdfs:label     "California" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=392,402> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Creating , fn:Intentionally_create , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "publish" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=1018,1027> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AmericanSpeechLanguageHearingAssociation>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "American Speech Language Hearing Association" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=973,1017> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr1> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=6,78> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=260,461> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=45,93> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr6,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=60,93> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=419,461> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr22,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=419,450> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=454,538> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr27,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=506,538> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr41,rl83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=863,877> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=431,461> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr21,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=389,436> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr21,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=431,450> .
+    
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr45,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#char=969,1027> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr2> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev10>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr8> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr6,rl9> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev14>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr18> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr22,rl46> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr19> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr27,rl54> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr24> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr41,rl83> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev30>
+            sem:hasPlace  <http://dbpedia.org/resource/France> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr33> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr21,rl40> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev40>
+            sem:hasPlace  <http://dbpedia.org/resource/California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr21,rl42> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev40>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tr40> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#pr45,rl92> {
+    <http://en.wikinews.org/wiki/Apple_releases_program_to_limit_iPod_volume#ev47>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/AmericanSpeechLanguageHearingAssociation> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/AmericanSpeechLanguageHearingAssociation> .
+}

@@ -1,0 +1,462 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Closure , fn:Body_movement , eso:Motion ;
+            rdfs:label     "close" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=27,32> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=358,365> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=753,759> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1180,1186> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "General Motors" , "GM 's" , "U.S. automaker GM" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=15,17> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=99,113> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=115,117> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=618,620> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=713,715> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1250,1254> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=945,949> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=384,386> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=249,253> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=0,17> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=249,251> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=945,947> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1250,1252> .
+    
+    <http://www.newsreader-project.eu/time/20090515>
+            a              time:DateTimeDescription ;
+            time:day       "---15"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 15 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=52,64> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090515> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=135,141> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090515> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5>
+            a                time:Instant ;
+            rdfs:label       "the end of 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=696,711> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1144,1149> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090515> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev16>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Motion ;
+            rdfs:label     "move" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=254,258> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1030,1034> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Resolve_problem ;
+            rdfs:label     "dealer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=631,638> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=814,821> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=0,4> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=295,299> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=646,650> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=809,813> .
+    
+    <http://www.newsreader-project.eu/time/201010>
+            a              time:DateTimeDescription ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx4>
+            a                time:Instant ;
+            rdfs:label       "October of next year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=521,541> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201010> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "underperform" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=765,780> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=950,955> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , eso:Increasing , eso:Getting ;
+            rdfs:label     "revenue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1260,1267> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev42>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Motion , fn:Arriving , fn:Reveal_secret , eso:Arriving ;
+            rdfs:label     "come" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=259,264> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Manufacturing , fn:Self_motion , fn:Creating , eso:Creating ;
+            rdfs:label     "maker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=304,309> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=621,624> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev48>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=18,23> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev49>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=119,128> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=405,413> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090515> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev55>
+            a              sem:Event , nwrontology:contextualEvent , eso:Motion , fn:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=716,720> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=940,944> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr1> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=27,64> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=135,365> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=696,759> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1144,1186> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=0,32> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1030,1149> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr9,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=249,258> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=521,638> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=631,821> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr25,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=618,638> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr25,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=625,650> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=696,780> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr31,rl71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=765,821> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=950,1149> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr39,rl84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=945,955> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1144,1267> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr56,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1250,1267> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=135,264> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr10,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=249,264> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=135,309> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr13,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=295,309> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=521,624> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=621,711> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr24,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=618,624> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr24,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=621,650> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=18,64> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=0,23> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=405,413> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr15,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=384,413> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=696,720> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=940,1149> .
+    
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr29,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=713,720> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr2> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr3> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr4> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr2,rl3> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr7> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr9,rl15> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev16>
+            sem:hasActor     <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Motion@Theme>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0            <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr14> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr15> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr25,rl56> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev23>
+            sem:hasActor              <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Resolve_problem@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                     <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr25,rl57> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev23>
+            sem:hasActor              <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Resolve_problem@Agent>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr17> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr31,rl71> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr22> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr39,rl84> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev31>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr29> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr56,rl114> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev40>
+            sem:hasActor                   <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                          <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr31> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr10,rl17> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev42>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr32> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr13,rl23> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev43>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr33> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr34> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr24,rl54> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev44>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr24,rl55> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev44>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr38> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr1,rl1> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev48>
+            sem:hasActor      <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0             <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr39> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev49>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr15,rl28> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev49>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr45> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tr46> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#pr29,rl66> {
+    <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#ev55>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                    <http://dbpedia.org/resource/General_Motors> .
+}

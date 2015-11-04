@@ -1,0 +1,457 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=9,16> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "drug maker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=0,2> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1203,1205> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1077,1088> .
+    
+    <http://www.newsreader-project.eu/time/200811>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx1>
+            a                time:Instant ;
+            rdfs:label       "November" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=44,52> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200811> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Getting , eso:Increasing , fn:Change_of_quantity_of_possession , eso:Getting ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=202,206> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=269,273> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=535,539> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=582,586> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1098,1103> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1180,1184> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4>
+            a                time:Instant ;
+            rdfs:label       "November 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=108,121> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200811> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "four day" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=130,138> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090313> .
+    
+    <http://www.newsreader-project.eu/time/20090313>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Operating_a_system , eso:BeingLeader ;
+            rdfs:label     "manage" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=698,706> .
+    
+    <http://dbpedia.org/resource/Citigroup>
+            rdfs:label     "Citigroup Inc." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=677,691> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx8>
+            a                time:Instant ;
+            rdfs:label       "this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=647,656> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx10>
+            a                time:Instant ;
+            rdfs:label       "the year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=742,750> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_fragment , eso:Destroying , eso:Damaging ;
+            rdfs:label     "collapse" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=825,835> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=846,854> .
+    
+    <http://dbpedia.org/resource/Lehman_Brothers>
+            rdfs:label     "Lehman brothers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=858,873> .
+    
+    <http://www.newsreader-project.eu/time/200809>
+            a              time:DateTimeDescription ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx11>
+            a                time:Instant ;
+            rdfs:label       "September" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=877,886> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200809> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=82,85> .
+    
+    <http://dbpedia.org/resource/New_York_Stock_Exchange>
+            rdfs:label     "Wall Street" , "NYSE" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=70,81> , <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=258,262> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_finish , fn:Activity_stop , eso:StoppingAnActivity ;
+            rdfs:label     "finish" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=95,101> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=565,568> .
+    
+    <http://dbpedia.org/resource/Nasdaq_Composite>
+            rdfs:label     "NASDAQ" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=548,554> .
+    
+    <http://www.newsreader-project.eu/time/20090312>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx7>
+            a                time:Instant ;
+            rdfs:label       "March 12 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=473,486> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090312> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Manufacturing , fn:Self_motion , fn:Creating , eso:Creating ;
+            rdfs:label     "maker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1082,1088> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx12>
+            a                time:Instant ;
+            rdfs:label       "the current year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1010,1026> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1089,1092> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communication , fn:Evidence , fn:Sign ;
+            rdfs:label     "indicator" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=240,250> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev46>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment , fn:Assessing ;
+            rdfs:label     "value" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1190,1195> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090313> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=9,52> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=0,16> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=108,206> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=130,206> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr42,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1077,1103> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=647,706> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=698,750> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr26,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=672,706> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=825,886> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr33,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=846,873> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=82,121> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=82,138> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr4,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=70,85> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=95,121> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=95,138> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr5,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=70,101> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=473,568> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=565,656> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=565,750> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr23,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=544,568> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1010,1088> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr40,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1077,1088> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1010,1092> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr41,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1077,1092> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=108,250> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=130,250> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr10,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=240,262> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr45,rl90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#char=1190,1212> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr1,rl1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev9>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr7> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr8> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr42,rl82> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr15> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr16> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr26,rl54> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev20>
+            sem:hasActor                    <http://dbpedia.org/resource/Citigroup> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Operating_a_system@Operator>
+                    <http://dbpedia.org/resource/Citigroup> ;
+            pb:A0                           <http://dbpedia.org/resource/Citigroup> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr24> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr33,rl66> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Lehman_Brothers> ;
+            pb:A1         <http://dbpedia.org/resource/Lehman_Brothers> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr31> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr32> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr4,rl6> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev32>
+            sem:hasActor          <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            eso:possession-owner  <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            pb:A0                 <http://dbpedia.org/resource/New_York_Stock_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr33> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr34> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr5,rl9> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev33>
+            sem:hasActor        <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            eso:activity-agent  <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            pb:A0               <http://dbpedia.org/resource/New_York_Stock_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr37> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr38> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr39> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr23,rl44> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev35>
+            sem:hasActor          <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            pb:A0                 <http://dbpedia.org/resource/Nasdaq_Composite> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr46> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr40,rl78> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev39>
+            sem:hasActor        <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:creating-theme  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1               <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr47> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr41,rl80> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev40>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr51> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr52> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr10,rl21> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev43>
+            sem:hasPlace  <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/New_York_Stock_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tr55> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#pr45,rl90> {
+    <http://en.wikinews.org/wiki/US_stock_markets_have_their_best_week_since_November#ev46>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Phenomenon>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Evaluee>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                    <http://dbpedia.org/resource/United_States_dollar> .
+}

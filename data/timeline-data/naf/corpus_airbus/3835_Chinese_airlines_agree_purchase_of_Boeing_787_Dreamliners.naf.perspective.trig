@@ -1,0 +1,230 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=23,31>
+          rdfs:comment        "agree" ;
+          rdfs:label          "purchase" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=17,22> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/chinese+airlines> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=17,22>
+          rdfs:label          "agree" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=46,57>
+          rdfs:comment        "agree" ;
+          rdfs:label          "Dreamliners" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=17,22> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=92,101>
+          rdfs:label          "Officials" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=143,149>
+          rdfs:label          "agreed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=153,161>
+          rdfs:label          "purchase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=201,205>
+          rdfs:label          "deal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=247,255>
+          rdfs:label          "selected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=260,269>
+          rdfs:label          "purchased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr6>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=300,311>
+          rdfs:label          "distributes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=356,365>
+          rdfs:label          "agreement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr8>
+          rdf:value             <CERTAIN_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=371,374>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr9>
+          rdf:value             <CERTAIN_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=387,396>
+          rdfs:label          "delivered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=550,559>
+          rdfs:label          "scheduled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=569,573>
+          rdfs:label          "time" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=633,638>
+          rdfs:label          "named" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=655,662>
+          rdfs:label          "renamed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=693,702>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=716,721>
+          rdfs:label          "begin" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr16>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=722,732>
+          rdfs:label          "production" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr17>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=765,770>
+          rdfs:label          "enter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr18>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=779,786>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=836,840>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr20>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=843,848>
+          rdfs:label          "range" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=876,881>
+          rdfs:label          "miles" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=895,898>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn#char=955,959>
+          rdfs:label          "fuel" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Chinese_airlines_agree_purchase_of_Boeing_787_Dreamliners_worth_US$7.2bn> .
+}

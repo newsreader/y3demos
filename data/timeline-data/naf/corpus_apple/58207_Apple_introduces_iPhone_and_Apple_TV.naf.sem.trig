@@ -1,0 +1,378 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev11>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "system" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=326,332> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1010,1016> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple TV" , "Apple Inc." , "today Apple" , "`` today Apple" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=0,5> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=935,943> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1161,1169> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1018,1023> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=238,243> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=644,649> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=310,315> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=56,66> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=28,36> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=887,892> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=881,892> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=798,810> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=945,947> .
+    
+    <http://dbpedia.org/resource/Microsoft>
+            rdfs:label     "Microsoft" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=975,984> .
+    
+    <http://dbpedia.org/resource/Home_theater_PC>
+            rdfs:label     "Media Center" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=987,999> .
+    
+    <http://www.newsreader-project.eu/time/20070110>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=881,886> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070110> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Attaching ;
+            rdfs:label     "connect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=612,619> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1170,1178> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070110> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=665,673> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=654,664> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=872,877> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070110> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cotheme , fn:Self_motion , eso:Translocation ;
+            rdfs:label     "walk" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=688,695> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , fn:Removing , fn:Bringing , fn:Taking , fn:Change_of_leadership , eso:Increasing , eso:Transportation , eso:Getting , eso:Taking ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=715,721> , <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1028,1033> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "reinvent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=823,831> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=898,906> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , eso:Arriving ;
+            rdfs:label     "approach" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1046,1054> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=6,16> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 10 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=38,54> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070110> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=77,87> .
+    
+    <http://dbpedia.org/resource/San_Francisco>
+            rdfs:label     "San Francisco" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=146,159> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx2>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=67,72> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070110> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev39>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=224,230> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr3> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=881,1016> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr8,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=310,332> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr33,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=975,1016> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr33,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=987,1016> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr38,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1161,1178> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=665,877> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr22,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=644,673> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=688,877> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr23,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=644,695> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=715,877> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr24,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=644,721> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr35,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1018,1033> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=823,877> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr28,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=805,831> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=881,906> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr30,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=881,906> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr36,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=1018,1054> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=6,54> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=0,16> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=67,87> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=56,87> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr2,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=77,159> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=67,230> .
+    
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr4,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#char=224,251> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr8,rl15> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr33,rl73> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Microsoft> ;
+            pb:A0         <http://dbpedia.org/resource/Microsoft> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr33,rl74> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Home_theater_PC> ;
+            pb:A1         <http://dbpedia.org/resource/Home_theater_PC> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr11> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr38,rl85> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev19>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attaching@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attaching@Connector>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr12> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr22,rl41> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr13> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr23,rl44> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr14> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr24,rl46> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev22>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:possession-owner_2   <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr35,rl77> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev22>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_2   <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr16> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr28,rl57> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr17> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr30,rl64> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev25>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr20> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr36,rl79> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev28>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr24> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr25> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr2,rl6> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev33>
+            sem:hasPlace  <http://dbpedia.org/resource/San_Francisco> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/San_Francisco> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tr31> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#pr4,rl9> {
+    <http://en.wikinews.org/wiki/Apple_introduces_iPhone_and_Apple_TV#ev39>
+            sem:hasPlace  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Apple_Inc.> .
+}

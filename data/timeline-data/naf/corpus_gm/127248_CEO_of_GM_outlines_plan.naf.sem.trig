@@ -1,0 +1,1074 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "CEO" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=0,3> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "our" , "General motors" , "the history of General motors" , "the plan for General motors" , "General motors '" , "GM 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=7,9> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3073,3077> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2787,2791> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1450,1452> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1927,1930> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1242,1244> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3317,3319> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1292,1306> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1394,1396> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1069,1072> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1477,1479> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1217,1219> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2050,2052> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=475,504> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1279,1306> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=975,977> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2907,2922> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=194,208> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=490,504> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2718,2720> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2812,2814> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3009,3013> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2222,2223> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=547,549> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2519,2521> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3009,3011> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3111,3113> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3160,3162> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3481,3483> .
+    
+    <http://www.newsreader-project.eu/time/20090604>
+            a              time:DateTimeDescription ;
+            time:day       "---04"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 4 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=77,89> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090604> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "provision" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=385,395> .
+    
+    <http://dbpedia.org/resource/Federal_government_of_the_United_States>
+            rdfs:label     "U.S." , "the U.S. Treasury ''" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=399,403> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2155,2159> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2426,2430> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2563,2567> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3199,3203> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3375,3379> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3395,3399> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3644,3648> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3750,3769> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=443,448> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090604> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1049,1053> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3278,3282> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3341,3345> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3383,3387> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3666,3670> .
+    
+    <http://dbpedia.org/resource/China>
+            rdfs:label     "China" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3037,3042> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3349,3354> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3332,3337> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3186,3191> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090604> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev42>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "union" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1350,1355> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1383,1388> .
+    
+    <http://dbpedia.org/resource/United_Auto_Workers>
+            rdfs:label     "United Auto workers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1330,1349> .
+    
+    <http://dbpedia.org/resource/Canadian_Auto_Workers>
+            rdfs:label     "canadian Auto workers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1361,1382> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev44>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "bondholder" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1435,1446> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Receiving , eso:Getting ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1492,1500> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1550,1560> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1639,1649> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1849,1859> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2160,2170> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2568,2578> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3649,3659> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1613,1630> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev54>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "business" , "job" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1931,1939> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2923,2933> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1983,1986> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev55>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Operating_a_system , eso:BeingLeader ;
+            rdfs:label     "management" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2036,2046> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Behind_the_scenes , fn:Cause_to_start , fn:Intentionally_create , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "produce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2522,2531> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating , fn:Attempt_suasion ;
+            rdfs:label     "encourage" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2585,2594> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev62>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Giving , fn:Offering ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2727,2732> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev66>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Operating_a_system , eso:BeingLeader , fn:Amounting_to , fn:Resolve_problem , eso:HavingAValue ;
+            rdfs:label     "deal" , "manage" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2801,2808> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2829,2836> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev68>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "venturis" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3025,3033> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev69>
+            a              sem:Event , nwrontology:contextualEvent , fn:Separating , fn:Becoming_separated , fn:Separation , eso:Separating ;
+            rdfs:label     "part" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3095,3099> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev70>
+            a              sem:Event , nwrontology:contextualEvent , fn:Importing , eso:Importing ;
+            rdfs:label     "import" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3169,3175> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev73>
+            a              sem:Event , nwrontology:contextualEvent , eso:Creating , fn:Building , fn:Creating ;
+            rdfs:label     "building" , "build" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3263,3268> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3320,3328> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3359,3367> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev76>
+            a              sem:Event , nwrontology:contextualEvent , eso:Getting , eso:Creating , fn:Giving , fn:Creating , fn:Arriving , fn:Resurrection , eso:Arriving , fn:Getting , fn:Motion ;
+            rdfs:label     "return" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3490,3496> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3887,3893> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev77>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "profitability" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3500,3513> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev83>
+            a              sem:Event , nwrontology:contextualEvent , fn:Existence , fn:Left_to_do , fn:Remainder , fn:State_continue , eso:BeingInExistence ;
+            rdfs:label     "remain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=978,985> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev85>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1307,1310> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev87>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Manufacturing , eso:Creating , fn:Building , fn:Creating , fn:Arriving , fn:Cause_change , fn:Cooking_creation , fn:Self_motion ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2062,2066> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev88>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Manufacturing , eso:Creating , fn:Building , fn:Creating , fn:Arriving , fn:Cause_change , fn:Cooking_creation , fn:Self_motion ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2180,2184> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev92>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "conference" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=111,121> .
+    
+    <http://dbpedia.org/resource/New_York>
+            rdfs:label     "New York" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=96,104> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=290,295> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090604> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev95>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communicate_categorization ;
+            rdfs:label     "describe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=419,428> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=585,594> .
+    
+    <http://dbpedia.org/resource/Henderson,_Nevada>
+            rdfs:label     "Henderson" , "his" , "Fritz Henderson" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=409,418> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=783,786> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1264,1266> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1207,1209> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=923,926> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1454,1456> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=529,531> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=663,672> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1950,1952> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=685,687> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1814,1816> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=757,759> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=955,957> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=146,161> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev96>
+            a              sem:Event , nwrontology:sourceEvent , fn:Chatting , fn:Statement ;
+            rdfs:label     "speak" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=345,353> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=506,514> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev97>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , eso:BeingLeader , fn:Verdict ;
+            rdfs:label     "law" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=404,407> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev98>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession , fn:Recording ;
+            rdfs:label     "history" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=479,486> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev102>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=673,679> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev107>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supporting , fn:Taking_sides , eso:IntentionalEvent ;
+            rdfs:label     "support" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1061,1068> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1315,1322> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev112>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1283,1287> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev119>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Possession , eso:HavingInPossession , fn:Desiring , eso:Motion ;
+            rdfs:label     "want" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2053,2058> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2171,2176> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev120>
+            a              sem:Event , nwrontology:contextualEvent , fn:Text_creation ;
+            rdfs:label     "type" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2071,2075> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2193,2197> , <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2536,2541> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev123>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , eso:BeingLeader , fn:Verdict ;
+            rdfs:label     "law" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2445,2449> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev126>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Grant_permission , fn:Permitting ;
+            rdfs:label     "allow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2781,2786> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev133>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "address" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3737,3746> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev135>
+            a              sem:Event , nwrontology:sourceEvent , fn:Awareness , fn:Categorization , fn:Grasp , fn:Opinion , fn:Perception_experience ;
+            rdfs:label     "feel" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3857,3861> .
+    
+    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury>
+            rdfs:label     "U.S. Treasury" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3843,3856> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr1> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=0,89> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=0,18> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=385,448> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr13,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=385,407> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3666,3670> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr38,rl81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=975,1053> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr135,rl294>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3341,3354> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr137,rl297>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3383,3399> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr54,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1330,1355> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr55,rl116>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1370,1388> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr57,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1435,1452> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr59,rl122>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1477,1500> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2568,2578> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr66,rl139>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1617,1649> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr85,rl182>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2155,2170> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr121,rl260>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2907,2933> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr80,rl172>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2032,2052> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr100,rl214>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2511,2531> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2585,2594> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr102,rl219>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2559,2594> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2727,2732> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr111,rl236>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2718,2732> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr116,rl252>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2801,2823> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr123,rl267>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3009,3033> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr123,rl269>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3025,3042> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr124,rl270>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3095,3115> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3169,3175> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr128,rl277>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3152,3175> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr128,rl280>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3169,3191> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr128,rl281>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3169,3203> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr134,rl292>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3317,3328> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr134,rl293>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3320,3337> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr136,rl295>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3359,3379> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3490,3496> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr143,rl309>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3473,3496> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr144,rl312>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3473,3513> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr37,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=975,985> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr51,rl109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1279,1310> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr82,rl176>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2032,2066> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr87,rl186>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2151,2184> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=111,295> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr5,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=96,121> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=419,448> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr11,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=409,428> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr11,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=419,504> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=345,448> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr12,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=345,418> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=404,448> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr14,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=399,407> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=443,486> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr16,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=479,504> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr24,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=663,679> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr52,rl111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1279,1322> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr53,rl113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=1283,1306> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr81,rl174>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2032,2058> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr86,rl184>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2151,2176> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr88,rl188>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2151,2197> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr96,rl207>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2426,2449> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr112,rl241>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=2718,2786> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr153,rl334>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3737,3769> .
+    
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr156,rl341>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#char=3839,3861> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr2,rl3> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr6> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr13,rl32> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev29>
+            sem:hasActor            <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            eso:possession-theme    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                   <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr15> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev38>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr38,rl81> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev38>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr135,rl294> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev38>
+            sem:hasPlace  <http://dbpedia.org/resource/China> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr137,rl297> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev38>
+            sem:hasPlace  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr18> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr54,rl114> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev42>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A1         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr55,rl116> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev42>
+            sem:hasActor  <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A1         <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr20> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr57,rl118> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev44>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr21> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr59,rl122> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev45>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr23> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev47>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr66,rl139> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev47>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            pb:A2         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr85,rl182> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev47>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2         <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr30> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr121,rl260> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev54>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr31> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr80,rl172> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev55>
+            sem:hasActor                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Operating_a_system@Operator>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                           <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr33> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr100,rl214> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev57>
+            sem:hasActor                   <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                          <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr34> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev58>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr102,rl219> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev58>
+            sem:hasActor                <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt_suasion@Speaker>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                       <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr38> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev62>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr111,rl236> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev62>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr42> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr116,rl252> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev66>
+            sem:hasActor         <http://dbpedia.org/resource/General_Motors> ;
+            eso:value-attribute  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr44> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr123,rl267> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev68>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr123,rl269> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev68>
+            sem:hasPlace  <http://dbpedia.org/resource/China> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr45> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr124,rl270> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev69>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:separating-theme_3  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr46> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev70>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr128,rl277> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev70>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr128,rl280> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev70>
+            sem:hasActor            <http://dbpedia.org/resource/China> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/China> ;
+            pb:A2                   <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr128,rl281> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev70>
+            sem:hasActor            <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2                   <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr49> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev73>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr134,rl292> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev73>
+            sem:hasActor       <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0              <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr134,rl293> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev73>
+            sem:hasPlace  <http://dbpedia.org/resource/China> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr136,rl295> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev73>
+            sem:hasPlace  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr52> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev76>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr143,rl309> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev76>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr53> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev77>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr144,rl312> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev77>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr59> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr37,rl78> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev83>
+            sem:hasActor     <http://dbpedia.org/resource/General_Motors> ;
+            eso:exist-theme  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1            <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr61> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev85>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr51,rl109> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev85>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr63> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev87>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr82,rl176> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev87>
+            sem:hasActor                   <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                          <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr64> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr87,rl186> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev88>
+            sem:hasActor                   <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                          <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr68> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev92>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr5,rl9> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev92>
+            sem:hasPlace  <http://dbpedia.org/resource/New_York> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/New_York> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr71> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev95>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr11,rl26> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev95>
+            sem:hasActor  <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communicate_categorization@Speaker>
+                    <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            pb:A0         <http://dbpedia.org/resource/Henderson,_Nevada> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr11,rl28> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev95>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communicate_categorization@Category>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr72> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev96>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr12,rl31> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev96>
+            sem:hasActor                <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            pb:A0                       <http://dbpedia.org/resource/Henderson,_Nevada> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr73> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev97>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr14,rl33> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev97>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Verdict@Judge>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                 <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr74> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev98>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr16,rl36> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev98>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recording@Entity>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recording@Phenomenon>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr78> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev102>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr24,rl52> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev102>
+            sem:hasActor          <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Henderson,_Nevada> ;
+            pb:A0                 <http://dbpedia.org/resource/Henderson,_Nevada> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr83> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev107>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr52,rl111> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev107>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Supporting@Supported>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr88> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev112>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr53,rl113> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev112>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Attribute>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Goal>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Value>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr95> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev119>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr81,rl174> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev119>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr86,rl184> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev119>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                 <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr96> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev120>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr88,rl188> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev120>
+            sem:hasActor            <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Place>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2                   <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr99> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev123>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr96,rl207> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev123>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Verdict@Judge>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                 <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr102> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev126>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr112,rl241> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev126>
+            sem:hasActor                 <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Permitting@Principle>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                        <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr109> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev133>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr153,rl334> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev133>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2         <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tr111> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev135>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#pr156,rl341> {
+    <http://en.wikinews.org/wiki/CEO_of_GM_outlines_plan_for_%22New_GM%22_after_auto_company_declared_bankruptcy#ev135>
+            sem:hasActor                <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Awareness@Cognizer>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Opinion@Cognizer>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            pb:A0                       <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> .
+}

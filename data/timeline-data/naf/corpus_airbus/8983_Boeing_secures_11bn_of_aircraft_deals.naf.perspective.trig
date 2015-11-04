@@ -1,0 +1,358 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=581,587>
+          rdfs:comment        "estimated" ;
+          rdfs:label          "saving" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=560,569> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Air_Canada> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=560,569>
+          rdfs:label          "estimated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=599,607>
+          rdfs:comment        "estimated" ;
+          rdfs:label          "existing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=560,569> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=7,14>
+          rdfs:label          "secures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=33,38>
+          rdfs:label          "deals" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=67,74>
+          rdfs:label          "secured" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=85,91>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=126,133>
+          rdfs:label          "ordered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=194,198>
+          rdfs:label          "deal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=185,191>
+          rdfs:label          "signed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=243,247>
+          rdfs:label          "deal" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=248,256>
+          rdfs:label          "includes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=262,268>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=348,356>
+          rdfs:label          "included" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=407,412>
+          rdfs:label          "order" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=461,465>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=503,507>
+          rdfs:label          "save" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr13>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=634,638>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=671,677>
+          rdfs:label          "offers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=728,734>
+          rdfs:label          "factor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=753,759>
+          rdfs:label          "bought" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=807,810>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=826,832>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=813,818>
+          rdfs:label          "total" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=883,889>
+          rdfs:label          "family" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=898,903>
+          rdfs:label          "range" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=935,940>
+          rdfs:label          "built" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=976,983>
+          rdfs:label          "carries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1019,1022>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1004,1014>
+          rdfs:label          "passengers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1060,1065>
+          rdfs:label          "miles" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1099,1105>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1187,1195>
+          rdfs:label          "airliner" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1259,1268>
+          rdfs:label          "scheduled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1272,1277>
+          rdfs:label          "enter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1278,1285>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1303,1308>
+          rdfs:label          "carry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr34>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1329,1339>
+          rdfs:label          "passengers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1340,1349>
+          rdfs:label          "depending" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1434,1442>
+          rdfs:label          "addition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1483,1486>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1513,1521>
+          rdfs:label          "majority" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1529,1541>
+          rdfs:label          "construction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals> .
+}

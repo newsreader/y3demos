@@ -1,0 +1,298 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs>
+          prov:wasAttributedTo  nwrauthor:Zachary .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=25,28>
+          rdfs:comment        "plans" ;
+          rdfs:label          "cut" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=16,21> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr0>
+          rdf:value            <PROBABLE_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Daimler_AG> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=16,21>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=128,131>
+          rdfs:comment        "announced" ;
+          rdfs:label          "cut" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=103,112> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr1>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/international+car+company+daimlerchrysler> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=103,112>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=139,143>
+          rdfs:comment        "announced" ;
+          rdfs:label          "jobs" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=103,112> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=870,881>
+          rdfs:comment        "denied" ;
+          rdfs:label          "allegations" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=863,869> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Dieter_Zetsche> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=863,869>
+          rdfs:label          "denied" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=171,175>
+          rdfs:label          "part" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=176,180>
+          rdfs:label          "ways" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=202,210>
+          rdfs:label          "business" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=221,226>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=230,233>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr6>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=260,267>
+          rdfs:label          "attempt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=285,293>
+          rdfs:label          "business" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=271,275>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr9>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=338,342>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr10>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=351,354>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=385,389>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=608,612>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=430,432>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=441,444>
+          rdfs:label          "say" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr15>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=450,452>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=481,489>
+          rdfs:label          "reacting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=515,527>
+          rdfs:label          "verification" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=567,571>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=630,637>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=682,691>
+          rdfs:label          "Following" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=697,708>
+          rdfs:label          "speculation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=832,837>
+          rdfs:label          "split" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr24>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=777,783>
+          rdfs:label          "merged" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=804,808>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr26>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=895,902>
+          rdfs:label          "exclude" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=917,922>
+          rdfs:label          "order" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=940,948>
+          rdfs:label          "solution" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=926,930>
+          rdfs:label          "find" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs> .
+}

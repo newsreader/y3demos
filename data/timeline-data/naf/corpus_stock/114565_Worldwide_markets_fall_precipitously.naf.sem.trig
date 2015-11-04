@@ -1,0 +1,130 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev8>
+            a              sem:Event , nwrontology:contextualEvent , fn:Removing , eso:Removing ;
+            rdfs:label     "bail" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=222,226> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernments>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the US Government 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=189,208> .
+    
+    <http://www.newsreader-project.eu/time/20081006>
+            a              time:DateTimeDescription ;
+            time:day       "---06"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=111,116> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081006> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev11>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=289,294> , <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=585,590> , <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=720,725> , <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=878,883> , <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=985,990> , <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=1050,1057> , <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=1095,1100> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "UK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=286,288> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow Jones" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=710,719> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=765,770> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081006> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx7>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=916,921> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081006> .
+}
+
+<http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tr4> {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=111,226> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#pr7,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=189,226> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=720,770> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=878,921> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#pr10,rl24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=286,294> .
+    
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#pr17,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#char=710,725> .
+}
+
+<http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#pr7,rl14> {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev8>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernments> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/theUSGovernments> .
+}
+
+<http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tr8> {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tr9> {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#pr10,rl24> {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#pr17,rl44> {
+    <http://en.wikinews.org/wiki/Worldwide_markets_fall_precipitously#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A0         <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}

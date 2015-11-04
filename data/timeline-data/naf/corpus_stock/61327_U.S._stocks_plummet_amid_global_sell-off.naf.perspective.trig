@@ -1,0 +1,364 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off>
+          prov:wasAttributedTo  nwrauthor:Bawolff .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=841,848>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "economy" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_FUTURE_NEG> , <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Alan_Greenspan> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816>
+          rdfs:label          "indicated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=859,866>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "sustain" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=878,884>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "growth" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=912,915>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "set" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "signaled" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=927,934>
+          rdfs:comment        "indicated" ;
+          rdfs:label          "records" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=989,995>
+          rdfs:comment        "indicated" , "signaled" ;
+          rdfs:label          "revise" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1000,1008>
+          rdfs:comment        "indicated" , "signaled" ;
+          rdfs:label          "estimate" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1036,1042>
+          rdfs:comment        "indicated" , "signaled" ;
+          rdfs:label          "growth" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1061,1065>
+          rdfs:comment        "indicated" , "signaled" ;
+          rdfs:label          "rate" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1103,1111>
+          rdfs:comment        "indicated" , "signaled" ;
+          rdfs:label          "forecast" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr0> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr1>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/White_House> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1272,1283>
+          rdfs:comment        "reported" ;
+          rdfs:label          "implemented" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1226,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <negative> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Reuters> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1226,1234>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1303,1315>
+          rdfs:comment        "reported" ;
+          rdfs:label          "restrictions" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1226,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1316,1321>
+          rdfs:comment        "reported" ;
+          rdfs:label          "meant" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1226,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1325,1329>
+          rdfs:comment        "reported" ;
+          rdfs:label          "curb" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1226,1234> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=12,19>
+          rdfs:label          "plummet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=32,40>
+          rdfs:label          "sell-off" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=91,96>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=113,120>
+          rdfs:label          "plunged" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=160,164>
+          rdfs:label          "bell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=152,159>
+          rdfs:label          "closing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=198,205>
+          rdfs:label          "decline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=216,226>
+          rdfs:label          "re-opening" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=281,288>
+          rdfs:label          "attacks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=242,251>
+          rdfs:label          "following" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=299,307>
+          rdfs:label          "followed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=313,321>
+          rdfs:label          "sell-off" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=399,405>
+          rdfs:label          "dipped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=482,489>
+          rdfs:label          "decline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=498,505>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=517,523>
+          rdfs:label          "blamed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=539,545>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=585,594>
+          rdfs:label          "exchanges" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=599,606>
+          rdfs:label          "powered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=658,668>
+          rdfs:label          "correction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=725,731>
+          rdfs:label          "become" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=692,698>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=758,764>
+          rdfs:label          "headed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=781,790>
+          rdfs:label          "recession" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1178,1182>
+          rdfs:label          "come" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1362,1370>
+          rdfs:label          "occurred" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1444,1450>
+          rdfs:label          "failed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1389,1393>
+          rdfs:label          "plot" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1397,1408>
+          rdfs:label          "assassinate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off_dAttr30>
+          rdf:value             <negative> , <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off> .
+}

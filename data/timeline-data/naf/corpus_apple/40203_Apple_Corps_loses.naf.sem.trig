@@ -1,0 +1,534 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Finish_competition , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=12,17> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=97,101> .
+    
+    <http://dbpedia.org/resource/Apple_Corps>
+            rdfs:label     "Apple Corps" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=0,11> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=85,96> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=165,176> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=631,642> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1017,1028> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1096,1107> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple Computer" , "Apple" , "the Apple Computer" , "Apple Computer 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=37,51> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=536,541> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=829,843> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=680,698> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=404,420> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=125,139> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=309,323> .
+    
+    <http://dbpedia.org/resource/High_Court_of_Justice>
+            rdfs:label     "the High Court" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=149,163> .
+    
+    <http://www.newsreader-project.eu/time/20060508>
+            a              time:DateTimeDescription ;
+            time:day       "---08"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=140,145> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060508> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Try_defendant , eso:Placing ;
+            rdfs:label     "case" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=24,28> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=112,116> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1054,1058> .
+    
+    <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales>
+            rdfs:label     "the Court of Appeal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1062,1081> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev13>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Reasoning ;
+            rdfs:label     "argue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=177,183> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=334,338> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=489,494> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060508> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Coming_to_be , eso:Arriving ;
+            rdfs:label     "appear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=704,712> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses , fn:Change_of_quantity_of_possession , fn:Getting , fn:Removing , fn:Bringing , fn:Taking , fn:Change_of_leadership , eso:Increasing , eso:Transportation , eso:Getting , eso:Taking ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1045,1049> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_affect , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=525,528> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev27>
+            a              sem:Event , nwrontology:sourceEvent , fn:Labeling ;
+            rdfs:label     "label" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=79,84> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev31>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agree" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> .
+    
+    <http://dbpedia.org/resource/Anthony_Mann>
+            rdfs:label     "Anthony Mann" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=379,391> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Defend , fn:Justifying ;
+            rdfs:label     "defense" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=421,428> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , fn:Name_conferral , eso:Replacing , eso:IntentionalEvent ;
+            rdfs:label     "logo" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=542,546> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=699,703> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev36>
+            a              sem:Event , fn:Reasoning , nwrontology:sourceEvent , fn:Evidence ;
+            rdfs:label     "show" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=643,649> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev40>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing , fn:Deciding ;
+            rdfs:label     "decide" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1034,1041> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1131,1135> .
+    
+    <http://dbpedia.org/resource/Neil_Aspinall>
+            rdfs:label     "Neil Aspinall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1117,1130> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev42>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting ;
+            rdfs:label     "speak" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1083,1091> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr1> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=97,145> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=0,17> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=12,51> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr4,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=97,163> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=112,145> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=24,51> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr35,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1017,1058> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr35,rl81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1054,1081> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=140,183> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr6,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=165,183> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=334,338> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr10,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=309,338> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr23,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=680,712> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr34,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1017,1049> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr34,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1045,1081> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr18,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=525,546> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=79,145> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=66,96> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=79,163> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr12,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=368,398> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr12,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,428> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr13,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=404,428> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr19,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=536,546> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr22,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=631,649> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr33,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1017,1041> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr33,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1034,1081> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr36,rl83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1109,1135> .
+    
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr37,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1083,1107> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Finish_competition@Competitor>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Finish_competition@Competition>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr4,rl12> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev11>
+            sem:hasPlace  <http://dbpedia.org/resource/High_Court_of_Justice> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/High_Court_of_Justice> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr2> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev12>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Try_defendant@Defendant>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A3                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr35,rl80> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev12>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Try_defendant@Defendant>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A3                       <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr35,rl81> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> ;
+            pb:A2         <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr3> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr6,rl16> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev13>
+            sem:hasActor         <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Arguer>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A0                <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr4> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev14>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr10,rl23> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr7> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr23,rl51> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev17>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_to_be@Entity>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr11> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr34,rl77> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Corps> ;
+            eso:possession-owner_2   <http://dbpedia.org/resource/Apple_Corps> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A0                    <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr34,rl79> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev21>
+            sem:hasPlace  <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr14> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr18,rl41> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev24>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr17> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev27>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Entity>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Label>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Time>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A2               <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr3,rl8> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev27>
+            sem:hasActor        <http://dbpedia.org/resource/High_Court_of_Justice> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Entity>
+                    <http://dbpedia.org/resource/High_Court_of_Justice> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Label>
+                    <http://dbpedia.org/resource/High_Court_of_Justice> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Labeling@Time>
+                    <http://dbpedia.org/resource/High_Court_of_Justice> ;
+            pb:A2               <http://dbpedia.org/resource/High_Court_of_Justice> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr21> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr12,rl29> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev31>
+            sem:hasActor             <http://dbpedia.org/resource/Anthony_Mann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Anthony_Mann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Anthony_Mann> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Anthony_Mann> ;
+            pb:A0                    <http://dbpedia.org/resource/Anthony_Mann> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr12,rl30> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev31>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Means>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Be_in_agreement_on_assessment@Topic>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_2>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_2>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Topic>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr22> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr13,rl32> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev32>
+            sem:hasActor         <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Defend@Defender>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Justifying@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr25> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr19,rl42> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev35>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:replacing-entity_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr26> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr22,rl47> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev36>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Cognizer>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Arguer>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reasoning@Support>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr30> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr33,rl75> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev40>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deciding@Cognizer>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Corps> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr33,rl76> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev40>
+            sem:hasActor          <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Topic>
+                    <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Deciding@Decision>
+                    <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> ;
+            pb:A1                 <http://dbpedia.org/resource/Court_of_Appeal_of_England_and_Wales> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr31> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr36,rl83> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev41>
+            sem:hasActor             <http://dbpedia.org/resource/Neil_Aspinall> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Neil_Aspinall> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Neil_Aspinall> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Neil_Aspinall> ;
+            pb:A0                    <http://dbpedia.org/resource/Neil_Aspinall> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tr32> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#pr37,rl85> {
+    <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Topic>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Apple_Corps> ;
+            pb:A1                 <http://dbpedia.org/resource/Apple_Corps> .
+}

@@ -1,0 +1,534 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=354,359>
+          rdfs:comment        "promises" ;
+          rdfs:label          "model" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=300,308> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+plane> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=300,308>
+          rdfs:label          "promises" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=366,371>
+          rdfs:comment        "promises" ;
+          rdfs:label          "built" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=300,308> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=7,12>
+          rdfs:label          "rolls" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=41,43>
+          rdfs:label          "go" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr1>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=49,56>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=134,140>
+          rdfs:label          "rolled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=113,121>
+          rdfs:label          "delivery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=169,178>
+          rdfs:label          "delivered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=203,206>
+          rdfs:label          "ANA" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=216,220>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=256,263>
+          rdfs:label          "receive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr8>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=324,334>
+          rdfs:label          "efficiency" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=309,318>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=463,467>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=473,477>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=482,488>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=543,550>
+          rdfs:label          "ordered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=648,657>
+          rdfs:label          "developed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=556,563>
+          rdfs:label          "Delayed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=588,594>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=600,607>
+          rdfs:label          "variety" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=669,674>
+          rdfs:label          "holds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=717,722>
+          rdfs:label          "holds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=744,750>
+          rdfs:label          "choose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=775,779>
+          rdfs:label          "want" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=827,834>
+          rdfs:label          "arrives" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=805,812>
+          rdfs:label          "bearing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=819,825>
+          rdfs:label          "livery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=873,876>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr27>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=898,904>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=919,926>
+          rdfs:label          "charter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=956,960>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=964,967>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr31>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=979,985>
+          rdfs:label          "expand" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1040,1044>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=990,998>
+          rdfs:label          "business" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1031,1037>
+          rdfs:label          "routes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1061,1070>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1092,1096>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1100,1108>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr38>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1113,1120>
+          rdfs:label          "revenue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1177,1181>
+          rdfs:label          "play" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr40>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1216,1220>
+          rdfs:label          "adds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1140,1145>
+          rdfs:label          "route" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1198,1202>
+          rdfs:label          "role" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1229,1236>
+          rdfs:label          "flights" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1222,1228>
+          rdfs:label          "noting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr45>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1290,1297>
+          rdfs:label          "rolling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1347,1355>
+          rdfs:label          "enthused" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1383,1390>
+          rdfs:label          "manager" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1407,1416>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1423,1425>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1462,1468>
+          rdfs:label          "worked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1531,1539>
+          rdfs:label          "partners" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1567,1571>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1582,1590>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1595,1600>
+          rdfs:label          "tempo" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1655,1659>
+          rdfs:label          "meet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr56>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1669,1675>
+          rdfs:label          "demand" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr57>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1680,1682>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1700,1709>
+          rdfs:label          "challenge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1727,1732>
+          rdfs:label          "built" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1791,1797>
+          rdfs:label          "claims" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr61>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service#char=1761,1765>
+          rdfs:label          "rate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_rolls_out_first_787_Dreamliner_to_go_into_service> .
+}

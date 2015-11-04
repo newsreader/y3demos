@@ -1,0 +1,564 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev8>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Decreasing ;
+            rdfs:label     "plummet" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=12,19> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=0,4> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=73,77> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=493,497> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=562,566> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=750,754> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=836,840> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1409,1413> .
+    
+    <http://www.newsreader-project.eu/time/20070227>
+            a              time:DateTimeDescription ;
+            time:day       "---27"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx1>
+            a                time:Instant ;
+            rdfs:label       "February 27 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=42,59> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070227> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev10>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=91,96> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow Jones" , "the Dow Industrials" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=102,111> , <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=892,911> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=168,175> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070227> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "exchange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=585,594> .
+    
+    <http://www.newsreader-project.eu/time/20070305>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=820,826> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070305> .
+    
+    <http://www.newsreader-project.eu/time/20070306>
+            a              time:DateTimeDescription ;
+            time:day       "---06"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=967,974> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070306> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Self_motion ;
+            rdfs:label     "head" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=758,764> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "recession" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=781,790> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=841,848> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070227> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev27>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "sustain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=859,866> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , eso:Placing ;
+            rdfs:label     "set" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=912,915> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev32>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Execute_plan ;
+            rdfs:label     "implement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1272,1283> .
+    
+    <http://dbpedia.org/resource/New_York_Stock_Exchange>
+            rdfs:label     "the New York Stock Exchange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1240,1267> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Grant_permission , fn:Inhibit_movement , eso:IntentionalEvent ;
+            rdfs:label     "restriction" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1303,1315> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev36>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Successful_action , fn:Success_or_failure ;
+            rdfs:label     "fail" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1444,1450> .
+    
+    <http://dbpedia.org/resource/Afghanistan>
+            rdfs:label     "Afghanistan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1454,1465> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , fn:Recording , eso:HavingInPossession ;
+            rdfs:label     "history" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=498,505> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communication , fn:Evidence , fn:Sign ;
+            rdfs:label     "indicate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,816> .
+    
+    <http://dbpedia.org/resource/Alan_Greenspan>
+            rdfs:label     "Alan Greenspan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=792,806> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev44>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communication , fn:Gesture ;
+            rdfs:label     "signal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,963> .
+    
+    <http://dbpedia.org/resource/White_House>
+            rdfs:label     "the White House" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=939,954> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev48>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1226,1234> .
+    
+    <http://dbpedia.org/resource/Reuters>
+            rdfs:label     "Reuters" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1218,1225> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr1> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=12,59> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=0,19> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=91,175> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr3,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=73,96> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=91,111> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=585,826> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=585,974> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr18,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=562,594> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=758,826> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=758,974> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr23,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=746,764> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=781,826> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=781,974> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr24,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=746,790> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=841,848> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr26,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=836,848> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=859,866> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr27,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=832,866> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=820,915> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=912,974> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr29,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=892,915> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=820,1283> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=967,1283> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr39,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1240,1283> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=820,1315> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=967,1315> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr40,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1240,1315> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr44,rl99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1444,1465> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr15,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=493,505> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,826> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=807,974> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr25,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=792,816> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=820,963> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=955,974> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr30,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=939,963> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=820,1234> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=967,1234> .
+    
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr38,rl84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#char=1218,1234> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr1,rl1> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev8>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item       <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr4> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr3,rl4> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev10>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr3,rl5> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev10>
+            sem:hasActor  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A2         <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr13> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr14> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr18,rl33> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev19>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr23> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr24> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr23,rl42> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev24>
+            sem:hasActor               <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Self_mover>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                      <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr25> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr26> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr24,rl44> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr27> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev26>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr26,rl49> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr28> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev27>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr27,rl51> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev27>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr31> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr32> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr29,rl58> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev29>
+            sem:hasActor      <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A0             <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr36> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr37> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr39,rl86> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev32>
+            sem:hasActor           <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Execute_plan@Agent>
+                    <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            pb:A0                  <http://dbpedia.org/resource/New_York_Stock_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr38> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr39> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr40,rl88> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev33>
+            sem:hasActor                 <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inhibit_movement@Cause>
+                    <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            pb:A0                        <http://dbpedia.org/resource/New_York_Stock_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr43> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr44,rl99> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev36>
+            sem:hasPlace  <http://dbpedia.org/resource/Afghanistan> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Afghanistan> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr48> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr15,rl28> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev40>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recording@Entity>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recording@Phenomenon>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                    <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr53> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr54> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr25,rl46> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev43>
+            sem:hasActor                   <http://dbpedia.org/resource/Alan_Greenspan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication@Communicator>
+                    <http://dbpedia.org/resource/Alan_Greenspan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://dbpedia.org/resource/Alan_Greenspan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sign@Indicator>
+                    <http://dbpedia.org/resource/Alan_Greenspan> ;
+            pb:A0                          <http://dbpedia.org/resource/Alan_Greenspan> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr55> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr56> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr30,rl61> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev44>
+            sem:hasActor                   <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication@Communicator>
+                    <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Gesture@Communicator>
+                    <http://dbpedia.org/resource/White_House> ;
+            pb:A0                          <http://dbpedia.org/resource/White_House> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr63> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tr64> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#pr38,rl84> {
+    <http://en.wikinews.org/wiki/U.S._stocks_plummet_amid_global_sell-off#ev48>
+            sem:hasActor           <http://dbpedia.org/resource/Reuters> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Reuters> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Reuters> ;
+            pb:A0                  <http://dbpedia.org/resource/Reuters> .
+}

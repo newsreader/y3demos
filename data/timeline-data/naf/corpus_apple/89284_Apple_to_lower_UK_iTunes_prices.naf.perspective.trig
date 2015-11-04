@@ -1,0 +1,382 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=215,220>
+          rdfs:comment        "announced" ;
+          rdfs:label          "occur" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=255,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=255,264>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=193,199>
+          rdfs:comment        "announced" ;
+          rdfs:label          "change" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=255,264> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=9,14>
+          rdfs:label          "lower" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=25,31>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=78,84>
+          rdfs:label          "forced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=99,104>
+          rdfs:label          "lower" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=109,115>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=155,160>
+          rdfs:label          "store" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=183,187>
+          rdfs:label          "shop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=293,301>
+          rdfs:label          "producer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=317,326>
+          rdfs:label          "most-sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=352,360>
+          rdfs:label          "launched" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=400,405>
+          rdfs:label          "store" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=440,447>
+          rdfs:label          "renamed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=482,487>
+          rdfs:label          "began" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=488,495>
+          rdfs:label          "selling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=549,555>
+          rdfs:label          "movies" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=588,592>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=567,573>
+          rdfs:label          "launch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=644,648>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=733,740>
+          rdfs:label          "reduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr19>
+          rdf:value             <POSSIBLE_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=763,768>
+          rdfs:label          "match" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr20>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=710,713>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=722,729>
+          rdfs:label          "average" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=776,782>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=841,849>
+          rdfs:label          "decrease" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=850,857>
+          rdfs:label          "follows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=915,923>
+          rdfs:label          "charging" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=861,874>
+          rdfs:label          "investigation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=924,933>
+          rdfs:label          "customers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1028,1037>
+          rdfs:label          "demanding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr29>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1047,1053>
+          rdfs:label          "record" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr30>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1073,1079>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr31>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1093,1100>
+          rdfs:label          "respect" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr32>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1122,1125>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr33>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1109,1115>
+          rdfs:label          "forced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1152,1160>
+          rdfs:label          "welcomed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1169,1181>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1263,1267>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1191,1199>
+          rdfs:label          "reaction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1300,1306>
+          rdfs:label          "favour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1326,1331>
+          rdfs:label          "allow" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1345,1352>
+          rdfs:label          "benefit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1373,1379>
+          rdfs:label          "Market" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1390,1399>
+          rdfs:label          "downloads" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices> .
+}

@@ -1,0 +1,502 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=29,35>
+          rdfs:comment        "considering" ;
+          rdfs:label          "rescue" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=12,23> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr0> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/white+house+considering+auto+rescue+plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=12,23>
+          rdfs:label          "considering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=36,40>
+          rdfs:comment        "considering" ;
+          rdfs:label          "plan" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=12,23> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr0> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr1>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/white+house+considering+auto+rescue+plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=491,500>
+          rdfs:comment        "prefer" ;
+          rdfs:label          "determine" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=471,477> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/United_States_dollar> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=471,477>
+          rdfs:label          "prefer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=514,518>
+          rdfs:comment        "prefer" ;
+          rdfs:label          "fate" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=471,477> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=644,653>
+          rdfs:comment        "consider" ;
+          rdfs:label          "including" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3>
+          rdf:value            <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/United_States_dollar> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614>
+          rdfs:label          "consider" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=654,657>
+          rdfs:comment        "consider" ;
+          rdfs:label          "use" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=670,671>
+          rdfs:comment        "consider" ;
+          rdfs:label          "[" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=703,712>
+          rdfs:comment        "consider" ;
+          rdfs:label          "programme" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=718,725>
+          rdfs:comment        "consider" ;
+          rdfs:label          "prevent" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=728,736>
+          rdfs:comment        "consider" ;
+          rdfs:label          "collapse" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=606,614> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1484,1488>
+          rdfs:comment        "stated" ;
+          rdfs:label          "stop" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1530,1538>
+          rdfs:comment        "stated" ;
+          rdfs:label          "response" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1491,1492>
+          rdfs:comment        "stated" , "response" ;
+          rdfs:label          "%" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1530,1538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr6> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1515,1525>
+          rdfs:comment        "stated" , "response" ;
+          rdfs:label          "production" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1530,1538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr6> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1550,1563>
+          rdfs:comment        "stated" ;
+          rdfs:label          "deteriorating" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1571,1581>
+          rdfs:comment        "stated" ;
+          rdfs:label          "conditions" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_sAttr6>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+company> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=179,183>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=122,128>
+          rdfs:label          "failed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=132,136>
+          rdfs:label          "pass" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr3>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=69,73>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=77,81>
+          rdfs:label          "bail" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr5>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=195,206>
+          rdfs:label          "considering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=207,212>
+          rdfs:label          "using" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr7>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=240,249>
+          rdfs:label          "earmarked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=284,288>
+          rdfs:label          "bail" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr9>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=272,280>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=253,259>
+          rdfs:label          "rescue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr11>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=326,330>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=340,348>
+          rdfs:label          "collapse" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr13>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=387,394>
+          rdfs:label          "setback" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr14>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=406,413>
+          rdfs:label          "destroy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr15>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr16>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=451,461>
+          rdfs:label          "conditions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr18>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=573,578>
+          rdfs:label          "state" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=546,551>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=589,596>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=762,766>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=828,836>
+          rdfs:label          "collapse" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr23>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=860,864>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr24>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=874,880>
+          rdfs:label          "impact" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=888,895>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=938,944>
+          rdfs:label          "weaken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr27>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=965,972>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=949,960>
+          rdfs:label          "destabilize" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr29>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1078,1085>
+          rdfs:label          "pleaded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1108,1113>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr31>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1144,1151>
+          rdfs:label          "prevent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1215,1220>
+          rdfs:label          "voted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1181,1189>
+          rdfs:label          "approved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1249,1253>
+          rdfs:label          "vote" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1264,1268>
+          rdfs:label          "Part" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1276,1283>
+          rdfs:label          "failure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1291,1295>
+          rdfs:label          "bill" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1315,1328>
+          rdfs:label          "disagreements" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1341,1345>
+          rdfs:label          "cuts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1369,1377>
+          rdfs:label          "insisted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1299,1303>
+          rdfs:label          "pass" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr42>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1384,1390>
+          rdfs:label          "parity" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1427,1436>
+          rdfs:label          "carmakers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+  
+  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan> .
+}

@@ -1,0 +1,364 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev5>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Containing ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=177,181> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=209,213> .
+    
+    <http://dbpedia.org/resource/California>
+            rdfs:label     "the California Theater" , "California" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=217,239> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=262,272> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2>
+            a                  time:Interval ;
+            rdfs:label         "one month" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=59,68> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20051004> .
+    
+    <http://www.newsreader-project.eu/time/20051004>
+            a              time:DateTimeDescription ;
+            time:day       "---04"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=143,148> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051004> .
+    
+    <http://www.newsreader-project.eu/time/20041012>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4>
+            a                time:Instant ;
+            rdfs:label       "October 12" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=185,195> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20041012> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev6>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "downtown" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=243,251> .
+    
+    <http://dbpedia.org/resource/San_Jose,_California>
+            rdfs:label     "San Jose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=252,260> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev7>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "tagline" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=330,337> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=341,351> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051004> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , fn:Change_of_quantity_of_possession , eso:Increasing , eso:Getting ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=436,443> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" , "Apple Computer" , "Macintosh" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=0,5> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=724,731> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=421,426> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=118,132> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=724,729> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=846,855> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Processing_materials ;
+            rdfs:label     "processor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=869,878> .
+    
+    <http://dbpedia.org/resource/Intel>
+            rdfs:label     "Intel" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=863,868> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev21>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=6,11> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 4 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=35,50> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051004> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev22>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=133,142> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev25>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "claim" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=579,587> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=675,681> .
+    
+    <http://dbpedia.org/resource/Apple_community>
+            rdfs:label     "AppleInsider" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=662,674> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=563,575> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Categorization , fn:Grasp , fn:Intentionally_create , fn:Motion , fn:Perception_experience , fn:Self_motion , fn:Travel , fn:Come_together , eso:Creating , eso:Translocation , eso:Meeting , eso:Motion ;
+            rdfs:label     "see" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=621,625> , <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=690,694> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr1> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev5>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=59,181> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=143,181> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=177,195> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr5,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=209,239> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=59,251> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=143,251> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=185,251> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=243,260> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=243,272> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr8,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=330,351> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=421,443> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr28,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=863,878> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=6,50> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=0,11> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=59,142> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=133,148> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=133,195> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=118,142> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr20,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=563,587> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr23,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=662,694> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr2> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev5>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr3> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev5>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr5,rl11> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev5>
+            sem:hasPlace  <http://dbpedia.org/resource/California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr4> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev6>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr5> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev6>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr6> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev6>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev6>
+            sem:hasActor  <http://dbpedia.org/resource/San_Jose,_California> ;
+            pb:A1         <http://dbpedia.org/resource/San_Jose,_California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr6,rl14> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev6>
+            sem:hasActor  <http://dbpedia.org/resource/California> ;
+            pb:A1         <http://dbpedia.org/resource/California> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr7> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr8,rl18> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev7>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr10> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr11,rl23> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev10>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr18> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr28,rl55> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/Intel> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Processing_materials@Material>
+                    <http://dbpedia.org/resource/Intel> ;
+            pb:A1         <http://dbpedia.org/resource/Intel> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr23> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev21>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr24> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr25> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr26> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev22>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr29> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr20,rl38> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev25>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_community> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_community> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_community> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#tr30> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_another_special_event#pr23,rl46> {
+    <http://en.wikinews.org/wiki/Apple_plans_another_special_event#ev26>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_community> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://dbpedia.org/resource/Apple_community> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://dbpedia.org/resource/Apple_community> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://dbpedia.org/resource/Apple_community> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_community> .
+}

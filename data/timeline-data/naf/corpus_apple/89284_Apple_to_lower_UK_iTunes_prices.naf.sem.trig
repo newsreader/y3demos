@@ -1,0 +1,542 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Motion ;
+            rdfs:label     "lower" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=9,14> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=99,104> .
+    
+    <http://dbpedia.org/resource/European_Commission>
+            rdfs:label     "european Commission" , "the european Commission" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=54,73> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=878,901> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1132,1151> .
+    
+    <http://www.newsreader-project.eu/time/20080109>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 9 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=33,48> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080109> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3>
+            a                  time:Interval ;
+            rdfs:label         "the next six month" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=228,247> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20080109> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20080709> .
+    
+    <http://www.newsreader-project.eu/time/20080709>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4>
+            a                time:Instant ;
+            rdfs:label       "this morning" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=265,277> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080109> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev10>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "prex" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=25,31> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=109,115> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=776,782> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1073,1079> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "UK" , "United Kingdom" , "the UK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=15,17> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=133,147> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=937,943> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1083,1089> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=941,943> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1087,1089> .
+    
+    <http://dbpedia.org/resource/European_Union>
+            rdfs:label     "EU" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=773,775> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=973,975> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_motion , fn:Intentionally_create , eso:Translocation , fn:Being_in_effect ;
+            rdfs:label     "force" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=78,84> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1109,1115> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "force Apple Inc." , "Apple 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=0,5> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=78,95> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1161,1168> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1014,1019> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=476,481> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=280,285> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=105,108> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=249,254> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=162,169> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=129,132> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=162,167> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=909,914> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1161,1166> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , fn:Possession , fn:Storing , eso:Selling , eso:Placing , fn:Shopping ;
+            rdfs:label     "store" , "shop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=155,160> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=400,405> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=183,187> .
+    
+    <http://www.newsreader-project.eu/time/20030428>
+            a              time:DateTimeDescription ;
+            time:day       "---28"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx5>
+            a                time:Instant ;
+            rdfs:label       "April 28 , 2003" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=410,424> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20030428> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=488,495> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=588,592> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=644,648> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx6>
+            a                time:Instant ;
+            rdfs:label       "2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=467,471> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "customer" , "their" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=924,933> , <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1067,1072> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080109> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , eso:Getting ;
+            rdfs:label     "welcome" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1152,1160> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , eso:StartingAnActivity ;
+            rdfs:label     "begin" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=482,487> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev36>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=255,264> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Compatibility , fn:Evaluative_comparison ;
+            rdfs:label     "match" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=763,768> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny , fn:Criminal_investigation , fn:Research ;
+            rdfs:label     "investigation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=861,874> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Request , fn:Have_as_requirement , eso:Motion ;
+            rdfs:label     "demand" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1028,1037> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev42>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announcement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1169,1181> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Statement , eso:Motion , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1263,1267> .
+    
+    <http://dbpedia.org/resource/Neelie_Kroes>
+            rdfs:label     "Neelie Kroes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1250,1262> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr1> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=9,104> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=99,247> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=99,277> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr4,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=50,104> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=25,115> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=109,247> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=109,277> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=15,31> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr26,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=773,782> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=33,84> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=78,247> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=78,277> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=50,84> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=78,95> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=400,424> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr7,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=162,187> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=467,495> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr17,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=476,495> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr31,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=924,943> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr38,rl84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1128,1160> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr38,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1152,1181> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=467,487> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr16,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=476,487> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=228,264> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=255,277> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr10,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=249,264> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr23,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=763,801> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr30,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=861,905> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr30,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=861,914> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr32,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1014,1037> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr39,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1161,1181> .
+    
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr40,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#char=1221,1267> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr2> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr3> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr4,rl8> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev9>
+            sem:hasActor  <http://dbpedia.org/resource/European_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/European_Commission> ;
+            pb:A0         <http://dbpedia.org/resource/European_Commission> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr4> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr5> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr6> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev10>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr26,rl62> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev10>
+            sem:hasActor  <http://dbpedia.org/resource/European_Union> ;
+            pb:A0         <http://dbpedia.org/resource/European_Union> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr7> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr8> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr9> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev11>
+            sem:hasActor           <http://dbpedia.org/resource/European_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_motion@Agent>
+                    <http://dbpedia.org/resource/European_Commission> ;
+            pb:A0                  <http://dbpedia.org/resource/European_Commission> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev11>
+            sem:hasActor             <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                    <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr10> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr7,rl15> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr15> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr17,rl40> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev17>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr22> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr31,rl72> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A2         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr25> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr38,rl84> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev27>
+            sem:hasActor  <http://dbpedia.org/resource/European_Commission> ;
+            pb:A0         <http://dbpedia.org/resource/European_Commission> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr38,rl85> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev27>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr32> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr16,rl38> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev34>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:activity-agent  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr34> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr35> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr10,rl23> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev36>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr37> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr23,rl59> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev38>
+            sem:hasActor             <http://dbpedia.org/resource/European_Union> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/European_Union> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Items>
+                    <http://dbpedia.org/resource/European_Union> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evaluative_comparison@Standard_attribute>
+                    <http://dbpedia.org/resource/European_Union> ;
+            pb:A1                    <http://dbpedia.org/resource/European_Union> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr39> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr30,rl69> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev40>
+            sem:hasActor            <http://dbpedia.org/resource/European_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Criminal_investigation@Investigator>
+                    <http://dbpedia.org/resource/European_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Research@Researcher>
+                    <http://dbpedia.org/resource/European_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://dbpedia.org/resource/European_Commission> ;
+            pb:A0                   <http://dbpedia.org/resource/European_Commission> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr30,rl70> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev40>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Phenomenon>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr40> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr32,rl74> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev41>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr41> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr39,rl86> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev42>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tr42> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#pr40,rl88> {
+    <http://en.wikinews.org/wiki/Apple_to_lower_UK_iTunes_prices#ev43>
+            sem:hasActor             <http://dbpedia.org/resource/Neelie_Kroes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Neelie_Kroes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Neelie_Kroes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Neelie_Kroes> ;
+            pb:A0                    <http://dbpedia.org/resource/Neelie_Kroes> .
+}

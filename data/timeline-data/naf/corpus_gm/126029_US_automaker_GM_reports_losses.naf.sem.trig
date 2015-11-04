@@ -1,0 +1,315 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev6>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "los" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=24,30> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=460,466> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "General Motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=13,15> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1200,1202> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1135,1137> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1110,1112> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1057,1059> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=539,541> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=347,349> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=92,106> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=513,515> .
+    
+    <http://www.newsreader-project.eu/time/20090507>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 7 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=46,57> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090507> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4>
+            a                  time:Interval ;
+            rdfs:label         "the 1 quarter of last year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=315,345> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20080101> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20080330> .
+    
+    <http://www.newsreader-project.eu/time/20080101>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20080330>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "loss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=365,369> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "officer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1045,1052> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090507> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Death ;
+            rdfs:label     "bankruptcy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1113,1123> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1145,1150> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090507> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Coming_to_be , fn:Departing , fn:Travel , eso:Leaving ;
+            rdfs:label     "emerge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1207,1213> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev39>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=354,362> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=525,533> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1009,1013> , <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1393,1397> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/HimanshuPatel>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Himanshu Patel" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1378,1392> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Daring ;
+            rdfs:label     "chance" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1098,1104> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev49>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment , fn:Assessing ;
+            rdfs:label     "equity" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1138,1144> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr1> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev6>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=24,57> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=315,466> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=13,30> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=315,369> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr11,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=347,369> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr38,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1045,1059> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1113,1150> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr42,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1110,1123> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1145,1213> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr46,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1200,1213> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=315,362> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr9,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=347,362> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1145,1397> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr45,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1370,1397> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1098,1150> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr41,rl95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1098,1123> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1138,1150> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr44,rl101>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#char=1135,1144> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr2> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev6>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr1,rl1> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev6>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr7> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr11,rl22> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev10>
+            sem:hasActor                   <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                          <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr21> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr38,rl89> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr22> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr42,rl96> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev25>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Death@Protagonist>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr23> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr46,rl104> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev26>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr38> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr9,rl19> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev39>
+            sem:hasActor           <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                  <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr43> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr45,rl103> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev44>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/HimanshuPatel> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HimanshuPatel> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HimanshuPatel> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HimanshuPatel> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/HimanshuPatel> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr46> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr41,rl95> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev47>
+            sem:hasActor      <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Daring@Action>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1             <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tr48> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#pr44,rl101> {
+    <http://en.wikinews.org/wiki/US_automaker_GM_reports_losses_of_$6_billion#ev49>
+            sem:hasActor           <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Assessor>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Cognizer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                  <http://dbpedia.org/resource/General_Motors> .
+}

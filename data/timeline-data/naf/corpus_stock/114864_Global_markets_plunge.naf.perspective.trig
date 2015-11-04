@@ -1,0 +1,462 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Global_markets_plunge>
+          prov:wasAttributedTo  nwrauthor:TUFKAAP .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1351,1358>
+          rdfs:comment        "discuss" ;
+          rdfs:label          "falling" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Global_markets_plunge#char=1339,1346> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_sAttr1>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/OPEC> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1339,1346>
+          rdfs:label          "discuss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1359,1364>
+          rdfs:comment        "discuss" ;
+          rdfs:label          "price" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Global_markets_plunge#char=1339,1346> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=15,21>
+          rdfs:label          "plunge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=47,54>
+          rdfs:label          "markets" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=77,83>
+          rdfs:label          "fallen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=105,111>
+          rdfs:label          "seeing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=124,128>
+          rdfs:label          "drop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=138,145>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=163,166>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=200,207>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=212,213>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=217,222>
+          rdfs:label          "reach" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr9>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=249,252>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=255,263>
+          rdfs:label          "collapse" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=278,287>
+          rdfs:label          "insurance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=334,342>
+          rdfs:label          "declared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=432,436>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=454,461>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=486,489>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=495,499>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=522,529>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=565,566>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=556,562>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=578,587>
+          rdfs:label          "recovered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=627,633>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=661,665>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=695,699>
+          rdfs:label          "lows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=764,767>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=814,817>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=824,829>
+          rdfs:label          "drops" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=836,842>
+          rdfs:label          "result" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=858,866>
+          rdfs:label          "decrease" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=874,885>
+          rdfs:label          "consumption" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=908,914>
+          rdfs:label          "opened" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=987,997>
+          rdfs:label          "recovering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=959,966>
+          rdfs:label          "falling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1033,1037>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1041,1048>
+          rdfs:label          "address" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1068,1072>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1093,1099>
+          rdfs:label          "driven" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1135,1139>
+          rdfs:label          "seen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1140,1146>
+          rdfs:label          "losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1168,1175>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1193,1198>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1204,1210>
+          rdfs:label          "barrel" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1271,1275>
+          rdfs:label          "came" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1295,1299>
+          rdfs:label          "hold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr44>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr45>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1417,1421>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1437,1441>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1465,1475>
+          rdfs:label          "collapsing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1528,1533>
+          rdfs:label          "saved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1505,1510>
+          rdfs:label          "total" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1629,1633>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1660,1664>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1682,1690>
+          rdfs:label          "collapse" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Global_markets_plunge_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Global_markets_plunge> .
+}

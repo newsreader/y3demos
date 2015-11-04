@@ -1,0 +1,239 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "flight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=41,47> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=176,182> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=329,335> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=21,27> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1182,1188> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=729,735> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=124,127> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=128,134> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=67,73> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx5>
+            a                time:Instant ;
+            rdfs:label       "this weekend" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=501,513> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "plane" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=161,166> .
+    
+    <http://www.newsreader-project.eu/time/20100125>
+            a              time:DateTimeDescription ;
+            time:day       "---25"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 25 , 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=49,65> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100125> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "spokesman" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=736,745> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/JaimePerezGuerra>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Jaime Perez-Guerra" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=746,764> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx6>
+            a                  time:Interval ;
+            rdfs:label         "thirty minute" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=670,684> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20100125> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev34>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "confirm" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=78,87> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev37>
+            a              sem:Event , nwrontology:sourceEvent , fn:Adducing ;
+            rdfs:label     "cite" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=548,553> .
+    
+    <http://dbpedia.org/resource/Germany>
+            rdfs:label     "German magazine Der Spiegel" , "Germany" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=520,547> , <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1122,1129> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Questioning , fn:Request ;
+            rdfs:label     "ask" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1193,1198> .
+    
+    <http://www.newsreader-project.eu/time/201001>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx8>
+            a                time:Instant ;
+            rdfs:label       "the end of the month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1263,1283> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201001> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr2> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx5> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=329,513> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=21,47> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=49,166> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr5,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=128,166> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=670,745> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr21,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=729,745> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr21,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=729,764> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=49,87> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=67,87> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=501,553> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr15,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=520,553> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1193,1283> .
+    
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr35,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1182,1198> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev10>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr4> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr5,rl10> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev12>
+            sem:hasPlace  <http://dbpedia.org/resource/Airbus> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr13> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr21,rl46> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A2         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr21,rl47> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev20>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/JaimePerezGuerra> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/JaimePerezGuerra> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr29> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev34>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr32> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr15,rl34> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev37>
+            sem:hasActor         <http://dbpedia.org/resource/Germany> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Adducing@Speaker>
+                    <http://dbpedia.org/resource/Germany> ;
+            pb:A0                <http://dbpedia.org/resource/Germany> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tr39> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#pr35,rl78> {
+    <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#ev43>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Questioning@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                   <http://dbpedia.org/resource/Airbus> .
+}

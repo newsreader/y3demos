@@ -1,0 +1,488 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Tom+Morris> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=236,246>
+          rdfs:comment        "Addressing" ;
+          rdfs:label          "conference" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=223,233> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+bank+chief> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=223,233>
+          rdfs:label          "Addressing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1214,1220>
+          rdfs:comment        "think" ;
+          rdfs:label          "taking" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1189,1194> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ben_Bernanke> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1189,1194>
+          rdfs:label          "think" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1248,1257>
+          rdfs:comment        "think" ;
+          rdfs:label          "positives" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1189,1194> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=24,28>
+          rdfs:label          "rise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=32,37>
+          rdfs:label          "hopes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=53,61>
+          rdfs:label          "recovery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=86,93>
+          rdfs:label          "indexes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=104,108>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=134,139>
+          rdfs:label          "chief" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=153,157>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=170,177>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=182,190>
+          rdfs:label          "starting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=194,201>
+          rdfs:label          "recover" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=274,278>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=268,273>
+          rdfs:label          "chief" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=339,345>
+          rdfs:label          "appear" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=289,298>
+          rdfs:label          "prospects" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=305,311>
+          rdfs:label          "return" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=315,321>
+          rdfs:label          "growth" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=357,362>
+          rdfs:label          "added" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=392,400>
+          rdfs:label          "recovery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=461,470>
+          rdfs:label          "declining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=496,502>
+          rdfs:label          "levels" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=539,545>
+          rdfs:label          "gained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=574,577>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr22>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=609,616>
+          rdfs:label          "reached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=638,645>
+          rdfs:label          "gaining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=697,703>
+          rdfs:label          "struck" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=722,730>
+          rdfs:label          "reaching" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=733,738>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=799,804>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=805,809>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=820,827>
+          rdfs:label          "percent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=829,836>
+          rdfs:label          "closing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=862,867>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=868,874>
+          rdfs:label          "gained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=878,879>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=968,977>
+          rdfs:label          "expecting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=984,990>
+          rdfs:label          "saying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1128,1132>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1007,1014>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1018,1026>
+          rdfs:label          "starting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1030,1036>
+          rdfs:label          "emerge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1104,1111>
+          rdfs:label          "receded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1069,1074>
+          rdfs:label          "fears" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1090,1098>
+          rdfs:label          "collapse" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1160,1170>
+          rdfs:label          "strategist" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1335,1341>
+          rdfs:label          "warned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1324,1333>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr47>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1347,1351>
+          rdfs:label          "talk" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1366,1374>
+          rdfs:label          "recovery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1567,1571>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1428,1431>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1503,1509>
+          rdfs:label          "saying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1449,1453>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1465,1471>
+          rdfs:label          "shoots" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr54>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1545,1549>
+          rdfs:label          "back" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery_dAttr55>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery> .
+}

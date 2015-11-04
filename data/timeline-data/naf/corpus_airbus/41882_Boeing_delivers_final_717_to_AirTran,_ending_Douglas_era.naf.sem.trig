@@ -1,0 +1,554 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Delivery , eso:Transportation ;
+            rdfs:label     "deliver" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=7,15> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=111,120> .
+    
+    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes>
+            rdfs:label     "Boeing" , "Boeing 's" , "Boeing Commercial airplanes" , "Boeing Commercial airplanes on Tuesday" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=0,6> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=310,316> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1046,1052> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1362,1370> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=72,99> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=72,110> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=390,392> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=927,933> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1362,1368> .
+    
+    <http://dbpedia.org/resource/AirTran_Airways>
+            rdfs:label     "AirTran Airways" , "AirTran" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=29,36> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=148,163> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=265,280> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=537,552> .
+    
+    <http://www.newsreader-project.eu/time/20060523>
+            a              time:DateTimeDescription ;
+            time:day       "---23"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=103,110> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060523> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev18>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "era" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=53,56> .
+    
+    <http://dbpedia.org/resource/Douglas_Aircraft_Company>
+            rdfs:label     "Douglas" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=45,52> .
+    
+    <http://www.newsreader-project.eu/time/20060529>
+            a              time:DateTimeDescription ;
+            time:day       "---29"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 29 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=58,70> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060529> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Creating , eso:Creating ;
+            rdfs:label     "build" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=139,144> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=396,401> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=599,604> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1237,1242> .
+    
+    <http://dbpedia.org/resource/Long_Beach,_California>
+            rdfs:label     "Long Beach" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=181,191> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=612,622> .
+    
+    <http://dbpedia.org/resource/California>
+            rdfs:label     "California" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=193,203> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1246,1256> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "ceremony" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=167,177> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev21>
+            a              sem:Event , nwrontology:contextualEvent , eso:Creating , fn:Behind_the_scenes , fn:Cause_to_start , fn:Intentionally_create , fn:Manufacturing ;
+            rdfs:label     "production" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=214,224> .
+    
+    <http://dbpedia.org/resource/McDonnell_Douglas>
+            rdfs:label     "McDonnell Douglas" , "Douglas Aircraft" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=228,245> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=651,667> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=672,689> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=818,835> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=897,914> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Residence , eso:BeingAtAPlace ;
+            rdfs:label     "home" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=643,647> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060529> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev30>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Becoming ;
+            rdfs:label     "become" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=870,876> .
+    
+    <http://dbpedia.org/resource/Boeing_717>
+            a              <http://dbpedia.org/resource/Boeing_717> ;
+            rdfs:label     "Boeing 717" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=565,575> , <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=881,891> .
+    
+    <http://www.newsreader-project.eu/time/1995>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5>
+            a                time:Instant ;
+            rdfs:label       "1995" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=812,816> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1995> .
+    
+    <http://www.newsreader-project.eu/time/1996>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6>
+            a                time:Instant ;
+            rdfs:label       "1996" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=937,941> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1996> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Amalgamation , fn:Cause_to_amalgamate , eso:Merging ;
+            rdfs:label     "merge" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=915,921> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , fn:Change_position_on_a_scale , fn:Expansion , eso:JoiningAnOrganization , eso:Decreasing ;
+            rdfs:label     "contract" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1371,1379> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1415,1419> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_end , fn:Destroying , fn:Process_end , eso:Destroying ;
+            rdfs:label     "end" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=38,44> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev45>
+            a              sem:Event , nwrontology:contextualEvent , eso:Transportation , fn:Bringing ;
+            rdfs:label     "bring" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=205,213> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev47>
+            a              sem:Event , nwrontology:contextualEvent , eso:Creating , fn:Intentionally_create ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=836,846> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev49>
+            a              sem:Event , nwrontology:sourceEvent , fn:Experiencer_focus , fn:Experiencer_subj ;
+            rdfs:label     "like" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=287,291> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev54>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1053,1062> .
+    
+    <http://www.newsreader-project.eu/time/200501>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx7>
+            a                time:Instant ;
+            rdfs:label       "January 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1032,1044> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200501> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr1> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=103,120> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=0,15> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr1,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=7,36> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=53,70> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr3,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=45,56> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=103,144> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr6,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=139,163> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr6,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=139,203> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr38,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1237,1256> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=103,177> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr7,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=167,203> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=103,224> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr8,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=214,250> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr18,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=643,689> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=812,876> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=870,941> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr25,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=870,891> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=812,921> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=915,941> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr26,rl63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=897,921> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr26,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=915,933> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1371,1419> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr43,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1362,1379> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=38,70> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr2,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=0,44> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr2,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=38,56> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=103,213> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr5,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=72,213> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr5,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=205,250> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=812,846> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=836,941> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr24,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=818,846> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=287,291> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=265,291> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1032,1062> .
+    
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr31,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#char=1046,1062> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev17>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr1,rl3> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev17>
+            sem:hasActor            <http://dbpedia.org/resource/AirTran_Airways> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/AirTran_Airways> ;
+            pb:A2                   <http://dbpedia.org/resource/AirTran_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr2> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr3,rl7> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/Douglas_Aircraft_Company> ;
+            pb:A1         <http://dbpedia.org/resource/Douglas_Aircraft_Company> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr3> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr6,rl16> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev19>
+            sem:hasActor        <http://dbpedia.org/resource/AirTran_Airways> ;
+            eso:creating-theme  <http://dbpedia.org/resource/AirTran_Airways> ;
+            pb:A4               <http://dbpedia.org/resource/AirTran_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr6,rl17> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev19>
+            sem:hasPlace  <http://dbpedia.org/resource/Long_Beach,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Long_Beach,_California> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr38,rl89> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev19>
+            sem:hasPlace  <http://dbpedia.org/resource/California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/California> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr4> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr7,rl18> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev20>
+            sem:hasPlace  <http://dbpedia.org/resource/Long_Beach,_California> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Long_Beach,_California> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr5> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr8,rl19> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev21>
+            sem:hasActor        <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            eso:creating-theme  <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            pb:A1               <http://dbpedia.org/resource/McDonnell_Douglas> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr10> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr18,rl40> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev26>
+            sem:hasActor       <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            eso:atPlace-theme  <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            pb:A0              <http://dbpedia.org/resource/McDonnell_Douglas> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr17> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr18> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr25,rl61> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev30>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing_717> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Becoming@Final_state>
+                    <http://dbpedia.org/resource/Boeing_717> ;
+            pb:A2                    <http://dbpedia.org/resource/Boeing_717> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr19> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr20> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr26,rl63> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev31>
+            sem:hasActor         <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            eso:merging-theme_1  <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            pb:A1                <http://dbpedia.org/resource/McDonnell_Douglas> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr26,rl64> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev31>
+            sem:hasActor         <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            eso:merging-theme_2  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A2                <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr34> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr43,rl96> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr37> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr2,rl5> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev44>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_end@Agent>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr2,rl6> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev44>
+            sem:hasActor            <http://dbpedia.org/resource/Douglas_Aircraft_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_end@Agent>
+                    <http://dbpedia.org/resource/Douglas_Aircraft_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Process>
+                    <http://dbpedia.org/resource/Douglas_Aircraft_Company> ;
+            pb:A1                   <http://dbpedia.org/resource/Douglas_Aircraft_Company> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr38> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr5,rl12> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev45>
+            sem:hasActor       <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Bringing@Agent>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0              <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr5,rl13> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev45>
+            sem:hasActor             <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            pb:A1                    <http://dbpedia.org/resource/McDonnell_Douglas> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr41> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr42> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr24,rl55> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev47>
+            sem:hasActor  <http://dbpedia.org/resource/McDonnell_Douglas> ;
+            pb:A0         <http://dbpedia.org/resource/McDonnell_Douglas> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr44> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev49>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr9,rl20> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev49>
+            sem:hasActor  <http://dbpedia.org/resource/AirTran_Airways> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Experiencer>
+                    <http://dbpedia.org/resource/AirTran_Airways> ;
+            pb:A0         <http://dbpedia.org/resource/AirTran_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tr51> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#pr31,rl74> {
+    <http://en.wikinews.org/wiki/Boeing_delivers_final_717_to_AirTran,_ending_Douglas_era#ev54>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}

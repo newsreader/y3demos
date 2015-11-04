@@ -1,0 +1,574 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "buy" , "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=24,27> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=244,252> .
+    
+    <http://dbpedia.org/resource/Penske_Automotive_Group>
+            rdfs:label     "Penske" , "Penske Auto" , "the Penske Automotive Group" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=0,11> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=194,221> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=767,773> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1095,1101> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1378,1384> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General motors '" , "General motors Corporation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=28,43> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=99,101> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=988,990> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=477,479> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1241,1243> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=71,97> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=126,131> .
+    
+    <http://dbpedia.org/resource/Saturn_Corporation>
+            rdfs:label     "Saturn" , "Saturn Corporation" , "canadian saturn" , "Saturn 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=253,271> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=699,714> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=781,787> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1123,1131> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=577,583> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1123,1129> .
+    
+    <http://www.newsreader-project.eu/time/20090605>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=182,188> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090605> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_amalgamate , eso:Merging ;
+            rdfs:label     "unit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=51,55> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 5 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=57,69> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090605> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_stop , fn:Process_stop , eso:StoppingAnActivity ;
+            rdfs:label     "discontinue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=444,456> .
+    
+    <http://dbpedia.org/resource/BSkyB>
+            rdfs:label     "Sky" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=462,465> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "two much year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=560,574> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20070605> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20090605> .
+    
+    <http://www.newsreader-project.eu/time/20070605>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Creating , eso:Creating ;
+            rdfs:label     "build" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=495,503> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Resolve_problem ;
+            rdfs:label     "dealer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=592,599> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=715,722> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=611,624> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "vehicle" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=788,796> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090605> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Replacing , fn:Take_place_of , eso:Replacing ;
+            rdfs:label     "replace" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=980,987> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=997,1001> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Operating_a_system , eso:BeingLeader ;
+            rdfs:label     "manager" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1140,1147> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_ongoing , fn:Process_continue , eso:IntentionalEvent ;
+            rdfs:label     "continue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=486,494> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=584,587> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev40>
+            a              sem:Event , nwrontology:contextualEvent , eso:Merging , fn:Inclusion , fn:Cause_change_of_position_on_a_scale ;
+            rdfs:label     "include" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=731,739> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev41>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing ;
+            rdfs:label     "select" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=12,20> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing ;
+            rdfs:label     "select" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=232,240> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev46>
+            a              sem:Event , nwrontology:sourceEvent , fn:Chatting , fn:Statement ;
+            rdfs:label     "talk" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=933,938> , <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1320,1325> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev47>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1019,1026> .
+    
+    <http://dbpedia.org/resource/Automotive_News>
+            rdfs:label     "Automotive News" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1003,1018> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession , fn:Desiring , fn:Motion , eso:Motion ;
+            rdfs:label     "want" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1102,1107> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev49>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Causation ;
+            rdfs:label     "lead" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1370,1374> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr1> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=182,252> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=0,27> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=24,55> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr9,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=244,271> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=51,69> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=28,55> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=444,574> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr15,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=444,475> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=495,574> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr17,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=477,503> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=560,599> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr19,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=588,624> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr22,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=699,722> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=788,796> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr25,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=767,796> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr25,rl57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=781,796> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=980,1001> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr33,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=980,990> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr38,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1123,1147> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=486,494> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr16,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=477,494> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=560,587> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr18,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=577,587> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr18,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=584,624> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr23,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=699,739> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=12,69> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=0,20> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=182,240> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr8,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=194,240> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr8,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=232,271> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=933,1001> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr32,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=933,1001> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=997,1026> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr35,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1003,1026> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr36,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1095,1107> .
+    
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr42,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#char=1370,1384> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev12>
+            sem:hasActor            <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            pb:A0                   <http://dbpedia.org/resource/Penske_Automotive_Group> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev12>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-theme  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr9,rl18> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev12>
+            sem:hasActor          <http://dbpedia.org/resource/Saturn_Corporation> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:A1                 <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr2> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev13>
+            sem:hasActor         <http://dbpedia.org/resource/General_Motors> ;
+            eso:merging-theme_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr11> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr15,rl31> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/BSkyB> ;
+            eso:activity  <http://dbpedia.org/resource/BSkyB> ;
+            pb:A1         <http://dbpedia.org/resource/BSkyB> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr12> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr17,rl36> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev22>
+            sem:hasActor       <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0              <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr13> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr19,rl40> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev23>
+            sem:hasActor              <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Resolve_problem@Agent>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr22,rl47> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev23>
+            sem:hasPlace  <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr16> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev26>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr25,rl55> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            pb:A1         <http://dbpedia.org/resource/Penske_Automotive_Group> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr25,rl57> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:A1         <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr22> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr33,rl73> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev32>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:replacing-entity_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr24> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr38,rl85> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev34>
+            sem:hasActor                  <http://dbpedia.org/resource/Saturn_Corporation> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Operating_a_system@System>
+                    <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:A2                         <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr28> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev38>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr16,rl32> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev38>
+            sem:hasActor               <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_continue@Event>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                      <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr29> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr18,rl38> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev39>
+            sem:hasActor          <http://dbpedia.org/resource/Saturn_Corporation> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:A0                 <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr18,rl39> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev39>
+            sem:hasActor          <http://dbpedia.org/resource/United_States> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_States> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr30> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr23,rl50> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev40>
+            sem:hasActor        <http://dbpedia.org/resource/Saturn_Corporation> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inclusion@Total>
+                    <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:A2               <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr31> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev41>
+            sem:hasActor          <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            pb:A0                 <http://dbpedia.org/resource/Penske_Automotive_Group> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr33> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr8,rl15> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev43>
+            sem:hasActor        <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Chosen>
+                    <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Topic>
+                    <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            pb:A1               <http://dbpedia.org/resource/Penske_Automotive_Group> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr8,rl16> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev43>
+            sem:hasActor        <http://dbpedia.org/resource/Saturn_Corporation> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Reason>
+                    <http://dbpedia.org/resource/Saturn_Corporation> ;
+            pb:A3               <http://dbpedia.org/resource/Saturn_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr36> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr32,rl70> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev46>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Topic>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr37> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr35,rl77> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev47>
+            sem:hasActor           <http://dbpedia.org/resource/Automotive_News> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Automotive_News> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Automotive_News> ;
+            pb:A0                  <http://dbpedia.org/resource/Automotive_News> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr38> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr36,rl79> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev48>
+            sem:hasActor          <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            pb:A0                 <http://dbpedia.org/resource/Penske_Automotive_Group> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tr39> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#pr42,rl94> {
+    <http://en.wikinews.org/wiki/Penske_Auto_selected_to_buy_General_Motors'_Saturn_unit#ev49>
+            sem:hasActor        <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Cause>
+                    <http://dbpedia.org/resource/Penske_Automotive_Group> ;
+            pb:A0               <http://dbpedia.org/resource/Penske_Automotive_Group> .
+}

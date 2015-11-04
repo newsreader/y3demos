@@ -1,0 +1,365 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev7>
+            a              sem:Event , nwrontology:contextualEvent , fn:Win_game , eso:Getting ;
+            rdfs:label     "win" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=7,11> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=104,107> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=0,6> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=544,550> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=640,646> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=192,197> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=299,304> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=407,413> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=355,361> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=92,98> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=152,155> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=871,877> .
+    
+    <http://dbpedia.org/resource/Qatar>
+            rdfs:label     "Qatar airways" , "Qatar" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=508,513> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=577,579> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=571,576> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=390,395> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=375,388> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=12,25> .
+    
+    <http://www.newsreader-project.eu/time/20050613>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 13 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=45,58> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050613> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance ;
+            rdfs:label     "aid" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=335,338> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" , "Boeing 's" , "Airbus and Boeing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=366,372> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=424,430> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=463,469> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=463,471> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=355,372> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=669,675> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=830,836> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050613> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=647,651> .
+    
+    <http://www.newsreader-project.eu/time/2004>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2004" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=634,638> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2004> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_start , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "spark" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=701,709> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=747,751> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "2004" , "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=634,638> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=732,734> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev20>
+            a              sem:Event , nwrontology:contextualEvent , eso:Getting , fn:Receiving ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=841,849> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=881,885> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=514,517> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx3>
+            a                time:Instant ;
+            rdfs:label       "2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=601,605> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Request , eso:Motion ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=26,31> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Request , eso:Motion ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=111,116> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=529,534> , <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=859,865> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "dispute" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=339,346> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr1> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=7,107> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=0,11> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=7,43> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr11,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=335,372> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=634,651> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr19,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=640,651> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=634,709> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr20,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=640,709> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=634,751> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr22,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=728,751> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=841,885> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr24,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=830,849> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=514,605> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr15,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=508,517> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=26,58> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=12,31> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=529,605> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=859,885> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr16,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=508,534> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr25,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=830,865> .
+    
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr12,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#char=339,372> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev7>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Win_game@Competitor>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                   <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev7>
+            sem:hasActor             <http://dbpedia.org/resource/Qatar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Win_game@Competition>
+                    <http://dbpedia.org/resource/Qatar> ;
+            pb:A1                    <http://dbpedia.org/resource/Qatar> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr7> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr11,rl26> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev13>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> , <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Airbus> , <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Airbus> , <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr10> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr19,rl48> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev16>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                   <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr11> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr20,rl52> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev17>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Cause>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr12> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr22,rl56> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev18>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr14> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr24,rl62> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev20>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr15> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr15,rl37> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/Qatar> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Qatar> ;
+            pb:A0                 <http://dbpedia.org/resource/Qatar> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr17> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev23>
+            sem:hasActor        <http://dbpedia.org/resource/Qatar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Qatar> ;
+            pb:A0               <http://dbpedia.org/resource/Qatar> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr18> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr19> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr16,rl39> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev24>
+            sem:hasActor          <http://dbpedia.org/resource/Qatar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Qatar> ;
+            pb:A3                 <http://dbpedia.org/resource/Qatar> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr25,rl65> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev24>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A3                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tr21> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#pr12,rl28> {
+    <http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> , <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> , <http://dbpedia.org/resource/Boeing> .
+}

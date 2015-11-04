@@ -1,0 +1,501 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Getting , eso:Increasing , fn:Change_of_quantity_of_possession , eso:Getting ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=14,19> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=96,101> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=411,415> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=752,758> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=847,852> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=918,924> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "we" , "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=0,2> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=256,258> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=61,74> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/SP>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "S&amp;P" , "the broad S&amp;P 500" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=902,905> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=732,751> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=544,547> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=914,917> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx1>
+            a              time:Interval ;
+            rdfs:label     "4 week" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=24,35> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20090404> .
+    
+    <http://www.newsreader-project.eu/time/20090404>
+            a              time:DateTimeDescription ;
+            time:day       "---04"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20090403>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=105,111> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090403> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx12>
+            a                time:Instant ;
+            rdfs:label       "the week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=952,960> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev13>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=81,88> , <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=640,645> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx8>
+            a                  time:Interval ;
+            rdfs:label         "four week" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=562,572> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090307> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20090404> .
+    
+    <http://www.newsreader-project.eu/time/20090307>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/200709>
+            a              time:DateTimeDescription ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx9>
+            a                time:Instant ;
+            rdfs:label       "September" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=594,603> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200709> .
+    
+    <http://www.newsreader-project.eu/time/200710>
+            a              time:DateTimeDescription ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx10>
+            a                time:Instant ;
+            rdfs:label       "October of 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=608,623> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200710> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=183,191> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "US Labor Department" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=199,218> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4>
+            a                time:Instant ;
+            rdfs:label       "the same day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=222,234> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090404> .
+    
+    <http://www.newsreader-project.eu/time/200903>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5>
+            a                time:Instant ;
+            rdfs:label       "March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=288,293> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200903> .
+    
+    <http://www.newsreader-project.eu/time/1983>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1983"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6>
+            a                time:Instant ;
+            rdfs:label       "1983" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=355,359> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1983> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=259,266> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Buildings , fn:Removing , fn:Motion , eso:Placing , eso:Removing , eso:Motion ;
+            rdfs:label     "shed" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=267,271> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Increasing , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Path_shape , fn:Sidereal_appearance , fn:Travel , fn:Dough_rising ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=552,557> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=89,95> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev32>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=176,182> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr2> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=14,35> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=96,111> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=918,960> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr5,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=61,101> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr25,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=732,758> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr29,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=893,924> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=81,111> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=562,645> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=594,645> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=608,645> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=61,88> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=183,234> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=183,293> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=183,359> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr8,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=183,218> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=222,266> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=259,293> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=259,359> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr11,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=256,266> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=222,271> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=267,293> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=267,359> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr12,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=252,271> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=552,572> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=552,603> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=552,623> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr20,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=540,557> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=89,111> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr4,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=61,95> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=176,234> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=176,293> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=176,359> .
+    
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr9,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#char=176,218> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr3> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr4> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr5,rl13> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr25,rl59> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            sem:hasActor       <http://www.newsreader-project.eu/data/wikinews/entities/SP> ;
+            eso:quantity-item  <http://www.newsreader-project.eu/data/wikinews/entities/SP> ;
+            pb:A1              <http://www.newsreader-project.eu/data/wikinews/entities/SP> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr29,rl68> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev12>
+            sem:hasActor       <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1              <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr5> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr6> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr7> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr8> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr3,rl6> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev13>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr10> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr11> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr12> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr8,rl19> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev15>
+            sem:hasActor        <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> ;
+            pb:A0               <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr13> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr14> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr15> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr11,rl25> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr16> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr17> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr18> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr12,rl27> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev17>
+            sem:hasActor           <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Buildings@Building>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                  <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr23> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr24> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr25> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr20,rl48> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev20>
+            sem:hasActor       <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1              <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr49> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr4,rl9> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev31>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Sender>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr50> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr51> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tr52> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#pr9,rl21> {
+    <http://en.wikinews.org/wiki/US_stocks_log_gains_for_fourth_week_in_a_row#ev32>
+            sem:hasActor           <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> ;
+            pb:A0                  <http://www.newsreader-project.eu/data/wikinews/entities/USLaborDepartment> .
+}

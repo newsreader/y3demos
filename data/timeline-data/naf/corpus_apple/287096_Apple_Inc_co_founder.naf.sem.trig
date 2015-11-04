@@ -1,0 +1,1042 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Aging , fn:Cause_change_of_position_on_a_scale , eso:Decreasing , eso:Increasing ;
+            rdfs:label     "age" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=38,42> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=165,168> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Inc." , "Apple Inc. co-founder" , "the co-founder" , "Apple 's" , "Macintosh" , "Apple Computer 's" , "the Mac OS X" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=0,10> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=0,21> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=64,78> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1080,1087> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1538,1543> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=783,788> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=839,844> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=474,479> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1213,1218> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=117,127> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=511,520> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=731,747> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=937,949> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1080,1085> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Jobs" , "Steve Jobs" , "our" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=22,32> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=766,770> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2145,2148> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=225,229> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=128,138> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=313,317> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2095,2099> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1181,1191> .
+    
+    <http://www.newsreader-project.eu/time/20111005>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=148,157> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20111005> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "officer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=106,113> .
+    
+    <http://www.newsreader-project.eu/time/20111006>
+            a              time:DateTimeDescription ;
+            time:day       "---06"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 6 , 2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=47,62> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20111006> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "co-founder" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=68,78> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Death ;
+            rdfs:label     "die" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=143,147> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "website" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=201,208> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1088,1095> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Quitting , eso:LeavingAnOrganization ;
+            rdfs:label     "resign" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=230,238> .
+    
+    <http://www.newsreader-project.eu/time/20110824>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx3>
+            a                time:Instant ;
+            rdfs:label       "August 24" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=214,223> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110824> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_born , fn:Intentionally_create ;
+            rdfs:label     "bear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=319,323> .
+    
+    <http://dbpedia.org/resource/San_Francisco>
+            rdfs:label     "San Francisco" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=327,340> .
+    
+    <http://www.newsreader-project.eu/time/19550224>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1955"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx5>
+            a                time:Instant ;
+            rdfs:label       "February 24 , 1955" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=344,361> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/19550224> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev30>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=543,551> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=971,979> .
+    
+    <http://www.newsreader-project.eu/time/1976>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1976"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6>
+            a                time:Instant ;
+            rdfs:label       "1976" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=483,487> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1976> .
+    
+    <http://www.newsreader-project.eu/time/1984>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1984"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7>
+            a                time:Instant ;
+            rdfs:label       "1984" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=496,500> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1984> .
+    
+    <http://www.newsreader-project.eu/time/1998>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12>
+            a                time:Instant ;
+            rdfs:label       "1998" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=834,838> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1998> .
+    
+    <http://www.newsreader-project.eu/time/2001>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13>
+            a                time:Instant ;
+            rdfs:label       "2001" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=887,891> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2001> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "buy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=644,650> .
+    
+    <http://dbpedia.org/resource/The_Walt_Disney_Company>
+            rdfs:label     "the Walt Disney Company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=679,702> .
+    
+    <http://www.newsreader-project.eu/time/1986>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9>
+            a                time:Instant ;
+            rdfs:label       "1986" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=636,640> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1986> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10>
+            a                time:Instant ;
+            rdfs:label       "2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=706,710> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , fn:Possession , eso:Getting ;
+            rdfs:label     "acquire" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=667,675> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Resurrection , eso:Arriving ;
+            rdfs:label     "return" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=771,779> .
+    
+    <http://www.newsreader-project.eu/time/1996>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1996"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11>
+            a                time:Instant ;
+            rdfs:label       "1996" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=715,719> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1996> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=748,756> .
+    
+    <http://dbpedia.org/resource/NeXT>
+            rdfs:label     "NeXT" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=627,631> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=760,764> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cotheme , fn:Relative_time ;
+            rdfs:label     "follow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=721,730> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev41>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "system" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=960,966> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_in_operation , fn:Operating_a_system , fn:Using , fn:Being_operational , eso:BeingInUse ;
+            rdfs:label     "operate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=950,959> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1223,1227> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1279,1283> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1384,1388> .
+    
+    <http://www.newsreader-project.eu/time/2010>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14>
+            a                time:Instant ;
+            rdfs:label       "2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1058,1062> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2010> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev46>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "genius" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1253,1259> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_employed , fn:Work , fn:Working_a_post , eso:Working , eso:BeingEmployed ;
+            rdfs:label     "work" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1363,1367> .
+    
+    <http://dbpedia.org/resource/Steve_Waugh>
+            rdfs:label     "Steve" , "his" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1373,1378> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1590,1595> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1468,1470> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1493,1496> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1428,1433> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2006,2011> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1702,1704> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1911,1916> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20111006> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev51>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "talented" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1733,1741> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession , fn:Inclusion ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1887,1890> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1921,1924> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev60>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Success_or_failure ;
+            rdfs:label     "miss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2001,2005> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev61>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "condolence" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2079,2090> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev63>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , fn:Setting_fire , fn:Setting_out , eso:StartingAnActivity ;
+            rdfs:label     "start" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=466,473> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "introduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=845,855> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev69>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Getting , eso:Getting , eso:Creating , fn:Becoming_aware , fn:Locating ;
+            rdfs:label     "found" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=619,626> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev70>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1067,1076> , <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1825,1834> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev72>
+            a              sem:Event , nwrontology:contextualEvent , fn:Departing , fn:Forming_relationships , fn:Giving , eso:Leaving ;
+            rdfs:label     "leave" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1434,1440> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev73>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "foundation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1524,1534> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev80>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Encoding , fn:Expressing_publicly ;
+            rdfs:label     "express" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2069,2078> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr1> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=148,168> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=0,42> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr5,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=128,168> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=47,113> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=106,157> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr2,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=106,127> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=47,78> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=68,157> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr3,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=68,127> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=143,157> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr4,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=128,147> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=148,208> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr33,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1080,1095> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=214,238> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr7,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=225,238> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=319,361> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr11,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=319,340> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=483,551> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=496,551> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=834,979> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=887,979> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr28,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=937,979> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=636,650> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=644,710> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr18,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=644,710> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=636,675> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=667,710> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr19,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=651,710> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=715,779> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr20,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=766,779> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr20,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=771,788> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=715,756> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr21,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=731,756> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr21,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=748,764> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=715,730> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr22,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=721,764> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=834,966> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=887,966> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr29,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=941,966> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=834,959> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=887,959> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr30,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=937,966> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1058,1283> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr35,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1213,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1058,1259> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr36,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1213,1259> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr41,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1363,1378> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr48,rl112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1590,1741> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr61,rl137>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1911,1924> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2001,2005> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr65,rl147>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2001,2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr67,rl153>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2079,2099> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=466,487> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=466,500> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr14,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=466,479> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=834,855> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=845,891> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr25,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=839,855> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=483,626> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=496,626> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=619,640> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=619,710> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr17,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=619,631> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1058,1076> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr32,rl81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1067,1095> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr43,rl101>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1428,1440> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr46,rl109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=1524,1543> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr66,rl151>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#char=2069,2099> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev20>
+            sem:hasActor     <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Aging@Entity>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1            <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr5,rl12> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev20>
+            sem:hasActor     <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Aging@Entity>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1            <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr2> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr3> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr2,rl6> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr4> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr5> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr3,rl7> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr6> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr4,rl8> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev23>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Death@Protagonist>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr7> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr33,rl82> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr8> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr7,rl16> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev25>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:employment-employee  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr11> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr11,rl26> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev28>
+            sem:hasPlace  <http://dbpedia.org/resource/San_Francisco> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/San_Francisco> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr13> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr14> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr15> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr16> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr28,rl73> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev30>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Theme>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr21> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr22> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr18,rl47> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev32>
+            sem:hasActor          <http://dbpedia.org/resource/The_Walt_Disney_Company> ;
+            eso:possession-theme  <http://dbpedia.org/resource/The_Walt_Disney_Company> ;
+            pb:A1                 <http://dbpedia.org/resource/The_Walt_Disney_Company> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr23> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr24> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr19,rl48> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev33>
+            sem:hasActor          <http://dbpedia.org/resource/The_Walt_Disney_Company> ;
+            eso:possession-theme  <http://dbpedia.org/resource/The_Walt_Disney_Company> ;
+            pb:A1                 <http://dbpedia.org/resource/The_Walt_Disney_Company> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr25> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr20,rl54> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr20,rl55> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev34>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A4                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr26> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr21,rl58> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev35>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr21,rl59> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev35>
+            sem:hasActor          <http://dbpedia.org/resource/NeXT> ;
+            eso:possession-theme  <http://dbpedia.org/resource/NeXT> ;
+            pb:A1                 <http://dbpedia.org/resource/NeXT> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr27> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr22,rl60> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev36>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cotheme@Cotheme>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr34> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr35> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr29,rl74> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr36> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr37> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr30,rl76> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev42>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr40> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr35,rl85> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev45>
+            sem:hasActor                   <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                          <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr41> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr36,rl87> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev46>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr43> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr41,rl98> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev48>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Waugh> ;
+            pb:A3         <http://dbpedia.org/resource/Steve_Waugh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr46> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr48,rl112> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev51>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Waugh> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Waugh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr51> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr61,rl137> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev57>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Waugh> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Steve_Waugh> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Waugh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr54> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev60>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr65,rl147> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev60>
+            sem:hasActor                <http://dbpedia.org/resource/Steve_Waugh> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Success_or_failure@Goal>
+                    <http://dbpedia.org/resource/Steve_Waugh> ;
+            pb:A1                       <http://dbpedia.org/resource/Steve_Waugh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr55> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr67,rl153> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev61>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr57> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr58> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr14,rl35> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev63>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:activity  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr59> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr60> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr25,rl65> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr65> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr66> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr67> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr68> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr17,rl44> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev69>
+            sem:hasActor                  <http://dbpedia.org/resource/NeXT> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Becoming_aware@Phenomenon>
+                    <http://dbpedia.org/resource/NeXT> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Becoming_aware@Topic>
+                    <http://dbpedia.org/resource/NeXT> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Locating@Sought_entity>
+                    <http://dbpedia.org/resource/NeXT> ;
+            pb:A1                         <http://dbpedia.org/resource/NeXT> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr69> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr32,rl81> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev70>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr71> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev72>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr43,rl101> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev72>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Waugh> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Waugh> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Waugh> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr72> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev73>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr46,rl109> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev73>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Created_entity>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Instrument>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tr79> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev80>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#pr66,rl151> {
+    <http://en.wikinews.org/wiki/Apple_Inc._co-founder_Steve_Jobs_dies_aged_56#ev80>
+            sem:hasActor                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Encoding@Message>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expressing_publicly@Content>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1                           <http://dbpedia.org/resource/Steve_Jobs> .
+}

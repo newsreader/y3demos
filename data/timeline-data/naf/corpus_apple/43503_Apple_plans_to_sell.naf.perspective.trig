@@ -1,0 +1,390 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=15,19>
+          rdfs:comment        "plans" ;
+          rdfs:label          "sell" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=6,11> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=6,11>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=83,87>
+          rdfs:comment        "planning" ;
+          rdfs:label          "sell" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=71,79> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_sAttr1>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=71,79>
+          rdfs:label          "planning" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=108,113>
+          rdfs:comment        "planning" ;
+          rdfs:label          "films" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=71,79> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=118,126>
+          rdfs:comment        "planning" ;
+          rdfs:label          "download" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=71,79> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=182,187>
+          rdfs:label          "sells" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=202,208>
+          rdfs:label          "tracks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=232,237>
+          rdfs:label          "begun" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=249,257>
+          rdfs:label          "episodes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=241,245>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=266,276>
+          rdfs:label          "executives" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=284,296>
+          rdfs:label          "negotiations" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=318,325>
+          rdfs:label          "arrange" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr9>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=339,345>
+          rdfs:label          "settle" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=357,367>
+          rdfs:label          "structures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=349,356>
+          rdfs:label          "pricing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=375,383>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=400,406>
+          rdfs:label          "retail" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr14>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=427,434>
+          rdfs:label          "dollars" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=462,470>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=474,478>
+          rdfs:label          "want" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr17>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=482,485>
+          rdfs:label          "set" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=495,500>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=545,553>
+          rdfs:label          "retailer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=581,589>
+          rdfs:label          "software" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=598,608>
+          rdfs:label          "integrated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=631,635>
+          rdfs:label          "line" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=639,647>
+          rdfs:label          "products" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=655,663>
+          rdfs:label          "versions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=676,683>
+          rdfs:label          "include" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=711,721>
+          rdfs:label          "displaying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=753,758>
+          rdfs:label          "watch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=763,768>
+          rdfs:label          "films" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=830,834>
+          rdfs:label          "want" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr30>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=838,840>
+          rdfs:label          "do" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=896,907>
+          rdfs:label          "shareholder" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=929,933>
+          rdfs:label          "owns" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=975,978>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=982,989>
+          rdfs:label          "playing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr35>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=998,1002>
+          rdfs:label          "role" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1019,1027>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1038,1045>
+          rdfs:label          "becomes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr38>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1097,1102>
+          rdfs:label          "movie" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1171,1181>
+          rdfs:label          "suggesting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1201,1215>
+          rdfs:label          "infrastructure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1230,1235>
+          rdfs:label          "place" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes> .
+}

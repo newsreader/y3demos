@@ -1,0 +1,861 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "negotiates" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=9,19> .
+    
+    <http://dbpedia.org/resource/Aeroflot>
+            rdfs:label     "Aeroflot" , "Aeroflot 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=0,8> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1339,1347> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2175,2183> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2087,2097> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2056,2064> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=663,671> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=791,799> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=107,115> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1966,1974> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2087,2095> .
+    
+    <http://www.newsreader-project.eu/time/20070610>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 10 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=71,84> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070610> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=20,28> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=135,143> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2227,2235> .
+    
+    <http://www.newsreader-project.eu/time/2014>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2014"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2014" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=266,270> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2014> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_make_progress , fn:Coming_to_be , fn:Intentionally_create , fn:Cause_change_of_position_on_a_scale , eso:Creating ;
+            rdfs:label     "development" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=217,228> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=190,196> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=690,696> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2115,2121> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1379,1385> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1473,1479> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1993,1999> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1869,1875> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1955,1961> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1222,1228> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=154,160> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=39,45> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , eso:Placing ;
+            rdfs:label     "set" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=505,508> .
+    
+    <http://dbpedia.org/resource/Vladimir_Putin>
+            rdfs:label     "Vladimir Putin" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=486,500> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070610> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "showcase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=515,523> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "role" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=538,542> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "the US" , "our" , "his country 's" , "neither of the company involve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=776,778> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1214,1220> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1323,1326> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=772,778> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=524,537> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1218,1220> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1009,1042> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Catastrophe ;
+            rdfs:label     "suffer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=804,812> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx5>
+            a                time:Instant ;
+            rdfs:label       "last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=697,706> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6>
+            a                time:Instant ;
+            rdfs:label       "last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=868,877> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=921,925> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Participation ;
+            rdfs:label     "involve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1034,1042> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev35>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "relationship" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1302,1314> .
+    
+    <http://www.newsreader-project.eu/time/199>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "199"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8>
+            a                time:Instant ;
+            rdfs:label       "early 1990s" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1445,1456> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/199> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev36>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "policy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1396,1402> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Participation ;
+            rdfs:label     "involvement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1414,1425> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , eso:Arriving ;
+            rdfs:label     "enter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1484,1491> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev39>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "marketing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1557,1566> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev40>
+            a              sem:Event , nwrontology:contextualEvent , eso:Creating , fn:Building , fn:Manufacturing ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1523,1535> .
+    
+    <http://dbpedia.org/resource/Sukhoi>
+            rdfs:label     "Sukhoi" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1536,1542> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev41>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "centre" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1751,1757> .
+    
+    <http://dbpedia.org/resource/Moscow>
+            rdfs:label     "Moscow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1737,1743> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance ;
+            rdfs:label     "assistance" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2024,2034> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Supply , eso:Giving ;
+            rdfs:label     "provide" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2044,2052> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev53>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=207,210> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1390,1393> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev68>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "relation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=754,763> .
+    
+    <http://dbpedia.org/resource/Russia>
+            rdfs:label     "Russia" , "Russia 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=783,789> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1203,1209> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1840,1848> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1840,1846> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev70>
+            a              sem:Event , nwrontology:sourceEvent , fn:Evidence , fn:Reveal_secret ;
+            rdfs:label     "reveal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1049,1055> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev71>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agreement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1067,1076> , <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1500,1509> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev75>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "rift" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1190,1194> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev79>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating , fn:Coming_up_with ;
+            rdfs:label     "design" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1744,1750> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev80>
+            a              sem:Event , nwrontology:sourceEvent , fn:Estimating ;
+            rdfs:label     "estimate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1876,1885> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev82>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action , fn:Giving , fn:Resolve_problem ;
+            rdfs:label     "deal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1942,1946> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev83>
+            a              sem:Event , nwrontology:sourceEvent , fn:Commitment ;
+            rdfs:label     "promise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2000,2008> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev84>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2184,2187> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr1> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=9,84> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=0,19> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=20,143> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=135,270> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=0,28> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=71,228> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=217,270> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr7,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=190,228> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr14,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=476,508> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr15,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=476,523> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr16,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=524,542> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=697,812> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=804,877> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=804,925> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr23,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=791,812> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=868,1042> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=921,1042> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr31,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1020,1042> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1302,1456> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr41,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1302,1347> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1396,1456> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr43,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1379,1402> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1414,1456> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr44,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1379,1425> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1445,1491> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr46,rl101>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1473,1491> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1445,1566> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr48,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1473,1566> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1445,1535> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr49,rl111>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1523,1542> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr53,rl121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1737,1757> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2024,2034> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr65,rl144>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2024,2064> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr66,rl148>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2044,2064> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=71,210> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=207,270> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=190,210> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1390,1456> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr42,rl90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1379,1393> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=697,763> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr21,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=754,789> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1049,1055> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr30,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1009,1055> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=868,1076> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=921,1076> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1445,1509> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr47,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1473,1509> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1190,1456> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr39,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1190,1220> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr54,rl122>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1737,1750> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr60,rl134>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1869,1885> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr63,rl140>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1942,1974> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr64,rl141>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=1993,2008> .
+    
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr70,rl154>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#char=2175,2187> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A0         <http://dbpedia.org/resource/Aeroflot> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr2> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr3> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev18>
+            sem:hasActor            <http://dbpedia.org/resource/Aeroflot> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A0                   <http://dbpedia.org/resource/Aeroflot> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr4> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr5> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr7,rl17> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev19>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_make_progress@Agent>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_to_be@Cause>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                  <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr12> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr14,rl31> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev24>
+            sem:hasActor      <http://dbpedia.org/resource/Vladimir_Putin> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Placing@Agent>
+                    <http://dbpedia.org/resource/Vladimir_Putin> ;
+            pb:A0             <http://dbpedia.org/resource/Vladimir_Putin> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr13> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr15,rl33> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Vladimir_Putin> ;
+            pb:A0         <http://dbpedia.org/resource/Vladimir_Putin> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr14> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr16,rl35> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr19> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr20> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr21> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr23,rl48> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev31>
+            sem:hasActor              <http://dbpedia.org/resource/Aeroflot> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Catastrophe@Undergoer>
+                    <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A0                     <http://dbpedia.org/resource/Aeroflot> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr22> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr23> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr31,rl69> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev32>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Participation@Event>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr26> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr41,rl89> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev35>
+            sem:hasActor  <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A0         <http://dbpedia.org/resource/Aeroflot> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr27> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr43,rl92> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev36>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr28> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr44,rl94> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev37>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Participation@Event>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A1                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr29> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr46,rl101> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev38>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr30> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr48,rl106> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr31> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr49,rl111> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev40>
+            sem:hasActor        <http://dbpedia.org/resource/Sukhoi> ;
+            eso:creating-theme  <http://dbpedia.org/resource/Sukhoi> ;
+            pb:A1               <http://dbpedia.org/resource/Sukhoi> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr32> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr53,rl121> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/Moscow> ;
+            pb:A1         <http://dbpedia.org/resource/Moscow> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr37> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev47>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr65,rl144> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev47>
+            sem:hasActor                    <http://dbpedia.org/resource/Aeroflot> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Benefited_party>
+                    <http://dbpedia.org/resource/Aeroflot> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Benefitted_party>
+                    <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A1                           <http://dbpedia.org/resource/Aeroflot> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr38> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr66,rl148> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev48>
+            sem:hasActor            <http://dbpedia.org/resource/Aeroflot> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A2                   <http://dbpedia.org/resource/Aeroflot> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr43> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr44> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev53>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr53> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr42,rl90> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev60>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr63> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr21,rl46> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev68>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Russia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Russia> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr66> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev70>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr30,rl66> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev70>
+            sem:hasActor              <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evidence@Support>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reveal_secret@Speaker>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr67> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr68> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr69> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr47,rl103> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev71>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr73> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr39,rl85> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev75>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Russia> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> , <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr77> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev79>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr54,rl122> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev79>
+            sem:hasActor                <http://dbpedia.org/resource/Moscow> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_up_with@Cognizer>
+                    <http://dbpedia.org/resource/Moscow> ;
+            pb:A0                       <http://dbpedia.org/resource/Moscow> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr78> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev80>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr60,rl134> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev80>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Estimating@Cognizer>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr80> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr63,rl140> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev82>
+            sem:hasActor             <http://dbpedia.org/resource/Aeroflot> , <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Aeroflot> , <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Aeroflot> , <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Aeroflot> , <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                    <http://dbpedia.org/resource/Aeroflot> , <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr81> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr64,rl141> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev83>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Commitment@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                  <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tr82> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev84>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#pr70,rl154> {
+    <http://en.wikinews.org/wiki/Aeroflot_negotiates_purchase_of_22_new_Boeing_787_Dreamliner_aircraft#ev84>
+            sem:hasActor             <http://dbpedia.org/resource/Aeroflot> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Aeroflot> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Aeroflot> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Aeroflot> ;
+            pb:A0                    <http://dbpedia.org/resource/Aeroflot> .
+}

@@ -1,0 +1,415 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev14>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Successful_action , fn:Success_or_failure ;
+            rdfs:label     "fail" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=26,31> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=240,247> .
+    
+    <http://dbpedia.org/resource/United_States_Senate>
+            rdfs:label     "Senate" , "the Senate" , "the United states Senate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=40,46> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=844,850> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=636,642> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=632,642> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=209,233> .
+    
+    <http://www.newsreader-project.eu/time/20081212>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx1>
+            a                time:Instant ;
+            rdfs:label       "December 12 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=48,65> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081212> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3>
+            a                time:Instant ;
+            rdfs:label       "next year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=456,465> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev15>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Process_end , fn:Traversing ;
+            rdfs:label     "pass" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=35,39> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=686,690> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "leader" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=367,374> .
+    
+    <http://dbpedia.org/resource/Republican_Party_(United_States)>
+            rdfs:label     "Republican Party" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=350,366> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev21>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "union" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=419,424> .
+    
+    <http://dbpedia.org/resource/United_Auto_Workers>
+            rdfs:label     "UAW" , "United Auto Workers" , "the UAW" , "the auto worker" , "their" , "the United Auto Workers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=393,412> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=414,417> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=570,577> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1081,1097> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=484,489> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=389,412> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=574,577> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , eso:Increasing ;
+            rdfs:label     "increase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=434,442> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Come_together ;
+            rdfs:label     "meet" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=589,593> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_employed , fn:Work , fn:Working_a_post , eso:Working , eso:BeingEmployed ;
+            rdfs:label     "worker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1090,1097> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081212> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev43>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "average" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1674,1681> .
+    
+    <http://dbpedia.org/resource/Japan>
+            rdfs:label     "Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1659,1664> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev55>
+            a              sem:Event , nwrontology:sourceEvent , fn:Respond_to_proposal ;
+            rdfs:label     "reject" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=197,205> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=281,289> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "the United states" , "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=0,2> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=124,137> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=209,226> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=551,568> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1458,1462> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev57>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "insist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=375,383> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev58>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agree" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=425,430> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev59>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act ;
+            rdfs:label     "refuse" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=578,585> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=878,882> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1042,1046> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1427,1431> .
+    
+    <http://dbpedia.org/resource/Harry_Reid>
+            rdfs:label     "Harry Reid" , "Reid" , "Senate Majority leader Harry Reid" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=867,877> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1037,1041> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=956,957> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=888,890> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1148,1151> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1109,1112> , <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=844,877> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr1> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=26,247> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=240,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr2,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=26,46> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=35,65> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=35,46> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=367,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr14,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=350,374> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=419,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=393,424> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=434,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr17,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=389,442> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=456,593> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr23,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=570,593> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr36,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1085,1097> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr55,rl121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=1659,1681> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=281,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr7,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=197,233> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=375,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr13,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=350,383> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=425,465> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr16,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=389,430> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=456,585> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr22,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=570,585> .
+    
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr29,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#char=844,882> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr2> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr2,rl5> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev14>
+            sem:hasActor                 <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Success_or_failure@Agent>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Successful_action@Goal>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Successful_action@Protagonist>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            pb:A2                        <http://dbpedia.org/resource/United_States_Senate> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr3> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr3,rl8> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev15>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Manner>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Process>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Traversing@Theme>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            pb:A1                   <http://dbpedia.org/resource/United_States_Senate> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr10> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr14,rl30> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Republican_Party_(United_States)> ;
+            pb:A2         <http://dbpedia.org/resource/Republican_Party_(United_States)> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr11> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr15,rl32> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A2         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr12> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr17,rl36> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change_of_position_on_a_scale@Agent>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_position_on_a_scale@Attribute>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr16> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr23,rl49> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev26>
+            sem:hasActor              <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Come_together@Party_1>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0                     <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr21> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr36,rl72> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev32>
+            sem:hasActor            <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Being_employed@Task>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A1                   <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr32> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr55,rl121> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev43>
+            sem:hasActor  <http://dbpedia.org/resource/Japan> ;
+            pb:A1         <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr45> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr7,rl17> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev55>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_Senate> , <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_Senate> , <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr47> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr13,rl28> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev57>
+            sem:hasActor          <http://dbpedia.org/resource/Republican_Party_(United_States)> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Republican_Party_(United_States)> ;
+            pb:A0                 <http://dbpedia.org/resource/Republican_Party_(United_States)> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr48> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr16,rl34> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev58>
+            sem:hasActor             <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0                    <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr49> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr22,rl47> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/United_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/United_Auto_Workers> ;
+            pb:A0         <http://dbpedia.org/resource/United_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tr50> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#pr29,rl61> {
+    <http://en.wikinews.org/wiki/US_automaker_bailout_deal_fails_to_pass_Senate#ev60>
+            sem:hasActor             <http://dbpedia.org/resource/Harry_Reid> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Harry_Reid> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Harry_Reid> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Harry_Reid> ;
+            pb:A0                    <http://dbpedia.org/resource/Harry_Reid> .
+}

@@ -1,0 +1,373 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev15>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Process_end , fn:Traversing ;
+            rdfs:label     "pass" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=132,136> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1299,1303> .
+    
+    <http://dbpedia.org/resource/United_States_Senate>
+            rdfs:label     "Senate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=141,147> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1208,1214> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3>
+            a                time:Instant ;
+            rdfs:label       "this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=148,157> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5>
+            a                time:Instant ;
+            rdfs:label       "next year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1394,1403> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "bail" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=77,81> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=284,288> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "our" , "the automaker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=586,588> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=961,964> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=884,887> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=352,366> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=598,600> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=462,464> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=293,307> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_to_fragment , eso:Destroying , eso:Damaging ;
+            rdfs:label     "collapse" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=340,348> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=728,736> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=828,836> .
+    
+    <http://www.newsreader-project.eu/time/20081213>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081213> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=589,596> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=888,895> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=965,972> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4>
+            a                time:Instant ;
+            rdfs:label       "early this week" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=989,1006> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev31>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "vote" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1215,1220> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1249,1253> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_affect , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=207,212> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=179,183> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=326,330> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=762,766> .
+    
+    <http://dbpedia.org/resource/White_House>
+            rdfs:label     "the White House" , "White House" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=0,11> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=159,174> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=310,325> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=780,795> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev53>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=573,578> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev55>
+            a              sem:Event , nwrontology:sourceEvent , fn:Grant_permission ;
+            rdfs:label     "approve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1181,1189> .
+    
+    <http://dbpedia.org/resource/United_States_House_of_Representatives>
+            rdfs:label     "House" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1175,1180> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev58>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1454,1460> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General Motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1057,1071> , <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1439,1453> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr3> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=132,157> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1299,1403> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr6,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=132,147> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=77,288> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr12,rl24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=284,307> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=340,348> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr16,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=340,366> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=888,1006> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr26,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=586,596> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=989,1253> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1215,1403> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr44,rl95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1204,1220> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=148,212> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr10,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=207,307> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=148,183> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr4,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=159,183> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr24,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=573,596> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=989,1189> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1181,1403> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr45,rl97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1171,1189> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1394,1460> .
+    
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr56,rl113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#char=1439,1460> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr4> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr6,rl11> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev15>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Manner>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_end@Process>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Traversing@Theme>
+                    <http://dbpedia.org/resource/United_States_Senate> ;
+            pb:A1                   <http://dbpedia.org/resource/United_States_Senate> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr5> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr12,rl24> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr8> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev19>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr16,rl29> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev19>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr13> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr26,rl55> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr19> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr20> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr44,rl95> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Senate> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_Senate> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr29> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr10,rl19> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev41>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_affect@Event>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_affect@Means>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_affect@Place>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Using@Means>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Using@Place>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Using@Purpose>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                          <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr36> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr4,rl6> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev48>
+            sem:hasActor             <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/White_House> ;
+            pb:A0                    <http://dbpedia.org/resource/White_House> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr41> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr24,rl53> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev53>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr43> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr44> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr45,rl97> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev55>
+            sem:hasActor                 <http://dbpedia.org/resource/United_States_House_of_Representatives> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/United_States_House_of_Representatives> ;
+            pb:A0                        <http://dbpedia.org/resource/United_States_House_of_Representatives> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tr47> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#pr56,rl113> {
+    <http://en.wikinews.org/wiki/White_House_considering_auto_rescue_plan#ev58>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}

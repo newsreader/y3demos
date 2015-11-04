@@ -1,0 +1,306 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=104,111>
+          rdfs:comment        "announced" ;
+          rdfs:label          "settled" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,89> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr0>
+          rdf:value            <u_NON_FUTURE_u> , <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,89>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=129,138>
+          rdfs:comment        "announced" ;
+          rdfs:label          "trademark" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,89> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=139,146>
+          rdfs:comment        "announced" ;
+          rdfs:label          "dispute" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,89> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=165,171>
+          rdfs:comment        "announced" ;
+          rdfs:label          "record" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=80,89> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=1057,1064>
+          rdfs:comment        "disclosed" ;
+          rdfs:label          "catalog" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=1020,1029> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=1020,1029>
+          rdfs:label          "disclosed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=1069,1073>
+          rdfs:comment        "disclosed" ;
+          rdfs:label          "part" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=1020,1029> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=32,41>
+          rdfs:label          "trademark" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr0>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=42,49>
+          rdfs:label          "dispute" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr1>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=236,239>
+          rdfs:label          "own" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr3>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=270,277>
+          rdfs:label          "license" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr4>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=209,218>
+          rdfs:label          "agreement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=250,260>
+          rdfs:label          "trademarks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=308,316>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr7>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=328,332>
+          rdfs:label          "name" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=320,323>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr9>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=362,369>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=392,400>
+          rdfs:label          "replaces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=410,419>
+          rdfs:label          "agreement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr12>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=453,460>
+          rdfs:label          "defined" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=506,509>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr14>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=520,529>
+          rdfs:label          "trademark" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=536,540>
+          rdfs:label          "love" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=626,630>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=587,591>
+          rdfs:label          "odds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=662,667>
+          rdfs:label          "feels" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=677,684>
+          rdfs:label          "resolve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr20>
+          rdf:value             <u_u_u> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=704,710>
+          rdfs:label          "manner" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr21>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=737,743>
+          rdfs:label          "remove" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr22>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=721,724>
+          rdfs:label          "way" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=748,757>
+          rdfs:label          "potential" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=862,866>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=847,852>
+          rdfs:label          "times" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=882,889>
+          rdfs:label          "manager" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=910,914>
+          rdfs:label          "wish" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute#char=944,948>
+          rdfs:label          "look" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc.,_Apple_Corps_resolve_trademark_dispute> .
+}

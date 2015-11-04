@@ -1,0 +1,804 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012>
+          prov:wasAttributedTo  nwrauthor:Markie .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1085,1091>
+          rdfs:comment        "announced" ;
+          rdfs:label          "closed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1049,1058> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ford_Motor_Company> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1049,1058>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1107,1119>
+          rdfs:comment        "announced" ;
+          rdfs:label          "negotiations" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1049,1058> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1151,1156>
+          rdfs:comment        "announced" ;
+          rdfs:label          "union" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1049,1058> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2544,2552>
+          rdfs:comment        "negotiates" ;
+          rdfs:label          "contract" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2527,2537> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ford_Motor_Company> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2527,2537>
+          rdfs:label          "negotiates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2817,2823>
+          rdfs:comment        "statement" ;
+          rdfs:label          "saying" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/United_Auto_Workers> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2866,2870>
+          rdfs:comment        "statement" ;
+          rdfs:label          "find" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2882,2888>
+          rdfs:comment        "statement" ;
+          rdfs:label          "facing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2938,2945>
+          rdfs:comment        "statement" ;
+          rdfs:label          "failure" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2976,2981>
+          rdfs:comment        "statement" ;
+          rdfs:label          "share" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2949,2953>
+          rdfs:comment        "statement" ;
+          rdfs:label          "halt" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2961,2968>
+          rdfs:comment        "statement" ;
+          rdfs:label          "sliding" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2807,2816> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=19,26>
+          rdfs:label          "cutting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=143,146>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr1>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=113,125>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=176,180>
+          rdfs:label          "part" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=200,204>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=208,215>
+          rdfs:label          "relieve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=244,248>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=277,282>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=295,301>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=321,331>
+          rdfs:label          "brainchild" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr9>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=422,428>
+          rdfs:label          "losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr10>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=396,399>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr11>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=561,564>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=441,451>
+          rdfs:label          "accomplish" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr13>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=464,468>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=475,479>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=492,499>
+          rdfs:label          "percent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=525,534>
+          rdfs:label          "workforce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=587,593>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=597,602>
+          rdfs:label          "order" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=630,638>
+          rdfs:label          "capacity" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=606,611>
+          rdfs:label          "bring" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=642,646>
+          rdfs:label          "line" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=727,733>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=668,671>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=743,748>
+          rdfs:label          "makes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=787,793>
+          rdfs:label          "phased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=845,857>
+          rdfs:label          "manufactures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=889,892>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=883,888>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=899,906>
+          rdfs:label          "decline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=929,934>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr31>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1204,1208>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr33>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1219,1222>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1242,1247>
+          rdfs:label          "makes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1394,1398>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1299,1302>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1339,1350>
+          rdfs:label          "chairperson" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1388,1393>
+          rdfs:label          "union" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1411,1414>
+          rdfs:label          "lot" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1448,1453>
+          rdfs:label          "doubt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1481,1485>
+          rdfs:label          "goes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr42>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1503,1507>
+          rdfs:label          "puts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1536,1540>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1553,1561>
+          rdfs:label          "millions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1598,1606>
+          rdfs:label          "invested" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1616,1624>
+          rdfs:label          "products" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1648,1656>
+          rdfs:label          "entitled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1669,1679>
+          rdfs:label          "investment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1680,1685>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1696,1702>
+          rdfs:label          "record" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1716,1720>
+          rdfs:label          "news" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1757,1766>
+          rdfs:label          "committed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1770,1776>
+          rdfs:label          "invest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1808,1815>
+          rdfs:label          "upgrade" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1847,1859>
+          rdfs:label          "manufactured" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1820,1830>
+          rdfs:label          "appearance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr57>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1933,1941>
+          rdfs:label          "believes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1980,1985>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr59>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=1997,2001>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2056,2060>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr61>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2061,2066>
+          rdfs:label          "sense" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2081,2085>
+          rdfs:label          "list" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr63>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2137,2141>
+          rdfs:label          "look" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr64>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2155,2162>
+          rdfs:label          "closure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr65>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2209,2214>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr66>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2267,2273>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr67>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2284,2293>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr68>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2327,2331>
+          rdfs:label          "fire" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr69>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2334,2335>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr70>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2356,2364>
+          rdfs:label          "officers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr71>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2483,2492>
+          rdfs:label          "receiving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr72>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2396,2404>
+          rdfs:label          "contract" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr73>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2434,2439>
+          rdfs:label          "union" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr74>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2441,2448>
+          rdfs:label          "workers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr75>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2499,2502>
+          rdfs:label          "pay" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr76>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr77>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2598,2602>
+          rdfs:label          "earn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr78>
+          rdf:value             <POSSIBLE_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2613,2617>
+          rdfs:label          "earn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr79>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2742,2748>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr80>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2749,2752>
+          rdfs:label          "say" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr81>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=2800,2806>
+          rdfs:label          "issued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr82>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr83>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=3012,3016>
+          rdfs:label          "left" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr84> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr84>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=3025,3032>
+          rdfs:label          "hanging" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr85> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr85>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=3054,3059>
+          rdfs:label          "force" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr86> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr86>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=3086,3099>
+          rdfs:label          "announcements" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr87> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr87>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012#char=3131,3137>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr88> .
+  
+  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012_dAttr88>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Motor_Company_cutting_30,000_jobs_by_2012> .
+}

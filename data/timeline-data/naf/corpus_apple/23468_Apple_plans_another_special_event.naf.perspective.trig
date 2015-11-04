@@ -1,0 +1,240 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_plans_another_special_event>
+          prov:wasAttributedTo  nwrauthor:ShakataGaNai .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=177,181>
+          rdfs:comment        "announced" ;
+          rdfs:label          "held" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=133,142> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=133,142>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=165,170>
+          rdfs:comment        "announced" ;
+          rdfs:label          "event" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=133,142> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=621,625>
+          rdfs:comment        "claiming" ;
+          rdfs:label          "seen" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=579,587> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_community> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=579,587>
+          rdfs:label          "claiming" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=690,694>
+          rdfs:comment        "claims" ;
+          rdfs:label          "seen" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=675,681> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr3>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_community> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=675,681>
+          rdfs:label          "claims" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=753,761>
+          rdfs:comment        "claims" ;
+          rdfs:label          "supports" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=675,681> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=6,11>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=209,213>
+          rdfs:label          "held" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=243,251>
+          rdfs:label          "downtown" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr3>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=290,295>
+          rdfs:label          "reads" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=330,337>
+          rdfs:label          "tagline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=375,382>
+          rdfs:label          "picture" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=401,409>
+          rdfs:label          "curtains" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=436,443>
+          rdfs:label          "gaining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=444,450>
+          rdfs:label          "rights" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=465,471>
+          rdfs:label          "videos" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=454,458>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=477,483>
+          rdfs:label          "record" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=484,490>
+          rdfs:label          "labels" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=501,510>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=511,517>
+          rdfs:label          "rumors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=534,538>
+          rdfs:label          "vPod" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=798,805>
+          rdfs:label          "include" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=776,782>
+          rdfs:label          "rumors" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=833,839>
+          rdfs:label          "update" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event#char=869,878>
+          rdfs:label          "processor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_plans_another_special_event_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_plans_another_special_event> .
+}

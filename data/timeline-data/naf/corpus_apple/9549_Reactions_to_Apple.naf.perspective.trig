@@ -1,0 +1,782 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger>
+          prov:wasAttributedTo  nwrauthor:ShakataGaNai .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=550,558>
+          rdfs:comment        "reports" ;
+          rdfs:label          "includes" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505>
+          rdfs:label          "reports" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=589,597>
+          rdfs:comment        "reports" ;
+          rdfs:label          "versions" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=527,531>
+          rdfs:comment        "reports" ;
+          rdfs:label          "name" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=613,621>
+          rdfs:comment        "reports" ;
+          rdfs:label          "software" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=721,726>
+          rdfs:comment        "reports" ;
+          rdfs:label          "iChat" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=704,713>
+          rdfs:comment        "reports" ;
+          rdfs:label          "messaging" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=498,505> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1822,1829>
+          rdfs:comment        "promised" ;
+          rdfs:label          "release" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1800,1808> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Cisco_Systems> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1800,1808>
+          rdfs:label          "promised" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1841,1844>
+          rdfs:comment        "promised" ;
+          rdfs:label          "end" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1800,1808> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=0,9>
+          rdfs:label          "Reactions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=26,31>
+          rdfs:label          "Tiger" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=129,136>
+          rdfs:label          "buzzing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=93,98>
+          rdfs:label          "users" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=161,168>
+          rdfs:label          "version" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=240,244>
+          rdfs:label          "base" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=383,389>
+          rdfs:label          "passed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=283,291>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=322,326>
+          rdfs:label          "user" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=327,336>
+          rdfs:label          "interface" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=337,345>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=368,377>
+          rdfs:label          "utilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=409,414>
+          rdfs:label          "phase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=456,464>
+          rdfs:label          "shipping" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=765,771>
+          rdfs:label          "rolled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=805,815>
+          rdfs:label          "integrates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=816,822>
+          rdfs:label          "search" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=830,834>
+          rdfs:label          "core" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=850,858>
+          rdfs:label          "utilizes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=876,885>
+          rdfs:label          "algorithm" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=899,907>
+          rdfs:label          "provides" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=910,917>
+          rdfs:label          "sandbox" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1005,1009>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1027,1033>
+          rdfs:label          "stroke" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1094,1101>
+          rdfs:label          "enables" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1141,1146>
+          rdfs:label          "tasks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1153,1157>
+          rdfs:label          "user" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1186,1190>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1196,1203>
+          rdfs:label          "comment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1179,1185>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1231,1238>
+          rdfs:label          "pointed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1217,1225>
+          rdfs:label          "analysts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1251,1259>
+          rdfs:label          "advances" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1335,1343>
+          rdfs:label          "advances" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1349,1355>
+          rdfs:label          "gained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1361,1367>
+          rdfs:label          "praise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1379,1384>
+          rdfs:label          "point" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1417,1425>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1429,1433>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr39>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1480,1488>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1470,1478>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1610,1613>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1533,1541>
+          rdfs:label          "strength" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1558,1562>
+          rdfs:label          "work" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1584,1591>
+          rdfs:label          "systems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr45>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1574,1583>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1633,1640>
+          rdfs:label          "reports" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr47>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1713,1718>
+          rdfs:label          "issue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1735,1739>
+          rdfs:label          "fact" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1760,1763>
+          rdfs:label          "VPN" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1773,1777>
+          rdfs:label          "work" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1883,1895>
+          rdfs:label          "breakthrough" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1910,1915>
+          rdfs:label          "Using" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr54>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=1981,1988>
+          rdfs:label          "results" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2010,2014>
+          rdfs:label          "used" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2058,2064>
+          rdfs:label          "update" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr57>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2069,2075>
+          rdfs:label          "change" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2083,2086>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr59>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2092,2098>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2107,2114>
+          rdfs:label          "queries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2139,2144>
+          rdfs:label          "saved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr62>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2177,2183>
+          rdfs:label          "moving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr63>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2220,2227>
+          rdfs:label          "collect" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr64>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2321,2328>
+          rdfs:label          "keeping" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr65>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2237,2243>
+          rdfs:label          "photos" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr66>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2286,2294>
+          rdfs:label          "vacation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr67>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2336,2343>
+          rdfs:label          "ordered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr68>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2357,2362>
+          rdfs:label          "drive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr69>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2379,2385>
+          rdfs:label          "review" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr70>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2485,2492>
+          rdfs:label          "suggest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr71>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2493,2500>
+          rdfs:label          "waiting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr72>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2568,2576>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr73>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2523,2530>
+          rdfs:label          "release" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr74>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2547,2554>
+          rdfs:label          "jumping" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr75>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2640,2647>
+          rdfs:label          "pattern" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr76>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2654,2660>
+          rdfs:label          "moving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr77>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2693,2701>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr78>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2740,2747>
+          rdfs:label          "program" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr79>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2770,2777>
+          rdfs:label          "accused" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr80>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2787,2792>
+          rdfs:label          "aimed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr81>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2796,2803>
+          rdfs:label          "forcing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr82>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2824,2827>
+          rdfs:label          "pay" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr83>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2850,2858>
+          rdfs:label          "software" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr84> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr84>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2868,2875>
+          rdfs:label          "returns" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr85> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr85>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2916,2921>
+          rdfs:label          "fixes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr86> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr86>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2939,2949>
+          rdfs:label          "technology" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr87> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr87>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger#char=2926,2933>
+          rdfs:label          "leading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr88> .
+  
+  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger_dAttr88>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Reactions_to_Apple's_OS_X_Tiger> .
+}

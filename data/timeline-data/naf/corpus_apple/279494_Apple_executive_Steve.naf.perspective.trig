@@ -1,0 +1,798 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=97,101>
+          rdfs:comment        "chosen" ;
+          rdfs:label          "step" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=87,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=87,93>
+          rdfs:label          "chosen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=116,120>
+          rdfs:comment        "chosen" ;
+          rdfs:label          "post" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=87,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=124,127>
+          rdfs:comment        "chosen" ;
+          rdfs:label          "CEO" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=87,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=520,526>
+          rdfs:comment        "stated" ;
+          rdfs:label          "desire" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,510> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <positive> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,510>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=534,540>
+          rdfs:comment        "stated" ;
+          rdfs:label          "remain" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,510> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=544,552>
+          rdfs:comment        "stated" ;
+          rdfs:label          "chairman" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,510> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1608,1613>
+          rdfs:comment        "predicts" ;
+          rdfs:label          "begin" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1569,1577> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr4>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_FUTURE_NEG> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/AnalystCharlesGolvin> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1569,1577>
+          rdfs:label          "predicts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1617,1623>
+          rdfs:comment        "predicts" ;
+          rdfs:label          "affect" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1569,1577> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1630,1641>
+          rdfs:comment        "predicts" ;
+          rdfs:label          "performance" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1569,1577> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2093,2095>
+          rdfs:comment        "stated" ;
+          rdfs:label          "go" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2061,2067> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr10>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/CharlesOReillyCharlesOReilly> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2061,2067>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2101,2109>
+          rdfs:comment        "stated" ;
+          rdfs:label          "strength" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2061,2067> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2113,2121>
+          rdfs:comment        "stated" ;
+          rdfs:label          "strength" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2061,2067> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_sAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=27,34>
+          rdfs:label          "resigns" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=65,72>
+          rdfs:label          "founder" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=197,207>
+          rdfs:label          "succeeding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr3>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=226,234>
+          rdfs:label          "resigned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=240,246>
+          rdfs:label          "letter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=258,263>
+          rdfs:label          "board" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=277,284>
+          rdfs:label          "stating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=301,305>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=320,324>
+          rdfs:label          "came" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=354,358>
+          rdfs:label          "meet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr10>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=362,368>
+          rdfs:label          "duties" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=397,403>
+          rdfs:label          "C.E.O." ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=429,432>
+          rdfs:label          "let" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=471,475>
+          rdfs:label          "come" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=588,596>
+          rdfs:label          "fighting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=608,614>
+          rdfs:label          "cancer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=650,655>
+          rdfs:label          "leave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=662,669>
+          rdfs:label          "January" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=705,711>
+          rdfs:label          "period" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=723,728>
+          rdfs:label          "leave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=741,745>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=749,759>
+          rdfs:label          "appearance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=781,787>
+          rdfs:label          "unveil" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=841,848>
+          rdfs:label          "service" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=883,887>
+          rdfs:label          "left" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=853,857>
+          rdfs:label          "part" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=865,876>
+          rdfs:label          "resignation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=911,915>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=933,940>
+          rdfs:label          "friends" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=947,951>
+          rdfs:label          "life" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=968,973>
+          rdfs:label          "thank" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1018,1022>
+          rdfs:label          "work" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr33>
+          rdf:value             <positive> , <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1066,1077>
+          rdfs:label          "recommended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1089,1093>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr35>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1119,1126>
+          rdfs:label          "serving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1152,1161>
+          rdfs:label          "beginning" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1179,1184>
+          rdfs:label          "leave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1217,1221>
+          rdfs:label          "held" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1197,1201>
+          rdfs:label          "post" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1222,1231>
+          rdfs:label          "positions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1257,1262>
+          rdfs:label          "known" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1267,1274>
+          rdfs:label          "staying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr43>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1343,1351>
+          rdfs:label          "credited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1319,1327>
+          rdfs:label          "overhaul" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr45>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1361,1368>
+          rdfs:label          "success" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1406,1411>
+          rdfs:label          "stood" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1427,1432>
+          rdfs:label          "place" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1474,1481>
+          rdfs:label          "surgery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1486,1494>
+          rdfs:label          "received" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1515,1526>
+          rdfs:label          "performance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr52>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1678,1686>
+          rdfs:label          "products" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr53>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1705,1716>
+          rdfs:label          "development" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1731,1739>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr55>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1743,1748>
+          rdfs:label          "steer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr56>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1770,1778>
+          rdfs:label          "position" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr57>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1782,1790>
+          rdfs:label          "chairman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1868,1872>
+          rdfs:label          "adds" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1819,1827>
+          rdfs:label          "chairman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr60>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1847,1853>
+          rdfs:label          "member" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1886,1894>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr62>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1898,1903>
+          rdfs:label          "serve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr63>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1926,1934>
+          rdfs:label          "insights" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr64>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1976,1980>
+          rdfs:label          "view" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr65>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1984,1991>
+          rdfs:label          "offered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr66>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr67>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2026,2032>
+          rdfs:label          "expert" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr68>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2140,2150>
+          rdfs:label          "attributes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr69>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2163,2170>
+          rdfs:label          "success" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr70>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2178,2185>
+          rdfs:label          "ability" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr71>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2189,2193>
+          rdfs:label          "hold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr72>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2235,2241>
+          rdfs:label          "states" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr73>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2272,2278>
+          rdfs:label          "gotten" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr74>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2245,2248>
+          rdfs:label          "lot" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr75>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2252,2260>
+          rdfs:label          "products" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr76>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2305,2311>
+          rdfs:label          "wanted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr77>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2373,2377>
+          rdfs:label          "slid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr78>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2328,2333>
+          rdfs:label          "light" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr79>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2359,2365>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr80>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2400,2407>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr81>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2410,2414>
+          rdfs:label          "drop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr82>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2459,2463>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr83>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2452,2458>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr84> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr84>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2478,2482>
+          rdfs:label          "drop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr85> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr85>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2515,2520>
+          rdfs:label          "close" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr86> .
+  
+  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns_dAttr86>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns> .
+}

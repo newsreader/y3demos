@@ -1,0 +1,330 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev5>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "version" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=75,82> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Computer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=0,5> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=86,89> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=705,710> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=372,377> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=121,126> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=40,54> .
+    
+    <http://www.newsreader-project.eu/time/20080609>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=55,60> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080609> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , eso:Decreasing ;
+            rdfs:label     "reduce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=556,563> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "the iphone" , "the US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=579,581> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=283,293> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=575,581> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=531,541> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=295,297> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=644,650> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=225,235> , <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=648,650> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080609> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "prex" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=588,594> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev13>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "fan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=711,715> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Launch_process , fn:Cause_motion , fn:Shoot_projectiles , fn:Motion , eso:Translocation ;
+            rdfs:label     "launch" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=6,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 9 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=26,38> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080609> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Launch_process , fn:Cause_motion , fn:Shoot_projectiles , fn:Motion , eso:Translocation ;
+            rdfs:label     "launch" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=61,69> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Launch_process , fn:Cause_motion , fn:Shoot_projectiles , fn:Motion , eso:Translocation ;
+            rdfs:label     "launch" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=273,282> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4>
+            a                  time:Interval ;
+            rdfs:label         "one year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=258,266> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20080609> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , eso:Decreasing , eso:Increasing ;
+            rdfs:label     "promote" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=216,224> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev23>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "claim" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "price" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=521,526> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev25>
+            a              sem:Event , nwrontology:sourceEvent , fn:Coming_to_believe ;
+            rdfs:label     "speculation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=687,698> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr1> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev5>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=55,82> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=40,82> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr19,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=517,563> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr20,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=517,594> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr22,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=705,715> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=6,38> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=55,69> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=40,69> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=258,282> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr10,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=273,293> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=216,266> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr7,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=216,235> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=258,389> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr12,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=372,389> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr18,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=517,541> .
+    
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr21,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=687,715> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev5>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr6> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr19,rl45> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev11>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item       <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr7> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr20,rl50> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr8> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr22,rl55> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev13>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr9> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev14>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_start@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Launch_process@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Shoot_projectiles@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr10> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev15>
+            sem:hasActor                <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_start@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Launch_process@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Shoot_projectiles@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                       <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr12> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr10,rl25> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev17>
+            sem:hasActor                <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_start@Activity>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Launch_process@Agent>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Shoot_projectiles@Agent>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Shoot_projectiles@Projectile>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                       <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr16> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr7,rl18> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev21>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr18> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr12,rl29> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev23>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr19> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr18,rl43> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tr20> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#pr21,rl53> {
+    <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#ev25>
+            sem:hasActor                   <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_to_believe@Cognizer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                          <http://dbpedia.org/resource/Apple_Inc.> .
+}

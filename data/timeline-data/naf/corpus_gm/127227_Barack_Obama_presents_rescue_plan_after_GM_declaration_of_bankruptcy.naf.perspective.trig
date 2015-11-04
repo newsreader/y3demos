@@ -1,0 +1,770 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=290,295>
+          rdfs:comment        "announcement" ;
+          rdfs:label          "filed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,259> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr2>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <negative> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,259>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=326,336>
+          rdfs:comment        "announcement" ;
+          rdfs:label          "protection" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,259> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=346,355>
+          rdfs:comment        "announcement" ;
+          rdfs:label          "creditors" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,259> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=369,379>
+          rdfs:comment        "announcement" ;
+          rdfs:label          "bankruptcy" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,259> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1698,1708>
+          rdfs:comment        "voiced" ;
+          rdfs:label          "challenges" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> , <CERTAIN_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/by+political+opponents> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715>
+          rdfs:label          "voiced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1729,1738>
+          rdfs:comment        "voiced" ;
+          rdfs:label          "opponents" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1776,1786>
+          rdfs:comment        "voiced" ;
+          rdfs:label          "government" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1802,1813>
+          rdfs:comment        "voiced" ;
+          rdfs:label          "participate" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1821,1828>
+          rdfs:comment        "voiced" ;
+          rdfs:label          "affairs" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1836,1848>
+          rdfs:comment        "voiced" ;
+          rdfs:label          "restructured" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1709,1715> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2323,2334>
+          rdfs:comment        "described" ;
+          rdfs:label          "anticipated" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2305,2314> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr9> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr9>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/several+times> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2305,2314>
+          rdfs:label          "described" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr80> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2382,2394>
+          rdfs:comment        "described" ;
+          rdfs:label          "streamlining" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2305,2314> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_sAttr9> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=13,21>
+          rdfs:label          "presents" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=29,33>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=43,54>
+          rdfs:label          "declaration" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=191,200>
+          rdfs:label          "presented" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=99,105>
+          rdfs:label          "speech" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=218,222>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr6>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=223,232>
+          rdfs:label          "following" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=506,515>
+          rdfs:label          "explained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=414,424>
+          rdfs:label          "Describing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=565,569>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=541,549>
+          rdfs:label          "proposed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=593,599>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=609,615>
+          rdfs:label          "intent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=639,640>
+          rdfs:label          "]" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=628,637>
+          rdfs:label          "perpetuat" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=658,667>
+          rdfs:label          "decisions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=691,698>
+          rdfs:label          "loaning" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr17>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=764,769>
+          rdfs:label          "doing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=739,746>
+          rdfs:label          "problem" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=788,792>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=846,857>
+          rdfs:label          "conjunction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=797,803>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=831,841>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=867,878>
+          rdfs:label          "governments" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=911,918>
+          rdfs:label          "thanked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=929,934>
+          rdfs:label          "roles" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=949,959>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr27>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=980,987>
+          rdfs:label          "thanked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=996,1000>
+          rdfs:label          "role" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr29>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1024,1029>
+          rdfs:label          "stake" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr30>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1004,1011>
+          rdfs:label          "selling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr31>
+          rdf:value             <negative> , <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1048,1054>
+          rdfs:label          "become" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr32>
+          rdf:value             <negative> , <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1105,1115>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr33>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1122,1126>
+          rdfs:label          "hold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr34>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1133,1138>
+          rdfs:label          "stake" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1160,1164>
+          rdfs:label          "give" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr36>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1178,1186>
+          rdfs:label          "infusion" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1207,1215>
+          rdfs:label          "addition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1244,1252>
+          rdfs:label          "received" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1273,1282>
+          rdfs:label          "ownership" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1286,1292>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1301,1308>
+          rdfs:label          "refused" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1313,1316>
+          rdfs:label          "let" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1377,1386>
+          rdfs:label          "described" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1345,1351>
+          rdfs:label          "become" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1352,1357>
+          rdfs:label          "wards" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr46>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1391,1401>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1460,1470>
+          rdfs:label          "envisioned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1423,1433>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1498,1510>
+          rdfs:label          "bankruptcies" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1516,1523>
+          rdfs:label          "pointed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1531,1541>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1612,1618>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1560,1567>
+          rdfs:label          "example" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1579,1587>
+          rdfs:label          "envision" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr55>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1861,1867>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1684,1694>
+          rdfs:label          "Responding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr57>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1876,1879>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1884,1892>
+          rdfs:label          "interest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr60>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1897,1904>
+          rdfs:label          "running" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1930,1940>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr62>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1948,1955>
+          rdfs:label          "refrain" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr63>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1961,1971>
+          rdfs:label          "exercising" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr64>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1976,1982>
+          rdfs:label          "rights" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr65>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1999,2010>
+          rdfs:label          "shareholder" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr66>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2048,2054>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr67>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2072,2082>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr68>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2093,2101>
+          rdfs:label          "exercise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr69>
+          rdf:value             <CERTAIN_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2133,2140>
+          rdfs:label          "dictate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr70>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2106,2112>
+          rdfs:label          "rights" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr71>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2118,2129>
+          rdfs:label          "shareholder" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr72>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2166,2170>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr73>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2151,2155>
+          rdfs:label          "type" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr74> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr74>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2176,2182>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr75> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr75>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2191,2199>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr76> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr76>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2204,2216>
+          rdfs:label          "restructured" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr77> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr77>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2223,2227>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr78> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr78>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2299,2304>
+          rdfs:label          "times" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr79> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr79>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr80>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2415,2419>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr81> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr81>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2459,2466>
+          rdfs:label          "pretend" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr82> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr82>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2481,2486>
+          rdfs:label          "times" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr83> .
+  
+  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy_dAttr83>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy> .
+}

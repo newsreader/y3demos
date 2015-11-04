@@ -1,0 +1,328 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion>
+          prov:wasAttributedTo  nwrauthor:PatrickFlaherty .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=143,152>
+          rdfs:comment        "announced" ;
+          rdfs:label          "divesting" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=109,118> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <negative> , <u_u_u> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+daimlerchrysler+corporation> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=109,118>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=185,192>
+          rdfs:comment        "announced" ;
+          rdfs:label          "selling" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=109,118> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=227,233>
+          rdfs:comment        "announced" ;
+          rdfs:label          "equity" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=109,118> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=542,546>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "take" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr2>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Cerberus_Capital_Management> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,538>
+          rdfs:label          "agreed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=550,558>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "billions" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=605,610>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "costs" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=600,604>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "care" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,538> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=19,23>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=302,307>
+          rdfs:label          "names" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=312,321>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=328,335>
+          rdfs:label          "changed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr4>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=396,400>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=433,442>
+          rdfs:label          "retaining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=405,406>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=414,419>
+          rdfs:label          "stake" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=457,458>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=470,478>
+          rdfs:label          "ventures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=638,641>
+          rdfs:label          "led" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=660,668>
+          rdfs:label          "acquired" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=751,755>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=682,687>
+          rdfs:label          "stake" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,696>
+          rdfs:label          "April" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=733,736>
+          rdfs:label          "arm" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=723,732>
+          rdfs:label          "financing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=759,767>
+          rdfs:label          "planning" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=771,777>
+          rdfs:label          "invest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr20>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=786,791>
+          rdfs:label          "parts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=861,865>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=826,835>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=878,885>
+          rdfs:label          "assured" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=917,926>
+          rdfs:label          "agreement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr25>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=906,916>
+          rdfs:label          "bargaining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=947,953>
+          rdfs:label          "remain" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr27>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=981,991>
+          rdfs:label          "eliminated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1003,1009>
+          rdfs:label          "change" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1065,1072>
+          rdfs:label          "pending" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1085,1093>
+          rdfs:label          "approval" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1115,1124>
+          rdfs:label          "scheduled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion> .
+}

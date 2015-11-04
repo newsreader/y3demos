@@ -1,0 +1,326 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=9,16> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=844,850> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=858,862> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=0,2> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=168,181> .
+    
+    <http://www.newsreader-project.eu/time/20071015>
+            a              time:DateTimeDescription ;
+            time:day       "---15"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx1>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=34,40> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071015> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending , eso:Giving , fn:Causation , fn:Motion ;
+            rdfs:label     "send" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=273,277> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=569,573> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=678,682> .
+    
+    <http://dbpedia.org/resource/Iraq>
+            rdfs:label     "Iraq" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=594,598> .
+    
+    <http://www.newsreader-project.eu/time/20071018>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7>
+            a                time:Instant ;
+            rdfs:label       "October 18" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=555,565> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071018> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx8>
+            a                time:Instant ;
+            rdfs:label       "October 18" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=808,818> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071018> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=521,531> .
+    
+    <http://dbpedia.org/resource/Turkey>
+            rdfs:label     "Turkey" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=512,518> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Attempt , fn:Intentionally_create , eso:IntentionalEvent ;
+            rdfs:label     "attempt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=605,612> .
+    
+    <http://dbpedia.org/resource/Kurdistan_Workers'_Party>
+            rdfs:label     "Kurdistan Workers Party" , "PKK" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=642,665> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=667,670> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , fn:Removing , fn:Bringing , fn:Taking , fn:Change_of_leadership , eso:Increasing , eso:Transportation , eso:Getting , eso:Taking ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=616,620> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1934,1938> .
+    
+    <http://dbpedia.org/resource/NASDAQ>
+            rdfs:label     "NASDAQ" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1922,1928> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev35>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "militant" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=625,634> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev57>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "los" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1945,1951> .
+    
+    <http://www.newsreader-project.eu/time/20071020>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071020> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Closure , fn:Body_movement , eso:Motion ;
+            rdfs:label     "close" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1955,1960> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1990,1997> , <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=2074,2081> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev71>
+            a              sem:Event , nwrontology:sourceEvent , fn:Grant_permission ;
+            rdfs:label     "approve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=532,541> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=9,40> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=0,16> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=555,573> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=678,818> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr22,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=569,598> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=521,565> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr19,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=502,531> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=555,612> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr23,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=605,671> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=555,620> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr24,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=616,671> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr76,rl153>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1918,1938> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=555,634> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr25,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=625,671> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr77,rl158>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1918,1951> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr78,rl160>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=1918,1960> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=532,565> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr20,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#char=502,541> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr1,rl1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev19>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr20> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr21> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr22,rl49> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev26>
+            sem:hasActor            <http://dbpedia.org/resource/Iraq> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Iraq> ;
+            pb:A2                   <http://dbpedia.org/resource/Iraq> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr27> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr19,rl43> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Turkey> ;
+            pb:A2         <http://dbpedia.org/resource/Turkey> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr29> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr23,rl51> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev33>
+            sem:hasActor      <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt@Agent>
+                    <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attempt@Goal>
+                    <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            pb:A1             <http://dbpedia.org/resource/Kurdistan_Workers'_Party> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr30> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr24,rl52> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            eso:possession-theme     <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            pb:A1                    <http://dbpedia.org/resource/Kurdistan_Workers'_Party> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr76,rl153> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/NASDAQ> ;
+            eso:possession-owner_2   <http://dbpedia.org/resource/NASDAQ> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0                    <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr31> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr25,rl53> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev35>
+            sem:hasActor  <http://dbpedia.org/resource/Kurdistan_Workers'_Party> ;
+            pb:A1         <http://dbpedia.org/resource/Kurdistan_Workers'_Party> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr61> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr77,rl158> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev57>
+            sem:hasActor  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0         <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr62> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr78,rl160> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev58>
+            sem:hasActor            <http://dbpedia.org/resource/NASDAQ> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://dbpedia.org/resource/NASDAQ> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Closure@Agent>
+                    <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0                   <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tr86> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#pr20,rl45> {
+    <http://en.wikinews.org/wiki/US_stock_markets_tumble_on_'Black_Monday'_anniversary#ev71>
+            sem:hasActor                 <http://dbpedia.org/resource/Turkey> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/Turkey> ;
+            pb:A0                        <http://dbpedia.org/resource/Turkey> .
+}

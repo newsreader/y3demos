@@ -1,0 +1,456 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits>
+          prov:wasAttributedTo  nwrauthor:ShakataGaNai .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=221,227>
+          rdfs:comment        "enjoyed" ;
+          rdfs:label          "demand" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=228,235> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr3> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr4> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr3>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/apple+%27s+ipod+digital+music+players> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=228,235>
+          rdfs:label          "enjoyed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=266,273>
+          rdfs:comment        "enjoyed" ;
+          rdfs:label          "players" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=228,235> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr3> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr4> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=308,313>
+          rdfs:comment        "enjoyed" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=228,235> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr3> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr4> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=314,320>
+          rdfs:comment        "enjoyed" ;
+          rdfs:label          "period" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=228,235> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr3> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr4> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr4>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/apple+%27s+ipod+digital+music+players> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr5>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/apple+%27s+ipod+digital+music+players> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=730,736>
+          rdfs:comment        "explained" ;
+          rdfs:label          "growth" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=750,759> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr6> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr6>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+laptops+produced+by+apple> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=750,759>
+          rdfs:label          "explained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_sAttr7>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+laptops+produced+by+apple> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=11,18>
+          rdfs:label          "doubled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=23,30>
+          rdfs:label          "profits" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=90,97>
+          rdfs:label          "reached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=109,117>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=125,132>
+          rdfs:label          "profits" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=164,169>
+          rdfs:label          "ended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=202,211>
+          rdfs:label          "explained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=407,413>
+          rdfs:label          "marked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=328,334>
+          rdfs:label          "result" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=359,364>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=423,431>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=447,452>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=456,464>
+          rdfs:label          "compared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=486,492>
+          rdfs:label          "profit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=493,499>
+          rdfs:label          "reaped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=516,522>
+          rdfs:label          "period" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=553,559>
+          rdfs:label          "gained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=612,619>
+          rdfs:label          "revenue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=635,639>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=673,680>
+          rdfs:label          "boosted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=767,771>
+          rdfs:label          "fact" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=789,797>
+          rdfs:label          "produced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=816,821>
+          rdfs:label          "found" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=868,875>
+          rdfs:label          "experts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=885,896>
+          rdfs:label          "broadcasted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=913,920>
+          rdfs:label          "results" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=961,968>
+          rdfs:label          "results" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=994,1006>
+          rdfs:label          "expectations" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1016,1022>
+          rdfs:label          "profit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1027,1031>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1070,1078>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1154,1158>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1113,1120>
+          rdfs:label          "quarter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1185,1192>
+          rdfs:label          "players" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1230,1237>
+          rdfs:label          "implies" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1253,1259>
+          rdfs:label          "growth" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1426,1435>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1340,1349>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1386,1392>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1465,1474>
+          rdfs:label          "mentioned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1511,1518>
+          rdfs:label          "tripled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1528,1535>
+          rdfs:label          "doubled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1548,1557>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1592,1598>
+          rdfs:label          "growth" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1627,1632>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1640,1645>
+          rdfs:label          "iPods" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1685,1694>
+          rdfs:label          "presented" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits> .
+}

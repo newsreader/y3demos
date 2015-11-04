@@ -1,0 +1,448 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , fn:Sign_agreement , eso:JoiningAnOrganization ;
+            rdfs:label     "sign" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=185,191> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Air India" , "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=701,707> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=171,180> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=451,460> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=397,406> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=614,623> .
+    
+    <http://www.newsreader-project.eu/time/20050427>
+            a              time:DateTimeDescription ;
+            time:day       "---27"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050427> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "buy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=753,759> .
+    
+    <http://dbpedia.org/resource/Korean_Air>
+            rdfs:label     "Korean Air" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=737,747> .
+    
+    <http://dbpedia.org/resource/Boeing_787_Dreamliner>
+            rdfs:label     "dreamliners" , "Dreamliner" , "long-range 787 Dreamliner" , "Boeing 787" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=763,774> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1150,1160> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=309,334> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1135,1145> .
+    
+    <http://www.newsreader-project.eu/time/200504>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5>
+            a                time:Instant ;
+            rdfs:label       "early this month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=775,793> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200504> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Creating , eso:Creating ;
+            rdfs:label     "build" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=935,940> .
+    
+    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes>
+            rdfs:label     "Boeing" , "Boeing Commercial airplanes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=0,6> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=796,802> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=56,62> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=944,971> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1227,1254> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "airliner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1187,1195> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx9>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1289,1293> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Inclusion , eso:Merging ;
+            rdfs:label     "include" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=248,256> .
+    
+    <http://dbpedia.org/resource/Air_Canada>
+            rdfs:label     "Air Canada" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=111,121> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=232,242> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=545,555> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev30>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=807,810> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , eso:Getting ;
+            rdfs:label     "secure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=7,14> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 27 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=40,54> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050427> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action , fn:Giving , fn:Resolve_problem , eso:Giving ;
+            rdfs:label     "deal" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=33,38> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=194,198> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=243,247> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , eso:Getting ;
+            rdfs:label     "secure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=67,74> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Request , eso:Motion ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=85,91> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=126,133> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=262,268> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=407,412> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=826,832> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=461,465> , <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=634,638> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev38>
+            a              sem:Event , nwrontology:sourceEvent , fn:Estimating ;
+            rdfs:label     "estimate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=560,569> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr1> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr7,rl15> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev9>
+            sem:hasActor                 <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sign_agreement@Signatory>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                        <http://dbpedia.org/resource/Airbus> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr7,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=171,191> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=753,793> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr21,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=737,759> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr21,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=753,774> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr27,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=918,971> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1187,1293> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr33,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=1187,1293> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr9,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=228,256> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=775,810> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr22,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=796,810> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=7,54> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=33,54> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=0,38> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr6,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=111,198> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=171,198> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=40,74> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=56,74> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=40,91> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=775,832> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr4,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=56,91> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr5,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=111,133> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr12,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=397,412> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=634,793> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr13,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=451,465> .
+    
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr15,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#char=545,569> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr6> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr21,rl43> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Korean_Air> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Korean_Air> ;
+            pb:A0                   <http://dbpedia.org/resource/Korean_Air> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr21,rl45> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev14>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            pb:A1                 <http://dbpedia.org/resource/Boeing_787_Dreamliner> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr10> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr27,rl55> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev18>
+            sem:hasActor        <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            eso:creating-theme  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A1               <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr15> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr33,rl68> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr21> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr9,rl19> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev28>
+            sem:hasActor        <http://dbpedia.org/resource/Air_Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Inclusion@Total>
+                    <http://dbpedia.org/resource/Air_Canada> ;
+            pb:A2               <http://dbpedia.org/resource/Air_Canada> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr23> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr22,rl47> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev30>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr26> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev33>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr27> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr6,rl12> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/Air_Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Air_Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Air_Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Air_Canada> ;
+            pb:A0                    <http://dbpedia.org/resource/Air_Canada> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr28> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev35>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr29> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr30> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr4,rl7> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev36>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A3                 <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr5,rl9> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev36>
+            sem:hasActor        <http://dbpedia.org/resource/Air_Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Air_Canada> ;
+            pb:A0               <http://dbpedia.org/resource/Air_Canada> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr12,rl25> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev36>
+            sem:hasActor        <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0               <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr31> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr13,rl26> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev37>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tr32> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#pr15,rl31> {
+    <http://en.wikinews.org/wiki/Boeing_secures_$11bn_of_aircraft_deals#ev38>
+            sem:hasActor            <http://dbpedia.org/resource/Air_Canada> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Estimating@Cognizer>
+                    <http://dbpedia.org/resource/Air_Canada> ;
+            pb:A0                   <http://dbpedia.org/resource/Air_Canada> .
+}

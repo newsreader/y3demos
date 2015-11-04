@@ -1,0 +1,482 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=4,9> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=201,205> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=462,466> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1223,1227> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1308,1312> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1330,1334> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1381,1385> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1423,1427> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=0,3> .
+    
+    <http://www.newsreader-project.eu/time/20080904>
+            a              time:DateTimeDescription ;
+            time:day       "---04"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=237,245> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080904> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=415,423> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080904> .
+    
+    <http://www.newsreader-project.eu/time/20080105>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx6>
+            a                time:Instant ;
+            rdfs:label       "1.5" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1231,1234> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080105> .
+    
+    <http://www.newsreader-project.eu/time/20080903>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx8>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1507,1516> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080903> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=136,141> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1375,1380> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1681,1686> .
+    
+    <http://dbpedia.org/resource/NASDAQ>
+            rdfs:label     "Nasdaq" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1358,1364> .
+    
+    <http://www.newsreader-project.eu/time/200806>
+            a              time:DateTimeDescription ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx9>
+            a                time:Instant ;
+            rdfs:label       "June of this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1582,1599> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200806> .
+    
+    <http://www.newsreader-project.eu/time/20080829>
+            a              time:DateTimeDescription ;
+            time:day       "---29"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx10>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1630,1636> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080829> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=406,414> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=483,491> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2031,2039> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theUSDepartmentofLabor>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the U.S. Department of Labor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=427,455> .
+    
+    <http://www.newsreader-project.eu/time/20080910>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2040,2049> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080910> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14>
+            a                time:Instant ;
+            rdfs:label       "2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2105,2109> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev28>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=915,924> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MerkInvestments>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Merk Investments" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=928,944> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5>
+            a                time:Instant ;
+            rdfs:label       "the year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=880,888> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "retailer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1136,1144> .
+    
+    <http://dbpedia.org/resource/Target_Corporation>
+            rdfs:label     "Target" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1145,1151> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Get_a_job , fn:Hiring , eso:JoiningAnOrganization ;
+            rdfs:label     "bond" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2003,2008> .
+    
+    <http://dbpedia.org/resource/United_States_Treasury_security>
+            rdfs:label     "Treasury" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1994,2002> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev52>
+            a              sem:Event , nwrontology:sourceEvent , fn:Adducing ;
+            rdfs:label     "cite" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=369,374> .
+    
+    <http://dbpedia.org/resource/The_New_York_Times>
+            rdfs:label     "the New York Times" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=350,368> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=672,690> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=969,987> , <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1532,1550> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev56>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=946,950> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev57>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,965> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev65>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "price" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1985,1990> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr1> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=201,245> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=415,466> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1223,1234> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1423,1516> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=0,9> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=136,245> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1582,1686> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1630,1686> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr50,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1358,1380> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=406,491> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2031,2049> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2031,2109> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr16,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=406,455> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=880,924> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr35,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=909,944> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1136,1234> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr42,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1136,1151> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2003,2049> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=2003,2109> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr73,rl149>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1994,2008> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=369,423> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr13,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=350,374> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=880,950> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr27,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=946,987> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=880,965> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr28,rl61>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=956,987> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1985,2049> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1985,2109> .
+    
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr72,rl148>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#char=1985,2008> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr2> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr3> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr4> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev13>
+            sem:hasActor       <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1              <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr7> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr8> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr9> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr50,rl107> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0         <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr27> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr28> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr29> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr16,rl30> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev23>
+            sem:hasActor        <http://www.newsreader-project.eu/data/wikinews/entities/theUSDepartmentofLabor> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theUSDepartmentofLabor> ;
+            pb:A0               <http://www.newsreader-project.eu/data/wikinews/entities/theUSDepartmentofLabor> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr35> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr35,rl74> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev28>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/MerkInvestments> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/MerkInvestments> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr42> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr42,rl92> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev34>
+            sem:hasActor          <http://dbpedia.org/resource/Target_Corporation> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Target_Corporation> ;
+            pb:A1                 <http://dbpedia.org/resource/Target_Corporation> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr51> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr52> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr73,rl149> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_Treasury_security> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr66> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev52>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr13,rl23> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev52>
+            sem:hasActor         <http://dbpedia.org/resource/The_New_York_Times> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Adducing@Speaker>
+                    <http://dbpedia.org/resource/The_New_York_Times> ;
+            pb:A0                <http://dbpedia.org/resource/The_New_York_Times> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr73> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr27,rl58> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev56>
+            sem:hasPlace  <http://dbpedia.org/resource/The_New_York_Times> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/The_New_York_Times> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr74> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr28,rl61> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev57>
+            sem:hasActor            <http://dbpedia.org/resource/The_New_York_Times> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Addressee>
+                    <http://dbpedia.org/resource/The_New_York_Times> ;
+            pb:A2                   <http://dbpedia.org/resource/The_New_York_Times> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr89> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev65>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tr90> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev65>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#pr72,rl148> {
+    <http://en.wikinews.org/wiki/Dow_falls_340_points_amid_unemployment_and_retail_sales_rates_news#ev65>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_Treasury_security> .
+}

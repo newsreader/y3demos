@@ -1,0 +1,324 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Killing+Vector> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=551,557>
+          rdfs:comment        "show" ;
+          rdfs:label          "making" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=538,542> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/our+third-quarter+results> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=538,542>
+          rdfs:label          "show" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=569,577>
+          rdfs:comment        "show" ;
+          rdfs:label          "progress" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=538,542> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=609,614>
+          rdfs:comment        "show" ;
+          rdfs:label          "slump" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=538,542> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=29,34>
+          rdfs:label          "posts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=46,53>
+          rdfs:label          "profits" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=91,103>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=113,117>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=126,132>
+          rdfs:label          "posted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=203,212>
+          rdfs:label          "predicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=139,145>
+          rdfs:label          "profit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=177,184>
+          rdfs:label          "quarter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=272,281>
+          rdfs:label          "surprised" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=305,313>
+          rdfs:label          "forecast" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=342,346>
+          rdfs:label          "lose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr10>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=362,369>
+          rdfs:label          "profits" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=370,376>
+          rdfs:label          "equate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=408,418>
+          rdfs:label          "difference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=444,448>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=463,474>
+          rdfs:label          "anticipated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=492,500>
+          rdfs:label          "analysts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=522,529>
+          rdfs:label          "results" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=617,621>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=649,656>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=741,748>
+          rdfs:label          "working" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=688,692>
+          rdfs:label          "face" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=723,737>
+          rdfs:label          "transformation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=768,776>
+          rdfs:label          "business" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=777,786>
+          rdfs:label          "continues" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=790,794>
+          rdfs:label          "grow" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=815,824>
+          rdfs:label          "predicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=848,852>
+          rdfs:label          "meet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr28>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=861,868>
+          rdfs:label          "surpass" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=890,897>
+          rdfs:label          "targets" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=903,912>
+          rdfs:label          "suggested" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=956,959>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=929,936>
+          rdfs:label          "quarter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=963,967>
+          rdfs:label          "post" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr34>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=981,987>
+          rdfs:label          "profit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits> .
+}

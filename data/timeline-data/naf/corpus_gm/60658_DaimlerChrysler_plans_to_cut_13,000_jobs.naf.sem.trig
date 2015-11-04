@@ -1,0 +1,372 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev8>
+            a              sem:Event , nwrontology:contextualEvent , fn:Experience_bodily_harm ;
+            rdfs:label     "cut" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=25,28> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=128,131> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=230,233> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=351,354> .
+    
+    <http://dbpedia.org/resource/Daimler_AG>
+            rdfs:label     "DaimlerChrysler" , "Daimler-Benz" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=0,15> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=809,824> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=981,996> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=87,102> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=728,740> .
+    
+    <http://dbpedia.org/resource/North_America>
+            rdfs:label     "North America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=147,160> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" , "the Chrysler Group" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=238,246> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=761,769> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=958,976> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=597,605> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=276,284> .
+    
+    <http://www.newsreader-project.eu/time/20070214>
+            a              time:DateTimeDescription ;
+            time:day       "---14"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070214> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev9>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "job" , "business" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=139,143> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=338,342> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=385,389> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=202,210> , <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=285,293> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev14>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "officer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=630,637> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/SolarisAssetManagement>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Solaris Asset Management" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=641,665> .
+    
+    <http://www.newsreader-project.eu/time/1998>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1998"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4>
+            a                time:Instant ;
+            rdfs:label       "1998" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=796,800> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1998> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev19>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Causation ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=271,275> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx3>
+            a                time:Instant ;
+            rdfs:label       "2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=308,312> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Manufacturing , fn:Self_motion , fn:Creating , eso:Creating ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=804,808> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev23>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=16,21> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx1>
+            a                time:Instant ;
+            rdfs:label       "February 14 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=42,59> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070214> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev24>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=103,112> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx2>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=113,118> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070214> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev29>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "deny" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=863,869> .
+    
+    <http://dbpedia.org/resource/Dieter_Zetsche>
+            rdfs:label     "Dieter Zetsche" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=848,862> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev31>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "allegation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=870,881> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Resolve_problem ;
+            rdfs:label     "solution" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=940,948> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr1> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev8>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx0> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=128,131> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=0,28> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr4,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=128,160> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr10,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=230,253> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=338,342> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr5,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=132,160> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr12,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=276,293> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=630,800> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr24,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=630,679> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=271,312> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr13,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=271,293> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=796,808> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr30,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=804,824> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=16,59> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=0,21> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=103,118> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr3,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=103,160> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=796,869> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr25,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=839,869> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=796,881> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr31,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=839,881> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=796,948> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr34,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#char=940,996> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr2,rl3> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experience_bodily_harm@Experiencer>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A0         <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr4,rl10> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/North_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experience_bodily_harm@Body_part>
+                    <http://dbpedia.org/resource/North_America> ;
+            pb:A1         <http://dbpedia.org/resource/North_America> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr10,rl22> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experience_bodily_harm@Body_part>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr2> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev9>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr5,rl11> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev9>
+            sem:hasActor  <http://dbpedia.org/resource/North_America> ;
+            pb:A1         <http://dbpedia.org/resource/North_America> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr12,rl25> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev9>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr7> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr24,rl52> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev14>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/SolarisAssetManagement> ;
+            pb:A2         <http://www.newsreader-project.eu/data/wikinews/entities/SolarisAssetManagement> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr12> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr13,rl27> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev19>
+            sem:hasActor           <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Affected>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Cause>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1                  <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr15> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr30,rl66> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev22>
+            sem:hasActor        <http://dbpedia.org/resource/Daimler_AG> ;
+            eso:creating-theme  <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A1               <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr16> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr1,rl1> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev23>
+            sem:hasActor      <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A0             <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr17> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr3,rl7> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev24>
+            sem:hasActor          <http://dbpedia.org/resource/North_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/North_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/North_America> ;
+            pb:A1                 <http://dbpedia.org/resource/North_America> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr23> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr25,rl54> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev29>
+            sem:hasActor          <http://dbpedia.org/resource/Dieter_Zetsche> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Dieter_Zetsche> ;
+            pb:A0                 <http://dbpedia.org/resource/Dieter_Zetsche> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr25> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr31,rl67> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Dieter_Zetsche> ;
+            pb:A3         <http://dbpedia.org/resource/Dieter_Zetsche> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tr26> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#pr34,rl74> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_plans_to_cut_13,000_jobs#ev32>
+            sem:hasActor              <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Resolve_problem@Agent>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0                     <http://dbpedia.org/resource/Chrysler> .
+}

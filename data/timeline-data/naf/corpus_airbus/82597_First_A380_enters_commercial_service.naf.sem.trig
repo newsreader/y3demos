@@ -1,0 +1,235 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Vehicle_landing , fn:Motion , eso:Arriving ;
+            rdfs:label     "land" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=118,124> .
+    
+    <http://dbpedia.org/resource/Singapore_Changi_Airport>
+            rdfs:label     "Changi International Airport" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=140,168> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=386,414> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=654,682> .
+    
+    <http://www.newsreader-project.eu/time/20071017>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 17 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=38,54> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071017> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Bringing , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "flight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=206,212> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=876,882> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/DeliveryCenter>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "delivery Center" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=226,241> .
+    
+    <http://www.newsreader-project.eu/time/20071025>
+            a              time:DateTimeDescription ;
+            time:day       "---25"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx4>
+            a                time:Instant ;
+            rdfs:label       "October 25" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=886,896> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071025> .
+    
+    <http://www.newsreader-project.eu/time/20071028>
+            a              time:DateTimeDescription ;
+            time:day       "---28"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx5>
+            a                time:Instant ;
+            rdfs:label       "October 28" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=986,996> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071028> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Travel , fn:Beat_opponent , fn:Sending , eso:Giving ;
+            rdfs:label     "route" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=977,982> .
+    
+    <http://dbpedia.org/resource/Singapore>
+            rdfs:label     "Singapore" , "Singapore-Sydney" , "Singapore 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=128,137> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=902,911> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=320,329> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=960,976> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=128,139> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , eso:StartingAnActivity ;
+            rdfs:label     "begin" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=931,936> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20071017> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Bringing , eso:Transportation , fn:Giving ;
+            rdfs:label     "carrier" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=502,509> .
+    
+    <http://dbpedia.org/resource/Singapore_Airlines>
+            rdfs:label     "Singapore airlines" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=461,479> .
+    
+    <http://dbpedia.org/resource/Fiat_Aviazione>
+            rdfs:label     "SIA" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=481,484> , <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=636,639> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr5> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=38,124> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr5,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=118,168> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=876,896> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=876,996> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr6,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=206,241> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=886,982> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=977,996> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr24,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=960,982> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=931,936> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr22,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=931,982> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr13,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=461,509> .
+    
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr13,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#char=481,509> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr5,rl8> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev14>
+            sem:hasPlace  <http://dbpedia.org/resource/Singapore_Changi_Airport> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Singapore_Changi_Airport> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr6> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr7> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr6,rl12> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev15>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/DeliveryCenter> ;
+            pb:A3         <http://www.newsreader-project.eu/data/wikinews/entities/DeliveryCenter> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr12> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr13> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr24,rl59> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev20>
+            sem:hasActor             <http://dbpedia.org/resource/Singapore> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Beat_opponent@Winner>
+                    <http://dbpedia.org/resource/Singapore> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Travel@Traveler>
+                    <http://dbpedia.org/resource/Singapore> ;
+            pb:A0                    <http://dbpedia.org/resource/Singapore> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr16> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev23>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr22,rl54> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev23>
+            sem:hasPlace  <http://dbpedia.org/resource/Singapore> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Singapore> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tr22> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr13,rl27> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev29>
+            sem:hasPlace  <http://dbpedia.org/resource/Singapore_Airlines> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Singapore_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/First_A380_enters_commercial_service#pr13,rl28> {
+    <http://en.wikinews.org/wiki/First_A380_enters_commercial_service#ev29>
+            sem:hasPlace  <http://dbpedia.org/resource/Fiat_Aviazione> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Fiat_Aviazione> .
+}

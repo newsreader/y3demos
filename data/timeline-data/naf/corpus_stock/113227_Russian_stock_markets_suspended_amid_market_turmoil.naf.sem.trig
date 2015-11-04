@@ -1,0 +1,303 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=14,21> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=105,112> .
+    
+    <http://dbpedia.org/resource/Russia>
+            rdfs:label     "Russia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=84,90> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=750,756> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx3>
+            a              time:Interval ;
+            rdfs:label     "a 2 consecutive day" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=136,160> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://www.newsreader-project.eu/time/20080917>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=602,606> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=705,712> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1152,1158> .
+    
+    <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange>
+            rdfs:label     "MICEX" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=652,657> .
+    
+    <http://dbpedia.org/resource/NASDAQ>
+            rdfs:label     "NASDAQ" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1135,1141> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5>
+            a                time:Instant ;
+            rdfs:label       "this day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=720,728> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=658,663> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=886,891> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1142,1147> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1068,1073> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Cause_change_of_position_on_a_scale , eso:Increasing ;
+            rdfs:label     "increase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=688,696> , <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1046,1054> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , fn:Setting_fire , fn:Setting_out , eso:StartingAnActivity ;
+            rdfs:label     "start" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=664,671> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev35>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Request , eso:Motion ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=269,274> .
+    
+    <http://dbpedia.org/resource/Federal_Service>
+            rdfs:label     "Federal Service" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=303,318> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=434,438> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ChrisWeafer>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Chris Weafer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=455,467> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080917> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev40>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1284,1293> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/TheRussianGovernment>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the Russian Government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1252,1274> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr1> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=105,160> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr6,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=84,112> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=602,728> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr24,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=648,712> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr35,rl83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1131,1158> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=658,891> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=886,1073> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr21,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=652,663> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr34,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1135,1147> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1046,1073> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr23,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=648,696> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=664,728> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr22,rl44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=648,671> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=136,274> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr10,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=269,318> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr13,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=434,467> .
+    
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr37,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#char=1252,1293> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr6,rl9> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev12>
+            sem:hasActor            <http://dbpedia.org/resource/Russia> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Russia> ;
+            pb:A0                   <http://dbpedia.org/resource/Russia> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr9> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr24,rl51> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev20>
+            sem:hasActor       <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            pb:A1              <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr35,rl83> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev20>
+            sem:hasActor       <http://dbpedia.org/resource/NASDAQ> ;
+            eso:quantity-item  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A1              <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr11> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr12> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr21,rl42> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            pb:A0         <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr34,rl79> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0         <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr13> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr23,rl48> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev23>
+            sem:hasActor            <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            pb:A1                   <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr22> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr22,rl44> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            eso:activity  <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> ;
+            pb:A1         <http://dbpedia.org/resource/Moscow_Interbank_Currency_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr26> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr10,rl17> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev35>
+            sem:hasActor        <http://dbpedia.org/resource/Federal_Service> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://dbpedia.org/resource/Federal_Service> ;
+            pb:A0               <http://dbpedia.org/resource/Federal_Service> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr28> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr13,rl25> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev37>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/ChrisWeafer> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ChrisWeafer> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ChrisWeafer> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ChrisWeafer> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/ChrisWeafer> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tr31> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#pr37,rl88> {
+    <http://en.wikinews.org/wiki/Russian_stock_markets_suspended_amid_market_turmoil#ev40>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/TheRussianGovernment> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/TheRussianGovernment> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/TheRussianGovernment> .
+}

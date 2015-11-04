@@ -1,0 +1,470 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1623,1627>
+          rdfs:comment        "announced" ;
+          rdfs:label          "give" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> , <u_u_u> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+belgian+government> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1669,1672>
+          rdfs:comment        "announced" ;
+          rdfs:label          "aid" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1676,1680>
+          rdfs:comment        "announced" ;
+          rdfs:label          "help" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1703,1709>
+          rdfs:comment        "announced" ;
+          rdfs:label          "supply" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1721,1727>
+          rdfs:comment        "announced" ;
+          rdfs:label          "employ" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1728,1737>
+          rdfs:comment        "announced" ;
+          rdfs:label          "thousands" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1600,1609> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=5,10>
+          rdfs:label          "makes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=18,24>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=106,109>
+          rdfs:label          "set" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=113,117>
+          rdfs:label          "land" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=173,179>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=201,207>
+          rdfs:label          "flying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=269,277>
+          rdfs:label          "carrying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=309,315>
+          rdfs:label          "billed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=341,348>
+          rdfs:label          "carried" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=363,369>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=405,410>
+          rdfs:label          "staff" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=440,449>
+          rdfs:label          "Lufthansa" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=474,484>
+          rdfs:label          "travelling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=520,530>
+          rdfs:label          "passengers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=545,552>
+          rdfs:label          "branded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=576,579>
+          rdfs:label          "fly" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr15>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=565,571>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr16>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=682,692>
+          rdfs:label          "travelling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr17>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=633,636>
+          rdfs:label          "leg" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr18>
+          rdf:value             <CERTAIN_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=651,656>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr19>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=718,724>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr20>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=740,746>
+          rdfs:label          "arrive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr21>
+          rdf:value             <u_u_u> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=839,843>
+          rdfs:label          "used" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=847,854>
+          rdfs:label          "monitor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=978,982>
+          rdfs:label          "work" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=892,897>
+          rdfs:label          "docks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=914,918>
+          rdfs:label          "gate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=969,977>
+          rdfs:label          "services" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=926,929>
+          rdfs:label          "way" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1029,1037>
+          rdfs:label          "customer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1126,1130>
+          rdfs:label          "cost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1084,1090>
+          rdfs:label          "Delays" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1098,1108>
+          rdfs:label          "production" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1178,1184>
+          rdfs:label          "warned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1211,1218>
+          rdfs:label          "charges" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1222,1226>
+          rdfs:label          "come" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr35>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1244,1252>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1258,1261>
+          rdfs:label          "led" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1300,1307>
+          rdfs:label          "program" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1319,1325>
+          rdfs:label          "called" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1355,1357>
+          rdfs:label          "go" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1388,1392>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr41>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1403,1411>
+          rdfs:label          "partners" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1425,1429>
+          rdfs:label          "lose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr43>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1436,1440>
+          rdfs:label          "jobs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1442,1450>
+          rdfs:label          "followed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1462,1468>
+          rdfs:label          "having" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1471,1475>
+          rdfs:label          "loss" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1531,1534>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr48>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1554,1557>
+          rdfs:label          "cut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US#char=1585,1595>
+          rdfs:label          "government" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+  
+  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/A380_makes_maiden_flight_to_US> .
+}

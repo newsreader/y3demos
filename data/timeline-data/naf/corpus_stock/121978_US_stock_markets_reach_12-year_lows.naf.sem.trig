@@ -1,0 +1,301 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev7>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=61,68> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=0,2> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=189,191> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=52,54> .
+    
+    <http://www.newsreader-project.eu/time/20090312>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=100,108> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090312> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing ;
+            rdfs:label     "fall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=117,124> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=948,955> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1802,1809> .
+    
+    <http://dbpedia.org/resource/Citigroup>
+            rdfs:label     "Citigroup" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=938,947> .
+    
+    <http://www.newsreader-project.eu/time/20090305>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1725,1730> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090305> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=203,215> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090305> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Finish_competition , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=423,427> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=672,676> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=606,610> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=709,713> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=921,927> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1761,1767> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "General Motors" , "General motors '" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=216,230> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=686,701> .
+    
+    <http://dbpedia.org/resource/Bank_of_America>
+            rdfs:label     "Bank of America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=905,920> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev17>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=702,708> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=842,848> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "officer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1655,1662> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/DremanValueManagement>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Dreman Value Management" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1666,1689> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx4>
+            a                  time:Interval ;
+            rdfs:label         "the last 100 year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1273,1291> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/19090305> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20090305> .
+    
+    <http://www.newsreader-project.eu/time/19090305>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1909"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev31>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1755,1760> , <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1785,1790> .
+    
+    <http://dbpedia.org/resource/London>
+            rdfs:label     "London" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1741,1747> .
+    
+    <http://dbpedia.org/resource/Germany>
+            rdfs:label     "Germany" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1794,1801> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=61,108> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=52,68> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=100,124> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1725,1809> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr31,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=938,955> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=203,215> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr10,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=189,215> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1725,1767> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr23,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=686,713> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr30,rl63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=905,927> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr22,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=686,708> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1273,1662> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1655,1730> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr55,rl121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1634,1689> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1725,1790> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr56,rl123>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1737,1760> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr60,rl134>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#char=1785,1801> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr3,rl6> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev7>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr3> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr4> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr31,rl65> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev9>
+            sem:hasActor       <http://dbpedia.org/resource/Citigroup> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Citigroup> ;
+            pb:A1              <http://dbpedia.org/resource/Citigroup> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr6> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev11>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr10,rl22> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev11>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr10> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr23,rl49> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev15>
+            sem:hasActor                   <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                          <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr30,rl63> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev15>
+            sem:hasActor                   <http://dbpedia.org/resource/Bank_of_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A0                          <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr12> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr22,rl48> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev17>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr27> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr28> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr55,rl121> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev30>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/DremanValueManagement> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/DremanValueManagement> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tr29> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr56,rl123> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev31>
+            sem:hasPlace  <http://dbpedia.org/resource/London> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/London> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#pr60,rl134> {
+    <http://en.wikinews.org/wiki/US_stock_markets_reach_12-year_lows#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Germany> ;
+            pb:A1         <http://dbpedia.org/resource/Germany> .
+}

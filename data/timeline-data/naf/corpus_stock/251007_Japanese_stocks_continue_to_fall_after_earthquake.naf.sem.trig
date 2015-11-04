@@ -1,0 +1,206 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev5>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=114,119> , <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=522,527> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Standard &amp; Poor 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=500,517> .
+    
+    <http://www.newsreader-project.eu/time/20110317>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=138,146> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110317> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx4>
+            a                time:Instant ;
+            rdfs:label       "a week ago" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=242,252> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Communication_response , fn:Response , eso:IntentionalEvent ;
+            rdfs:label     "react" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=459,466> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "we" , "stock" , "we stock" , "79.14" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=444,446> , <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=287,293> , <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=444,453> , <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=740,742> , <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=838,843> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx5>
+            a              time:Interval ;
+            rdfs:label     "the past five trading day" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=259,285> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20110318> .
+    
+    <http://www.newsreader-project.eu/time/20110318>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=341,346> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110318> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx7>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=657,666> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110317> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , fn:Body_movement , fn:Change_posture , fn:Commerce_pay , fn:Motion_directional , fn:Path_shape , fn:Cause_motion , fn:Travel , eso:Decreasing , eso:Translocation ;
+            rdfs:label     "drop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=528,535> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr3> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev5>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=114,146> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=114,252> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#pr12,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=496,527> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=259,466> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=341,466> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=459,666> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#pr11,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=444,466> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=259,535> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=341,535> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=528,666> .
+    
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#pr13,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#char=496,535> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr4> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev5>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#pr12,rl27> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev5>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr11> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr12> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr13> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#pr11,rl23> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev10>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communication_response@Addressee>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Response@Agent>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr14> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr15> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tr16> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#pr13,rl30> {
+    <http://en.wikinews.org/wiki/Japanese_stocks_continue_to_fall_after_earthquake#ev11>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            eso:quantity-attribute  <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            eso:quantity-item       <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            pb:A1                   <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> .
+}

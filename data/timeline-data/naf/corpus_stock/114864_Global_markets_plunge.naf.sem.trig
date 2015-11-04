@@ -1,0 +1,395 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , fn:Body_movement , fn:Change_posture , fn:Commerce_pay , fn:Motion_directional , fn:Path_shape , fn:Cause_motion , fn:Travel , eso:Decreasing , eso:Translocation ;
+            rdfs:label     "drop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=124,128> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=200,207> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=454,461> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=522,529> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=824,829> .
+    
+    <http://dbpedia.org/resource/Australia>
+            rdfs:label     "Australia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=444,453> .
+    
+    <http://dbpedia.org/resource/European_Union>
+            rdfs:label     "Europe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=506,512> .
+    
+    <http://www.newsreader-project.eu/time/20081010>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 10 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_plunge#char=23,39> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081010> .
+    
+    <http://www.newsreader-project.eu/time/20081009>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx4>
+            a                time:Instant ;
+            rdfs:label       "yesterday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_plunge#char=421,430> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081009> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Recovery ;
+            rdfs:label     "recover" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=578,587> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=987,997> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=895,899> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081010> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev24>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Containing ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1295,1299> .
+    
+    <http://dbpedia.org/resource/OPEC>
+            rdfs:label     "OPEC" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1285,1289> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Secrecy_status ;
+            rdfs:label     "open" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=908,914> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Manufacturing , fn:Self_motion , fn:Creating , eso:Creating ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1033,1037> .
+    
+    <http://dbpedia.org/resource/George_W._Bush>
+            rdfs:label     "George W. Bush" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1018,1032> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Travel , eso:Translocation , fn:Intentionally_create , fn:Self_motion , eso:Creating , fn:Categorization , fn:Grasp , fn:Motion , fn:Perception_experience , fn:Come_together , eso:Meeting , eso:Motion ;
+            rdfs:label     "see" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=163,166> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=249,252> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=486,489> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=764,767> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=814,817> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=1135,1139> .
+    
+    <http://dbpedia.org/resource/Japan>
+            rdfs:label     "Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=238,243> .
+    
+    <http://dbpedia.org/resource/South_Korea>
+            rdfs:label     "South Korea" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=474,485> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev37>
+            a              sem:Event , nwrontology:sourceEvent , fn:Chatting , fn:Statement , fn:Speak_on_topic ;
+            rdfs:label     "address" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1041,1048> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Statement , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1068,1072> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=1417,1421> , <http://en.wikinews.org/wiki/Global_markets_plunge#char=1629,1633> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/TheBritishNationalCouncilforVoluntaryOrganisations>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the british National Council for Voluntary Organisations" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1572,1628> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_plunge#char=1411,1416> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081010> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev40>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "discuss" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1339,1346> .
+    
+    <http://www.newsreader-project.eu/time/20081118>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx5>
+            a                time:Instant ;
+            rdfs:label       "November 18" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_plunge#char=1324,1335> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081118> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr5> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=23,128> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=421,461> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr16,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=444,461> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr19,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=503,529> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr33,rl63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=891,997> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1295,1299> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr45,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1285,1299> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr32,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=891,914> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr35,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1008,1037> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=249,489> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr11,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=238,252> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr17,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=474,489> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr36,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1008,1048> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1411,1421> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr37,rl71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1008,1072> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr54,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1572,1633> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1324,1346> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_plunge#pr46,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_plunge#char=1285,1346> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr6> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr16,rl30> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev11>
+            sem:hasActor            <http://dbpedia.org/resource/Australia> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Australia> ;
+            eso:quantity-item       <http://dbpedia.org/resource/Australia> ;
+            pb:A1                   <http://dbpedia.org/resource/Australia> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr19,rl35> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev11>
+            sem:hasPlace  <http://dbpedia.org/resource/European_Union> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/European_Union> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr9> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr33,rl63> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev15>
+            sem:hasActor         <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recovery@Patient>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr18> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev24>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr45,rl87> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev24>
+            sem:hasActor             <http://dbpedia.org/resource/OPEC> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/OPEC> ;
+            pb:A0                    <http://dbpedia.org/resource/OPEC> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr22> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr32,rl59> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev28>
+            sem:hasActor                <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Secrecy_status@Cognizer>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                       <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr23> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr35,rl67> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev29>
+            sem:hasActor                   <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            pb:A0                          <http://dbpedia.org/resource/George_W._Bush> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr27> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr11,rl20> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev33>
+            sem:hasActor                <http://dbpedia.org/resource/Japan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://dbpedia.org/resource/Japan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://dbpedia.org/resource/Japan> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://dbpedia.org/resource/Japan> ;
+            pb:A0                       <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr17,rl32> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev33>
+            sem:hasActor                <http://dbpedia.org/resource/South_Korea> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://dbpedia.org/resource/South_Korea> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://dbpedia.org/resource/South_Korea> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://dbpedia.org/resource/South_Korea> ;
+            pb:A0                       <http://dbpedia.org/resource/South_Korea> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr31> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr36,rl69> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev37>
+            sem:hasActor                <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Speak_on_topic@Speaker>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            pb:A0                       <http://dbpedia.org/resource/George_W._Bush> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr32> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr37,rl71> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev38>
+            sem:hasActor             <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            pb:A0                    <http://dbpedia.org/resource/George_W._Bush> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr54,rl107> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev38>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/TheBritishNationalCouncilforVoluntaryOrganisations> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/TheBritishNationalCouncilforVoluntaryOrganisations> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/TheBritishNationalCouncilforVoluntaryOrganisations> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/TheBritishNationalCouncilforVoluntaryOrganisations> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/TheBritishNationalCouncilforVoluntaryOrganisations> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#tr34> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_plunge#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_plunge#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_plunge#pr46,rl92> {
+    <http://en.wikinews.org/wiki/Global_markets_plunge#ev40>
+            sem:hasActor                  <http://dbpedia.org/resource/OPEC> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/OPEC> ;
+            pb:A0                         <http://dbpedia.org/resource/OPEC> .
+}

@@ -1,0 +1,432 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Offering , eso:Giving ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=5,11> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=273,278> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=469,474> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1141,1147> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Ford 's" , "Ford Motor Company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=0,4> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=453,459> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=810,814> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1136,1140> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=70,88> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=282,300> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=453,457> .
+    
+    <http://www.newsreader-project.eu/time/20070908>
+            a              time:DateTimeDescription ;
+            time:day       "---08"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx1>
+            a                time:Instant ;
+            rdfs:label       "September 8 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=51,68> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070908> .
+    
+    <http://www.newsreader-project.eu/time/20070914>
+            a              time:DateTimeDescription ;
+            time:day       "---14"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=259,265> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070914> .
+    
+    <http://www.newsreader-project.eu/time/20060912>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3>
+            a                time:Instant ;
+            rdfs:label       "September 12" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=526,538> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060912> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev12>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_pay , eso:Paying ;
+            rdfs:label     "pay" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=126,129> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=750,753> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070908> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "head" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=397,401> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theStatePropertyAgency>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the State Property Agency" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=405,430> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev17>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Statement , eso:Increasing ;
+            rdfs:label     "add" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=485,490> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1235,1240> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/VladescuVladescu>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Vladescu" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=476,484> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "buy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=600,606> .
+    
+    <http://dbpedia.org/resource/Daewoo>
+            rdfs:label     "Daewoo Motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=645,658> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx4>
+            a                time:Instant ;
+            rdfs:label       "late 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=663,672> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev27>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "member" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=958,964> .
+    
+    <http://dbpedia.org/resource/European_Union>
+            rdfs:label     "European Union" , "Europe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=943,957> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1333,1339> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1078,1087> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/StroeStroe>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Stroe" , "Constantin Stroe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1352,1357> , <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1098,1114> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev32>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Becoming ;
+            rdfs:label     "become" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1287,1293> .
+    
+    <http://dbpedia.org/resource/Romania>
+            rdfs:label     "Romania" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1274,1281> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Manufacturing , fn:Self_motion , fn:Creating , eso:Creating ;
+            rdfs:label     "maker" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=103,108> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=94,98> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Evidence , fn:Reasoning ;
+            rdfs:label     "show" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=556,560> .
+    
+    <http://dbpedia.org/resource/Frankfurt>
+            rdfs:label     "Frankfurt" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=564,573> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev47>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "center" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1323,1329> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev48>
+            a              sem:Event , nwrontology:sourceEvent , fn:Adducing ;
+            rdfs:label     "cite" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1359,1364> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/HotNewsHotNews>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "HotNews" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1368,1375> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr1> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=5,68> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=259,474> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=273,538> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=0,11> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=126,129> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=70,129> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=259,401> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=397,538> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr12,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=397,437> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=485,538> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=476,490> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=600,672> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr18,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=600,658> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr29,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=943,964> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr33,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1078,1114> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1287,1293> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr40,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1274,1293> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=103,265> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=94,108> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=526,560> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr17,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=556,573> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1323,1329> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr43,rl95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1323,1339> .
+    
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr44,rl97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#char=1359,1375> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr2> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr3> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev11>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr4> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev12>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev12>
+            sem:hasActor            <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                   <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr7> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr8> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr12,rl27> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev15>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/theStatePropertyAgency> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Activity>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theStatePropertyAgency> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theStatePropertyAgency> ;
+            pb:A0                   <http://www.newsreader-project.eu/data/wikinews/entities/theStatePropertyAgency> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr11> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr15,rl32> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev17>
+            sem:hasActor          <http://www.newsreader-project.eu/data/wikinews/entities/VladescuVladescu> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/VladescuVladescu> ;
+            pb:A0                 <http://www.newsreader-project.eu/data/wikinews/entities/VladescuVladescu> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr13> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr18,rl43> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev19>
+            sem:hasActor            <http://dbpedia.org/resource/Daewoo> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Daewoo> ;
+            pb:A2                   <http://dbpedia.org/resource/Daewoo> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr21> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr29,rl66> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev27>
+            sem:hasActor  <http://dbpedia.org/resource/European_Union> ;
+            pb:A1         <http://dbpedia.org/resource/European_Union> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr24> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr33,rl74> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev30>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/StroeStroe> ;
+            pb:A2         <http://www.newsreader-project.eu/data/wikinews/entities/StroeStroe> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr26> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev32>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr40,rl87> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev32>
+            sem:hasActor        <http://dbpedia.org/resource/Romania> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Becoming@Entity>
+                    <http://dbpedia.org/resource/Romania> ;
+            pb:A1               <http://dbpedia.org/resource/Romania> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr28> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr3,rl8> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev34>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr39> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr17,rl39> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev43>
+            sem:hasPlace  <http://dbpedia.org/resource/Frankfurt> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Frankfurt> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr43> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev47>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr43,rl95> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev47>
+            sem:hasPlace  <http://dbpedia.org/resource/European_Union> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/European_Union> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tr44> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#pr44,rl97> {
+    <http://en.wikinews.org/wiki/Ford_offers_US$78_million_for_Romanian_auto_plant#ev48>
+            sem:hasActor         <http://www.newsreader-project.eu/data/wikinews/entities/HotNewsHotNews> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Adducing@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HotNewsHotNews> ;
+            pb:A0                <http://www.newsreader-project.eu/data/wikinews/entities/HotNewsHotNews> .
+}

@@ -1,0 +1,309 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev8>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=157,165> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=150,156> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=594,600> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=802,808> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=0,6> .
+    
+    <http://www.newsreader-project.eu/time/20050118>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx1>
+            a                time:Instant ;
+            rdfs:label       "January 18 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=49,65> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050118> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , fn:Removing , fn:Bringing , fn:Taking , fn:Change_of_leadership , eso:Increasing , eso:Transportation , eso:Getting , eso:Taking , fn:Aiming , fn:Placing , eso:Placing ;
+            rdfs:label     "take" , "aim" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=360,364> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=967,971> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1044,1048> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=526,531> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=407,413> , <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=421,427> .
+    
+    <http://dbpedia.org/resource/Singapore_Changi_Airport>
+            rdfs:label     "Changi Airport" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1082,1096> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050118> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev19>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "executive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=607,616> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1148,1157> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AmericanairlineVirginAtlantic>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "American airline Virgin Atlantic" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1111,1143> .
+    
+    <http://www.newsreader-project.eu/time/200403>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx3>
+            a                time:Instant ;
+            rdfs:label       "March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=990,995> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200403> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx4>
+            a                time:Instant ;
+            rdfs:label       "mid-2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1056,1064> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Launch_process , fn:Cause_motion , fn:Shoot_projectiles , fn:Motion , eso:Translocation ;
+            rdfs:label     "launch" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=7,15> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=809,812> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Coming_up_with , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "design" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=443,449> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev39>
+            a              sem:Event , nwrontology:sourceEvent , fn:Chatting , fn:Statement ;
+            rdfs:label     "talk" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=875,880> .
+    
+    <http://dbpedia.org/resource/China>
+            rdfs:label     "China" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=886,891> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr1> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=49,165> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=150,165> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=360,364> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr11,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=360,419> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr39,rl90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1044,1096> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr18,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=594,616> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=990,1157> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1056,1157> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr40,rl91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=1099,1157> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=7,65> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=0,15> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr29,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=802,812> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr13,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=421,449> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=875,995> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=875,1064> .
+    
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr32,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#char=875,891> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev8>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr7> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr11,rl30> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Boeing> ;
+            pb:A2                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr39,rl90> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14>
+            sem:hasActor            <http://dbpedia.org/resource/Singapore_Changi_Airport> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Singapore_Changi_Airport> ;
+            pb:A2                   <http://dbpedia.org/resource/Singapore_Changi_Airport> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr13> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr18,rl45> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev19>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A2         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr22> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr23> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr40,rl91> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev26>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/AmericanairlineVirginAtlantic> ;
+            eso:possession-owner_2  <http://www.newsreader-project.eu/data/wikinews/entities/AmericanairlineVirginAtlantic> ;
+            pb:A0                   <http://www.newsreader-project.eu/data/wikinews/entities/AmericanairlineVirginAtlantic> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr26> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev28>
+            sem:hasActor                <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_start@Agent>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Launch_process@Agent>
+                    <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Shoot_projectiles@Agent>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                       <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr27> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr29,rl65> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev29>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr30> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr13,rl33> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev32>
+            sem:hasActor                <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Coming_up_with@Cognizer>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                       <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr38> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tr39> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#pr32,rl72> {
+    <http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev39>
+            sem:hasActor                <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_2>
+                    <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Topic>
+                    <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Addressee>
+                    <http://dbpedia.org/resource/China> ;
+            pb:A2                       <http://dbpedia.org/resource/China> .
+}

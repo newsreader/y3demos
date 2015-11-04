@@ -1,0 +1,398 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1309,1313>
+          rdfs:comment        "contemplate" ;
+          rdfs:label          "risk" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1275,1286> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/many+investors> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1275,1286>
+          rdfs:label          "contemplate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1323,1333>
+          rdfs:comment        "contemplate" ;
+          rdfs:label          "portfolios" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1275,1286> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=9,16>
+          rdfs:label          "markets" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=17,21>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=32,38>
+          rdfs:label          "levels" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=109,116>
+          rdfs:label          "indexes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=117,123>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=140,146>
+          rdfs:label          "levels" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=157,163>
+          rdfs:label          "decade" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=201,211>
+          rdfs:label          "confidence" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=182,191>
+          rdfs:label          "declining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=216,223>
+          rdfs:label          "worries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=249,260>
+          rdfs:label          "nationalize" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr10>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=306,310>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=341,344>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr12>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=376,381>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=436,440>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=430,435>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=464,469>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=492,497>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=532,537>
+          rdfs:label          "Index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=559,566>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=626,633>
+          rdfs:label          "falling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=679,684>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=685,689>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=713,720>
+          rdfs:label          "closing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=752,760>
+          rdfs:label          "remained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=856,863>
+          rdfs:label          "climbed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=819,826>
+          rdfs:label          "worries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=849,855>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=887,893>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=871,875>
+          rdfs:label          "Bank" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=894,898>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=925,931>
+          rdfs:label          "gained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=974,981>
+          rdfs:label          "plunged" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=994,995>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1024,1028>
+          rdfs:label          "left" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1033,1038>
+          rdfs:label          "right" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1043,1051>
+          rdfs:label          "throwing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1086,1089>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1184,1188>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1143,1148>
+          rdfs:label          "doing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1157,1160>
+          rdfs:label          "job" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1164,1175>
+          rdfs:label          "alleviating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr42>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1335,1344>
+          rdfs:label          "Sentiment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1387,1391>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1410,1420>
+          rdfs:label          "strategist" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997> .
+}

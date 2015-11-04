@@ -1,0 +1,132 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Memory , fn:Remembering_experience , fn:Remembering_information , fn:Remembering_to_do ;
+            rdfs:label     "remember" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1059,1069> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally>
+            a              nwrontology:PERSON ;
+            rdfs:label     "mulally" , "Alan Mulally" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=283,290> , <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1046,1058> , <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=436,443> .
+    
+    <http://www.newsreader-project.eu/time/20070209>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070209> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1081,1083> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1108,1115> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev43>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=444,449> .
+    
+    <http://www.newsreader-project.eu/time/1986>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1986"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx4>
+            a                time:Instant ;
+            rdfs:label       "1986" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=609,613> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1986> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tr22> {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#pr35,rl73> {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev27>
+            sem:hasActor                   <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Memory@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Remembering_experience@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Remembering_information@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Remembering_to_do@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            pb:A0                          <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#pr35,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1046,1069> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#pr36,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1081,1115> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=444,613> .
+    
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=436,449> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tr28> {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#pr36,rl77> {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev34>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tr37> {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#pr15,rl32> {
+    <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#ev43>
+            sem:hasActor      <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> ;
+            pb:A0             <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> .
+}

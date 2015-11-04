@@ -1,0 +1,278 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays>
+          prov:wasAttributedTo  nwrauthor:Skenmy .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1071,1078>
+          rdfs:comment        "stated" ;
+          rdfs:label          "details" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1042,1048> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Fiat_Aviazione> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1042,1048>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1087,1091>
+          rdfs:comment        "stated" ;
+          rdfs:label          "kept" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1042,1048> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=25,36>
+          rdfs:label          "compensated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=90,94>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=111,122>
+          rdfs:label          "compensated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=152,157>
+          rdfs:label          "delay" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=161,169>
+          rdfs:label          "delivery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=192,196>
+          rdfs:label          "A380" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=239,247>
+          rdfs:label          "delivery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr6>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=289,296>
+          rdfs:label          "delayed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=341,346>
+          rdfs:label          "found" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=353,361>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=447,451>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=402,411>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=467,472>
+          rdfs:label          "cause" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=495,499>
+          rdfs:label          "fact" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=535,546>
+          rdfs:label          "facilitates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=604,615>
+          rdfs:label          "implemented" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=551,557>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=586,598>
+          rdfs:label          "installation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=641,648>
+          rdfs:label          "working" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=678,683>
+          rdfs:label          "curve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=755,759>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=740,749>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=832,836>
+          rdfs:label          "test" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=868,878>
+          rdfs:label          "proceeding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=855,864>
+          rdfs:label          "programme" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=923,929>
+          rdfs:label          "issues" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=946,956>
+          rdfs:label          "predicting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=991,994>
+          rdfs:label          "run" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1149,1152>
+          rdfs:label          "fly" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr29>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays#char=1174,1183>
+          rdfs:label          "receiving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Singapore_Airlines_to_be_compensated_for_A380_delays> .
+}

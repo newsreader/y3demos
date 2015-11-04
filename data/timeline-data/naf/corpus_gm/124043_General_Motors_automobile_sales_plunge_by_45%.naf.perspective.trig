@@ -1,0 +1,456 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=125,128>
+          rdfs:comment        "announced" ;
+          rdfs:label          "saw" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,103> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,103>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=135,139>
+          rdfs:comment        "announced" ;
+          rdfs:label          "drop" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,103> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=165,170>
+          rdfs:comment        "announced" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=94,103> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=395,400>
+          rdfs:comment        "show" ;
+          rdfs:label          "signs" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=384,388> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+market> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=384,388>
+          rdfs:label          "show" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=415,419>
+          rdfs:comment        "show" ;
+          rdfs:label          "need" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=384,388> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=426,435>
+          rdfs:comment        "show" ;
+          rdfs:label          "nourished" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=384,388> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=698,702>
+          rdfs:comment        "reported" ;
+          rdfs:label          "loss" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=683,691> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr3> , <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr3>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/chrysler+and+the+japanese+toyota> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=683,691>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_sAttr4>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/chrysler+and+the+japanese+toyota> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=32,38>
+          rdfs:label          "plunge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=26,31>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=240,244>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=265,269>
+          rdfs:label          "hope" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=283,291>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=295,304>
+          rdfs:label          "stabilise" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=313,318>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=319,328>
+          rdfs:label          "rebounded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=372,380>
+          rdfs:label          "starting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr10>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=453,457>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=467,476>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=536,539>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=560,565>
+          rdfs:label          "shows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=566,571>
+          rdfs:label          "signs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=600,613>
+          rdfs:label          "manufacturers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=619,622>
+          rdfs:label          "saw" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=633,638>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=639,643>
+          rdfs:label          "slip" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=730,735>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=736,740>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=743,744>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=758,763>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=810,819>
+          rdfs:label          "predicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=828,834>
+          rdfs:label          "dipped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr26>
+          rdf:value             <PROBABLE_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=787,795>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=922,928>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=948,954>
+          rdfs:label          "makers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=959,966>
+          rdfs:label          "pulling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=988,994>
+          rdfs:label          "effort" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=998,1005>
+          rdfs:label          "attract" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr32>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1017,1026>
+          rdfs:label          "evidenced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1087,1095>
+          rdfs:label          "programs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1110,1118>
+          rdfs:label          "resonate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1130,1137>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1157,1164>
+          rdfs:label          "analyst" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1184,1190>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1191,1197>
+          rdfs:label          "gained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1208,1213>
+          rdfs:label          "level" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1234,1241>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1254,1261>
+          rdfs:label          "markets" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1316,1325>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1329,1330>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1342,1348>
+          rdfs:label          "shares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1349,1356>
+          rdfs:label          "slipped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25#char=1360,1361>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/General_Motors_automobile_sales_plunge_by_45%25> .
+}

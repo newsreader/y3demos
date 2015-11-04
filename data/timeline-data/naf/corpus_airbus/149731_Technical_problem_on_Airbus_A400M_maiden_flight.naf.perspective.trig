@@ -1,0 +1,324 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=114,120>
+          rdfs:comment        "confirmed" ;
+          rdfs:label          "glitch" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=78,87> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Airbus> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=78,87>
+          rdfs:label          "confirmed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=161,166>
+          rdfs:comment        "confirmed" ;
+          rdfs:label          "plane" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=78,87> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=176,182>
+          rdfs:comment        "confirmed" ;
+          rdfs:label          "flight" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=78,87> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=10,17>
+          rdfs:label          "problem" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=41,47>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=222,230>
+          rdfs:label          "affected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=244,255>
+          rdfs:label          "controlling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=289,297>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=313,317>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=329,335>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=438,442>
+          rdfs:label          "call" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=477,483>
+          rdfs:label          "became" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=491,500>
+          rdfs:label          "attention" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=548,553>
+          rdfs:label          "cited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=567,576>
+          rdfs:label          "documents" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=589,594>
+          rdfs:label          "maker" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=657,663>
+          rdfs:label          "failed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=650,656>
+          rdfs:label          "system" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=706,714>
+          rdfs:label          "resolved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=736,745>
+          rdfs:label          "spokesman" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=789,792>
+          rdfs:label          "led" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=807,816>
+          rdfs:label          "disengage" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr19>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=841,847>
+          rdfs:label          "blades" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=828,836>
+          rdfs:label          "allowing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=851,855>
+          rdfs:label          "turn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr22>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=899,904>
+          rdfs:label          "flown" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=879,883>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=936,945>
+          rdfs:label          "exceeding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=992,1000>
+          rdfs:label          "involved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1036,1040>
+          rdfs:label          "EADS" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1025,1035>
+          rdfs:label          "contractor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1041,1046>
+          rdfs:label          "wants" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1063,1073>
+          rdfs:label          "shouldered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr30>
+          rdf:value             <PROBABLE_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1193,1198>
+          rdfs:label          "asked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1251,1255>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1206,1214>
+          rdfs:label          "decision" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1240,1247>
+          rdfs:label          "procced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight#char=1267,1270>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Technical_problem_on_Airbus_A400M_maiden_flight> .
+}

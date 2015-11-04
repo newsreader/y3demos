@@ -1,0 +1,584 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=857,866>
+          rdfs:comment        "claims" ;
+          rdfs:label          "reduction" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Boeing> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837>
+          rdfs:label          "claims" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=847,856>
+          rdfs:comment        "claims" ;
+          rdfs:label          "resulting" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=877,885>
+          rdfs:comment        "claims" ;
+          rdfs:label          "compared" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=920,925>
+          rdfs:comment        "claims" ;
+          rdfs:label          "offer" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=940,950>
+          rdfs:comment        "claims" ;
+          rdfs:label          "efficiency" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=952,962>
+          rdfs:comment        "claims" ;
+          rdfs:label          "benefiting" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1157,1163>
+          rdfs:comment        "announced" ;
+          rdfs:label          "orders" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1140,1149> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Boeing> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1140,1149>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1563,1573>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "strategies" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <PROBABLE_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+787> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548>
+          rdfs:label          "illustrates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1553,1562>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "differing" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1574,1581>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "adopted" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1634,1638>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "flew" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1660,1668>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "expected" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1672,1677>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "enter" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1678,1685>
+          rdfs:comment        "illustrates" ;
+          rdfs:label          "service" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1537,1548> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1870,1874>
+          rdfs:comment        "predicts" ;
+          rdfs:label          "area" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1850,1858> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr3>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Boeing> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1850,1858>
+          rdfs:label          "predicts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1878,1884>
+          rdfs:comment        "predicts" ;
+          rdfs:label          "growth" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1850,1858> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2162,2166>
+          rdfs:comment        "reflection" ;
+          rdfs:label          "work" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2143,2153> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_sAttr4>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/by+the+wonder+of+flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2143,2153>
+          rdfs:label          "reflection" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=7,14>
+          rdfs:label          "unveils" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=58,70>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=83,91>
+          rdfs:label          "unveiled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=106,116>
+          rdfs:label          "Dreamliner" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=134,141>
+          rdfs:label          "Factory" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=201,207>
+          rdfs:label          "chosen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=215,219>
+          rdfs:label          "date" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=220,227>
+          rdfs:label          "matches" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=255,261>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=291,297>
+          rdfs:label          "format" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=267,274>
+          rdfs:label          "written" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=322,330>
+          rdfs:label          "attended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=348,357>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=394,403>
+          rdfs:label          "officials" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=434,443>
+          rdfs:label          "community" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=510,514>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=461,470>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=563,572>
+          rdfs:label          "celebrate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr17>
+          rdf:value             <u_u_u> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=609,618>
+          rdfs:label          "customers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=640,648>
+          rdfs:label          "partners" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=657,668>
+          rdfs:label          "communities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=765,773>
+          rdfs:label          "airliner" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=810,822>
+          rdfs:label          "construction" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1049,1052>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr24>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1103,1108>
+          rdfs:label          "sized" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1242,1250>
+          rdfs:label          "bringing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1255,1260>
+          rdfs:label          "total" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1306,1311>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1364,1370>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1374,1382>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1386,1390>
+          rdfs:label          "take" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr32>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1391,1396>
+          rdfs:label          "place" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1486,1493>
+          rdfs:label          "receive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr34>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1400,1406>
+          rdfs:label          "August" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1808,1816>
+          rdfs:label          "targeted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1730,1735>
+          rdfs:label          "aimed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1739,1745>
+          rdfs:label          "flying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr39>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1752,1761>
+          rdfs:label          "passenger" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1762,1769>
+          rdfs:label          "numbers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1930,1938>
+          rdfs:label          "received" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1956,1962>
+          rdfs:label          "letter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1988,1997>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2020,2024>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2060,2067>
+          rdfs:label          "history" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2103,2110>
+          rdfs:label          "reached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2118,2126>
+          rdfs:label          "industry" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2187,2195>
+          rdfs:label          "inspired" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2203,2209>
+          rdfs:label          "wonder" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2250,2253>
+          rdfs:label          "get" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr53>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2278,2287>
+          rdfs:label          "competing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr54>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2334,2343>
+          rdfs:label          "celebrate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner_dAttr55>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner> .
+}

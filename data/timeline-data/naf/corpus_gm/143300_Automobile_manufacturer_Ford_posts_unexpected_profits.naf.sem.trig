@@ -1,0 +1,292 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev8>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , eso:Increasing , eso:Getting ;
+            rdfs:label     "profit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=46,53> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=139,145> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=362,369> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=981,987> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Ford 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=24,28> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=543,547> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=355,361> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=104,108> , <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=355,359> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx3>
+            a                  time:Interval ;
+            rdfs:label         "the 3 quarter of this year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=167,197> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090701> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20090930> .
+    
+    <http://www.newsreader-project.eu/time/20090701>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20090930>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=254,258> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx6>
+            a                  time:Interval ;
+            rdfs:label         "the 4 quarter of this year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=918,949> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20091001> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20091231> .
+    
+    <http://www.newsreader-project.eu/time/20091001>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20091231>
+            a              time:DateTimeDescription ;
+            time:day       "---31"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=91,103> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=77,79> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "equate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=370,376> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "third-quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=508,521> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090701> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20090930> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Manufacturing ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=551,557> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Progress , fn:Self_motion , eso:Translocation ;
+            rdfs:label     "progress" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=569,577> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=29,34> .
+    
+    <http://www.newsreader-project.eu/time/20091103>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx1>
+            a                time:Instant ;
+            rdfs:label       "November 3 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=55,71> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20091103> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr1> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=139,197> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=139,258> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=918,987> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr2,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=24,53> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=91,197> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=91,258> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr3,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=77,103> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr3,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=91,108> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=370,521> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr13,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=355,376> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=508,557> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr21,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=543,557> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=508,577> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr22,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=543,577> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=29,71> .
+    
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#char=24,34> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr2> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr3> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev8>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr2,rl6> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev8>
+            sem:hasActor                   <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                          <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr4> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr5> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr3,rl9> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev9>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr3,rl12> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev9>
+            sem:hasActor        <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:creating-theme  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1               <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr10> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr13,rl33> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr12> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr21,rl50> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev14>
+            sem:hasActor                   <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                          <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr13> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr22,rl53> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev15>
+            sem:hasActor        <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Progress@Entity>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1               <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tr29> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Automobile_manufacturer_Ford_posts_unexpected_profits#ev26>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Sender>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}

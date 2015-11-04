@@ -1,0 +1,400 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Recovery ;
+            rdfs:label     "recovery" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=53,61> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=392,400> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1366,1374> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=41,43> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=167,169> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=126,128> .
+    
+    <http://www.newsreader-project.eu/time/20090821>
+            a              time:DateTimeDescription ;
+            time:day       "---21"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx1>
+            a                time:Instant ;
+            rdfs:label       "August 21 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=63,78> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090821> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "chief" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=134,139> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=268,273> .
+    
+    <http://dbpedia.org/resource/Ben_Bernanke>
+            rdfs:label     "Ben Bernanke" , "Bernanke" , "US bank chief Ben Bernanke" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=140,152> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=907,915> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=979,981> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=126,152> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1187,1188> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,118> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090821> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev13>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=170,177> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1007,1014> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Recovery ;
+            rdfs:label     "recover" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=194,201> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Attack , fn:Cause_harm , fn:Cause_impact , fn:Impact , eso:Injuring ;
+            rdfs:label     "strike" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=697,703> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Standard &amp; Poor 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=657,674> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090821> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev27>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "strategist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1160,1170> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ForexcomForexcom>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Forex.com" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1174,1183> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1324,1333> .
+    
+    <http://dbpedia.org/resource/European_Central_Bank>
+            rdfs:label     "the European Central Bank" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1298,1323> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , fn:Setting_fire , fn:Setting_out , eso:StartingAnActivity ;
+            rdfs:label     "start" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=182,190> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Change_position_on_a_scale , fn:Path_shape , eso:Arriving ;
+            rdfs:label     "reach" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=722,730> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=153,157> , <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=274,278> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev41>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent , fn:Chatting , fn:Speak_on_topic ;
+            rdfs:label     "address" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=223,233> .
+    
+    <http://dbpedia.org/resource/Wyoming>
+            rdfs:label     "Wyoming" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=250,257> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev42>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "conference" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=236,246> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion ;
+            rdfs:label     "warn" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1335,1341> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr2> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=53,78> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=41,61> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,139> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=126,139> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr6,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=126,152> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,177> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr8,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=167,177> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,201> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr10,rl22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=163,201> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr27,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=653,703> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr46,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1160,1183> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr51,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1298,1333> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,190> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=163,190> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr28,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=653,730> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,157> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr7,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=126,157> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,233> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr12,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=223,257> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=112,246> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr13,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=236,257> .
+    
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr50,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#char=1277,1341> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev10>
+            sem:hasActor         <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recovery@Patient>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr4> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr6,rl15> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Ben_Bernanke> ;
+            pb:A0         <http://dbpedia.org/resource/Ben_Bernanke> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr5> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr8,rl18> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev13>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr6> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr10,rl22> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev14>
+            sem:hasActor         <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Recovery@Patient>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr13> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr27,rl56> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev21>
+            sem:hasActor           <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Attack@Source>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_harm@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_harm@Cause>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_impact@Agent>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Impact@Cause>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            pb:A0                  <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr18> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr46,rl96> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev27>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/ForexcomForexcom> ;
+            pb:A2         <http://www.newsreader-project.eu/data/wikinews/entities/ForexcomForexcom> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr21> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr51,rl106> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/European_Central_Bank> ;
+            pb:A0         <http://dbpedia.org/resource/European_Central_Bank> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr24> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr9,rl20> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:activity  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr27> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr28,rl60> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev36>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            eso:translocation-theme  <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/StandardPoors> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr31> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr7,rl16> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev40>
+            sem:hasActor             <http://dbpedia.org/resource/Ben_Bernanke> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Ben_Bernanke> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ben_Bernanke> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Ben_Bernanke> ;
+            pb:A0                    <http://dbpedia.org/resource/Ben_Bernanke> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr32> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr12,rl27> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev41>
+            sem:hasActor                <http://dbpedia.org/resource/Wyoming> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Topic>
+                    <http://dbpedia.org/resource/Wyoming> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Speak_on_topic@Audience>
+                    <http://dbpedia.org/resource/Wyoming> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Message>
+                    <http://dbpedia.org/resource/Wyoming> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Topic>
+                    <http://dbpedia.org/resource/Wyoming> ;
+            pb:A1                       <http://dbpedia.org/resource/Wyoming> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr33> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr13,rl29> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev42>
+            sem:hasPlace  <http://dbpedia.org/resource/Wyoming> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Wyoming> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tr41> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#pr50,rl104> {
+    <http://en.wikinews.org/wiki/Stock_markets_worldwide_rise_on_hopes_of_US_economic_recovery#ev50>
+            sem:hasActor  <http://dbpedia.org/resource/European_Central_Bank> ;
+            pb:A0         <http://dbpedia.org/resource/European_Central_Bank> .
+}

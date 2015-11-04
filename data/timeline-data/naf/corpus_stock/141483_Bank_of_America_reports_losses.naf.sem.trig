@@ -1,0 +1,216 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev10>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "los" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=24,30> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=262,268> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=771,777> .
+    
+    <http://dbpedia.org/resource/Bank_of_America>
+            rdfs:label     "Bank of America" , "Bank of America Corporation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=0,15> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=77,104> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=421,436> .
+    
+    <http://www.newsreader-project.eu/time/20091016>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20091016> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Getting , fn:Change_of_quantity_of_possession , eso:Increasing , eso:Getting ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=441,447> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev29>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=16,23> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx1>
+            a                time:Instant ;
+            rdfs:label       "October 16 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=55,71> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20091016> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=518,522> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=761,765> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=865,869> .
+    
+    <http://dbpedia.org/resource/Lewis>
+            rdfs:label     "Lewis" , "Ken Lewis" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=755,760> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=507,516> , <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=862,864> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "the 4 quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=921,939> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20091001> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20091231> .
+    
+    <http://www.newsreader-project.eu/time/20091001>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20091231>
+            a              time:DateTimeDescription ;
+            time:day       "---31"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=995,1003> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev34>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "statement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=528,537> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr1> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev10>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=771,777> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=0,30> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr11,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=421,447> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=16,71> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr3,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=8,23> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=865,939> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=865,1003> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr13,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=491,522> .
+    
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr14,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#char=491,537> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev10>
+            sem:hasActor  <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A0         <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr6> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr11,rl20> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev15>
+            sem:hasActor            <http://dbpedia.org/resource/Bank_of_America> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A0                   <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr21> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr3,rl4> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev29>
+            sem:hasActor           <http://dbpedia.org/resource/Bank_of_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/Bank_of_America> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A0                  <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr25> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr26> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr13,rl23> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev33>
+            sem:hasActor             <http://dbpedia.org/resource/Lewis> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Lewis> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Lewis> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Lewis> ;
+            pb:A0                    <http://dbpedia.org/resource/Lewis> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tr27> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#pr14,rl25> {
+    <http://en.wikinews.org/wiki/Bank_of_America_reports_losses_of_over_US$2.2_billion#ev34>
+            sem:hasActor          <http://dbpedia.org/resource/Lewis> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Lewis> ;
+            pb:A0                 <http://dbpedia.org/resource/Lewis> .
+}

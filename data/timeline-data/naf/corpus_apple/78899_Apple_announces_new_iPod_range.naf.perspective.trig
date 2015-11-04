@@ -1,0 +1,428 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=25,30>
+          rdfs:comment        "announces" ;
+          rdfs:label          "range" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=6,15> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=6,15>
+          rdfs:label          "announces" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1288,1293>
+          rdfs:comment        "announced" ;
+          rdfs:label          "price" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1269,1278> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1269,1278>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1331,1335>
+          rdfs:comment        "announced" ;
+          rdfs:label          "sale" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1269,1278> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1355,1358>
+          rdfs:comment        "announced" ;
+          rdfs:label          "cut" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1269,1278> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1305,1311>
+          rdfs:comment        "announced" ;
+          rdfs:label          "iPhone" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1269,1278> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=62,70>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=79,89>
+          rdfs:label          "re-designs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=112,117>
+          rdfs:label          "range" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=180,189>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=122,130>
+          rdfs:label          "addition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=209,214>
+          rdfs:label          "touch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=224,230>
+          rdfs:label          "player" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=237,243>
+          rdfs:label          "mimics" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=270,282>
+          rdfs:label          "capabilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=313,321>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=380,383>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=338,343>
+          rdfs:label          "space" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=331,337>
+          rdfs:label          "memory" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=400,406>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=450,456>
+          rdfs:label          "adding" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=463,471>
+          rdfs:label          "playback" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=479,487>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=542,553>
+          rdfs:label          "predecessor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=655,661>
+          rdfs:label          "design" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=678,683>
+          rdfs:label          "model" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=715,720>
+          rdfs:label          "range" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=752,757>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=780,785>
+          rdfs:label          "touch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=791,799>
+          rdfs:label          "features" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=827,835>
+          rdfs:label          "enabling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=815,825>
+          rdfs:label          "technology" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=878,883>
+          rdfs:label          "music" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=845,851>
+          rdfs:label          "access" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr28>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=897,911>
+          rdfs:label          "market-leading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=933,938>
+          rdfs:label          "store" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=948,955>
+          rdfs:label          "handset" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=964,973>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=995,1000>
+          rdfs:label          "offer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr33>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1012,1018>
+          rdfs:label          "access" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1026,1031>
+          rdfs:label          "users" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1044,1049>
+          rdfs:label          "touch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1057,1062>
+          rdfs:label          "cafes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1075,1081>
+          rdfs:label          "layout" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1114,1120>
+          rdfs:label          "offers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1121,1127>
+          rdfs:label          "access" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1217,1221>
+          rdfs:label          "16GB" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1232,1240>
+          rdfs:label          "capacity" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1379,1388>
+          rdfs:label          "described" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1402,1407>
+          rdfs:label          "range" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1429,1436>
+          rdfs:label          "wonders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range> .
+}

@@ -1,0 +1,472 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=27,32>
+          rdfs:comment        "plans" ;
+          rdfs:label          "close" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=18,23> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=18,23>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=438,445>
+          rdfs:comment        "announce" ;
+          rdfs:label          "intends" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=405,413> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=405,413>
+          rdfs:label          "announce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=449,453>
+          rdfs:comment        "intends" , "announce" ;
+          rdfs:label          "shut" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=438,445> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=405,413> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr1> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr2> , <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr2>
+          rdf:value            <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/that+it+intends+to+shut+down> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_sAttr3>
+          rdf:value            <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/that+it+intends+to+shut+down> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=119,128>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=129,134>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=145,149>
+          rdfs:label          "shut" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr3>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=193,199>
+          rdfs:label          "effort" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=203,208>
+          rdfs:label          "evade" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr5>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=234,246>
+          rdfs:label          "expenditures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=254,258>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=259,264>
+          rdfs:label          "comes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=311,319>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=322,326>
+          rdfs:label          "list" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=304,309>
+          rdfs:label          "maker" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=358,365>
+          rdfs:label          "closing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr13>
+          rdf:value             <CERTAIN_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=547,554>
+          rdfs:label          "receive" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr14>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=507,514>
+          rdfs:label          "renewed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=565,571>
+          rdfs:label          "letter" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=487,497>
+          rdfs:label          "franchises" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=521,528>
+          rdfs:label          "October" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=572,579>
+          rdfs:label          "telling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=621,624>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=631,638>
+          rdfs:label          "dealers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=654,661>
+          rdfs:label          "intends" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=665,671>
+          rdfs:label          "reduce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr23>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=700,703>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=716,720>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=753,759>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr26>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=765,780>
+          rdfs:label          "underperforming" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=814,821>
+          rdfs:label          "dealers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=802,808>
+          rdfs:label          "volume" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=878,884>
+          rdfs:label          "losing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=940,944>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=863,868>
+          rdfs:label          "cases" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=899,905>
+          rdfs:label          "danger" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=909,914>
+          rdfs:label          "going" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr34>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=950,955>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=985,994>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1010,1020>
+          rdfs:label          "conference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1025,1027>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1030,1034>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1076,1081>
+          rdfs:label          "taken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1053,1058>
+          rdfs:label          "argue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr41>
+          rdf:value             <POSSIBLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1101,1111>
+          rdfs:label          "leadership" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1112,1116>
+          rdfs:label          "team" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1117,1120>
+          rdfs:label          "had" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1124,1130>
+          rdfs:label          "choice" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1138,1140>
+          rdfs:label          "do" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1187,1196>
+          rdfs:label          "represent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1180,1186>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1199,1200>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1226,1233>
+          rdfs:label          "network" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr50>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1245,1246>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships#char=1260,1267>
+          rdfs:label          "revenue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/U.S._automaker_GM_plans_to_close_1,100_dealerships> .
+}

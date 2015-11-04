@@ -1,0 +1,272 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=308,314>
+          rdfs:comment        "claims" ;
+          rdfs:label          "models" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=202,208> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Boeing> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=202,208>
+          rdfs:label          "claims" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=24,29>
+          rdfs:label          "makes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=37,43>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=123,127>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=143,149>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=321,328>
+          rdfs:label          "release" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=418,425>
+          rdfs:label          "plagued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=445,454>
+          rdfs:label          "including" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=462,468>
+          rdfs:label          "action" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=476,485>
+          rdfs:label          "shortages" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=497,505>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=523,530>
+          rdfs:label          "thought" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=539,548>
+          rdfs:label          "attracted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr12>
+          rdf:value             <PROBABLE_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=553,559>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=591,600>
+          rdfs:label          "cancelled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=620,626>
+          rdfs:label          "making" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=635,640>
+          rdfs:label          "worth" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=648,654>
+          rdfs:label          "region" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=709,716>
+          rdfs:label          "analyst" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=737,741>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=771,778>
+          rdfs:label          "provide" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr20>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=764,765>
+          rdfs:label          "]" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr21>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=787,793>
+          rdfs:label          "needed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=794,804>
+          rdfs:label          "perception" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=879,882>
+          rdfs:label          "way" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=833,837>
+          rdfs:label          "kind" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=863,865>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=901,907>
+          rdfs:label          "result" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr27>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=928,933>
+          rdfs:label          "rival" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=946,955>
+          rdfs:label          "preparing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight#char=959,966>
+          rdfs:label          "release" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_787_%22Dreamliner%22_makes_maiden_flight> .
+}

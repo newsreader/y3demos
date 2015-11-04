@@ -1,0 +1,194 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=414,421>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "provide" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr2>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389>
+          rdfs:label          "claimed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=431,437>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "access" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=452,457>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "speed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=474,480>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "access" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=481,489>
+          rdfs:comment        "claimed" ;
+          rdfs:label          "provided" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=382,389> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=726,732>
+          rdfs:comment        "speculation" ;
+          rdfs:label          "launch" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=687,698> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_sAttr3>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Inc.> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=687,698>
+          rdfs:label          "speculation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=6,14>
+          rdfs:label          "launches" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=61,69>
+          rdfs:label          "launched" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=75,82>
+          rdfs:label          "version" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=97,103>
+          rdfs:label          "device" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=152,161>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=195,205>
+          rdfs:label          "conference" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=216,224>
+          rdfs:label          "promoted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=239,245>
+          rdfs:label          "saying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=301,310>
+          rdfs:label          "launching" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=273,282>
+          rdfs:label          "launching" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=326,328>
+          rdfs:label          "3G" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=521,526>
+          rdfs:label          "price" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=556,563>
+          rdfs:label          "reduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=588,594>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone#char=711,715>
+          rdfs:label          "fans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_launches_3G_iPhone> .
+}

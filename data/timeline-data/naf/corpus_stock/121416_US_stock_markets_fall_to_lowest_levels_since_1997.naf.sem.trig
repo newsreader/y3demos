@@ -1,0 +1,395 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=9,16> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=0,2> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=82,95> .
+    
+    <http://www.newsreader-project.eu/time/1997>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx1>
+            a                time:Instant ;
+            rdfs:label       "1997" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=45,49> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1997> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=109,116> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=430,435> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=532,537> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=679,684> .
+    
+    <http://dbpedia.org/resource/Nasdaq_Composite>
+            rdfs:label     "Nasdaq Composite" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=662,678> .
+    
+    <http://www.newsreader-project.eu/time/20090302>
+            a              time:DateTimeDescription ;
+            time:day       "---02"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx5>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=167,173> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090302> .
+    
+    <http://www.newsreader-project.eu/time/199704>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1997"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx7>
+            a                time:Instant ;
+            rdfs:label       "April 1997" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=504,514> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/199704> .
+    
+    <http://www.newsreader-project.eu/time/2000>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2000" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=527,531> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2000> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Finish_competition ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=436,440> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=685,689> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=849,855> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=887,893> .
+    
+    <http://dbpedia.org/resource/Bank_of_America>
+            rdfs:label     "Bank of America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=871,886> .
+    
+    <http://www.newsreader-project.eu/time/20090224>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=864,869> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090224> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "Bank" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=871,875> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Path_shape , fn:Sidereal_appearance , fn:Travel , fn:Change_position_on_a_scale , fn:Dough_rising , eso:Increasing ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=894,898> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Increasing , fn:Getting ;
+            rdfs:label     "gain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=925,931> .
+    
+    <http://dbpedia.org/resource/Citigroup>
+            rdfs:label     "Citigroup" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=915,924> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev35>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "strategist" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1410,1420> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/FritzMeyer>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Fritz Meyer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1438,1449> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090224> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Body_movement ;
+            rdfs:label     "close" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=713,720> .
+    
+    <http://www.newsreader-project.eu/time/20081120>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx10>
+            a                time:Instant ;
+            rdfs:label       "November 20 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=771,788> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081120> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1184,1188> , <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1387,1391> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/CapitalFinancialAdvisoryServices>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Capital Financial Advisory services" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1207,1242> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=9,49> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=0,16> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=109,173> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=430,514> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=527,537> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr4,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=82,116> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr22,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=662,684> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=436,514> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr23,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=658,689> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=849,869> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr29,rl63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=871,893> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=864,875> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr30,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=871,886> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=864,898> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr31,rl65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=871,898> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=864,931> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr32,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=908,931> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr48,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1410,1449> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=713,788> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr24,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=658,720> .
+    
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr39,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#char=1184,1242> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr1,rl1> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr8> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr9> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr10> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr4,rl7> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr22,rl48> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            pb:A0         <http://dbpedia.org/resource/Nasdaq_Composite> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr14> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr23,rl50> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Finish_competition@Competitor>
+                    <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            pb:A1         <http://dbpedia.org/resource/Nasdaq_Composite> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr17> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr29,rl63> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A1         <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr18> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr30,rl64> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A1         <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr19> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr31,rl65> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev25>
+            sem:hasActor       <http://dbpedia.org/resource/Bank_of_America> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A1              <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr20> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr32,rl67> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev26>
+            sem:hasActor       <http://dbpedia.org/resource/Citigroup> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Citigroup> ;
+            pb:A1              <http://dbpedia.org/resource/Citigroup> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr27> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev35>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr48,rl103> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev35>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/FritzMeyer> ;
+            pb:A2         <http://www.newsreader-project.eu/data/wikinews/entities/FritzMeyer> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr33> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr24,rl53> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev41>
+            sem:hasActor            <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://dbpedia.org/resource/Nasdaq_Composite> ;
+            pb:A1                   <http://dbpedia.org/resource/Nasdaq_Composite> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tr37> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#pr39,rl82> {
+    <http://en.wikinews.org/wiki/US_stock_markets_fall_to_lowest_levels_since_1997#ev45>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/CapitalFinancialAdvisoryServices> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/CapitalFinancialAdvisoryServices> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/CapitalFinancialAdvisoryServices> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/CapitalFinancialAdvisoryServices> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/CapitalFinancialAdvisoryServices> .
+}

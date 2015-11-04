@@ -1,0 +1,321 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing , fn:Path_shape , fn:Traversing , eso:Translocation ;
+            rdfs:label     "fall" , "descend" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=389,395> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=476,480> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=520,524> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=983,987> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1532,1536> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1221,1230> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theStandardPoors>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the Standard &amp; Poor 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=488,509> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx7>
+            a                time:Instant ;
+            rdfs:label       "this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=438,447> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://www.newsreader-project.eu/time/20090220>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx8>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=481,486> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090220> .
+    
+    <http://www.newsreader-project.eu/time/200810>
+            a              time:DateTimeDescription ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx12>
+            a                time:Instant ;
+            rdfs:label       "October" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1260,1267> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200810> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx14>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1504,1509> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090220> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Behind_the_scenes , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "director" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1410,1418> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/HinsdaleAssociates>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Hinsdale associates" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1437,1456> .
+    
+    <http://www.newsreader-project.eu/time/200811>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx13>
+            a                time:Instant ;
+            rdfs:label       "November" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1378,1386> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200811> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev30>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , fn:Motion_directional , fn:Travel , fn:Cause_motion , eso:Decreasing , fn:Path_shape , eso:Translocation , fn:Cause_change_of_position_on_a_scale , fn:Body_movement , fn:Change_posture , fn:Commerce_pay ;
+            rdfs:label     "drop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1590,1597> .
+    
+    <http://dbpedia.org/resource/Bank_of_America>
+            rdfs:label     "Bank of America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1567,1582> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev37>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Motion , eso:Motion ;
+            rdfs:label     "descent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=884,891> .
+    
+    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average>
+            rdfs:label     "Dow" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=878,881> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx11>
+            a                time:Instant ;
+            rdfs:label       "2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=806,810> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Travel , eso:Translocation , fn:Intentionally_create , eso:Creating , fn:Motion , eso:Motion , fn:Categorization , fn:Grasp , fn:Perception_experience , fn:Self_motion , fn:Come_together , eso:Meeting ;
+            rdfs:label     "see" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=659,663> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/SP>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "S&amp;P" , "the S&amp;P" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=515,518> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=751,753> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=705,708> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=647,654> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=664,667> , <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=651,654> .
+    
+    <http://www.newsreader-project.eu/time/20090219>
+            a              time:DateTimeDescription ;
+            time:day       "---19"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx9>
+            a                time:Instant ;
+            rdfs:label       "Thursday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=695,703> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090219> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx10>
+            a                time:Instant ;
+            rdfs:label       "last October" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=737,749> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200810> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny ;
+            rdfs:label     "analyst" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=841,848> .
+    
+    <http://dbpedia.org/resource/IG_Group>
+            rdfs:label     "IG Markets" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=852,862> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr8> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx7> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=389,447> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=476,524> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1221,1267> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1504,1536> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr14,rl30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=488,524> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1378,1418> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr40,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1406,1456> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1504,1597> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr42,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=1567,1610> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=806,891> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr24,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=874,891> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=659,703> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=659,749> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr17,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=647,663> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=806,848> .
+    
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr23,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#char=841,862> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr9> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr10> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx12> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx12> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr11> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr14,rl30> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev20>
+            sem:hasActor       <http://www.newsreader-project.eu/data/wikinews/entities/theStandardPoors> ;
+            eso:quantity-item  <http://www.newsreader-project.eu/data/wikinews/entities/theStandardPoors> ;
+            pb:A1              <http://www.newsreader-project.eu/data/wikinews/entities/theStandardPoors> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr22> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr40,rl87> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev29>
+            sem:hasActor                 <http://www.newsreader-project.eu/data/wikinews/entities/HinsdaleAssociates> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HinsdaleAssociates> ;
+            pb:A0                        <http://www.newsreader-project.eu/data/wikinews/entities/HinsdaleAssociates> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr23> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr42,rl94> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev30>
+            sem:hasActor            <http://dbpedia.org/resource/Bank_of_America> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Bank_of_America> ;
+            eso:quantity-item       <http://dbpedia.org/resource/Bank_of_America> ;
+            pb:A1                   <http://dbpedia.org/resource/Bank_of_America> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr30> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr24,rl52> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev37>
+            sem:hasActor       <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> ;
+            pb:A1              <http://dbpedia.org/resource/Dow_Jones_Industrial_Average> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr38> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr39> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr17,rl38> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev43>
+            sem:hasActor                <http://www.newsreader-project.eu/data/wikinews/entities/SP> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Categorization@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SP> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grasp@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SP> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Perception_experience@Perceiver_passive>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/SP> ;
+            pb:A0                       <http://www.newsreader-project.eu/data/wikinews/entities/SP> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tr41> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#pr23,rl51> {
+    <http://en.wikinews.org/wiki/Dow_Jones_Industrial_Average_closes_at_lowest_level_in_six_years#ev45>
+            sem:hasActor  <http://dbpedia.org/resource/IG_Group> ;
+            pb:A2         <http://dbpedia.org/resource/IG_Group> .
+}

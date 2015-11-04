@@ -1,0 +1,352 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Van+der+Hoorn> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=902,909>
+          rdfs:comment        "reported" ;
+          rdfs:label          "profits" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=886,894> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Ryanair> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=886,894>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=8,17>
+          rdfs:label          "exercises" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=18,25>
+          rdfs:label          "options" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=95,104>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=122,132>
+          rdfs:label          "exercising" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=137,144>
+          rdfs:label          "options" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr4>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=150,156>
+          rdfs:label          "Boeing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr5>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=160,168>
+          rdfs:label          "purchase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=197,203>
+          rdfs:label          "brings" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=220,226>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=242,248>
+          rdfs:label          "orders" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=261,273>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=305,309>
+          rdfs:label          "come" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=342,348>
+          rdfs:label          "fitted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=374,379>
+          rdfs:label          "boost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr13>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=385,395>
+          rdfs:label          "efficiency" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=444,453>
+          rdfs:label          "justified" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=478,484>
+          rdfs:label          "saying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr16>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=458,464>
+          rdfs:label          "choice" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=506,509>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=545,552>
+          rdfs:label          "ensures" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=529,540>
+          rdfs:label          "reliability" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=636,639>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=666,670>
+          rdfs:label          "cost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=623,631>
+          rdfs:label          "addition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=656,665>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=713,721>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr25>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=725,731>
+          rdfs:label          "enable" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=676,684>
+          rdfs:label          "addition" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr27>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=738,745>
+          rdfs:label          "develop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr28>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=780,785>
+          rdfs:label          "bring" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=790,795>
+          rdfs:label          "fares" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=818,827>
+          rdfs:label          "consumers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=978,982>
+          rdfs:label          "plan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=945,953>
+          rdfs:label          "pursuing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=994,997>
+          rdfs:label          "see" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr35>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1000,1002>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1030,1034>
+          rdfs:label          "jump" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1038,1041>
+          rdfs:label          "70m" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr38>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1009,1015>
+          rdfs:label          "number" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s#char=1086,1089>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s_dAttr40>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ryanair_exercises_options_on_five_Boeing_737s> .
+}

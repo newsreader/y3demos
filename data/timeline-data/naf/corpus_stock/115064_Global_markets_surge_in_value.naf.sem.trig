@@ -1,0 +1,279 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Congregating ;
+            rdfs:label     "meet" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=611,614> .
+    
+    <http://dbpedia.org/resource/Washington,_D.C.>
+            rdfs:label     "Washington" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=618,628> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4>
+            a                time:Instant ;
+            rdfs:label       "the weekend" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=579,590> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://www.newsreader-project.eu/time/20081013>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=825,830> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081013> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev21>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Containing ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=702,706> .
+    
+    <http://dbpedia.org/resource/International_Monetary_Fund>
+            rdfs:label     "the International Monetary Fund" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=651,682> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Congregating ;
+            rdfs:label     "meeting" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=720,728> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev23>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=764,769> , <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1057,1062> , <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1368,1373> .
+    
+    <http://dbpedia.org/resource/BM&F_Bovespa>
+            rdfs:label     "Bovespa" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1360,1367> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx6>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1012,1017> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081013> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx8>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1374,1379> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081013> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , fn:Body_movement , fn:Change_posture , fn:Commerce_pay , fn:Motion_directional , fn:Path_shape , fn:Cause_motion , fn:Travel , eso:Decreasing , eso:Translocation ;
+            rdfs:label     "drop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1317,1324> .
+    
+    <http://dbpedia.org/resource/HBOS>
+            rdfs:label     "HBOS" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1306,1310> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx7>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1311,1316> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081013> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "exchange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1497,1506> .
+    
+    <http://dbpedia.org/resource/Buenos_Aires>
+            rdfs:label     "Buenos Aires" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1517,1529> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr18> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=579,614> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=611,830> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr21,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=611,628> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=579,706> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=702,830> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr22,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=651,706> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=579,728> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=720,830> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr23,rl55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=651,728> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=764,830> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1012,1062> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1368,1379> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr41,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1360,1373> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1311,1324> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr40,rl99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1306,1324> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1374,1506> .
+    
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr44,rl115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#char=1497,1541> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr19> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr21,rl51> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev20>
+            sem:hasPlace  <http://dbpedia.org/resource/Washington,_D.C.> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Washington,_D.C.> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr20> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr21> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr22,rl53> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            pb:A0                    <http://dbpedia.org/resource/International_Monetary_Fund> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr22> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr23> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr23,rl55> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev22>
+            sem:hasActor                 <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Congregating@Individuals>
+                    <http://dbpedia.org/resource/International_Monetary_Fund> ;
+            pb:A0                        <http://dbpedia.org/resource/International_Monetary_Fund> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr24> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr25> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr26> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr41,rl104> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/BM&F_Bovespa> ;
+            pb:A0         <http://dbpedia.org/resource/BM&F_Bovespa> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr31> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr40,rl99> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev28>
+            sem:hasActor            <http://dbpedia.org/resource/HBOS> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/HBOS> ;
+            eso:quantity-item       <http://dbpedia.org/resource/HBOS> ;
+            pb:A1                   <http://dbpedia.org/resource/HBOS> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#tr32> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Global_markets_surge_in_value#pr44,rl115> {
+    <http://en.wikinews.org/wiki/Global_markets_surge_in_value#ev29>
+            sem:hasPlace  <http://dbpedia.org/resource/Buenos_Aires> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Buenos_Aires> .
+}

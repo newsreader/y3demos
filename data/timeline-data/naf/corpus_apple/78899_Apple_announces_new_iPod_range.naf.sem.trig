@@ -1,0 +1,271 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=62,70> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=0,5> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1243,1248> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1297,1304> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=889,896> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=51,56> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=889,894> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1297,1302> .
+    
+    <http://www.newsreader-project.eu/time/20070905>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx1>
+            a                time:Instant ;
+            rdfs:label       "September 5 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=32,49> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070905> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev33>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "market-leading" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=897,911> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070905> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Offering , eso:Giving ;
+            rdfs:label     "offer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=995,1000> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1114,1120> .
+    
+    <http://dbpedia.org/resource/Starbucks>
+            rdfs:label     "Starbucks" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=979,988> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1053,1056> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1331,1335> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "Apple 's iphone" , "the US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1343,1345> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1297,1311> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1339,1345> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Experience_bodily_harm ;
+            rdfs:label     "cut" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1355,1358> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev43>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "iphone" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1305,1311> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev46>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=6,15> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev51>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=964,973> , <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1269,1278> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Steve Jobs" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1253,1263> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev52>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "price" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1288,1293> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr2> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=32,70> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=51,70> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr31,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=889,911> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=995,1000> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr35,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=979,1000> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr47,rl98>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1284,1335> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr48,rl100>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1284,1358> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr49,rl104>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1297,1311> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=6,49> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=0,15> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr45,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1243,1278> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1288,1293> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr46,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1284,1311> .
+    
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr46,rl97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#char=1288,1311> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev16>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr19> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr31,rl67> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr22> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev36>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr35,rl75> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev36>
+            sem:hasActor  <http://dbpedia.org/resource/Starbucks> ;
+            pb:A0         <http://dbpedia.org/resource/Starbucks> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr27> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr47,rl98> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev41>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-theme  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr28> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr48,rl100> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev42>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experience_bodily_harm@Body_part>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr29> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr49,rl104> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev43>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> , <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> , <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr32> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev46>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr37> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr45,rl93> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev51>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tr38> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev52>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr46,rl96> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev52>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#pr46,rl97> {
+    <http://en.wikinews.org/wiki/Apple_announces_new_iPod_range#ev52>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}

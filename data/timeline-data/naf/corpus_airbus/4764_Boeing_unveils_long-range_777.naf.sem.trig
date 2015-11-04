@@ -1,0 +1,421 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=7,14> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=61,69> .
+    
+    <http://dbpedia.org/resource/Boeing_747>
+            rdfs:label     "Boeing" , "Boeing 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=0,6> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1153,1161> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1506,1512> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=760,766> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=835,837> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=498,504> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=104,107> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=50,56> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1153,1159> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1204,1210> .
+    
+    <http://www.newsreader-project.eu/time/20050217>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx1>
+            a                time:Instant ;
+            rdfs:label       "February 17 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=31,48> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050217> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev13>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "version" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=93,100> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1107,1114> .
+    
+    <http://www.newsreader-project.eu/time/200411>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx5>
+            a                time:Instant ;
+            rdfs:label       "last November" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1137,1150> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200411> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=133,139> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=191,194> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=351,354> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=587,590> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1331,1337> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1560,1563> .
+    
+    <http://dbpedia.org/resource/London>
+            rdfs:label     "London" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=145,151> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=596,602> .
+    
+    <http://dbpedia.org/resource/Sydney_Airport>
+            rdfs:label     "Sydney" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=155,161> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=606,612> .
+    
+    <http://dbpedia.org/resource/New_York>
+            rdfs:label     "New York" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=360,368> .
+    
+    <http://dbpedia.org/resource/Singapore>
+            rdfs:label     "Singapore" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=372,381> .
+    
+    <http://www.newsreader-project.eu/time/2003>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2003"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6>
+            a                time:Instant ;
+            rdfs:label       "2003" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1217,1221> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2003> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Receiving , eso:Getting ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=771,779> .
+    
+    <http://www.newsreader-project.eu/time/200002>
+            a              time:DateTimeDescription ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2000"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx2>
+            a                time:Instant ;
+            rdfs:label       "February 2000" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=855,868> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200002> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev29>
+            a              sem:Event , nwrontology:contextualEvent , eso:Transportation , fn:Delivery ;
+            rdfs:label     "deliver" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=908,917> .
+    
+    <http://dbpedia.org/resource/Pakistan_International_Airlines>
+            rdfs:label     "Pakistan International airlines" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=921,952> .
+    
+    <http://www.newsreader-project.eu/time/200601>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx3>
+            a                time:Instant ;
+            rdfs:label       "January 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=956,968> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200601> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Evaluative_comparison ;
+            rdfs:label     "rival" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1171,1176> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1191,1194> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_of_leadership , fn:Name_conferral , eso:Replacing , eso:IntentionalEvent ;
+            rdfs:label     "name" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=474,479> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/WorldlinerWorldliner>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Worldliner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=484,494> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20050217> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Request ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=785,791> .
+    
+    <http://dbpedia.org/resource/Boeing_777>
+            rdfs:label     "777-200LR" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=819,828> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev46>
+            a              sem:Event , nwrontology:sourceEvent , fn:Awareness , fn:Certainty ;
+            rdfs:label     "believe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1223,1231> , <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1527,1535> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr1> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=7,69> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1107,1150> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=50,100> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1217,1337> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=133,151> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=133,170> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr12,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=351,368> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr12,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=351,381> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=771,868> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr24,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=760,779> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=908,968> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr27,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=908,952> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1171,1221> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr32,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1153,1176> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1191,1221> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr33,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1191,1210> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr14,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=474,494> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr14,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=474,504> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=785,868> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr25,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=760,791> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr25,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=785,828> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1217,1231> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr45,rl113>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#char=1506,1535> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr2> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev13>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr5> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/London> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/London> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr6,rl14> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/Sydney_Airport> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Sydney_Airport> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr12,rl34> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/New_York> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/New_York> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr12,rl35> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/Singapore> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Singapore> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr17> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr24,rl64> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev28>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing_747> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Boeing_747> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr18> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr27,rl74> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev29>
+            sem:hasActor            <http://dbpedia.org/resource/Pakistan_International_Airlines> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/Pakistan_International_Airlines> ;
+            pb:A2                   <http://dbpedia.org/resource/Pakistan_International_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr20> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr32,rl85> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev31>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_747> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Evaluative_comparison@Standard_item>
+                    <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A1         <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr29> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr33,rl88> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev40>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_747> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A1                 <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr31> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr14,rl40> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev42>
+            sem:hasActor                  <http://www.newsreader-project.eu/data/wikinews/entities/WorldlinerWorldliner> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_leadership@Role>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/WorldlinerWorldliner> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Name_conferral@Name>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/WorldlinerWorldliner> ;
+            pb:A2                         <http://www.newsreader-project.eu/data/wikinews/entities/WorldlinerWorldliner> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr14,rl41> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev42>
+            sem:hasActor               <http://dbpedia.org/resource/Boeing_747> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Change_of_leadership@Selector>
+                    <http://dbpedia.org/resource/Boeing_747> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Name_conferral@Speaker>
+                    <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A0                      <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr32> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr25,rl67> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev43>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_747> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A3                 <http://dbpedia.org/resource/Boeing_747> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr25,rl69> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev43>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing_777> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Boeing_777> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Message>
+                    <http://dbpedia.org/resource/Boeing_777> ;
+            pb:A1                 <http://dbpedia.org/resource/Boeing_777> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tr36> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#pr45,rl113> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_long-range_777#ev46>
+            sem:hasActor           <http://dbpedia.org/resource/Boeing_747> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Awareness@Cognizer>
+                    <http://dbpedia.org/resource/Boeing_747> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Certainty@Cognizer>
+                    <http://dbpedia.org/resource/Boeing_747> ;
+            pb:A0                  <http://dbpedia.org/resource/Boeing_747> .
+}

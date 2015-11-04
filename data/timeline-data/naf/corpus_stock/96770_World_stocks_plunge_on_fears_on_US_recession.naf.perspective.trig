@@ -1,0 +1,436 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession>
+          prov:wasAttributedTo  nwrauthor:Bawolff .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=798,805>
+          rdfs:comment        "reporting" ;
+          rdfs:label          "numbers" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=782,791> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/american+home+loan+companies> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=782,791>
+          rdfs:label          "reporting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=820,825>
+          rdfs:comment        "reporting" ;
+          rdfs:label          "loans" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=782,791> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1044,1053>
+          rdfs:comment        "proposed" ;
+          rdfs:label          "encourage" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1003,1011> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <u_u_u> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Presidency_of_George_W._Bush> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1003,1011>
+          rdfs:label          "proposed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1036,1040>
+          rdfs:comment        "proposed" ;
+          rdfs:label          "plan" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1003,1011> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1068,1076>
+          rdfs:comment        "proposed" ;
+          rdfs:label          "spending" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1003,1011> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=13,19>
+          rdfs:label          "plunge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=23,28>
+          rdfs:label          "fears" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=35,44>
+          rdfs:label          "recession" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=70,76>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=77,84>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=173,180>
+          rdfs:label          "causing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr5>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=125,130>
+          rdfs:label          "fears" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr6>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=143,151>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr7>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=271,275>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=265,270>
+          rdfs:label          "index" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=280,287>
+          rdfs:label          "percent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=302,306>
+          rdfs:label          "fall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=347,354>
+          rdfs:label          "attacks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=403,411>
+          rdfs:label          "recorded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=356,362>
+          rdfs:label          "Losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=533,538>
+          rdfs:label          "blame" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=496,503>
+          rdfs:label          "linking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=513,522>
+          rdfs:label          "economies" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=546,552>
+          rdfs:label          "losses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=556,561>
+          rdfs:label          "fears" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=567,576>
+          rdfs:label          "recession" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=637,643>
+          rdfs:label          "market" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=662,672>
+          rdfs:label          "businesses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=702,708>
+          rdfs:label          "bought" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=715,721>
+          rdfs:label          "stakes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=761,765>
+          rdfs:label          "loan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=776,781>
+          rdfs:label          "began" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=891,901>
+          rdfs:label          "tightening" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=851,857>
+          rdfs:label          "spread" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=877,889>
+          rdfs:label          "institutions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=921,929>
+          rdfs:label          "sparking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=930,937>
+          rdfs:label          "worries" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=960,966>
+          rdfs:label          "levels" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=970,974>
+          rdfs:label          "debt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1091,1094>
+          rdfs:label          "say" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1126,1133>
+          rdfs:label          "prevent" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr37>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1148,1155>
+          rdfs:label          "defined" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1167,1174>
+          rdfs:label          "decline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1189,1196>
+          rdfs:label          "economy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1204,1210>
+          rdfs:label          "period" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1253,1259>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1377,1385>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1313,1320>
+          rdfs:label          "holiday" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr44>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1340,1347>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1348,1357>
+          rdfs:label          "indicates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession#char=1399,1405>
+          rdfs:label          "reopen" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession_dAttr47>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/World_stocks_plunge_on_fears_on_US_recession> .
+}

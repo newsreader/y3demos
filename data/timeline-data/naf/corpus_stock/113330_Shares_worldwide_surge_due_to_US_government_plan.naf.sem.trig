@@ -1,0 +1,457 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=33,43> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=245,255> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            a              <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            rdfs:label     "we" , "United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=30,32> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=231,244> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=327,329> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=920,924> .
+    
+    <http://www.newsreader-project.eu/time/20080920>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=152,157> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080920> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=56,63> .
+    
+    <http://dbpedia.org/resource/United_Kingdom>
+            rdfs:label     "the United Kingdom" , "those in the United Kingdom" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=104,122> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=351,353> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=399,404> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=95,122> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "loan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=316,321> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev28>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=354,359> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=590,595> .
+    
+    <http://dbpedia.org/resource/NASDAQ>
+            rdfs:label     "NASDAQ" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=583,589> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=796,801> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080920> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Path_shape , fn:Sidereal_appearance , fn:Travel , fn:Change_position_on_a_scale , fn:Dough_rising , eso:Increasing ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=375,379> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=600,605> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev41>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "economy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1591,1598> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1581,1588> .
+    
+    <http://www.newsreader-project.eu/time/1934>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "1934"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6>
+            a                time:Instant ;
+            rdfs:label       "1934" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1665,1669> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/1934> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving ;
+            rdfs:label     "give" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1677,1682> .
+    
+    <http://dbpedia.org/resource/United_States_Treasury_security>
+            rdfs:label     "Treasury" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=710,718> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1687,1695> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev52>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announcement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=258,270> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev54>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communicate_categorization ;
+            rdfs:label     "describe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=719,728> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev56>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Choosing , fn:Motion , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=806,810> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1262,1266> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1546,1550> .
+    
+    <http://dbpedia.org/resource/George_W._Bush>
+            rdfs:label     "George W. Bush" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1480,1494> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx4>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=846,851> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080920> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev57>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=852,861> .
+    
+    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury>
+            rdfs:label     "U.S. Treasury Department" , "U.S. Treasury" , "the US Treasury" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=821,845> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=983,996> , <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1178,1193> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev58>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "insure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1002,1008> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20080920> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev64>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting ;
+            rdfs:label     "speak" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1496,1504> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev67>
+            a              sem:Event , nwrontology:contextualEvent , fn:Grant_permission , fn:Permitting , eso:IntentionalEvent ;
+            rdfs:label     "permission" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1700,1710> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr2> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=33,255> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr8,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=231,255> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=56,157> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr4,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=56,123> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=152,321> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr13,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=316,335> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=590,801> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr14,rl28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=351,359> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr19,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=583,595> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=600,801> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr20,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=579,605> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1591,1669> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr52,rl112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1581,1598> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1665,1682> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr55,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1677,1695> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=152,270> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr9,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=227,270> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=719,801> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr22,rl51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=703,728> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=806,851> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr50,rl108>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1470,1550> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=846,861> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr27,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=817,861> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1002,1008> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr31,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=979,1008> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1496,1669> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr49,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1470,1504> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1665,1710> .
+    
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr56,rl121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#char=1683,1710> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr8,rl16> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr3> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr4,rl8> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev22>
+            sem:hasActor            <http://dbpedia.org/resource/United_Kingdom> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A2                   <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr8> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr13,rl26> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev27>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr9> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr14,rl28> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/United_Kingdom> ;
+            pb:A0         <http://dbpedia.org/resource/United_Kingdom> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr19,rl42> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A0         <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr10> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr20,rl46> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev29>
+            sem:hasActor       <http://dbpedia.org/resource/NASDAQ> ;
+            eso:quantity-item  <http://dbpedia.org/resource/NASDAQ> ;
+            pb:A1              <http://dbpedia.org/resource/NASDAQ> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr22> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr52,rl112> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev41>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            pb:A1         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr23> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr55,rl118> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev42>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_Treasury_security> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr33> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev52>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr9,rl18> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev52>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr35> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr22,rl51> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev54>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communicate_categorization@Speaker>
+                    <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_Treasury_security> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr38> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr50,rl108> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev56>
+            sem:hasActor             <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            pb:A0                    <http://dbpedia.org/resource/George_W._Bush> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr39> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr27,rl60> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev57>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr40> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev58>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr31,rl69> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev58>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr46> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr49,rl106> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev64>
+            sem:hasActor                <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/George_W._Bush> ;
+            pb:A0                       <http://dbpedia.org/resource/George_W._Bush> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tr49> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev67>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#pr56,rl121> {
+    <http://en.wikinews.org/wiki/Shares_worldwide_surge_due_to_US_government_plan#ev67>
+            sem:hasActor                    <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantee>
+                    <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantor>
+                    <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Permitting@Principle>
+                    <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Permitting@State_of_affairs>
+                    <http://dbpedia.org/resource/United_States_Treasury_security> ;
+            pb:A2                           <http://dbpedia.org/resource/United_States_Treasury_security> .
+}

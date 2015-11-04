@@ -1,0 +1,611 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Travel , eso:Translocation ;
+            rdfs:label     "tour" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=40,44> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=138,142> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=22,28> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=271,277> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=101,107> .
+    
+    <http://dbpedia.org/resource/Asia>
+            rdfs:label     "Asia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=146,150> .
+    
+    <http://dbpedia.org/resource/Australia>
+            rdfs:label     "Australia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=155,164> .
+    
+    <http://www.newsreader-project.eu/time/20051105>
+            a              time:DateTimeDescription ;
+            time:day       "---05"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx1>
+            a                time:Instant ;
+            rdfs:label       "November 5 , 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=46,62> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051105> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Departing , fn:Setting_out , fn:Quitting , eso:Leaving ;
+            rdfs:label     "departure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=68,77> .
+    
+    <http://dbpedia.org/resource/France>
+            rdfs:label     "France" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=83,89> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1092,1098> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , eso:StartingAnActivity ;
+            rdfs:label     "commence" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=394,403> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=947,955> .
+    
+    <http://dbpedia.org/resource/Qantas>
+            rdfs:label     "Qantas" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=880,886> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=931,937> .
+    
+    <http://www.newsreader-project.eu/time/200704>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6>
+            a                time:Instant ;
+            rdfs:label       "April 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=984,994> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200704> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "display" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=485,492> .
+    
+    <http://dbpedia.org/resource/Singapore_Airlines>
+            rdfs:label     "Singapore airlines" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=461,479> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=637,655> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051105> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Wearing , eso:Placing ;
+            rdfs:label     "wear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=618,622> .
+    
+    <http://dbpedia.org/resource/Airbus_A380>
+            a              <http://dbpedia.org/resource/Airbus_A380> ;
+            rdfs:label     "Airbus 380" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=602,612> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev29>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "livery" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=627,633> .
+    
+    <http://www.newsreader-project.eu/time/200611>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx3>
+            a                time:Instant ;
+            rdfs:label       "November 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=563,576> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200611> .
+    
+    <http://www.newsreader-project.eu/time/20051116>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5>
+            a                time:Instant ;
+            rdfs:label       "November 16" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=918,929> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051116> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev32>
+            a              sem:Event , nwrontology:contextualEvent , eso:Translocation , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=803,806> .
+    
+    <http://dbpedia.org/resource/Brisbane_Airport>
+            rdfs:label     "Brisbane" , "Melbourne and Brisbane" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=846,854> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1236,1244> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=832,854> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev34>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "celebration" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=902,914> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev36>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "reschedule" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1025,1036> .
+    
+    <http://dbpedia.org/resource/Malaysia>
+            rdfs:label     "Malaysia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=789,797> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1002,1010> .
+    
+    <http://www.newsreader-project.eu/time/20051117>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx7>
+            a                time:Instant ;
+            rdfs:label       "November 17" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1041,1052> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20051117> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev38>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Self_motion , fn:Escaping , fn:Evading , fn:Fleeing , eso:Escaping ;
+            rdfs:label     "flight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1082,1088> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev39>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Process_stop ;
+            rdfs:label     "stop" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1228,1232> .
+    
+    <http://www.newsreader-project.eu/time/20041111>
+            a              time:DateTimeDescription ;
+            time:day       "---11"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx8>
+            a                time:Instant ;
+            rdfs:label       "November 11" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1249,1260> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20041111> .
+    
+    <http://www.newsreader-project.eu/time/20041116>
+            a              time:DateTimeDescription ;
+            time:day       "---16"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx9>
+            a                time:Instant ;
+            rdfs:label       "November 16" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1314,1325> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20041116> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Existence , fn:Left_to_do , fn:Remainder , fn:State_continue , eso:BeingInExistence ;
+            rdfs:label     "remain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=421,427> .
+    
+    <http://dbpedia.org/resource/Singapore>
+            rdfs:label     "Singapore" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=406,415> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=578,580> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Setting_out , fn:Activity_start , fn:Process_start , eso:StartingAnActivity , fn:Setting_fire ;
+            rdfs:label     "start" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=972,980> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev45>
+            a              sem:Event , nwrontology:contextualEvent , eso:Transportation , fn:Arriving , fn:Come_together , fn:Visiting , eso:Meeting , eso:Arriving ;
+            rdfs:label     "visit" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1011,1016> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev49>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=278,287> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev53>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=721,728> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=773,780> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=938,943> , <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1138,1145> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr2> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=40,142> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=22,44> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr6,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=138,164> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=46,77> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr5,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=68,89> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=947,994> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr33,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=931,955> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=485,492> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr18,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=461,492> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=618,622> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr23,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=598,622> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr23,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=618,655> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=563,633> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=627,929> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr24,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=627,655> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=803,929> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr28,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=803,854> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=902,929> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr31,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=880,914> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1025,1052> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr37,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=998,1036> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1041,1088> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr39,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1082,1098> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1228,1260> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1228,1325> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr43,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1228,1244> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=421,427> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr16,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=406,427> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=972,994> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr34,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=931,980> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1011,1016> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr36,rl78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1002,1016> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=278,576> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr10,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=271,287> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=773,929> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=938,994> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1138,1260> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=1138,1325> .
+    
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr32,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#char=931,943> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev18>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr6,rl12> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev18>
+            sem:hasActor    <http://dbpedia.org/resource/Asia> , <http://dbpedia.org/resource/Australia> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Travel@Area>
+                    <http://dbpedia.org/resource/Asia> , <http://dbpedia.org/resource/Australia> ;
+            pb:A1           <http://dbpedia.org/resource/Asia> , <http://dbpedia.org/resource/Australia> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr3> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr5,rl10> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev19>
+            sem:hasActor             <http://dbpedia.org/resource/France> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/France> ;
+            pb:A0                    <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr10> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr33,rl72> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev25>
+            sem:hasActor        <http://dbpedia.org/resource/Qantas> ;
+            eso:activity-agent  <http://dbpedia.org/resource/Qantas> ;
+            pb:A0               <http://dbpedia.org/resource/Qantas> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr11> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev26>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr18,rl32> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Singapore_Airlines> ;
+            pb:A0         <http://dbpedia.org/resource/Singapore_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr13> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev28>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr23,rl46> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev28>
+            sem:hasActor       <http://dbpedia.org/resource/Airbus_A380> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Wearing@Wearer>
+                    <http://dbpedia.org/resource/Airbus_A380> ;
+            pb:A0              <http://dbpedia.org/resource/Airbus_A380> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr23,rl48> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev28>
+            sem:hasActor         <http://dbpedia.org/resource/Singapore_Airlines> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Wearing@Clothing>
+                    <http://dbpedia.org/resource/Singapore_Airlines> ;
+            pb:A1                <http://dbpedia.org/resource/Singapore_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr14> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr15> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr24,rl50> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev29>
+            sem:hasActor  <http://dbpedia.org/resource/Singapore_Airlines> ;
+            pb:A1         <http://dbpedia.org/resource/Singapore_Airlines> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr19> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr28,rl62> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev32>
+            sem:hasPlace  <http://dbpedia.org/resource/Brisbane_Airport> ;
+            pb:AM-DIR     <http://dbpedia.org/resource/Brisbane_Airport> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr21> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr31,rl66> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev34>
+            sem:hasActor  <http://dbpedia.org/resource/Qantas> ;
+            pb:A0         <http://dbpedia.org/resource/Qantas> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr23> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr37,rl79> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev36>
+            sem:hasActor  <http://dbpedia.org/resource/Malaysia> ;
+            pb:A1         <http://dbpedia.org/resource/Malaysia> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr25> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr39,rl85> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev38>
+            sem:hasActor              <http://dbpedia.org/resource/France> ;
+            eso:translocation-goal    <http://dbpedia.org/resource/France> ;
+            eso:translocation-source  <http://dbpedia.org/resource/France> ;
+            pb:A1                     <http://dbpedia.org/resource/France> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr26> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr27> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr43,rl93> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Brisbane_Airport> ;
+            pb:A1         <http://dbpedia.org/resource/Brisbane_Airport> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr30> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev41>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr16,rl27> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev41>
+            sem:hasActor     <http://dbpedia.org/resource/Singapore> ;
+            eso:exist-theme  <http://dbpedia.org/resource/Singapore> ;
+            pb:A1            <http://dbpedia.org/resource/Singapore> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr33> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr34,rl75> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev44>
+            sem:hasActor        <http://dbpedia.org/resource/Qantas> ;
+            eso:activity-agent  <http://dbpedia.org/resource/Qantas> ;
+            pb:A0               <http://dbpedia.org/resource/Qantas> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr34> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev45>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr36,rl78> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev45>
+            sem:hasActor             <http://dbpedia.org/resource/Malaysia> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Malaysia> ;
+            pb:A0                    <http://dbpedia.org/resource/Malaysia> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr39> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr10,rl18> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev49>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr44> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr45> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr46> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tr47> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#pr32,rl70> {
+    <http://en.wikinews.org/wiki/Engine_troubles_delay_Airbus_superjumbo_tour#ev53>
+            sem:hasActor      <http://dbpedia.org/resource/Qantas> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Qantas> ;
+            pb:A0             <http://dbpedia.org/resource/Qantas> .
+}

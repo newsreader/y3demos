@@ -1,0 +1,1143 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "resigns" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=27,34> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Jobs" , "Steve Jobs" , "Steve Jobs '" , "Steve" , "his" , "Jobs '" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=16,26> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1415,1426> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1875,1880> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=944,946> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2151,2162> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=861,864> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1915,1918> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=904,905> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=568,578> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1165,1170> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=966,967> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=112,115> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=693,698> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=730,732> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=53,63> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=499,503> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1721,1725> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=878,882> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=693,697> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=221,225> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1081,1085> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=208,212> .
+    
+    <http://www.newsreader-project.eu/time/20110825>
+            a              time:DateTimeDescription ;
+            time:day       "---25"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1>
+            a                time:Instant ;
+            rdfs:label       "August 25 , 2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=36,51> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110825> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Self_motion , eso:Translocation ;
+            rdfs:label     "step" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=97,101> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "CEO" , "C.E.O." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=124,127> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=397,403> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple 's" , "Apple share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=0,5> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1904,1909> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2446,2451> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1624,1629> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2353,2358> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=955,960> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1205,1210> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=76,81> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=389,396> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=250,257> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=250,255> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=389,394> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2446,2458> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev23>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Success_or_failure ;
+            rdfs:label     "succeed" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=197,207> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110825> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Quitting , eso:LeavingAnOrganization ;
+            rdfs:label     "resign" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=226,234> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Board_vehicle , fn:Residence , fn:Temporary_stay , eso:BeingAtAPlace ;
+            rdfs:label     "board" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=258,263> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev28>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "chairman" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=544,552> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1782,1790> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1819,1827> .
+    
+    <http://dbpedia.org/resource/Genentech>
+            rdfs:label     "Genentech" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1831,1840> .
+    
+    <http://www.newsreader-project.eu/time/2004>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2>
+            a                time:Instant ;
+            rdfs:label       "2004" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=621,625> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2004> .
+    
+    <http://www.newsreader-project.eu/time/201101>
+            a              time:DateTimeDescription ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3>
+            a                time:Instant ;
+            rdfs:label       "January of this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=662,682> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201101> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6>
+            a                  time:Interval ;
+            rdfs:label         "1.5 to 2 year" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1646,1660> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20090825> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20110825> .
+    
+    <http://www.newsreader-project.eu/time/20090825>
+            a              time:DateTimeDescription ;
+            time:day       "---25"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Hostile_encounter , fn:Quarreling , eso:IntentionalEvent ;
+            rdfs:label     "fight" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=588,596> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Quitting , eso:LeavingAnOrganization , fn:Departing , fn:Path_shape , eso:Leaving , fn:Forming_relationships , fn:Giving ;
+            rdfs:label     "leave" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=650,655> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=723,728> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=883,887> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1179,1184> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev33>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "period" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=705,711> .
+    
+    <http://www.newsreader-project.eu/time/201103>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4>
+            a                time:Instant ;
+            rdfs:label       "March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=763,768> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201103> .
+    
+    <http://www.newsreader-project.eu/time/201106>
+            a              time:DateTimeDescription ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5>
+            a                time:Instant ;
+            rdfs:label       "June" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=773,777> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201106> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev40>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "friend" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=933,940> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Residence , eso:BeingAtAPlace ;
+            rdfs:label     "life" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=947,951> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Taking ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1089,1093> .
+    
+    <http://dbpedia.org/resource/James_Cook>
+            rdfs:label     "his" , "Cook" , "Tim Cook" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1212,1216> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1331,1335> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1337,1339> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1511,1514> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1193,1196> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1042,1050> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1398,1400> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1483,1485> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=180,188> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1251,1253> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev44>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , fn:Assistance , fn:Being_employed , fn:Working_a_post , eso:BeingEmployed , eso:Working , eso:Giving ;
+            rdfs:label     "serve" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1119,1126> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1898,1903> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev45>
+            a              sem:Event , nwrontology:contextualEvent , fn:Containing , fn:Retaining , eso:HavingInPossession ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1217,1221> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2189,2193> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev46>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "position" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1222,1231> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1770,1778> .
+    
+    <http://dbpedia.org/resource/IBM>
+            rdfs:label     "IBM" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1235,1238> .
+    
+    <http://dbpedia.org/resource/Compaq>
+            rdfs:label     "Compaq" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1243,1249> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Reforming_a_system , eso:Creating ;
+            rdfs:label     "overhaul" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1319,1327> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev49>
+            a              sem:Event , nwrontology:contextualEvent , eso:BeingAtAPlace , fn:Statement , fn:Being_located , fn:Change_posture , fn:Placing , fn:Posture , eso:Placing ;
+            rdfs:label     "stand" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1406,1411> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev52>
+            a              sem:Event , nwrontology:contextualEvent , fn:Conduct ;
+            rdfs:label     "performance" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1515,1526> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1630,1641> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev55>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , eso:BeingLeader ;
+            rdfs:label     "steer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1743,1748> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev59>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "expert" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2026,2032> .
+    
+    <http://dbpedia.org/resource/Stanford_University>
+            rdfs:label     "Stanford University" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2036,2055> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev61>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "attribute" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2140,2150> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/RichardDohertyRichardDoherty>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Richard Doherty" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2124,2139> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev66>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2359,2365> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2452,2458> .
+    
+    <http://www.newsreader-project.eu/time/20110824>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx7>
+            a                time:Instant ;
+            rdfs:label       "Wednesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2503,2512> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110824> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev69>
+            a              sem:Event , nwrontology:contextualEvent , fn:Path_shape , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Sidereal_appearance , fn:Travel , fn:Change_position_on_a_scale , fn:Dough_rising , eso:Increasing ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2459,2463> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev78>
+            a              sem:Event , nwrontology:contextualEvent , fn:Objective_influence ;
+            rdfs:label     "affect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1617,1623> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev79>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Activity_ongoing , fn:Process_continue ;
+            rdfs:label     "continue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1731,1739> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev80>
+            a              sem:Event , nwrontology:contextualEvent , eso:IntentionalEvent , fn:Activity_ongoing , fn:Process_continue ;
+            rdfs:label     "continue" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1886,1894> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev82>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Success_or_failure , fn:Successful_action ;
+            rdfs:label     "success" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2163,2170> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev84>
+            a              sem:Event , nwrontology:sourceEvent , fn:Choosing ;
+            rdfs:label     "choose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=87,93> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev85>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=116,120> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev86>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "founder" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=65,72> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev87>
+            a              sem:Event , nwrontology:contextualEvent , eso:Giving , fn:Sending , fn:Causation , fn:Motion ;
+            rdfs:label     "letter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=240,246> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev88>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "state" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=277,284> , <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,510> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev94>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "recommend" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1066,1077> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev95>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sending ;
+            rdfs:label     "post" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1197,1201> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev98>
+            a              sem:Event , nwrontology:sourceEvent , fn:Occupy_rank ;
+            rdfs:label     "place" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1427,1432> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev99>
+            a              sem:Event , nwrontology:sourceEvent , fn:Predicting ;
+            rdfs:label     "predict" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1569,1577> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AnalystCharlesGolvin>
+            a              nwrontology:PERSON ;
+            rdfs:label     "analyst Charles Golvin" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1546,1568> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr1> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=27,51> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=0,34> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=36,101> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr3,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=53,101> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=36,127> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr16,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=389,403> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr7,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=197,212> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr8,rl16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=221,234> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr10,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=250,263> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=544,625> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=544,682> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1646,1790> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr70,rl152>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1819,1840> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=588,625> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=588,682> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr23,rl49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=568,596> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=621,655> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=650,682> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr33,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=878,887> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=621,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=662,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=705,768> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=705,777> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr27,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=693,711> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=763,940> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=773,940> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr37,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=933,960> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=763,951> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=773,951> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr38,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=947,960> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr42,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1042,1093> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr73,rl157>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1875,1903> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr73,rl158>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1898,1909> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr46,rl96>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1212,1221> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1646,1778> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr48,rl101>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1212,1231> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr48,rl102>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1222,1249> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr52,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1319,1335> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr54,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1406,1432> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1630,1660> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr62,rl135>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1624,1641> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1646,1748> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr66,rl143>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1721,1748> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr78,rl170>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2013,2055> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr82,rl178>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2124,2150> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr82,rl179>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2140,2170> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2452,2512> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr93,rl205>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2353,2365> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2459,2512> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr96,rl209>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2446,2463> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1617,1660> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr61,rl134>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1617,1641> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1731,1739> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr65,rl140>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1721,1739> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr81>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1886,1894> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr72,rl154>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1875,1894> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr83,rl181>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=2151,2170> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=36,93> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr2,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=53,93> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=36,120> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr4,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=53,120> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=36,72> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr5,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=65,81> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr9,rl18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=221,246> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,625> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=504,682> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr19,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=499,510> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr41,rl84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1042,1077> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr41,rl86>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1066,1085> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr47,rl99>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1193,1210> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr55,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1415,1432> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1569,1660> .
+    
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr59,rl126>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#char=1546,1577> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr2> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr3,rl4> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr3> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr16,rl36> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr4> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr7,rl14> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev23>
+            sem:hasActor                <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Success_or_failure@Goal>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1                       <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr5> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr8,rl16> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev24>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:employment-employee  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr6> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr10,rl20> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr9> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr10> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr11> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr70,rl152> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/Genentech> ;
+            pb:A2         <http://dbpedia.org/resource/Genentech> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr12> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr13> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr23,rl49> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev29>
+            sem:hasActor                 <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Hostile_encounter@Side_1>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Quarreling@Arguer1>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                        <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr16> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr17> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr33,rl70> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev31>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr20> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr21> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr22> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr23> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr27,rl56> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr36> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr37> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr37,rl77> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev40>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr38> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr39> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr38,rl79> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev41>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:atPlace-location  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr42> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr42,rl88> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev43>
+            sem:hasActor     <http://dbpedia.org/resource/James_Cook> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Taking@Agent>
+                    <http://dbpedia.org/resource/James_Cook> ;
+            pb:A0            <http://dbpedia.org/resource/James_Cook> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr43> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr73,rl157> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev44>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr73,rl158> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev44>
+            sem:hasActor                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Benefitted_party>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2                           <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr44> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr46,rl96> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev45>
+            sem:hasActor             <http://dbpedia.org/resource/James_Cook> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/James_Cook> ;
+            pb:A0                    <http://dbpedia.org/resource/James_Cook> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr45> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr48,rl101> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev46>
+            sem:hasActor  <http://dbpedia.org/resource/James_Cook> ;
+            pb:A0         <http://dbpedia.org/resource/James_Cook> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr48,rl102> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev46>
+            sem:hasActor  <http://dbpedia.org/resource/IBM> , <http://dbpedia.org/resource/Compaq> ;
+            pb:A2         <http://dbpedia.org/resource/IBM> , <http://dbpedia.org/resource/Compaq> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr47> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr52,rl110> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev48>
+            sem:hasActor                 <http://dbpedia.org/resource/James_Cook> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reforming_a_system@Agent>
+                    <http://dbpedia.org/resource/James_Cook> ;
+            pb:A0                        <http://dbpedia.org/resource/James_Cook> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr48> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev49>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr54,rl114> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev49>
+            sem:hasActor            <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:atPlace-location    <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-goal  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A2                   <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr51> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev52>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr62,rl135> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev52>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Conduct@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr54> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev55>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr66,rl143> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev55>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr58> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr78,rl170> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev59>
+            sem:hasActor  <http://dbpedia.org/resource/Stanford_University> ;
+            pb:A0         <http://dbpedia.org/resource/Stanford_University> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr60> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr82,rl178> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev61>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/RichardDohertyRichardDoherty> ;
+            pb:A0         <http://www.newsreader-project.eu/data/wikinews/entities/RichardDohertyRichardDoherty> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr82,rl179> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev61>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr65> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr93,rl205> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev66>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr68> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr96,rl209> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev69>
+            sem:hasActor       <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1              <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr79> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev78>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr61,rl134> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev78>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Objective_influence@Dependent_entity>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr80> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev79>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr65,rl140> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev79>
+            sem:hasActor               <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_continue@Event>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                      <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr81> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev80>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr72,rl154> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev80>
+            sem:hasActor               <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Activity_ongoing@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Process_continue@Event>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                      <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr82> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr83,rl181> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev82>
+            sem:hasActor                 <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Success_or_failure@Agent>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Successful_action@Cause>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                        <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr84> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev84>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr2,rl2> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev84>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr85> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev85>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr4,rl6> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev85>
+            sem:hasActor       <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Sender>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0              <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr86> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev86>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr5,rl9> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev86>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr87> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev87>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr9,rl18> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev87>
+            sem:hasActor            <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                   <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr88> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr89> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev88>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr19,rl42> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev88>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr98> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev94>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr41,rl84> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev94>
+            sem:hasActor  <http://dbpedia.org/resource/James_Cook> ;
+            pb:A1         <http://dbpedia.org/resource/James_Cook> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr41,rl86> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev94>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr99> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev95>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr47,rl99> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev95>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sending@Theme>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr102> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev98>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr55,rl117> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev98>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tr103> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev99>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#pr59,rl126> {
+    <http://en.wikinews.org/wiki/Apple_executive_Steve_Jobs_resigns#ev99>
+            sem:hasActor            <http://www.newsreader-project.eu/data/wikinews/entities/AnalystCharlesGolvin> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Predicting@Evidence>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AnalystCharlesGolvin> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Predicting@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AnalystCharlesGolvin> ;
+            pb:A0                   <http://www.newsreader-project.eu/data/wikinews/entities/AnalystCharlesGolvin> .
+}

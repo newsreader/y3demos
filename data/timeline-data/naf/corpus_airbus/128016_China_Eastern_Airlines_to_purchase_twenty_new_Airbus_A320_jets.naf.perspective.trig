@@ -1,0 +1,210 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets>
+          prov:wasAttributedTo  nwrauthor:Cirt .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=133,139>
+          rdfs:comment        "stated" ;
+          rdfs:label          "signed" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,108> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <u_u_u> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/China_Eastern_Airlines> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,108>
+          rdfs:label          "stated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=142,150>
+          rdfs:comment        "stated" ;
+          rdfs:label          "contract" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,108> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=154,162>
+          rdfs:comment        "stated" ;
+          rdfs:label          "purchase" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,108> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=165,170>
+          rdfs:comment        "stated" ;
+          rdfs:label          "score" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=102,108> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=26,34>
+          rdfs:label          "purchase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr0>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=297,303>
+          rdfs:label          "signed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=308,317>
+          rdfs:label          "agreement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=351,355>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=378,382>
+          rdfs:label          "meet" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr5>
+          rdf:value             <u_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=394,400>
+          rdfs:label          "demand" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=424,430>
+          rdfs:label          "routes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=446,454>
+          rdfs:label          "approved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=486,491>
+          rdfs:label          "board" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=532,540>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=558,565>
+          rdfs:label          "waiting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=573,581>
+          rdfs:label          "approval" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=602,613>
+          rdfs:label          "authorities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=631,639>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=643,648>
+          rdfs:label          "start" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr15>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=649,659>
+          rdfs:label          "delivering" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=672,675>
+          rdfs:label          "end" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=755,762>
+          rdfs:label          "selling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr18>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=804,808>
+          rdfs:label          "used" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets#char=846,852>
+          rdfs:label          "routes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets_dAttr20>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/China_Eastern_Airlines_to_purchase_twenty_new_Airbus_A320_jets> .
+}

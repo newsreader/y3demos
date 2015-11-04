@@ -1,0 +1,458 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev7>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=19,23> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=185,192> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=396,400> .
+    
+    <http://dbpedia.org/resource/Daimler_AG>
+            rdfs:label     "DaimlerChrysler" , "Daimler AG" , "Chrysler" , "Chrysler Holding LLC" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=0,15> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=339,349> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1051,1061> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=376,391> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=410,413> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=423,431> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=932,940> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=614,622> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=354,374> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1032,1047> .
+    
+    <http://www.newsreader-project.eu/time/20070414>
+            a              time:DateTimeDescription ;
+            time:day       "---14"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx1>
+            a                time:Instant ;
+            rdfs:label       "April 14 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=57,71> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070414> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change , fn:Undergo_change ;
+            rdfs:label     "change" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=328,335> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=1003,1009> .
+    
+    <http://www.newsreader-project.eu/time/20070514>
+            a              time:DateTimeDescription ;
+            time:day       "---14"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070514> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev10>
+            a              sem:Event , nwrontology:contextualEvent , fn:Memory ;
+            rdfs:label     "retain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=433,442> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "stake" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=414,419> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=682,687> .
+    
+    <http://www.newsreader-project.eu/time/200604>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2>
+            a                time:Instant ;
+            rdfs:label       "April of last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,709> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200604> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev14>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Taking_time ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=542,546> .
+    
+    <http://dbpedia.org/resource/Cerberus_Capital_Management>
+            rdfs:label     "cerberus" , "Cerberus Capital Management" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=239,266> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=519,527> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=624,632> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Expensiveness ;
+            rdfs:label     "cost" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=605,610> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cotheme ;
+            rdfs:label     "lead" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=638,641> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Placing ;
+            rdfs:label     "arm" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=733,736> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=740,742> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "financing" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=723,732> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev25>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=826,835> .
+    
+    <http://dbpedia.org/resource/Canadian_Auto_Workers>
+            rdfs:label     "canadian Auto Workers" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=839,860> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev29>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment , fn:Assessing ;
+            rdfs:label     "equity" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=227,233> .
+    
+    <http://dbpedia.org/resource/New_York_City>
+            rdfs:label     "New York city-based" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=199,218> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev32>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agree" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,538> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=751,755> , <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=861,865> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev36>
+            a              sem:Event , nwrontology:sourceEvent , fn:Agree_or_refuse_to_act , fn:Be_in_agreement_on_assessment , fn:Compatibility , fn:Make_agreement_on_action ;
+            rdfs:label     "agreement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=917,926> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev37>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "bargaining" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=906,916> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr1> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev7>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=19,192> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=376,400> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr8,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=328,374> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr10,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=376,442> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=682,709> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr12,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=410,431> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=542,709> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr16,rl34>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=519,546> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=605,709> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr18,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=605,622> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=638,709> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr20,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=624,641> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,736> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr25,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=733,742> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,732> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr26,rl53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=723,742> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,835> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr31,rl60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=822,860> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=57,233> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr5,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=199,233> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=532,709> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr15,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=519,538> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,755> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr30,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=807,865> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=917,926> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr33,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=917,940> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=691,916> .
+    
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr34,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#char=906,940> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr9,rl20> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev7>
+            sem:hasActor            <http://dbpedia.org/resource/Daimler_AG> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A0                   <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr3> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr8,rl19> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev9>
+            sem:hasActor                    <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Final_category>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Undergo_change@Final_category>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A2                           <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr4> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev10>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr10,rl23> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev10>
+            sem:hasActor        <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Memory@Cognizer>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A0               <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr5> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr12,rl27> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A2         <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr7> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr16,rl34> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev14>
+            sem:hasActor  <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            pb:A0         <http://dbpedia.org/resource/Cerberus_Capital_Management> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr9> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr18,rl38> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev16>
+            sem:hasPlace  <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr11> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr20,rl40> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev18>
+            sem:hasActor      <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cotheme@Theme>
+                    <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            pb:A0             <http://dbpedia.org/resource/Cerberus_Capital_Management> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr14> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr25,rl52> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev21>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr15> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr26,rl53> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr18> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr31,rl60> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A0         <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr22> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr5,rl12> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev29>
+            sem:hasActor           <http://dbpedia.org/resource/New_York_City> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Assessor>
+                    <http://dbpedia.org/resource/New_York_City> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Cognizer>
+                    <http://dbpedia.org/resource/New_York_City> ;
+            pb:A0                  <http://dbpedia.org/resource/New_York_City> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr25> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr15,rl32> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev32>
+            sem:hasActor             <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Speaker>
+                    <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_1>
+                    <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_1>
+                    <http://dbpedia.org/resource/Cerberus_Capital_Management> ;
+            pb:A0                    <http://dbpedia.org/resource/Cerberus_Capital_Management> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr26> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr30,rl58> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev33>
+            sem:hasActor             <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Canadian_Auto_Workers> ;
+            pb:A0                    <http://dbpedia.org/resource/Canadian_Auto_Workers> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr29> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev36>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr33,rl66> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev36>
+            sem:hasActor             <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Agree_or_refuse_to_act@Means>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Be_in_agreement_on_assessment@Topic>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compatibility@Item_2>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Party_2>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Make_agreement_on_action@Topic>
+                    <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A2                    <http://dbpedia.org/resource/Daimler_AG> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tr30> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#pr34,rl68> {
+    <http://en.wikinews.org/wiki/DaimlerChrysler_to_sell_Chrysler_Group_for_$7.4_Billion#ev37>
+            sem:hasActor  <http://dbpedia.org/resource/Daimler_AG> ;
+            pb:A2         <http://dbpedia.org/resource/Daimler_AG> .
+}

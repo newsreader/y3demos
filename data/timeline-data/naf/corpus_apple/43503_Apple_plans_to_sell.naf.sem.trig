@@ -1,0 +1,191 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=15,19> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=83,87> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=182,187> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=241,245> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Computer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=0,5> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=848,853> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=369,371> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=260,265> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=53,67> .
+    
+    <http://www.newsreader-project.eu/time/20060620>
+            a              time:DateTimeDescription ;
+            time:day       "---20"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 20 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=38,51> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060620> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev13>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "executive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=266,276> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20060620> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Participation ;
+            rdfs:label     "shareholder" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=896,907> .
+    
+    <http://dbpedia.org/resource/The_Walt_Disney_Company>
+            rdfs:label     "Disney" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=911,917> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=1131,1137> , <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=919,924> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev38>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=6,11> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev39>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=71,79> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev41>
+            a              sem:Event , nwrontology:sourceEvent , fn:Discussion ;
+            rdfs:label     "negotiation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=284,296> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr1> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=15,87> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=0,19> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr12,rl23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=260,276> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr37,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=896,917> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=6,51> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=0,11> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=38,79> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=53,79> .
+    
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr13,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#char=260,296> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev9>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr5> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr12,rl23> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev13>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr18> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr37,rl77> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev27>
+            sem:hasActor            <http://dbpedia.org/resource/The_Walt_Disney_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Participation@Event>
+                    <http://dbpedia.org/resource/The_Walt_Disney_Company> ;
+            pb:A1                   <http://dbpedia.org/resource/The_Walt_Disney_Company> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr29> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev38>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr30> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev39>
+            sem:hasActor      <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0             <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tr32> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#pr13,rl25> {
+    <http://en.wikinews.org/wiki/Apple_plans_to_sell_movies_on_iTunes#ev41>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Discussion@Interlocutor_1>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                         <http://dbpedia.org/resource/Apple_Inc.> .
+}

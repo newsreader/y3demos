@@ -1,0 +1,376 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived>
+          prov:wasAttributedTo  nwrauthor:Zachary .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=109,115>
+          rdfs:comment        "reported" ;
+          rdfs:label          "rename" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0>
+          rdf:value            <CERTAIN_FUTURE_POS> , <CERTAIN_NON_FUTURE_POS> , <PROBABLE_NON_FUTURE_POS> , <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/ford+motor+company+ceo+alan+mulally> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=204,212>
+          rdfs:comment        "reported" ;
+          rdfs:label          "expected" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=195,200>
+          rdfs:comment        "reported" ;
+          rdfs:label          "model" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=219,227>
+          rdfs:comment        "reported" ;
+          rdfs:label          "launched" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=254,259>
+          rdfs:comment        "reported" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=231,238>
+          rdfs:comment        "reported" ;
+          rdfs:label          "improve" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=85,93> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=320,324>
+          rdfs:comment        "decision" ;
+          rdfs:label          "name" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=308,316> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr1>
+          rdf:value            <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/ford+%27s> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=308,316>
+          rdfs:label          "decision" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=482,492>
+          rdfs:comment        "plans" ;
+          rdfs:label          "nameplates" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=444,449> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr2>
+          rdf:value            <CERTAIN_u_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/entities/MulallyMulally> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=444,449>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=453,461>
+          rdfs:comment        "plans" ;
+          rdfs:label          "reviving" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=444,449> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=18,25>
+          rdfs:label          "revived" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr0>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=291,295>
+          rdfs:label          "says" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=375,379>
+          rdfs:label          "move" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=397,402>
+          rdfs:label          "names" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=385,390>
+          rdfs:label          "makes" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=428,434>
+          rdfs:label          "result" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=595,605>
+          rdfs:label          "introduced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=648,655>
+          rdfs:label          "rewrote" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=660,665>
+          rdfs:label          "rules" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr11>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=670,678>
+          rdfs:label          "creating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr12>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=692,698>
+          rdfs:label          "pushed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=732,738>
+          rdfs:label          "follow" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=745,752>
+          rdfs:label          "leading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=765,775>
+          rdfs:label          "revolution" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=796,803>
+          rdfs:label          "Detroit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=854,862>
+          rdfs:label          "survived" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=885,892>
+          rdfs:label          "selling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=930,942>
+          rdfs:label          "discontinued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=974,977>
+          rdfs:label          "run" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=993,1001>
+          rdfs:label          "destined" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1012,1021>
+          rdfs:label          "customers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1036,1038>
+          rdfs:label          "go" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr24>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1059,1069>
+          rdfs:label          "remembered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1081,1083>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1070,1076>
+          rdfs:label          "asking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1257,1265>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1135,1143>
+          rdfs:label          "expected" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1167,1171>
+          rdfs:label          "turn" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr30>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1157,1163>
+          rdfs:label          "change" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1269,1273>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr32>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1274,1279>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1299,1303>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr34>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1317,1322>
+          rdfs:label          "known" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived#char=1351,1356>
+          rdfs:label          "known" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford_Taurus_to_be_revived> .
+}

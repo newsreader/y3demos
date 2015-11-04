@@ -1,0 +1,505 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , fn:Building , fn:Creating , fn:Intentionally_create , fn:Manufacturing , eso:Increasing ;
+            rdfs:label     "double" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=11,18> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1528,1535> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Inc." , "Apple 's" , "the Apple 's" , "Apple Inc" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=0,10> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=19,22> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1143,1153> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=801,806> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=953,960> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=929,934> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=435,446> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=239,246> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=80,85> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=239,244> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=439,444> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=953,958> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1501,1510> .
+    
+    <http://www.newsreader-project.eu/time/2004>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13>
+            a                time:Instant ;
+            rdfs:label       "2004" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1522,1526> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2004> .
+    
+    <http://www.newsreader-project.eu/time/2005>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14>
+            a                time:Instant ;
+            rdfs:label       "2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1539,1543> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://www.newsreader-project.eu/time/2006>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15>
+            a                time:Instant ;
+            rdfs:label       "2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1575,1579> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Cause_change_of_position_on_a_scale , fn:Change_position_on_a_scale , eso:Increasing ;
+            rdfs:label     "increase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=109,117> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=423,431> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1426,1435> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1548,1557> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx2>
+            a                  time:Interval ;
+            rdfs:label         "the last quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=140,156> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20061001> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20061231> .
+    
+    <http://www.newsreader-project.eu/time/20061001>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20061231>
+            a              time:DateTimeDescription ;
+            time:day       "---31"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20061230>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx3>
+            a                time:Instant ;
+            rdfs:label       "December 30 , 2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=170,187> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20061230> .
+    
+    <http://www.newsreader-project.eu/time/20061225>
+            a              time:DateTimeDescription ;
+            time:day       "---25"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6>
+            a                time:Instant ;
+            rdfs:label       "Christmas" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=349,358> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20061225> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8>
+            a                time:Instant ;
+            rdfs:label       "the same period of the last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=507,539> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Competition , fn:Performers_and_roles , eso:Creating , eso:IntentionalEvent ;
+            rdfs:label     "player" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=266,273> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1185,1192> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx4>
+            a                time:Instant ;
+            rdfs:label       "the Christmas" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=281,294> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20061225> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11>
+            a                  time:Interval ;
+            rdfs:label         "the 1 quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1103,1120> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20070101> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20070330> .
+    
+    <http://www.newsreader-project.eu/time/20070101>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20070330>
+            a              time:DateTimeDescription ;
+            time:day       "---30"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=308,313> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=359,364> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=447,452> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1627,1632> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev18>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Causation ;
+            rdfs:label     "result" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=328,334> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=913,920> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=961,968> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Manufacturing , eso:Creating , fn:Behind_the_scenes , fn:Cause_to_start , fn:Cause_change ;
+            rdfs:label     "produce" , "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=789,797> , <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1027,1031> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx9>
+            a                time:Instant ;
+            rdfs:label       "2006" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=660,664> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2006> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx10>
+            a                time:Instant ;
+            rdfs:label       "2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=702,706> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2005> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1154,1158> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Increasing ;
+            rdfs:label     "triple" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1511,1518> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr1> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1522,1535> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1528,1543> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1528,1579> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=0,18> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=109,156> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=109,187> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=349,431> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=423,539> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1522,1557> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1539,1557> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1548,1579> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr16,rl36>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=423,452> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=266,294> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1103,1192> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr10,rl25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=239,273> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=281,313> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=349,452> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=359,539> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr17,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=435,452> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=328,358> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=328,539> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr34,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=953,968> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=660,797> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=702,797> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1027,1120> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr29,rl62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=789,806> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1103,1158> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr39,rl87>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1143,1158> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1511,1526> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1511,1543> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr53>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1511,1579> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr48,rl106>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#char=1480,1518> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr2> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr3> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev11>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-item       <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr8> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr9> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr10> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr11> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr12> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr13> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr14> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr16,rl36> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr15> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr16> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr10,rl25> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev14>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Competition@Participant_1>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Performers_and_roles@Performance>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr17> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr18> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr19> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr17,rl37> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev15>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr25> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr26> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr34,rl74> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev18>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Cause>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr40> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr41> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr42> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr29,rl62> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev25>
+            sem:hasActor                   <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Artist>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_to_start@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                          <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr45> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr39,rl87> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev28>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                   <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr51> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx13> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr52> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx14> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tr53> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#tmx15> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#pr48,rl106> {
+    <http://en.wikinews.org/wiki/Apple_Inc._doubled_its_profits#ev31>
+            sem:hasActor            <http://dbpedia.org/resource/Apple_Inc.> ;
+            eso:quantity-attribute  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                   <http://dbpedia.org/resource/Apple_Inc.> .
+}

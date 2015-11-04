@@ -1,0 +1,377 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=681,687>
+          rdfs:comment        "decided" ;
+          rdfs:label          "remove" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=670,677> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_sAttr0>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Airbus> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=670,677>
+          rdfs:label          "decided" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=706,714>
+          rdfs:comment        "decided" ;
+          rdfs:label          "continue" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=670,677> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=719,725>
+          rdfs:comment        "decided" ;
+          rdfs:label          "flight" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=670,677> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=24,31>
+          rdfs:label          "delayed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=74,80>
+          rdfs:label          "flight" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=160,167>
+          rdfs:label          "delayed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=194,202>
+          rdfs:label          "accident" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=234,240>
+          rdfs:label          "serves" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=271,279>
+          rdfs:label          "accident" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=280,288>
+          rdfs:label          "occurred" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=296,300>
+          rdfs:label          "push" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=327,334>
+          rdfs:label          "leaving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=337,344>
+          rdfs:label          "parking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=372,375>
+          rdfs:label          "fly" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr10>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=509,515>
+          rdfs:label          "struck" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=434,440>
+          rdfs:label          "pushed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=478,481>
+          rdfs:label          "tug" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=482,490>
+          rdfs:label          "operator" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=520,524>
+          rdfs:label          "side" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=548,556>
+          rdfs:label          "crumpled" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=584,592>
+          rdfs:label          "designed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=596,603>
+          rdfs:label          "improve" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr18>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=609,619>
+          rdfs:label          "efficiency" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr19>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=750,754>
+          rdfs:label          "left" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=818,826>
+          rdfs:label          "carrying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=807,816>
+          rdfs:label          "departure" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=859,867>
+          rdfs:label          "intended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=871,881>
+          rdfs:label          "counteract" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr25>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=882,892>
+          rdfs:label          "criticisms" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=926,929>
+          rdfs:label          "has" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=941,949>
+          rdfs:label          "wingspan" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=995,1000>
+          rdfs:label          "crews" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1020,1028>
+          rdfs:label          "operated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1055,1067>
+          rdfs:label          "demonstrates" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1079,1087>
+          rdfs:label          "problems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1068,1078>
+          rdfs:label          "continuing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr33>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1123,1131>
+          rdfs:label          "suffered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1159,1165>
+          rdfs:label          "opened" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1217,1226>
+          rdfs:label          "discovery" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr36>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1236,1242>
+          rdfs:label          "cracks" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr37>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1254,1262>
+          rdfs:label          "taxiways" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr38>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1298,1302>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr39>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1313,1321>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr40>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1333,1337>
+          rdfs:label          "tour" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#char=1346,1359>
+          rdfs:label          "demonstrating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident_dAttr42>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident> .
+}

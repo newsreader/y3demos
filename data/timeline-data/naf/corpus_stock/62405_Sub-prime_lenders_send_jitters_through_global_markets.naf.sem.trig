@@ -1,0 +1,515 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "lender" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=174,181> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=821,828> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states" , "each" , "Paris '" , "the US" , "these lender" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=185,202> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=281,283> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=305,309> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=606,608> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=416,422> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=713,715> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1203,1205> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1199,1205> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1042,1055> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx2>
+            a                  time:Interval ;
+            rdfs:label         "two week" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=76,85> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20070313> .
+    
+    <http://www.newsreader-project.eu/time/20070313>
+            a              time:DateTimeDescription ;
+            time:day       "---13"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev27>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=297,304> .
+    
+    <http://www.newsreader-project.eu/time/20070312>
+            a              time:DateTimeDescription ;
+            time:day       "---12"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=332,338> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070312> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx4>
+            a                time:Instant ;
+            rdfs:label       "2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=391,395> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_pay , eso:Paying ;
+            rdfs:label     "payment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=555,563> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5>
+            a                  time:Interval ;
+            rdfs:label         "the 4 quarter" ;
+            gaf:denotedBy      <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=623,641> ;
+            time:hasBeginning  <http://www.newsreader-project.eu/time/20061001> ;
+            time:hasEnd        <http://www.newsreader-project.eu/time/20061231> .
+    
+    <http://www.newsreader-project.eu/time/20061001>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://www.newsreader-project.eu/time/20061231>
+            a              time:DateTimeDescription ;
+            time:day       "---31"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--12"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2006"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Residence , eso:BeingAtAPlace ;
+            rdfs:label     "home" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=609,614> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Behind_the_scenes , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "director" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=981,989> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Housing study" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=993,1008> .
+    
+    <http://dbpedia.org/resource/Lawrence_Summers>
+            rdfs:label     "Harvard University" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1012,1030> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070313> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Manufacturing ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1067,1071> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Lending , eso:Lending ;
+            rdfs:label     "loan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1072,1077> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1622,1627> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1082,1086> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev44>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "lot" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1035,1038> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev66>
+            a              sem:Event , nwrontology:contextualEvent , fn:Activity_start , fn:Process_start , fn:Setting_fire , fn:Setting_out , eso:StartingAnActivity ;
+            rdfs:label     "start" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1056,1063> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev70>
+            a              sem:Event , nwrontology:contextualEvent , fn:Causation , fn:Motion , fn:Sending , eso:Giving ;
+            rdfs:label     "send" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=207,214> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=98,102> .
+    
+    <http://dbpedia.org/resource/China>
+            rdfs:label     "China" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=92,97> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev75>
+            a              sem:Event , nwrontology:sourceEvent , fn:Reporting , fn:Statement ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=536,544> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/theMortgageBankersAssociation>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "the Mortgage Bankers Association" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=503,535> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev76>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Statement , fn:Choosing , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=958,962> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1372,1376> , <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1480,1484> .
+    
+    <http://dbpedia.org/resource/New_York_Stock_Exchange>
+            rdfs:label     "the New York Stock Exchange" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1340,1367> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/AccreditedHomeLoanLending>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "Accredited Home Loan Lending" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1405,1433> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev77>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny , fn:Education_teaching ;
+            rdfs:label     "study" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1001,1008> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev79>
+            a              sem:Event , nwrontology:contextualEvent , fn:Scrutiny , fn:Criminal_investigation , fn:Research ;
+            rdfs:label     "investigation" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1325,1338> .
+    
+    <http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission>
+            rdfs:label     "SEC" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1321,1324> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr2> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=76,181> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr6,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=174,202> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=297,338> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=297,395> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr8,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=281,304> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=555,641> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr17,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=555,614> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=609,641> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr19,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=606,614> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr30,rl71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=981,1008> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr30,rl72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=981,1030> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr33,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1033,1071> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr34,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1033,1077> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr35,rl80>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1033,1086> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr36,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1035,1055> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr32,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1033,1063> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=76,214> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=92,102> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=536,641> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr16,rl38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=503,544> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr43,rl97>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1340,1376> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr45,rl102>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1405,1484> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr31,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=993,1008> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr31,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1001,1030> .
+    
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr41,rl93>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#char=1321,1338> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr6,rl15> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev25>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr4> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr5> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr8,rl17> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev27>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr14> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr17,rl43> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev32>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr16> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr19,rl48> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev34>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr22> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr30,rl71> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev40>
+            sem:hasActor  <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Production>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> ;
+            pb:A1         <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr30,rl72> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev40>
+            sem:hasActor                 <http://dbpedia.org/resource/Lawrence_Summers> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Behind_the_scenes@Studio>
+                    <http://dbpedia.org/resource/Lawrence_Summers> ;
+            pb:A2                        <http://dbpedia.org/resource/Lawrence_Summers> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr23> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr33,rl77> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev41>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr24> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr34,rl79> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev42>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            pb:A0         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr25> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr35,rl80> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev43>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr26> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr36,rl82> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev44>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            pb:A1         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr48> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev66>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr32,rl75> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev66>
+            sem:hasActor  <http://dbpedia.org/resource/United_States> ;
+            eso:activity  <http://dbpedia.org/resource/United_States> ;
+            pb:A1         <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr52> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr3,rl8> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev70>
+            sem:hasActor            <http://dbpedia.org/resource/China> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/China> ;
+            pb:A0                   <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr60> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr16,rl38> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev75>
+            sem:hasActor           <http://www.newsreader-project.eu/data/wikinews/entities/theMortgageBankersAssociation> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theMortgageBankersAssociation> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/theMortgageBankersAssociation> ;
+            pb:A0                  <http://www.newsreader-project.eu/data/wikinews/entities/theMortgageBankersAssociation> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr61> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr43,rl97> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev76>
+            sem:hasActor             <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/New_York_Stock_Exchange> ;
+            pb:A0                    <http://dbpedia.org/resource/New_York_Stock_Exchange> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr45,rl102> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev76>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/AccreditedHomeLoanLending> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AccreditedHomeLoanLending> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AccreditedHomeLoanLending> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/AccreditedHomeLoanLending> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/AccreditedHomeLoanLending> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr62> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev77>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr31,rl73> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev77>
+            sem:hasActor                   <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Education_teaching@Student>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> ;
+            pb:A0                          <http://www.newsreader-project.eu/data/wikinews/entities/HousingStudies> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr31,rl74> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev77>
+            sem:hasPlace  <http://dbpedia.org/resource/Lawrence_Summers> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Lawrence_Summers> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tr64> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev79>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#pr41,rl93> {
+    <http://en.wikinews.org/wiki/Sub-prime_lenders_send_jitters_through_global_markets#ev79>
+            sem:hasActor            <http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Criminal_investigation@Investigator>
+                    <http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Research@Researcher>
+                    <http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Scrutiny@Cognizer>
+                    <http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission> ;
+            pb:A0                   <http://dbpedia.org/resource/U.S._Securities_and_Exchange_Commission> .
+}

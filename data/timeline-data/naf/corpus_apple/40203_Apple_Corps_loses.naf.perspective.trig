@@ -1,0 +1,342 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=467,474>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "branded" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1>
+          rdf:value            <u_NON_FUTURE_u> , <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Anthony_Mann> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398>
+          rdfs:label          "agreed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=489,494>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "sells" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=507,515>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "conclude" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=560,567>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "suggest" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=525,528>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "use" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=542,546>
+          rdfs:comment        "agreed" ;
+          rdfs:label          "logo" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=579,589>
+          rdfs:comment        "agreed" , "suggest" ;
+          rdfs:label          "connection" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=560,567> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=608,612>
+          rdfs:comment        "agreed" , "suggest" ;
+          rdfs:label          "work" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=392,398> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=560,567> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr1> , <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr2>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+use+of+the+apple+logo> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1045,1049>
+          rdfs:comment        "decided" ;
+          rdfs:label          "take" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1034,1041> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr4>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Apple_Corps> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1034,1041>
+          rdfs:label          "decided" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1054,1058>
+          rdfs:comment        "decided" ;
+          rdfs:label          "case" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1034,1041> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_sAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=12,17>
+          rdfs:label          "loses" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=24,28>
+          rdfs:label          "case" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=79,84>
+          rdfs:label          "label" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=97,101>
+          rdfs:label          "lost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=112,116>
+          rdfs:label          "case" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=177,183>
+          rdfs:label          "argued" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=218,224>
+          rdfs:label          "breach" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=237,247>
+          rdfs:label          "settlement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=248,255>
+          rdfs:label          "reached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=334,338>
+          rdfs:label          "sell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr9>
+          rdf:value             <CERTAIN_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=345,352>
+          rdfs:label          "branded" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=421,428>
+          rdfs:label          "defence" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=643,649>
+          rdfs:label          "showed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=704,712>
+          rdfs:label          "appeared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=699,703>
+          rdfs:label          "logo" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=730,738>
+          rdfs:label          "download" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=749,758>
+          rdfs:label          "purchased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=859,867>
+          rdfs:label          "extended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=822,828>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=871,881>
+          rdfs:label          "invitation" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=919,924>
+          rdfs:label          "loved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=963,967>
+          rdfs:label          "work" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=980,983>
+          rdfs:label          "get" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1131,1135>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1083,1091>
+          rdfs:label          "Speaking" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1180,1188>
+          rdfs:label          "consider" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1149,1156>
+          rdfs:label          "respect" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1170,1175>
+          rdfs:label          "judge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1196,1203>
+          rdfs:label          "reached" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer#char=1214,1224>
+          rdfs:label          "conclusion" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Corps_loses_court_case_against_Apple_Computer> .
+}

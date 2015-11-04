@@ -1,0 +1,565 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=171,176> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1502,1507> .
+    
+    <http://dbpedia.org/resource/Japan>
+            rdfs:label     "Japan" , "Japan 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=150,155> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=465,470> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1355,1360> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=350,357> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=150,157> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=350,355> .
+    
+    <http://dbpedia.org/resource/BSE_SENSEX>
+            rdfs:label     "Sensex" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1495,1501> .
+    
+    <http://dbpedia.org/resource/Mumbai>
+            rdfs:label     "Mumbai" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1511,1517> .
+    
+    <http://www.newsreader-project.eu/time/20081027>
+            a              time:DateTimeDescription ;
+            time:day       "---27"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=82,88> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081027> .
+    
+    <http://www.newsreader-project.eu/time/198210>
+            a              time:DateTimeDescription ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1982"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5>
+            a                time:Instant ;
+            rdfs:label       "October 1982" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=205,217> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/198210> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "save" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=460,464> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Path_shape , fn:Sidereal_appearance , fn:Travel , fn:Change_position_on_a_scale , fn:Dough_rising , eso:Increasing ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=634,638> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "U.S." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=622,626> .
+    
+    <http://www.newsreader-project.eu/time/20081024>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--10"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx6>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=729,735> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081024> .
+    
+    <http://www.newsreader-project.eu/time/199508>
+            a              time:DateTimeDescription ;
+            time:month     "--08"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "1995"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx7>
+            a                time:Instant ;
+            rdfs:label       "August 1995" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=823,834> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/199508> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Exchange , fn:Transfer , eso:ChangeOfPossession ;
+            rdfs:label     "trade" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=690,697> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1016,1023> .
+    
+    <http://www.newsreader-project.eu/time/2004>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2004" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1074,1078> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2004> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev32>
+            a              sem:Event , nwrontology:contextualEvent , fn:Finish_competition , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1110,1114> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1262,1266> .
+    
+    <http://dbpedia.org/resource/SSE_Composite_Index>
+            rdfs:label     "Shanghai Composite Index" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1085,1109> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9>
+            a                time:Instant ;
+            rdfs:label       "the past year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1179,1192> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Sound_movement ;
+            rdfs:label     "echo" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1345,1351> .
+    
+    <http://dbpedia.org/resource/China>
+            rdfs:label     "China" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1251,1256> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1365,1370> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx10>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1431,1437> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081024> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx11>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1452,1457> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081027> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev38>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "los" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1663,1669> .
+    
+    <http://dbpedia.org/resource/Australia>
+            rdfs:label     "Australia" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1645,1654> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081027> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev39>
+            a              sem:Event , nwrontology:contextualEvent , fn:Travel , fn:Cause_change_of_position_on_a_scale , fn:Cause_motion , fn:Manipulation , eso:Translocation ;
+            rdfs:label     "push" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1704,1711> .
+    
+    <http://dbpedia.org/resource/Ordinary_(officer)>
+            rdfs:label     "Ordinaries" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1720,1730> .
+    
+    <http://dbpedia.org/resource/Sydney>
+            rdfs:label     "Sydney" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1734,1740> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev45>
+            a              sem:Event , nwrontology:sourceEvent , fn:Complaining ;
+            rdfs:label     "minister" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=364,372> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev51>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment , fn:Assessing ;
+            rdfs:label     "value" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=749,754> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1232,1238> , <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1296,1301> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev53>
+            a              sem:Event , nwrontology:contextualEvent , fn:Body_movement ;
+            rdfs:label     "close" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1149,1154> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev54>
+            a              sem:Event , nwrontology:sourceEvent , fn:Experiencer_focus ;
+            rdfs:label     "fear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1339,1344> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr14> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=82,176> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=171,217> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr6,rl13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=150,176> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr48,rl120>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1495,1507> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr48,rl121>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1502,1517> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=82,464> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=205,464> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr19,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=460,470> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=634,735> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=634,834> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr23,rl54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=618,638> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1016,1078> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr24,rl58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=618,697> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1179,1266> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr34,rl83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1081,1114> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1179,1351> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1345,1437> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1345,1457> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr42,rl105>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1345,1370> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr51,rl125>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1645,1669> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr52,rl130>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1704,1730> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr52,rl131>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1704,1740> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=82,372> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=205,372> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr13,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=350,372> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=729,754> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr71>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=749,834> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr72>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1179,1301> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr37,rl94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1232,1256> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1074,1154> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1149,1192> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr35,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1081,1154> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1179,1344> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1339,1437> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1339,1457> .
+    
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr41,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#char=1339,1370> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr15> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr6,rl13> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Japan> ;
+            pb:A0         <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr48,rl120> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/BSE_SENSEX> ;
+            pb:A0         <http://dbpedia.org/resource/BSE_SENSEX> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr48,rl121> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev20>
+            sem:hasPlace  <http://dbpedia.org/resource/Mumbai> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Mumbai> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr22> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr23> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr19,rl45> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Japan> ;
+            pb:A1         <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr26> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr27> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr23,rl54> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev26>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr28> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr24,rl58> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev27>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Exchange@Means>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr35> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr34,rl83> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev32>
+            sem:hasActor  <http://dbpedia.org/resource/SSE_Composite_Index> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Finish_competition@Competitor>
+                    <http://dbpedia.org/resource/SSE_Composite_Index> ;
+            pb:A1         <http://dbpedia.org/resource/SSE_Composite_Index> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr37> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr38> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr39> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr42,rl105> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev34>
+            sem:hasActor             <http://dbpedia.org/resource/Japan> , <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Sound_movement@Sound>
+                    <http://dbpedia.org/resource/Japan> , <http://dbpedia.org/resource/China> ;
+            pb:A0                    <http://dbpedia.org/resource/Japan> , <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr46> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr51,rl125> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/Australia> ;
+            pb:A0         <http://dbpedia.org/resource/Australia> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr47> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr52,rl130> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev39>
+            sem:hasActor             <http://dbpedia.org/resource/Ordinary_(officer)> ;
+            eso:translocation-goal   <http://dbpedia.org/resource/Ordinary_(officer)> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Ordinary_(officer)> ;
+            pb:A1                    <http://dbpedia.org/resource/Ordinary_(officer)> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr52,rl131> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev39>
+            sem:hasPlace  <http://dbpedia.org/resource/Sydney> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Sydney> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr59> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr60> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr13,rl29> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev45>
+            sem:hasActor  <http://dbpedia.org/resource/Japan> ;
+            pb:A2         <http://dbpedia.org/resource/Japan> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr70> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr71> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr72> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev51>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr37,rl94> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev51>
+            sem:hasActor         <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Result>
+                    <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Reason>
+                    <http://dbpedia.org/resource/China> ;
+            pb:A2                <http://dbpedia.org/resource/China> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr75> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr76> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr35,rl85> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev53>
+            sem:hasActor            <http://dbpedia.org/resource/SSE_Composite_Index> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Body_movement@Agent>
+                    <http://dbpedia.org/resource/SSE_Composite_Index> ;
+            pb:A1                   <http://dbpedia.org/resource/SSE_Composite_Index> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr77> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr78> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tr79> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev54>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#pr41,rl103> {
+    <http://en.wikinews.org/wiki/Asian_stock_markets_slide;_Nikkei_at_lowest_level_since_'82#ev54>
+            sem:hasActor  <http://dbpedia.org/resource/Japan> , <http://dbpedia.org/resource/China> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Experiencer>
+                    <http://dbpedia.org/resource/Japan> , <http://dbpedia.org/resource/China> ;
+            pb:A0         <http://dbpedia.org/resource/Japan> , <http://dbpedia.org/resource/China> .
+}

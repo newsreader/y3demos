@@ -1,0 +1,639 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sale" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=15,20> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=102,107> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=603,608> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=666,671> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=753,758> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=826,831> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=920,925> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1165,1170> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1320,1325> .
+    
+    <http://dbpedia.org/resource/Ford_Motor_Company>
+            rdfs:label     "Ford" , "Ford 's" , "Ford Motor Company" , "the company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=0,4> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=357,361> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=596,602> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=503,509> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1255,1259> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1556,1562> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=372,375> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=251,255> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=0,6> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=58,76> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=98,101> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1344,1355> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=503,507> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=596,600> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1556,1560> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "the United states" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=7,9> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=111,128> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=395,397> .
+    
+    <http://www.newsreader-project.eu/time/20100302>
+            a              time:DateTimeDescription ;
+            time:day       "---02"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Tuesday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=85,92> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100302> .
+    
+    <http://www.newsreader-project.eu/time/201002>
+            a              time:DateTimeDescription ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4>
+            a                time:Instant ;
+            rdfs:label       "February" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=141,149> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201002> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5>
+            a                time:Instant ;
+            rdfs:label       "last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=178,187> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx9>
+            a                time:Instant ;
+            rdfs:label       "February" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1156,1164> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201002> .
+    
+    <http://www.newsreader-project.eu/time/20100303>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx10>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1171,1176> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100303> .
+    
+    <http://www.newsreader-project.eu/time/201003>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2010"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11>
+            a                time:Instant ;
+            rdfs:label       "the month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1394,1403> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/201003> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev14>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "spike" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=21,26> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx1>
+            a                time:Instant ;
+            rdfs:label       "March 3 , 2010" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=43,56> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100303> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev15>
+            a              sem:Event , nwrontology:contextualEvent , fn:Surpassing ;
+            rdfs:label     "surpass" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=28,38> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "General motors" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=39,41> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=232,246> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=339,341> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_posture , fn:Getting_up , fn:Motion_directional , fn:Path_shape , fn:Sidereal_appearance , fn:Travel , fn:Change_position_on_a_scale , fn:Dough_rising , eso:Increasing ;
+            rdfs:label     "rise" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=129,133> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=409,413> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=516,520> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=876,880> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6>
+            a                time:Instant ;
+            rdfs:label       "a year ago" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=434,444> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7>
+            a                time:Instant ;
+            rdfs:label       "the day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=587,594> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20100303> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=331,335> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=747,751> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "market" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=402,408> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Carry_goods , fn:Possession , fn:Giving , eso:HavingInPossession , eso:Placing ;
+            rdfs:label     "stock" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=510,515> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev23>
+            a              sem:Event , nwrontology:contextualEvent , fn:Change_position_on_a_scale , eso:Decreasing ;
+            rdfs:label     "decline" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=568,577> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1326,1334> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev25>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , fn:Subjective_influence , eso:Creating ;
+            rdfs:label     "influence" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=628,638> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev38>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1568,1577> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev42>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=77,81> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Choosing , fn:Motion , fn:Statement , fn:Text_creation , eso:Motion ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=256,260> , <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=362,366> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Confronting_problem , eso:IntentionalEvent , eso:Merging ;
+            rdfs:label     "face" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1360,1365> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Memory , eso:Removing ;
+            rdfs:label     "recall" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1380,1386> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr1> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=85,107> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=102,149> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=102,187> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1156,1170> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1165,1176> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1320,1403> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=0,20> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=7,20> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=21,56> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr2,rl4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=0,26> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr2,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=7,26> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=28,56> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=28,41> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=85,133> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=129,149> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=129,187> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=409,444> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=516,594> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr6,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=98,133> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr17,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=503,520> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=85,335> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=141,335> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=178,335> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=331,444> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr10,rl27>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=331,341> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr23>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=402,444> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr14,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=395,408> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=510,594> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr16,rl40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=503,515> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=568,594> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1326,1403> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr18,rl45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=503,577> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=587,638> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr21,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=596,638> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1394,1577> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr56,rl125>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1556,1577> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=77,92> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=77,149> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=77,187> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr4,rl9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=58,81> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=362,444> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr8,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=251,260> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1360,1403> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr47,rl105>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1344,1365> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1380,1403> .
+    
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr48,rl108>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1344,1386> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr2> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr3> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr4> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr5> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr6> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasActor            <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                   <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev13>
+            sem:hasPlace  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr7> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr2,rl4> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev14>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr2,rl5> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev14>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr8> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev15>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr3,rl8> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev15>
+            sem:hasActor                 <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Surpassing@Standard_item>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                        <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr9> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr10> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr11> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr12> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr13> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr6,rl14> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasActor       <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:quantity-item  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1              <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr17,rl41> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev16>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr18> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr19> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr20> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr21> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr10,rl27> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev19>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr23> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr14,rl37> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev21>
+            sem:hasActor            <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2                   <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr24> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr16,rl40> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev22>
+            sem:hasActor          <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Carry_goods@Goods>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1                 <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr25> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr26> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr18,rl45> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev23>
+            sem:hasActor       <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            eso:quantity-item  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1              <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr28> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev25>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr21,rl50> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev25>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Subjective_influence@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr44> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr56,rl125> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A2         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr48> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr49> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr50> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr4,rl9> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev42>
+            sem:hasActor             <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                    <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr51> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr8,rl21> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev43>
+            sem:hasActor             <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0                    <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr56> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr47,rl105> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev47>
+            sem:hasActor                  <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Confronting_problem@Agent>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Confronting_problem@Issue>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A1                         <http://dbpedia.org/resource/Ford_Motor_Company> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tr57> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#tmx11> .
+}
+
+<http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#pr48,rl108> {
+    <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#ev48>
+            sem:hasActor        <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Memory@Cognizer>
+                    <http://dbpedia.org/resource/Ford_Motor_Company> ;
+            pb:A0               <http://dbpedia.org/resource/Ford_Motor_Company> .
+}

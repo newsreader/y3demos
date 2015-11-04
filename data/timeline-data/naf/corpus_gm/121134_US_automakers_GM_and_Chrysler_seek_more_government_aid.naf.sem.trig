@@ -1,0 +1,606 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Assistance ;
+            rdfs:label     "aid" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=51,54> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=239,242> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1039,1042> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1603,1606> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=21,29> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=111,119> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=514,522> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=536,544> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "General motors" , "a profitable General motors" , "GM 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=14,16> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1376,1378> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1268,1282> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1463,1466> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1255,1282> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=765,767> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=629,631> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=841,843> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=828,830> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1073,1077> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1389,1391> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=613,627> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1073,1075> .
+    
+    <http://www.newsreader-project.eu/time/200803>
+            a              time:DateTimeDescription ;
+            time:month     "--03"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4>
+            a                time:Instant ;
+            rdfs:label       "March" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1025,1030> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200803> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8>
+            a                time:Instant ;
+            rdfs:label       "this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1570,1579> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev22>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=98,110> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1499,1511> .
+    
+    <http://dbpedia.org/resource/Federal_government_of_the_United_States>
+            a              <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            rdfs:label     "we" , "United states" , "three thousand employee" , "two year '" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=0,2> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=79,92> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=191,193> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=324,348> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1492,1494> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1415,1425> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev24>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=194,204> .
+    
+    <http://www.newsreader-project.eu/time/20090218>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--02"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1>
+            a                time:Instant ;
+            rdfs:label       "February 18 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=56,73> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090218> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3>
+            a                time:Instant ;
+            rdfs:label       "the end of last year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=353,373> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev26>
+            a              sem:Event , nwrontology:contextualEvent , fn:Shoot_projectiles , fn:Use_firearm , fn:Firing , fn:Quitting , eso:LeavingAnOrganization ;
+            rdfs:label     "fire" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=319,323> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev30>
+            a              sem:Event , nwrontology:contextualEvent , fn:Experience_bodily_harm ;
+            rdfs:label     "cut" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=528,531> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090218> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev33>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "lie" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=777,780> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev38>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "executive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1084,1093> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1307,1312> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090218> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev41>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Causation ;
+            rdfs:label     "result" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1245,1251> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Seeking_to_achieve ;
+            rdfs:label     "seek" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=30,34> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev53>
+            a              sem:Event , nwrontology:contextualEvent , fn:Needing , fn:Required_event ;
+            rdfs:label     "need" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=850,854> .
+    
+    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury>
+            rdfs:label     "US Treasury Department" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=887,909> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1613,1635> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev58>
+            a              sem:Event , nwrontology:contextualEvent , fn:Questioning , fn:Request , fn:Motion , eso:Motion ;
+            rdfs:label     "ask" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=181,186> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev59>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=295,301> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev61>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=310,315> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=768,773> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1116,1120> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1315,1319> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1673,1678> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx9>
+            a              time:Interval ;
+            rdfs:label     "several week" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1683,1696> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20090218> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev63>
+            a              sem:Event , fn:Statement , nwrontology:sourceEvent ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=634,643> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Choosing , fn:Statement , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=831,835> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1288,1292> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1379,1383> , <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1537,1541> .
+    
+    <http://www.newsreader-project.eu/time/2017>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2017"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx7>
+            a                time:Instant ;
+            rdfs:label       "2017" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1476,1480> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2017> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev68>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "review" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1641,1647> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr1> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1025,1042> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1570,1606> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=14,54> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1499,1579> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=79,110> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=56,204> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=194,373> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr8,rl21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=191,204> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=56,323> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=319,373> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr13,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=319,348> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=528,531> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr21,rl47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=514,531> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr29,rl66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=765,780> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr24>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1025,1093> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr25>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1084,1312> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr40,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1073,1093> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr28>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1245,1251> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr46,rl107>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1245,1282> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=30,73> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=14,34> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=850,1030> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr32,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=850,966> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=56,186> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr49>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=181,373> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr6,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=181,204> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=56,301> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=295,373> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr7,rl19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=187,301> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr54>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1307,1319> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr55>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1673,1696> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr12,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=310,348> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr28,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=765,773> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr23,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=594,643> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr58>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1288,1312> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1379,1480> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr60>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1537,1579> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr31,rl69>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=828,835> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr65>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1641,1647> .
+    
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr57,rl130>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#char=1609,1647> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr2> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr2,rl3> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assistance@Helper>
+                    <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr3> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr3,rl5> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev22>
+            sem:hasPlace  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr6> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr7> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr8,rl21> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2         <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr10> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr11> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr13,rl31> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev26>
+            sem:hasActor             <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            eso:employment-employee  <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A1                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr15> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev30>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr21,rl47> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experience_bodily_harm@Experiencer>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A0         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr19> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev33>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr29,rl66> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev33>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr24> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr25> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr40,rl92> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr28> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev41>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr46,rl107> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev41>
+            sem:hasActor         <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Causation@Effect>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2                <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr35> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr1,rl1> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev47>
+            sem:hasActor                 <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Seeking_to_achieve@Agent>
+                    <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                        <http://dbpedia.org/resource/Chrysler> , <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr42> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr32,rl74> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev53>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            pb:A3         <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr48> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr49> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr6,rl15> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev58>
+            sem:hasActor              <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Questioning@Addressee>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A2                     <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr50> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr51> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr7,rl19> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev59>
+            sem:hasActor             <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A0                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr54> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr55> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr12,rl29> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev61>
+            sem:hasActor          <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Attribute>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Goal>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Value>
+                    <http://dbpedia.org/resource/Federal_government_of_the_United_States> ;
+            pb:A1                 <http://dbpedia.org/resource/Federal_government_of_the_United_States> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr28,rl64> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev61>
+            sem:hasActor      <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0             <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr57> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr23,rl52> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev63>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr58> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr59> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr60> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr31,rl69> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev64>
+            sem:hasActor             <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                    <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tr65> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev68>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#pr57,rl130> {
+    <http://en.wikinews.org/wiki/US_automakers_GM_and_Chrysler_seek_more_government_aid#ev68>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            pb:A0         <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> .
+}

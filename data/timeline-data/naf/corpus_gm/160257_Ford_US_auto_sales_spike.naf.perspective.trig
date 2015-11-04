@@ -1,0 +1,496 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM>
+          prov:wasAttributedTo  nwrauthor:Tempodivalse .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1165,1170>
+          rdfs:comment        "reported" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1147,1155> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/other+companies> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1147,1155>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=15,20>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=21,26>
+          rdfs:label          "spike" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=28,38>
+          rdfs:label          "surpassing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=77,81>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=102,107>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=129,133>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=136,137>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=256,260>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=278,286>
+          rdfs:label          "improved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=331,335>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=362,366>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=376,381>
+          rdfs:label          "share" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=409,413>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=402,408>
+          rdfs:label          "market" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=488,497>
+          rdfs:label          "predicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=510,515>
+          rdfs:label          "stock" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=516,520>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=568,577>
+          rdfs:label          "declining" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=552,559>
+          rdfs:label          "trading" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=603,608>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=628,638>
+          rdfs:label          "influenced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=648,656>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=666,671>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=713,722>
+          rdfs:label          "accounted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr23>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=747,751>
+          rdfs:label          "sold" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=779,788>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=796,797>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=753,758>
+          rdfs:label          "Sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=769,778>
+          rdfs:label          "consumers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr28>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=819,822>
+          rdfs:label          "led" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=826,831>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr30>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=876,880>
+          rdfs:label          "rose" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr31>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=978,987>
+          rdfs:label          "increased" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=920,925>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1020,1030>
+          rdfs:label          "redesigned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1055,1059>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1074,1081>
+          rdfs:label          "quality" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1102,1109>
+          rdfs:label          "driving" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1205,1210>
+          rdfs:label          "gains" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1189,1198>
+          rdfs:label          "reporting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1304,1309>
+          rdfs:label          "gains" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr41>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1320,1325>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1326,1334>
+          rdfs:label          "declined" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr43>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1338,1339>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1360,1365>
+          rdfs:label          "faced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1380,1386>
+          rdfs:label          "recall" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr46>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1409,1412>
+          rdfs:label          "led" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr47>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1428,1436>
+          rdfs:label          "stoppage" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr48>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1440,1450>
+          rdfs:label          "production" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr49>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1474,1482>
+          rdfs:label          "strength" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr50>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1511,1521>
+          rdfs:label          "resonating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr51>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1494,1502>
+          rdfs:label          "products" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr52>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1539,1543>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1568,1577>
+          rdfs:label          "president" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1614,1622>
+          rdfs:label          "believed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr55>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1666,1672>
+          rdfs:label          "buying" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr56>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1697,1705>
+          rdfs:label          "awaiting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr57>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM#char=1710,1717>
+          rdfs:label          "results" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM_dAttr58>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Ford's_US_auto_sales_spike,_surpassing_GM> .
+}

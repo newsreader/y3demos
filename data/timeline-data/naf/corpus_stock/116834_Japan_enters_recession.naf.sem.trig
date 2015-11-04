@@ -1,0 +1,322 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , eso:Arriving ;
+            rdfs:label     "enter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=6,12> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=93,100> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=1124,1132> .
+    
+    <http://dbpedia.org/resource/Economy_of_Japan>
+            rdfs:label     "Japan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=0,5> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=50,55> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=1213,1218> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=1111,1116> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=43,48> .
+    
+    <http://www.newsreader-project.eu/time/20081118>
+            a              time:DateTimeDescription ;
+            time:day       "---18"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx1>
+            a                time:Instant ;
+            rdfs:label       "November 18 , 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=24,41> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20081118> .
+    
+    <http://www.newsreader-project.eu/time/200804>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx3>
+            a                time:Instant ;
+            rdfs:label       "April" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=220,225> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200804> .
+    
+    <http://www.newsreader-project.eu/time/200806>
+            a              time:DateTimeDescription ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx4>
+            a                time:Instant ;
+            rdfs:label       "June" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=230,234> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200806> .
+    
+    <http://www.newsreader-project.eu/time/200809>
+            a              time:DateTimeDescription ;
+            time:month     "--09"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx5>
+            a                time:Instant ;
+            rdfs:label       "September" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=260,269> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200809> .
+    
+    <http://www.newsreader-project.eu/time/2001>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2001"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2001" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=1251,1255> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2001> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev22>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "crisis" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=526,532> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=1191,1197> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" , "European financial crisis deepen" , "japanese company" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=500,502> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=507,540> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=1001,1003> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=844,862> .
+    
+    <http://www.newsreader-project.eu/time/2008>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the beginning of the year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=686,711> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2008> .
+    
+    <http://www.newsreader-project.eu/time/200811>
+            a              time:DateTimeDescription ;
+            time:month     "--11"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7>
+            a                time:Instant ;
+            rdfs:label       "this month" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Japan_enters_recession#char=756,766> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200811> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev23>
+            a              sem:Event , nwrontology:contextualEvent , eso:Decreasing , eso:Increasing ;
+            rdfs:label     "deepen" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=533,540> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev29>
+            a              sem:Event , nwrontology:contextualEvent , fn:Earnings_and_losses ;
+            rdfs:label     "lose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=721,725> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=863,867> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev47>
+            a              sem:Event , nwrontology:sourceEvent , fn:Judgment , fn:Assessing ;
+            rdfs:label     "value" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=743,748> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=898,903> , <http://en.wikinews.org/wiki/Japan_enters_recession#char=983,988> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr1> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=6,100> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=93,225> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=93,234> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=93,269> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=1124,1255> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=0,12> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=526,711> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=526,766> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=1191,1255> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#pr25,rl46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=500,532> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=533,711> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=533,766> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#pr26,rl48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=496,540> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=686,725> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr57>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=721,766> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#pr43,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=844,867> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=686,748> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=743,766> .
+    
+    <http://en.wikinews.org/wiki/Japan_enters_recession#pr49,rl91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Japan_enters_recession#char=983,1010> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr2> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr3> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr4> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr5> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev9>
+            sem:hasActor             <http://dbpedia.org/resource/Economy_of_Japan> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Economy_of_Japan> ;
+            pb:A0                    <http://dbpedia.org/resource/Economy_of_Japan> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr41> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr42> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr43> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev22>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#pr25,rl46> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev22>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr44> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr45> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev23>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#pr26,rl48> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev23>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr56> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr57> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev29>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#pr43,rl77> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev29>
+            sem:hasActor                   <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Earnings_and_losses@Earner>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                          <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr91> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#tr92> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Japan_enters_recession#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Japan_enters_recession#pr49,rl91> {
+    <http://en.wikinews.org/wiki/Japan_enters_recession#ev47>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Assessing@Phenomenon>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Evaluee>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A1                    <http://dbpedia.org/resource/United_States_dollar> .
+}

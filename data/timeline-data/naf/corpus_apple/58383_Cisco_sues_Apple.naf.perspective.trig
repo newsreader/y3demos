@@ -1,0 +1,316 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark>
+          prov:wasAttributedTo  nwrauthor:ShakataGaNai .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=383,390>
+          rdfs:comment        "claims" ;
+          rdfs:label          "possess" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=373,379> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr0>
+          rdf:value            <PROBABLE_u_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/the+company> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=373,379>
+          rdfs:label          "claims" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=395,404>
+          rdfs:comment        "claims" ;
+          rdfs:label          "trademark" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=373,379> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=651,659>
+          rdfs:comment        "states" ;
+          rdfs:label          "received" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,638> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Cisco_Systems> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,638>
+          rdfs:label          "states" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=664,673>
+          rdfs:comment        "states" ;
+          rdfs:label          "trademark" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,638> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=742,746>
+          rdfs:comment        "states" ;
+          rdfs:label          "took" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=632,638> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=6,10>
+          rdfs:label          "sues" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=73,77>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=82,92>
+          rdfs:label          "appearance" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=142,149>
+          rdfs:label          "aroused" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=168,172>
+          rdfs:label          "come" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=188,200>
+          rdfs:label          "manufacturer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr5>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=226,234>
+          rdfs:label          "resented" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=289,295>
+          rdfs:label          "leader" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr7>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=334,339>
+          rdfs:label          "based" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=325,332>
+          rdfs:label          "systems" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=439,444>
+          rdfs:label          "sells" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=493,502>
+          rdfs:label          "divisions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=510,516>
+          rdfs:label          "became" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=521,527>
+          rdfs:label          "reason" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=541,545>
+          rdfs:label          "file" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=548,555>
+          rdfs:label          "lawsuit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=600,604>
+          rdfs:label          "stop" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr17>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=605,612>
+          rdfs:label          "selling" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr18>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=833,842>
+          rdfs:label          "explained" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=794,801>
+          rdfs:label          "counsel" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=861,866>
+          rdfs:label          "doubt" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=877,887>
+          rdfs:label          "excitement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=899,905>
+          rdfs:label          "device" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr24>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=938,941>
+          rdfs:label          "use" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr25>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=944,953>
+          rdfs:label          "trademark" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=961,968>
+          rdfs:label          "belongs" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=991,1000>
+          rdfs:label          "developed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=1028,1034>
+          rdfs:label          "allows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=1044,1048>
+          rdfs:label          "make" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr30>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=1055,1060>
+          rdfs:label          "calls" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark#char=1070,1075>
+          rdfs:label          "voice" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark_dAttr32>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Cisco_sues_Apple_for_iPhone_trademark> .
+}

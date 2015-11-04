@@ -1,0 +1,706 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Death ;
+            rdfs:label     "bankruptcy" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=369,379> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1391,1401> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1423,1433> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1498,1510> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1531,1541> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1336,1344> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1673,1681> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1405,1413> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1545,1553> .
+    
+    <http://dbpedia.org/resource/General_Motors>
+            rdfs:label     "GM" , "when" , "General motors" , "GM Europe" , "loan General motors money" , "General Motors" , "GM 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=40,42> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=721,725> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1317,1331> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2596,2598> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=735,738> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1071,1085> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1033,1042> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1165,1167> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=574,588> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=691,719> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=3051,3065> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=699,713> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=263,277> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1624,1638> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1905,1907> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1437,1451> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1592,1606> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2398,2402> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2585,2587> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2217,2219> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2398,2400> .
+    
+    <http://www.newsreader-project.eu/time/20090601>
+            a              time:DateTimeDescription ;
+            time:day       "---01"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,145> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090601> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev28>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=831,841> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=867,878> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=949,959> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1105,1115> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1776,1786> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1930,1940> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2072,2082> .
+    
+    <http://dbpedia.org/resource/United_States>
+            rdfs:label     "the United states" , "America" , "the United states of America" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=160,177> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=813,830> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1087,1104> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2733,2740> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=3078,3106> .
+    
+    <http://dbpedia.org/resource/Canada>
+            rdfs:label     "Canada" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=882,888> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=971,976> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=902,907> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=992,995> .
+    
+    <http://dbpedia.org/resource/Government_of_Ontario>
+            rdfs:label     "Ontario" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=893,900> .
+    
+    <http://dbpedia.org/resource/Germany>
+            rdfs:label     "Germany" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=963,970> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090601> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev30>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "stake" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1024,1029> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1133,1138> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev31>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_sell , eso:Selling ;
+            rdfs:label     "sell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1004,1011> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev32>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Becoming ;
+            rdfs:label     "become" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1048,1054> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1345,1351> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev33>
+            a              sem:Event , nwrontology:contextualEvent , fn:Containing , fn:Retaining , eso:HavingInPossession ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1122,1126> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Giving , eso:Giving ;
+            rdfs:label     "give" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1160,1164> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating ;
+            rdfs:label     "envision" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1460,1470> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1579,1587> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev41>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership , fn:Adducing , fn:Evidence , eso:BeingLeader ;
+            rdfs:label     "point" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1516,1523> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev42>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "example" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1560,1567> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev46>
+            a              sem:Event , nwrontology:contextualEvent , fn:Placing , fn:Reforming_a_system , eso:Placing ;
+            rdfs:label     "restructure" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1836,1848> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2204,2216> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating , fn:Experiencer_obj ;
+            rdfs:label     "interest" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1884,1892> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev48>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "run" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1897,1904> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev53>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "streamlining" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2382,2394> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev56>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_create , eso:Creating , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Manufacturing , fn:Self_motion , fn:Creating ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2223,2227> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev57>
+            a              sem:Event , nwrontology:contextualEvent , fn:Presence , eso:BeingAtAPlace ;
+            rdfs:label     "present" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=13,21> .
+    
+    <http://dbpedia.org/resource/Barack_Obama>
+            rdfs:label     "Barack Obama" , "Obama" , "the United states Barack Obama" , "his" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=0,12> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=178,190> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=500,505> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=160,190> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=537,540> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx1>
+            a                time:Instant ;
+            rdfs:label       "June 1 , 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=70,82> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20090601> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev58>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=29,33> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=218,222> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=565,569> , <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=788,792> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev59>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "declaration" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=43,54> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Presence , eso:BeingAtAPlace ;
+            rdfs:label     "present" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=191,200> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev61>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Chatting ;
+            rdfs:label     "speech" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=99,105> .
+    
+    <http://dbpedia.org/resource/White_House>
+            rdfs:label     "the White House" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=111,126> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev62>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announcement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,259> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev63>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Explaining_the_facts ;
+            rdfs:label     "explain" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=506,515> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev64>
+            a              sem:Event , nwrontology:sourceEvent , fn:Communicate_categorization ;
+            rdfs:label     "describe" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=414,424> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev71>
+            a              sem:Event , nwrontology:sourceEvent , fn:Grant_permission ;
+            rdfs:label     "let" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1313,1316> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev79>
+            a              sem:Event , nwrontology:contextualEvent , fn:Expectation , fn:Opinion , fn:Motion , eso:Motion ;
+            rdfs:label     "expect" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2191,2199> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr5> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,379> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr52,rl109>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1391,1413> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr54,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1423,1451> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1105,1115> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr28,rl56>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=817,841> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr29,rl59>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=867,902> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr32,rl67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=949,970> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr35,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1024,1042> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr36,rl76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1004,1042> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr37,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1048,1085> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1122,1126> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr39,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1087,1126> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr16>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1160,1164> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr41,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1160,1167> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr60,rl128>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1579,1606> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr56,rl118>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1516,1553> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr59,rl124>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1557,1606> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr88,rl192>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2200,2219> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr71,rl153>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1884,1907> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr72,rl155>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1897,1907> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr93,rl200>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2382,2409> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr89,rl193>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2200,2227> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=13,82> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=0,21> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,222> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr15,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=565,588> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=43,82> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr3,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=40,54> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,200> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr4,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=147,200> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=99,145> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr5,rl11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=99,126> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr44>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,259> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr7,rl15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=247,277> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr45>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,515> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr13,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=500,515> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=140,424> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr14,rl32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=414,505> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr48,rl103>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=1313,1344> .
+    
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr87,rl190>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#char=2191,2219> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr52,rl109> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Death@Protagonist>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr54,rl114> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev21>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Death@Protagonist>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr10> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev28>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr28,rl56> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev28>
+            sem:hasActor          <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Leader>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr29,rl59> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/Canada> , <http://dbpedia.org/resource/Government_of_Ontario> ;
+            pb:A2         <http://dbpedia.org/resource/Canada> , <http://dbpedia.org/resource/Government_of_Ontario> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr32,rl67> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev28>
+            sem:hasActor  <http://dbpedia.org/resource/Germany> ;
+            pb:A2         <http://dbpedia.org/resource/Germany> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr12> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev30>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr35,rl75> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev30>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr13> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev31>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr36,rl76> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev31>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-theme  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr14> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev32>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr37,rl79> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev32>
+            sem:hasPlace  <http://dbpedia.org/resource/General_Motors> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr15> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev33>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr39,rl82> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev33>
+            sem:hasActor             <http://dbpedia.org/resource/United_States> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/United_States> ;
+            pb:A0                    <http://dbpedia.org/resource/United_States> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr16> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev34>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr41,rl88> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev34>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A2                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr22> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr60,rl128> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev40>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr23> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr56,rl118> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev41>
+            sem:hasActor                  <http://dbpedia.org/resource/Chrysler> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Adducing@Specified_entity>
+                    <http://dbpedia.org/resource/Chrysler> ;
+            pb:A2                         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr24> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr59,rl124> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev42>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr28> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev46>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr88,rl192> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev46>
+            sem:hasActor                  <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reforming_a_system@Entity>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr29> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr71,rl153> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev47>
+            sem:hasActor                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_obj@Experiencer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                           <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr30> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev48>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr72,rl155> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev48>
+            sem:hasActor            <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Leadership@Governed>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                   <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr35> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr93,rl200> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev53>
+            sem:hasActor  <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1         <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr38> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev56>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr89,rl193> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev56>
+            sem:hasActor                   <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                          <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr39> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev57>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev57>
+            sem:hasActor       <http://dbpedia.org/resource/Barack_Obama> ;
+            eso:atPlace-theme  <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0              <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr40> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev58>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr15,rl35> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev58>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Attribute>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Goal>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Value>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr41> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev59>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr3,rl5> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev59>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr42> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev60>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr4,rl8> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev60>
+            sem:hasActor       <http://dbpedia.org/resource/Barack_Obama> ;
+            eso:atPlace-theme  <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0              <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr43> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr5,rl11> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev61>
+            sem:hasActor                <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Chatting@Interlocutor_1>
+                    <http://dbpedia.org/resource/White_House> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/White_House> ;
+            pb:A0                       <http://dbpedia.org/resource/White_House> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr44> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev62>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr7,rl15> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev62>
+            sem:hasActor          <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A0                 <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr45> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev63>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr13,rl26> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev63>
+            sem:hasActor          <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0                 <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr46> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr14,rl32> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev64>
+            sem:hasActor  <http://dbpedia.org/resource/Barack_Obama> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Communicate_categorization@Speaker>
+                    <http://dbpedia.org/resource/Barack_Obama> ;
+            pb:A0         <http://dbpedia.org/resource/Barack_Obama> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr53> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev71>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr48,rl103> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev71>
+            sem:hasActor                 <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Grant_permission@Grantee>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                        <http://dbpedia.org/resource/General_Motors> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tr61> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev79>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#pr87,rl190> {
+    <http://en.wikinews.org/wiki/Barack_Obama_presents_rescue_plan_after_GM_declaration_of_bankruptcy#ev79>
+            sem:hasActor               <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Phenomenon>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Expectation@Topic>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Opinion@Topic>
+                    <http://dbpedia.org/resource/General_Motors> ;
+            pb:A1                      <http://dbpedia.org/resource/General_Motors> .
+}

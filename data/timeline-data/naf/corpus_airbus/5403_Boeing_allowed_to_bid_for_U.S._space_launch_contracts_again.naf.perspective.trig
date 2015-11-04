@@ -1,0 +1,374 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=200,206>
+          rdfs:comment        "announced" ;
+          rdfs:label          "launch" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=231,240> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/United_States_Air_Force> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=231,240>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=207,216>
+          rdfs:comment        "announced" ;
+          rdfs:label          "contracts" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=231,240> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=582,589>
+          rdfs:comment        "agreement" ;
+          rdfs:label          "protect" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=569,578> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_sAttr1>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/United_States_Air_Force> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=569,578>
+          rdfs:label          "agreement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=606,615>
+          rdfs:comment        "agreement" ;
+          rdfs:label          "interests" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=569,578> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=7,14>
+          rdfs:label          "allowed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=18,21>
+          rdfs:label          "bid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr1>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=44,53>
+          rdfs:label          "contracts" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=37,43>
+          rdfs:label          "launch" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr3>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=144,149>
+          rdfs:label          "units" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=160,167>
+          rdfs:label          "allowed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr5>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=171,174>
+          rdfs:label          "bid" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr6>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=259,268>
+          rdfs:label          "suspended" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=295,304>
+          rdfs:label          "violating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr9>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=313,316>
+          rdfs:label          "law" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr10>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=334,344>
+          rdfs:label          "discovered" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=361,371>
+          rdfs:label          "possession" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=375,384>
+          rdfs:label          "thousands" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr13>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=388,393>
+          rdfs:label          "pages" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr14>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=442,447>
+          rdfs:label          "rival" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=515,522>
+          rdfs:label          "process" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr16>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=498,504>
+          rdfs:label          "source" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr17>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=551,557>
+          rdfs:label          "signed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr18>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=631,637>
+          rdfs:label          "allows" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=646,657>
+          rdfs:label          "reinstating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr21>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=689,697>
+          rdfs:label          "indicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr22>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=701,710>
+          rdfs:label          "convicted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr23>
+          rdf:value             <u_NON_FUTURE_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=722,730>
+          rdfs:label          "evidence" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=734,739>
+          rdfs:label          "found" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=755,759>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr26>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=763,769>
+          rdfs:label          "submit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr27>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=841,847>
+          rdfs:label          "charge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr28>
+          rdf:value             <CERTAIN_u_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=781,793>
+          rdfs:label          "verification" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr29>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=823,828>
+          rdfs:label          "taken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=810,815>
+          rdfs:label          "steps" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=866,876>
+          rdfs:label          "associated" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=904,920>
+          rdfs:label          "responsibilities" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=952,959>
+          rdfs:label          "changed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr34>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=933,941>
+          rdfs:label          "practice" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr35>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=1018,1023>
+          rdfs:label          "types" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=1046,1054>
+          rdfs:label          "designed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr37>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=1058,1064>
+          rdfs:label          "reduce" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr38>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=1069,1073>
+          rdfs:label          "cost" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again#char=1083,1091>
+          rdfs:label          "launches" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Boeing_allowed_to_bid_for_U.S._space_launch_contracts_again> .
+}

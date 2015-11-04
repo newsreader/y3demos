@@ -1,0 +1,714 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Pi+zero> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=182,187>
+          rdfs:comment        "announced" ;
+          rdfs:label          "leave" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=117,126> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr0>
+          rdf:value            <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=117,126>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=208,214>
+          rdfs:comment        "announced" ;
+          rdfs:label          "period" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=117,126> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=640,648>
+          rdfs:comment        "mentioned" ;
+          rdfs:label          "prompted" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=625,634> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr1>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/Steve_Jobs> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=625,634>
+          rdfs:label          "mentioned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=684,688>
+          rdfs:comment        "mentioned" ;
+          rdfs:label          "said" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=625,634> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=653,661>
+          rdfs:comment        "mentioned" ;
+          rdfs:label          "decision" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=625,634> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=720,723>
+          rdfs:comment        "mentioned" ;
+          rdfs:label          "CEO" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=625,634> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=997,1001>
+          rdfs:comment        "reported" ;
+          rdfs:label          "said" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_NON_FUTURE_POS> , <CERTAIN_NON_FUTURE_NEG> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/The_New_York_Times> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1009,1015>
+          rdfs:comment        "reported" ;
+          rdfs:label          "health" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1016,1019>
+          rdfs:comment        "reported" ;
+          rdfs:label          "has" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1021,1024>
+          rdfs:comment        "reported" ;
+          rdfs:label          "ups" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1043,1051>
+          rdfs:comment        "reported" ;
+          rdfs:label          "problems" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1068,1074>
+          rdfs:comment        "reported" ;
+          rdfs:label          "system" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1076,1084>
+          rdfs:comment        "reported" ;
+          rdfs:label          "problems" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1096,1107>
+          rdfs:comment        "reported" ;
+          rdfs:label          "experienced" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1126,1129>
+          rdfs:comment        "reported" ;
+          rdfs:label          "had" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1136,1147>
+          rdfs:comment        "reported" ;
+          rdfs:label          "transplants" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_sAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr0>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=149,153>
+          rdfs:label          "memo" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr1>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=94,101>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr2>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=228,237>
+          rdfs:label          "statement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=238,244>
+          rdfs:label          "caused" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=253,261>
+          rdfs:label          "decrease" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=277,283>
+          rdfs:label          "prices" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr6>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=326,332>
+          rdfs:label          "closed" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=336,341>
+          rdfs:label          "honor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr8>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=381,393>
+          rdfs:label          "announcement" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=394,400>
+          rdfs:label          "marked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=446,450>
+          rdfs:label          "aged" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=459,464>
+          rdfs:label          "taken" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr12>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=473,478>
+          rdfs:label          "leave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=483,489>
+          rdfs:label          "fought" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=520,524>
+          rdfs:label          "took" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr15>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=561,570>
+          rdfs:label          "revealing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=501,507>
+          rdfs:label          "cancer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=596,606>
+          rdfs:label          "transplant" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=728,732>
+          rdfs:label          "left" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=757,764>
+          rdfs:label          "officer" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=747,756>
+          rdfs:label          "operating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr22>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=784,790>
+          rdfs:label          "charge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=831,835>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=805,815>
+          rdfs:label          "operations" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr25>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=854,862>
+          rdfs:label          "absences" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr26>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=885,892>
+          rdfs:label          "comment" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=913,917>
+          rdfs:label          "made" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1166,1171>
+          rdfs:label          "asked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1175,1181>
+          rdfs:label          "remain" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1193,1197>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr32> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr32>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1242,1250>
+          rdfs:label          "appeared" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr33> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr33>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1257,1270>
+          rdfs:label          "deteriorating" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr34> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr34>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1287,1295>
+          rdfs:label          "becoming" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr35> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr35>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1357,1361>
+          rdfs:label          "said" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr36> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr36>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1326,1332>
+          rdfs:label          "doctor" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr37> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr37>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1366,1368>
+          rdfs:label          "'s" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr38> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr38>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1396,1404>
+          rdfs:label          "patients" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr39> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr39>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1385,1395>
+          rdfs:label          "transplant" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr40> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr40>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1408,1412>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr41> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr41>
+          rdf:value             <PROBABLE_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1475,1483>
+          rdfs:label          "released" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr42> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr42>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1460,1467>
+          rdfs:label          "website" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr43> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr43>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1574,1581>
+          rdfs:label          "granted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr44> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr44>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1488,1492>
+          rdfs:label          "text" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr45> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr45>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1516,1521>
+          rdfs:label          "reads" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr46> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr46>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1538,1545>
+          rdfs:label          "request" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr47> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr47>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1551,1556>
+          rdfs:label          "board" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr48> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr48>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1595,1600>
+          rdfs:label          "leave" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr49> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr49>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1621,1626>
+          rdfs:label          "focus" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr50> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr50>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1633,1639>
+          rdfs:label          "health" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr51> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr51>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1648,1656>
+          rdfs:label          "continue" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr52> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr52>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1671,1679>
+          rdfs:label          "involved" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr53> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr53>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1699,1708>
+          rdfs:label          "decisions" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr54> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr54>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1735,1740>
+          rdfs:label          "asked" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr55> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr55>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1787,1790>
+          rdfs:label          "day" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr56> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr56>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1798,1808>
+          rdfs:label          "operations" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr57> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr57>
+          rdf:value             <CERTAIN_u_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1812,1816>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr58> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr58>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1823,1833>
+          rdfs:label          "confidence" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr59> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr59>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1894,1896>
+          rdfs:label          "do" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr60> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr60>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1908,1911>
+          rdfs:label          "job" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr61> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr61>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1851,1855>
+          rdfs:label          "rest" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr62> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr62>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1884,1888>
+          rdfs:label          "team" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr63> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr63>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1912,1921>
+          rdfs:label          "executing" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr64> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr64>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1935,1940>
+          rdfs:label          "plans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr65> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr65>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1944,1948>
+          rdfs:label          "have" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr66> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr66>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1952,1957>
+          rdfs:label          "place" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr67> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr67>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1972,1976>
+          rdfs:label          "love" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr68> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr68>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1995,1999>
+          rdfs:label          "hope" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr69> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr69>
+          rdf:value             <CERTAIN_u_POS> , <positive> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=2075,2085>
+          rdfs:label          "appreciate" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr70> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr70>
+          rdf:value             <CERTAIN_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=2049,2055>
+          rdfs:label          "family" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr71> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr71>
+          rdf:value             <CERTAIN_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=2086,2093>
+          rdfs:label          "respect" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr72> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr72>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=2102,2109>
+          rdfs:label          "privacy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr73> .
+  
+  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave_dAttr73>
+          rdf:value             <u_u_u> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave> .
+}

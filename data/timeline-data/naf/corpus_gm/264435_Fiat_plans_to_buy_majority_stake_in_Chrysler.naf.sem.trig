@@ -1,0 +1,488 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_buy , eso:Buying ;
+            rdfs:label     "buy" , "purchase" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=14,17> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=377,380> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=597,603> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=104,112> .
+    
+    <http://dbpedia.org/resource/Fiat>
+            rdfs:label     "Fiat" , "Fiat 's" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=0,4> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=90,92> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=514,518> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=592,596> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=190,195> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=282,288> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=60,64> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=282,286> .
+    
+    <http://dbpedia.org/resource/Chrysler>
+            rdfs:label     "Chrysler" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=36,44> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=640,645> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=630,638> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=258,266> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=142,150> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=394,402> .
+    
+    <http://www.newsreader-project.eu/time/20110603>
+            a              time:DateTimeDescription ;
+            time:day       "---03"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Friday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=78,84> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110603> .
+    
+    <http://www.newsreader-project.eu/time/20110610>
+            a              time:DateTimeDescription ;
+            time:day       "---10"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--06"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4>
+            a                time:Instant ;
+            rdfs:label       "June 10" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=463,470> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110610> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=586,590> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx6>
+            a                time:Instant ;
+            rdfs:label       "the end of this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=756,776> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev12>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "stake" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=27,32> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=249,254> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=621,626> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev13>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "percent" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=121,128> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=232,239> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev14>
+            a              sem:Event , nwrontology:contextualEvent , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "own" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=184,188> .
+    
+    <http://dbpedia.org/resource/United_States_dollar>
+            rdfs:label     "US" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=160,162> , <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=415,417> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev16>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "share" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=385,390> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev17>
+            a              sem:Event , nwrontology:contextualEvent , eso:HavingInPossession , fn:Containing , fn:Retaining ;
+            rdfs:label     "hold" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=403,407> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev18>
+            a              sem:Event , nwrontology:contextualEvent , fn:Leadership ;
+            rdfs:label     "government" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=418,428> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev20>
+            a              sem:Event , nwrontology:contextualEvent , fn:Commerce_pay , eso:Paying ;
+            rdfs:label     "pay" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=524,527> .
+    
+    <http://www.newsreader-project.eu/time/20110529>
+            a              time:DateTimeDescription ;
+            time:day       "---29"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110529> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev37>
+            a              sem:Event , nwrontology:sourceEvent , fn:Purpose ;
+            rdfs:label     "plan" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=5,10> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx1>
+            a                time:Instant ;
+            rdfs:label       "May 29 , 2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=46,58> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110529> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev38>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,74> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev40>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Reporting , fn:Request , fn:Telling , eso:Motion ;
+            rdfs:label     "tell" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=319,323> .
+    
+    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury>
+            rdfs:label     "Treasury" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=331,339> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev41>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announcement" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=289,301> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Statement , fn:Motion , eso:Motion , fn:Choosing , fn:Text_creation ;
+            rdfs:label     "say" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=986,990> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/RebeccaLindland>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Rebecca Lindland" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=969,985> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr1> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=78,112> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=377,470> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=586,603> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=597,776> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr2,rl3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=0,17> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr16,rl39>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=377,402> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=78,254> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=586,626> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=621,776> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr3,rl6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=27,44> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=78,239> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr11,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=232,266> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=78,188> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr8,rl17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=156,188> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=385,470> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr18,rl41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=385,402> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=403,470> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr19,rl42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=403,428> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr13>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=418,470> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr20,rl43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=415,428> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr15>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=524,527> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr22,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=514,527> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=5,58> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=0,10> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=65,84> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr4,rl7>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=60,74> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=319,470> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr12,rl29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=319,339> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=289,470> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr13,rl31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=282,301> .
+    
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr40,rl89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#char=961,990> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr2> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr3> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr4> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr2,rl3> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            sem:hasActor            <http://dbpedia.org/resource/Fiat> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                   <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr16,rl39> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev11>
+            sem:hasActor          <http://dbpedia.org/resource/Chrysler> ;
+            eso:possession-theme  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1                 <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr5> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr6> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr7> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev12>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr3,rl6> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev12>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr8> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev13>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr11,rl26> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev13>
+            sem:hasPlace  <http://dbpedia.org/resource/Chrysler> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr9> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev14>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr8,rl17> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev14>
+            sem:hasActor          <http://dbpedia.org/resource/United_States_dollar> ;
+            eso:possession-owner  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                 <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr11> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev16>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr18,rl41> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev16>
+            sem:hasActor  <http://dbpedia.org/resource/Chrysler> ;
+            pb:A1         <http://dbpedia.org/resource/Chrysler> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr12> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev17>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr19,rl42> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev17>
+            sem:hasActor             <http://dbpedia.org/resource/United_States_dollar> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Containing@Container>
+                    <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A0                    <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr13> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr20,rl43> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/United_States_dollar> ;
+            pb:A2         <http://dbpedia.org/resource/United_States_dollar> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr15> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev20>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr22,rl50> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev20>
+            sem:hasActor            <http://dbpedia.org/resource/Fiat> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                   <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr42> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev37>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev37>
+            sem:hasActor      <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Purpose@Agent>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0             <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr43> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr4,rl7> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev38>
+            sem:hasActor          <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                 <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr46> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev40>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr12,rl29> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev40>
+            sem:hasActor              <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Authorities>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Telling@Addressee>
+                    <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> ;
+            pb:A2                     <http://dbpedia.org/resource/United_States_Department_of_the_Treasury> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr47> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev41>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr13,rl31> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev41>
+            sem:hasActor          <http://dbpedia.org/resource/Fiat> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Fiat> ;
+            pb:A0                 <http://dbpedia.org/resource/Fiat> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tr59> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#pr40,rl89> {
+    <http://en.wikinews.org/wiki/Fiat_plans_to_buy_majority_stake_in_Chrysler#ev47>
+            sem:hasActor             <http://www.newsreader-project.eu/data/wikinews/entities/RebeccaLindland> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Choosing@Cognizer>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/RebeccaLindland> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/RebeccaLindland> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Text_creation@Author>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/RebeccaLindland> ;
+            pb:A0                    <http://www.newsreader-project.eu/data/wikinews/entities/RebeccaLindland> .
+}

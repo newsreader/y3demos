@@ -1,0 +1,366 @@
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+
+{ <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply>
+          prov:wasAttributedTo  <http://www.newsreader-project.eu/provenance/author/Blood+Red+Sandman> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=333,340>
+          rdfs:comment        "reported" ;
+          rdfs:label          "decline" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=318,326> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr0> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr0>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=318,326>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr9> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=542,546>
+          rdfs:comment        "reported" ;
+          rdfs:label          "drop" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1>
+          rdf:value            <CERTAIN_NON_FUTURE_POS> , <CERTAIN_u_POS> ;
+          gaf:wasAttributedTo  <http://www.newsreader-project.eu/data/wikinews/non-entities/japanese+automaker+toyota> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr16> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=540,541>
+          rdfs:comment        "reported" ;
+          rdfs:label          "%" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=553,558>
+          rdfs:comment        "reported" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=594,601>
+          rdfs:comment        "reported" ;
+          rdfs:label          "dropped" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=617,622>
+          rdfs:comment        "reported" ;
+          rdfs:label          "sales" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=623,630>
+          rdfs:comment        "reported" ;
+          rdfs:label          "dropped" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=633,634>
+          rdfs:comment        "reported" ;
+          rdfs:label          "%" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=527,535> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=986,991>
+          rdfs:comment        "announced" ;
+          rdfs:label          "offer" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2>
+          rdf:value            <CERTAIN_u_POS> , <CERTAIN_FUTURE_POS> , <u_u_u> ;
+          gaf:wasAttributedTo  <http://dbpedia.org/resource/General_Motors> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966>
+          rdfs:label          "announced" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr27> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1057,1063>
+          rdfs:comment        "announced" ;
+          rdfs:label          "reduce" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1002,1009>
+          rdfs:comment        "announced" ;
+          rdfs:label          "buyouts" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1020,1029>
+          rdfs:comment        "announced" ;
+          rdfs:label          "employees" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1047,1053>
+          rdfs:comment        "announced" ;
+          rdfs:label          "effort" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1068,1080>
+          rdfs:comment        "announced" ;
+          rdfs:label          "expenditures" ;
+          gaf:generatedBy     <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=957,966> ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_sAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=11,16>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr0> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr0>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=112,116>
+          rdfs:label          "fell" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr1> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr1>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=130,131>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr2> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr2>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=70,75>
+          rdfs:label          "Sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr3> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr3>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=200,208>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr4> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr4>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=223,228>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr5> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr5>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=250,255>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr6> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr6>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=256,263>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr7> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr7>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=266,267>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr8> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr8>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr9>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=363,366>
+          rdfs:label          "hit" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr10> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr10>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=390,395>
+          rdfs:label          "owned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr11> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr11>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=417,423>
+          rdfs:label          "plunge" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr12> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr12>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=467,474>
+          rdfs:label          "limited" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr13> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr13>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=437,444>
+          rdfs:label          "decline" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr14> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr14>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=486,499>
+          rdfs:label          "manufacturers" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr15> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr15>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr16>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=719,727>
+          rdfs:label          "reported" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr17> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr17>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=743,748>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr18> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr18>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=731,739>
+          rdfs:label          "increase" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr19> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr19>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=755,761>
+          rdfs:label          "posted" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr20> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr20>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=762,767>
+          rdfs:label          "gains" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr21> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr21>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=863,873>
+          rdfs:label          "plummeting" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr22> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr22>
+          rdf:value             <CERTAIN_NON_FUTURE_NEG> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=827,832>
+          rdfs:label          "basis" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr23> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr23>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=896,901>
+          rdfs:label          "sales" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr24> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr24>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=902,909>
+          rdfs:label          "dropped" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr25> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr25>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=912,913>
+          rdfs:label          "%" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr26> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr26>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr27>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1116,1121>
+          rdfs:label          "given" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr28> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr28>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1122,1127>
+          rdfs:label          "loans" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr29> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr29>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1181,1187>
+          rdfs:label          "warned" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr30> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr30>
+          rdf:value             <CERTAIN_NON_FUTURE_POS> , <negative> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply#char=1200,1210>
+          rdfs:label          "bankruptcy" ;
+          gaf:hasAttribution  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr31> .
+  
+  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply_dAttr31>
+          rdf:value             <CERTAIN_u_POS> ;
+          prov:wasAttributedTo  <http://en.wikinews.org/wiki/Automobile_sales_in_the_United_States_down_sharply> .
+}

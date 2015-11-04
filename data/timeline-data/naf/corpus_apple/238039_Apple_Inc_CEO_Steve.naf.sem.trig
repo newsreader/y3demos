@@ -1,0 +1,780 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev20>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "officer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=94,101> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=757,764> .
+    
+    <http://dbpedia.org/resource/Apple_Inc.>
+            rdfs:label     "Apple" , "Apple Inc." ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=0,10> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1977,1982> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1469,1474> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=921,926> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=265,270> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=105,115> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1779,1784> .
+    
+    <http://www.newsreader-project.eu/time/20110124>
+            a              time:DateTimeDescription ;
+            time:day       "---24"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=127,133> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110124> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Departing , fn:Path_shape , fn:Quitting , eso:Leaving , eso:LeavingAnOrganization , fn:Forming_relationships , fn:Giving ;
+            rdfs:label     "leave" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=182,187> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=473,478> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=728,732> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1595,1600> .
+    
+    <http://dbpedia.org/resource/Steve_Jobs>
+            rdfs:label     "Jobs" , "Steve Jobs" , "Jobs 's" , "thin" , "Jobs '" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=15,25> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=62,72> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1002,1008> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1229,1233> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1496,1502> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=440,444> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=608,612> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1002,1006> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1296,1303> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1280,1282> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1229,1234> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=839,844> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1496,1500> .
+    
+    <http://www.newsreader-project.eu/time/20110117>
+            a              time:DateTimeDescription ;
+            time:day       "---17"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--01"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3>
+            a                time:Instant ;
+            rdfs:label       "Monday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=366,372> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110117> .
+    
+    <http://www.newsreader-project.eu/time/200>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "200"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4>
+            a                time:Instant ;
+            rdfs:label       "the past decade" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=419,434> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev24>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "prex" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=277,283> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev27>
+            a              sem:Event , nwrontology:contextualEvent , fn:Aging , fn:Cause_change_of_position_on_a_scale , eso:Decreasing , eso:Increasing ;
+            rdfs:label     "age" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=446,450> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev28>
+            a              sem:Event , nwrontology:contextualEvent , eso:Increasing , fn:Change_of_quantity_of_possession , fn:Earnings_and_losses , fn:Getting , fn:Removing , fn:Bringing , fn:Taking , fn:Change_of_leadership , eso:Transportation , eso:Getting , eso:Taking ;
+            rdfs:label     "take" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=459,464> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=520,524> .
+    
+    <http://www.newsreader-project.eu/time/2004>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2004"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx5>
+            a                time:Instant ;
+            rdfs:label       "2004" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=511,515> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2004> .
+    
+    <http://www.newsreader-project.eu/time/2009>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2009"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx6>
+            a                time:Instant ;
+            rdfs:label       "early 2009" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=543,553> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2009> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev34>
+            a              sem:Event , nwrontology:contextualEvent , fn:Being_in_operation , fn:Operating_a_system , fn:Using , fn:Being_operational , eso:BeingInUse ;
+            rdfs:label     "operate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=747,756> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/TimothyDCook>
+            a              nwrontology:PERSON ;
+            rdfs:label     "Timothy D. Cook" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=765,780> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20110117> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev36>
+            a              sem:Event , nwrontology:contextualEvent , fn:Manufacturing , fn:Arriving , fn:Building , fn:Cause_change , fn:Cooking_creation , fn:Intentionally_create , fn:Self_motion , fn:Creating , eso:Creating ;
+            rdfs:label     "make" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=831,835> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=913,917> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7>
+            a              time:Interval ;
+            rdfs:label     "the past few week" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1209,1227> ;
+            time:hasEnd    <http://www.newsreader-project.eu/time/20110117> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev38>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "absence" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=854,862> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev39>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "health" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1009,1015> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1633,1639> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev43>
+            a              sem:Event , nwrontology:contextualEvent , eso:Decreasing ;
+            rdfs:label     "deteriorate" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1257,1270> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev44>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Becoming ;
+            rdfs:label     "become" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1287,1295> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev45>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "doctor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1326,1332> .
+    
+    <http://dbpedia.org/resource/New_York_University>
+            rdfs:label     "New York University" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1336,1355> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Releasing ;
+            rdfs:label     "release" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1475,1483> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev53>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "day" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1787,1790> .
+    
+    <http://www.newsreader-project.eu/time/2011>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2011"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx8>
+            a                time:Instant ;
+            rdfs:label       "2011" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1962,1966> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2011> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev64>
+            a              sem:Event , nwrontology:contextualEvent , fn:Inclusion , fn:Possession , eso:HavingInPossession ;
+            rdfs:label     "have" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1016,1019> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev75>
+            a              sem:Event , nwrontology:contextualEvent , fn:Compliance , fn:Judgment ;
+            rdfs:label     "honor" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=336,341> .
+    
+    <http://dbpedia.org/resource/Martin_Luther_King,_Jr.>
+            rdfs:label     "Martin Luther King" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=345,363> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev78>
+            a              sem:Event , nwrontology:sourceEvent , fn:Mention , fn:Statement ;
+            rdfs:label     "mention" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=625,634> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev82>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement , fn:Reporting ;
+            rdfs:label     "report" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,955> .
+    
+    <http://dbpedia.org/resource/The_New_York_Times>
+            rdfs:label     "the New York Times" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=928,946> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev83>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "comment" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=885,892> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev85>
+            a              sem:Event , nwrontology:contextualEvent , fn:Questioning , fn:Request , fn:Motion , eso:Motion ;
+            rdfs:label     "ask" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1166,1171> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1735,1740> .
+    
+    <http://dbpedia.org/resource/List_of_Ashes_to_Ashes_characters>
+            rdfs:label     "Tim" , "Tim Cook" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1839,1842> , <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1741,1749> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev86>
+            a              sem:Event , nwrontology:sourceEvent , fn:Appearance ;
+            rdfs:label     "appear" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1242,1250> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev93>
+            a              sem:Event , nwrontology:sourceEvent , fn:Experiencer_focus , fn:Experiencer_subj ;
+            rdfs:label     "love" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1972,1976> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr1> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev20>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=94,133> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr3,rl10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=94,115> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=127,187> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=366,478> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=419,478> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr16,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=440,478> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr9>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=127,283> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr10>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=277,372> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=277,434> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr9,rl20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=265,283> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr17>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=366,450> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr18>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=419,450> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr14,rl33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=440,454> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr19>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=366,464> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr20>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=419,464> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr21>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=511,524> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr22>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=520,553> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr15,rl35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=440,464> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr29,rl68>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=747,780> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr35>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=913,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr36,rl85>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=913,926> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr33,rl77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=839,862> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr38>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1009,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr38,rl88>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1002,1015> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1209,1270> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr51,rl117>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1229,1270> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr42>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1209,1295> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr52,rl119>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1287,1303> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr43>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1209,1332> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr54,rl122>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1324,1355> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr59,rl132>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1469,1483> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr51>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1787,1966> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr73,rl163>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1779,1790> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr63>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1016,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr39,rl90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1002,1019> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=127,341> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=336,372> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr78>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=336,434> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr11,rl26>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=336,363> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr83>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=511,634> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr84>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=543,634> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr22,rl52>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=608,634> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=947,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr34,rl79>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=928,955> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=885,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr35,rl82>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=885,926> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr94>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1166,1227> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr72,rl161>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1735,1749> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr95>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1209,1250> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr50,rl115>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1229,1250> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr102>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1962,1976> .
+    
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr85,rl190>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#char=1972,1982> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr3,rl10> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev20>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A2         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr2> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr3> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr4> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr16,rl37> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev21>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr9> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr10> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr11> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev24>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr9,rl20> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev24>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr17> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr18> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev27>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr14,rl33> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev27>
+            sem:hasActor     <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Aging@Entity>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1            <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr19> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr20> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr21> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr22> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev28>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr15,rl35> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev28>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:possession-owner_2   <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr33> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev34>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr29,rl68> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev34>
+            sem:hasActor        <http://www.newsreader-project.eu/data/wikinews/entities/TimothyDCook> ;
+            eso:inuse-entity_1  <http://www.newsreader-project.eu/data/wikinews/entities/TimothyDCook> ;
+            pb:A0               <http://www.newsreader-project.eu/data/wikinews/entities/TimothyDCook> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr35> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev36>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr36,rl85> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev36>
+            sem:hasActor                   <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Arriving@Theme>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Building@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cause_change@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Cooking_creation@Cook>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Intentionally_create@Creator>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Manufacturing@Manufacturer>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Self_motion@Source>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                          <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr37> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev38>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr33,rl77> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev38>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr38> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev39>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr38,rl88> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev39>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr41> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr51,rl117> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev43>
+            sem:hasActor  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1         <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr42> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev44>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr52,rl119> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev44>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Becoming@Final_state>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A2                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr43> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev45>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr54,rl122> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev45>
+            sem:hasActor  <http://dbpedia.org/resource/New_York_University> ;
+            pb:A0         <http://dbpedia.org/resource/New_York_University> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr45> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr59,rl132> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev47>
+            sem:hasActor        <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Releasing@Agent>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0               <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr51> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev53>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr73,rl163> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev53>
+            sem:hasActor  <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1         <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr63> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev64>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr39,rl90> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev64>
+            sem:hasActor          <http://dbpedia.org/resource/Steve_Jobs> ;
+            eso:possession-owner  <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                 <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr76> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr77> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx3> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr78> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr11,rl26> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev75>
+            sem:hasActor               <http://dbpedia.org/resource/Martin_Luther_King,_Jr.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Compliance@Protagonist>
+                    <http://dbpedia.org/resource/Martin_Luther_King,_Jr.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Judgment@Evaluee>
+                    <http://dbpedia.org/resource/Martin_Luther_King,_Jr.> ;
+            pb:A1                      <http://dbpedia.org/resource/Martin_Luther_King,_Jr.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr83> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev78>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr84> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev78>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr22,rl52> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev78>
+            sem:hasActor             <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Mention@Communicator>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A0                    <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr91> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev82>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr34,rl79> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev82>
+            sem:hasActor           <http://dbpedia.org/resource/The_New_York_Times> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Reporting@Informer>
+                    <http://dbpedia.org/resource/The_New_York_Times> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/The_New_York_Times> ;
+            pb:A0                  <http://dbpedia.org/resource/The_New_York_Times> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr92> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev83>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr35,rl82> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev83>
+            sem:hasActor          <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A0                 <http://dbpedia.org/resource/Apple_Inc.> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr94> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev85>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr72,rl161> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev85>
+            sem:hasActor              <http://dbpedia.org/resource/List_of_Ashes_to_Ashes_characters> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Questioning@Addressee>
+                    <http://dbpedia.org/resource/List_of_Ashes_to_Ashes_characters> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/List_of_Ashes_to_Ashes_characters> ;
+            pb:A2                     <http://dbpedia.org/resource/List_of_Ashes_to_Ashes_characters> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr95> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev86>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr50,rl115> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev86>
+            sem:hasActor              <http://dbpedia.org/resource/Steve_Jobs> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Appearance@Phenomenon>
+                    <http://dbpedia.org/resource/Steve_Jobs> ;
+            pb:A1                     <http://dbpedia.org/resource/Steve_Jobs> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tr102> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev93>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#pr85,rl190> {
+    <http://en.wikinews.org/wiki/Apple_Inc._CEO_Steve_Jobs_on_medical_leave#ev93>
+            sem:hasActor                  <http://dbpedia.org/resource/Apple_Inc.> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Experiencer_focus@Content>
+                    <http://dbpedia.org/resource/Apple_Inc.> ;
+            pb:A1                         <http://dbpedia.org/resource/Apple_Inc.> .
+}

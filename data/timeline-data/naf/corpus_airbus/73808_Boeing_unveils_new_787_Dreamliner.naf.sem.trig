@@ -1,0 +1,716 @@
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix gaf:   <http://groundedannotationframework.org/gaf#> .
+@prefix gafSentiment: <http://groundedannotationframework.org/gaf/sentiment#> .
+@prefix nwrpublisher: <http://www.newsreader-project.eu/provenance/publisher/> .
+@prefix wn:    <http://www.newsreader-project.eu/ontologies/pwn3.0/> .
+@prefix nwrontology: <http://www.newsreader-project.eu/ontologies/> .
+@prefix ili:   <http://globalwordnet.org/ili/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/TR/owl-time#> .
+@prefix eso:   <http://www.newsreader-project.eu/domain-ontology#> .
+@prefix nwrauthor: <http://www.newsreader-project.eu/provenance/author/> .
+@prefix nwrmagazine: <http://www.newsreader-project.eu/provenance/magazine/> .
+@prefix pb:    <http://www.newsreader-project.eu/ontologies/propbank/> .
+@prefix gafAttribution: <http://groundedannotationframework.org/gaf/attribution#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix nwr:   <http://www.newsreader-project.eu/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sem:   <http://semanticweb.cs.vu.nl/2009/11/sem/> .
+@prefix fn:    <http://www.newsreader-project.eu/ontologies/framenet/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix nwrdata: <http://www.newsreader-project.eu/data/> .
+
+{ 
+}
+
+nwr:instances {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev18>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "unveil" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=7,14> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=83,91> .
+    
+    <http://dbpedia.org/resource/Boeing>
+            rdfs:label     "Boeing" , "Boeing 's" , "Boeing predict" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=0,6> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2309,2317> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1843,1849> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1923,1929> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=824,830> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1133,1139> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1585,1591> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=71,77> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1843,1858> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2309,2315> .
+    
+    <http://dbpedia.org/resource/Boeing_787_Dreamliner>
+            rdfs:label     "Dreamliner" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=23,33> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=106,116> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1033,1043> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1794,1804> .
+    
+    <http://dbpedia.org/resource/Boeing_Everett_Factory>
+            rdfs:label     "Everett factory" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=126,141> .
+    
+    <http://www.newsreader-project.eu/time/20070709>
+            a              time:DateTimeDescription ;
+            time:day       "---09"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1>
+            a                time:Instant ;
+            rdfs:label       "July 9 , 2007" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=35,47> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070709> .
+    
+    <http://www.newsreader-project.eu/time/20070708>
+            a              time:DateTimeDescription ;
+            time:day       "---08"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2>
+            a                time:Instant ;
+            rdfs:label       "Sunday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=190,196> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070708> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev19>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "manufacturer" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=58,70> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev21>
+            a              sem:Event , nwrontology:contextualEvent , fn:Building , fn:Manufacturing , eso:Creating ;
+            rdfs:label     "factory" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=134,141> .
+    
+    <http://dbpedia.org/resource/Washington_(state)>
+            rdfs:label     "Washington" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=156,166> .
+    
+    <http://dbpedia.org/resource/Seattle>
+            rdfs:label     "Seattle" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=147,154> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev26>
+            a              sem:Event , nwrontology:contextualEvent ;
+            rdfs:label     "president" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=461,470> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1988,1997> .
+    
+    <http://dbpedia.org/resource/Boeing_Commercial_Airplanes>
+            rdfs:label     "Boeing Commercial airplanes" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=482,509> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx10>
+            a                time:Instant ;
+            rdfs:label       "today" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2027,2032> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070709> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev42>
+            a              sem:Event , nwrontology:grammaticalEvent , fn:Event ;
+            rdfs:label     "place" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1391,1396> .
+    
+    <http://dbpedia.org/resource/All_Nippon_Airways>
+            rdfs:label     "all Nippon airways" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1459,1477> .
+    
+    <http://www.newsreader-project.eu/time/2007>
+            a              time:DateTimeDescription ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx5>
+            a                time:Instant ;
+            rdfs:label       "August or September of this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1400,1432> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://www.newsreader-project.eu/time/200805>
+            a              time:DateTimeDescription ;
+            time:month     "--05"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2008"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx6>
+            a                time:Instant ;
+            rdfs:label       "May 2008" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1518,1526> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200805> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev43>
+            a              sem:Event , nwrontology:contextualEvent , fn:Receiving , eso:Getting ;
+            rdfs:label     "receive" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1486,1493> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1930,1938> .
+    
+    <http://dbpedia.org/resource/Airbus>
+            rdfs:label     "Airbus" , "Boeing and Airbus whose" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1596,1602> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1715,1721> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1585,1608> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1968,1974> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2238,2244> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9>
+            a                time:Instant ;
+            rdfs:label       "the day" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1914,1921> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070709> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev47>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , fn:Motion , fn:Operate_vehicle , fn:Ride_vehicle , fn:Self_motion , eso:Transportation , eso:Translocation , eso:Motion ;
+            rdfs:label     "fly" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1634,1638> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1739,1745> .
+    
+    <http://www.newsreader-project.eu/time/200504>
+            a              time:DateTimeDescription ;
+            time:month     "--04"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2005"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7>
+            a                time:Instant ;
+            rdfs:label       "April 2005" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1642,1652> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/200504> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8>
+            a                time:Instant ;
+            rdfs:label       "later this year" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1686,1701> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/2007> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev50>
+            a              sem:Event , nwrontology:contextualEvent , fn:Aiming , fn:Placing , eso:IntentionalEvent , eso:Placing ;
+            rdfs:label     "target" , "aim" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1808,1816> , <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1730,1735> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev56>
+            a              sem:Event , nwrontology:contextualEvent , fn:Arriving , fn:Possession ;
+            rdfs:label     "get" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2250,2253> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0>
+            a                time:Instant ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070709> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev60>
+            a              sem:Event , nwrontology:contextualEvent , fn:Intentionally_affect , fn:Using , fn:Using_resource , eso:BeingInUse ;
+            rdfs:label     "use" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1049,1052> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev61>
+            a              sem:Event , nwrontology:contextualEvent , fn:Bringing , eso:Transportation ;
+            rdfs:label     "bring" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1242,1250> .
+    
+    <http://www.newsreader-project.eu/time/20070707>
+            a              time:DateTimeDescription ;
+            time:day       "---07"^^<http://www.w3.org/2001/XMLSchema#gDay> ;
+            time:month     "--07"^^<http://www.w3.org/2001/XMLSchema#gMonth> ;
+            time:unitType  time:unitDay ;
+            time:year      "2007"^^<http://www.w3.org/2001/XMLSchema#gYear> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4>
+            a                time:Instant ;
+            rdfs:label       "Saturday" ;
+            gaf:denotedBy    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1123,1131> ;
+            time:inDateTime  <http://www.newsreader-project.eu/time/20070707> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev68>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "claim" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=831,837> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev69>
+            a              sem:Event , nwrontology:sourceEvent , fn:Statement ;
+            rdfs:label     "announce" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1140,1149> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev70>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , eso:Motion , fn:Request ;
+            rdfs:label     "order" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1157,1163> .
+    
+    <http://www.newsreader-project.eu/data/wikinews/entities/ALAFCOAviationLeaseFinanceofKuwait>
+            a              nwrontology:ORGANIZATION ;
+            rdfs:label     "ALAFCO Aviation Lease &amp; Finance of Kuwait" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1199,1240> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev75>
+            a              sem:Event , nwrontology:sourceEvent , fn:Predicting ;
+            rdfs:label     "predict" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1850,1858> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev76>
+            a              sem:Event , nwrontology:contextualEvent , fn:Motion , fn:Causation , fn:Sending , eso:Giving ;
+            rdfs:label     "letter" ;
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1956,1962> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr1> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1> .
+}
+
+nwr:provenance {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=7,91> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=83,196> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr1,rl1>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=0,14> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr1,rl2>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=7,33> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr3,rl8>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=83,167> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr3>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=35,70> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr4>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=58,196> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr2,rl5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=58,77> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr5>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=35,141> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr6>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=134,196> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr5,rl12>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=126,141> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr5,rl14>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=134,167> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr11>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1988,2032> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr17,rl37>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=461,509> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr29>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1391,1432> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr30>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1391,1526> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr41,rl92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1391,1477> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr31>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1400,1493> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr32>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1486,1526> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr33>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1914,1938> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr60,rl127>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1923,1938> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr60,rl129>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1930,1974> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr40>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1634,1652> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr41>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1634,1701> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr54,rl114>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1711,1745> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr46>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1642,1816> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr47>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1686,1816> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr48>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1730,1921> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr52,rl110>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1790,1816> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr53,rl112>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1711,1735> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr62>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2250,2253> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr71,rl150>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=2229,2253> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr66>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1049,1052> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr31,rl64>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1025,1052> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr67>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1123,1250> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr35,rl75>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1133,1250> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr24,rl50>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=824,837> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr76>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1123,1149> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr33,rl70>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1133,1149> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr77>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1123,1163> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr34,rl73>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1133,1163> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr34,rl74>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1157,1240> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr89>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1642,1858> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr90>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1686,1858> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr91>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1850,1921> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr57,rl122>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1843,1858> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr92>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1914,1962> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr61,rl130>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1923,1962> .
+    
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr61,rl132>
+            gaf:denotedBy  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#char=1956,1974> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr2> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev18>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr1,rl1> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr1,rl2> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev18>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            pb:A1         <http://dbpedia.org/resource/Boeing_787_Dreamliner> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr3,rl8> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev18>
+            sem:hasPlace  <http://dbpedia.org/resource/Boeing_Everett_Factory> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Boeing_Everett_Factory> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr3> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr4> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev19>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr2,rl5> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev19>
+            sem:hasActor        <http://dbpedia.org/resource/Boeing> ;
+            eso:creating-theme  <http://dbpedia.org/resource/Boeing> ;
+            pb:A1               <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr5> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx1> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr6> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev21>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx2> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr5,rl12> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev21>
+            sem:hasPlace  <http://dbpedia.org/resource/Boeing_Everett_Factory> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Boeing_Everett_Factory> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr5,rl14> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev21>
+            sem:hasPlace  <http://dbpedia.org/resource/Washington_(state)> , <http://dbpedia.org/resource/Seattle> ;
+            pb:AM-LOC     <http://dbpedia.org/resource/Washington_(state)> , <http://dbpedia.org/resource/Seattle> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr11> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev26>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx10> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx10> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr17,rl37> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev26>
+            sem:hasActor  <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> ;
+            pb:A0         <http://dbpedia.org/resource/Boeing_Commercial_Airplanes> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr29> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr30> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev42>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr41,rl92> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev42>
+            sem:hasActor    <http://dbpedia.org/resource/All_Nippon_Airways> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Event@Event>
+                    <http://dbpedia.org/resource/All_Nippon_Airways> ;
+            pb:A1           <http://dbpedia.org/resource/All_Nippon_Airways> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr31> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx5> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx5> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr32> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx6> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx6> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr33> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev43>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr60,rl127> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev43>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_2  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr60,rl129> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev43>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Airbus> ;
+            pb:A2                   <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr40> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr41> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev47>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr54,rl114> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev47>
+            sem:hasActor             <http://dbpedia.org/resource/Airbus> ;
+            eso:translocation-theme  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                    <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr46> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr47> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr48> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev50>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr52,rl110> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev50>
+            sem:hasActor        <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Aiming@Targeted>
+                    <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            pb:A0               <http://dbpedia.org/resource/Boeing_787_Dreamliner> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr53,rl112> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev50>
+            sem:hasActor          <http://dbpedia.org/resource/Airbus> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Aiming@Instrument>
+                    <http://dbpedia.org/resource/Airbus> ;
+            pb:A1                 <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr62> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev56>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr71,rl150> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev56>
+            sem:hasActor  <http://dbpedia.org/resource/Airbus> ;
+            pb:A1         <http://dbpedia.org/resource/Airbus> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr66> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev60>
+            sem:hasFutureTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0> ;
+            sem:hasTime        <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr31,rl64> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev60>
+            sem:hasActor        <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            eso:inuse-entity_1  <http://dbpedia.org/resource/Boeing_787_Dreamliner> ;
+            pb:A0               <http://dbpedia.org/resource/Boeing_787_Dreamliner> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr67> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev61>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr35,rl75> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev61>
+            sem:hasActor       <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Bringing@Agent>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0              <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr75> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev68>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx0> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr24,rl50> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev68>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr76> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev69>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr33,rl70> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev69>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Statement@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr77> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev70>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx4> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr34,rl73> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev70>
+            sem:hasActor          <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Addressee>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A3                 <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr34,rl74> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev70>
+            sem:hasActor        <http://www.newsreader-project.eu/data/wikinews/entities/ALAFCOAviationLeaseFinanceofKuwait> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Request@Speaker>
+                    <http://www.newsreader-project.eu/data/wikinews/entities/ALAFCOAviationLeaseFinanceofKuwait> ;
+            pb:A0               <http://www.newsreader-project.eu/data/wikinews/entities/ALAFCOAviationLeaseFinanceofKuwait> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr89> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx7> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr90> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx8> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr91> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev75>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr57,rl122> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev75>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Predicting@Evidence>
+                    <http://dbpedia.org/resource/Boeing> ;
+            <http://www.newsreader-project.eu/ontologies/framenet/Predicting@Speaker>
+                    <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tr92> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev76>
+            sem:hasAtTime  <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> ;
+            sem:hasTime    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#tmx9> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr61,rl130> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev76>
+            sem:hasActor            <http://dbpedia.org/resource/Boeing> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Boeing> ;
+            pb:A0                   <http://dbpedia.org/resource/Boeing> .
+}
+
+<http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#pr61,rl132> {
+    <http://en.wikinews.org/wiki/Boeing_unveils_new_787_Dreamliner#ev76>
+            sem:hasActor            <http://dbpedia.org/resource/Airbus> ;
+            eso:possession-owner_1  <http://dbpedia.org/resource/Airbus> ;
+            pb:A0                   <http://dbpedia.org/resource/Airbus> .
+}
