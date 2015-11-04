@@ -12,7 +12,7 @@ from pprint import pprint
 
 corpus=sys.argv[1]
 jsoninput  = sys.argv[2]
-with open('../data/timeline-data/json/gm_contextual.timeline.json') as data_file:    
+with open(jsoninput) as data_file:    
     data = json.load(data_file)
    
 eid = 1
